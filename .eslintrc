@@ -1,0 +1,9 @@
+{
+	"extends": ["plugin:prettier/recommended"],
+	"plugins": ["prettier"],
+	"rules": {
+		"max-len": ["error", 120],
+		"comma-dangle": ["error", "always"],
+		"prettier/prettier": "error"
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"recommendations": [
+		"waderyan.gitblame",
+		"esbenp.prettier-vscode",
+		"stylelint.vscode-stylelint",
+		"mfeckies.handlebars-formatter"
+	]
+}

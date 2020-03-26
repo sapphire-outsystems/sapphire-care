@@ -1,0 +1,39 @@
+{
+	"name": "sapphire-care",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "set NODE_ENV=development && webpack-dev-server --config webpack.dev.js",
+		"prod": "set NODE_ENV=production && webpack --config webpack.prod.js",
+		"new:build": "npm run prod && git add . && git commit -m \"New Release\" --allow-empty && git push origin master",
+		"release:patch": "npm run new:build && release-it patch --ci",
+		"release:minor": "npm run new:build && release-it minor --git.requireBranch=master",
+		"release:major": "npm run new:build && release-it major --git.requireBranch=master"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^9.7.4",
+		"clean-webpack-plugin": "^3.0.0",
+		"css-loader": "^3.4.2",
+		"eslint": "^6.8.0",
+		"eslint-config-prettier": "^6.9.0",
+		"eslint-plugin-prettier": "^3.1.2",
+		"file-loader": "^5.0.2",
+		"mini-css-extract-plugin": "^0.9.0",
+		"node-sass": "^4.13.1",
+		"postcss-loader": "^3.0.0",
+		"prettier": "^1.19.1",
+		"prettier-stylelint": "^0.4.2",
+		"release-it": "^13.3.1",
+		"sass-loader": "^8.0.2",
+		"style-loader": "^1.1.3",
+		"stylelint": "^13.0.0",
+		"stylelint-order": "^4.0.0",
+		"webpack": "^4.41.5",
+		"webpack-cli": "^3.3.10",
+		"webpack-dev-server": "^3.10.1",
+		"webpack-merge": "^4.2.2"
+	}
+}
