@@ -1,4 +1,4 @@
-require('./components/index.scss');
+require('./components//components/index.scss');
 
 //Import all JS files
 const requireAll = r => r.keys().forEach(r);
