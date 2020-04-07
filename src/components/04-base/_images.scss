@@ -1,0 +1,12 @@
+/*Customized image circle*/
+
+img.img-circle.fixed-size {
+  height: 60px;
+  width: 60px;
+}
+
+/*images ratio*/
+img {
+  object-fit: cover;
+  object-position: center;
+}

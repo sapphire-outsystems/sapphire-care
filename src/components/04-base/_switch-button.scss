@@ -1,0 +1,38 @@
+/* Toggle Button / Switch */
+/input[data-switch].switch:empty {
+  background-color: rgba(34, 31, 31, .26);
+}
+
+input.switch:empty:before {
+  background: #EEEEEE;
+}
+
+input.switch:checked:before {
+  background-color: #88c057;
+  border-color: #88c057;
+}
+
+input.switch:empty:after {
+  background-color: #fff;
+  border-color: #B0BEC5;
+}
+
+input.switch[disabled]:empty:before {
+  background-color: #F6F6F6;
+  border: 1px solid #CFD8DC;
+}
+
+input.switch[disabled]:empty:checked:before {
+  background-color: #EEEEEE;
+  border-color: transparent;
+}
+
+input.switch[disabled]:empty:after {
+  background-color: #cfd8dc;
+  border-color: #cfd8dc;
+}
+
+input.switch[disabled]:checked:after {
+  background-color: #fff;
+  border-color: transparent;
+}

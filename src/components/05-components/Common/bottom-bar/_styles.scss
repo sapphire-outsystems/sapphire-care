@@ -1,0 +1,85 @@
+/* Bottom Bar */
+.bottom-bar .bottom-bar-item-icon .icon {
+  font-size: 18px;
+}
+
+.bottom-bar.wizard-steps {
+  background-color: #eee;
+  color: #000;
+  font-size: 14px;
+  height: 48px;
+  line-height: 28px;
+  padding: 10px;
+}
+
+.bottom-bar.wizard-steps .fa {
+  font-size: 18px;
+  line-height: 28px;
+  width: 10px;
+}
+
+.white-bottom-bar {
+  background: #fff;
+  -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, .24), 0 0 8px rgba(0, 0, 0, .12);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, .24), 0 0 8px rgba(0, 0, 0, .12);
+  line-height: 16px;
+  padding: 10px;
+}
+
+.bottom-bar-wrapper.rquest-appoint,
+.bottom-bar-wrapper.appointments-list {
+  -webkit-box-shadow: 0 -2px 15px 0 rgba(0, 0, 0, .09);
+  box-shadow: 0 -2px 15px 0 rgba(0, 0, 0, .09);
+}
+
+.bottom-bar-wrapper.rquest-appoint .bottom-bar,
+.bottom-bar-wrapper.appointments-list .bottom-bar {
+  display: block;
+  padding: 15px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.is-rtl .bottom-bar-wrapper.rquest-appoint .bottom-bar,
+.is-rtl .bottom-bar-wrapper.appointments-list .bottom-bar {
+  text-align: left;
+}
+
+.bottom-bar-wrapper.rquest-appoint a {
+  display: inline-block;
+}
+
+/* Bottom bar */
+.bottom .appointments-list {
+  background-color: #f6f6f6;
+}
+
+.bottom .appointments-list,
+.bottom .detail-schedule,
+.bottom .detail-request {
+  background-color: #f6f6f6;
+  padding: 20px 15px;
+}
+
+.bottom .appointments-list a {
+  color: #333;
+}
+
+.bottom .btn,
+/* added to solve height issue in all buttons */
+.bottom .btn:hover,
+/* added to solve height issue in all buttons */
+.bottom .btn:focus,
+/* added to solve height issue in all buttons */
+.bottom .detail-schedule .btn,
+.bottom .detail-request .btn {
+  border-radius: 4px;
+  line-height: 30px;
+  margin-top: 10px;
+  min-height: 50px;
+}
+
+.bottom .detail-request .btn:first-child,
+.bottom .detail-schedule .btn:first-child {
+  margin-top: 0;
+}

@@ -1,0 +1,25 @@
+/* is-rtl arrows */
+.is-rtl .fa-angle-left:before {
+  content: "\f105";
+}
+
+.is-rtl .fa-angle-right:before {
+  content: "\f104";
+}
+
+.is-rtl .app-menu-back .fa-angle-left:before,
+.is-rtl .carousel-navigation .fa-angle-left:before {
+  content: "\f104";
+}
+
+.is-rtl .carousel-navigation .fa-angle-right:before {
+  content: "\f105";
+}
+
+.is-rtl [style^='text-align: right'] {
+  text-align: left !important;
+}
+
+.is-rtl [style^='text-align: left'] {
+  text-align: right !important;
+}

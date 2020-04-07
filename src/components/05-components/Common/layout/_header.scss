@@ -1,0 +1,55 @@
+.header {
+  background-color: #002b49;
+  /*secondary-color*/
+  color: #fff;
+}
+
+.header-top {
+  height: 60px;
+  padding: 0 15px;
+}
+
+.app-menu-line {
+  background-color: #00bfa5;
+  /*primary-color*/
+}
+
+.header,
+.header-title,
+.header-right {
+  color: inherit;
+}
+
+.header a,
+.header a:link,
+.header a:visited {
+  color: #00bfa5;
+  /*primary-color*/
+  margin: 0 -10px;
+  padding: 0 10px;
+}
+
+.header-title {
+  -webkit-box-flex: 5;
+  flex: 5;
+  text-align: left;
+}
+
+.is-rtl .header-title {
+  text-align: right;
+}
+
+.header-title img {
+  display: block;
+  margin: 0 auto;
+}
+
+.header-content button.button-group-item.button-group-selected-item {
+  color: #00BFA5;
+  /*primary-color*/
+}
+
+.header-content button.button-group-item.button-group-selected-item:after {
+  background-color: #00BFA5;
+  /*primary-color*/
+}

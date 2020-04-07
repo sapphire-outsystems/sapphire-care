@@ -1,0 +1,123 @@
+/* Menu UserInfo */
+.user-info-custom {
+  background-color: #002B49;
+  /*secondary-color*/
+  display: table;
+  margin-bottom: 10px;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.user-info-custom .user-info-image {
+  display: table-cell;
+  padding-top: 0;
+  text-align: center;
+  vertical-align: top;
+  width: 100px;
+}
+
+.user-info-custom .user-info-image-border {
+  border: 2px solid #00bfa5;
+  /*primary-color*/
+  border-radius: 50%;
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+}
+
+.user-info-custom .user-info-image-border .upload-file {
+  display: contents;
+}
+
+.user-info-custom .user-info-image-border .upload {
+  background: #002b49;
+  /*secondary-color*/
+  border-radius: 100%;
+  display: inline-block;
+  height: 76px;
+  margin: 0;
+  min-height: initial;
+  overflow: hidden;
+  padding: 0;
+  width: 76px;
+}
+
+.user-info-custom .user-info-image-border .upload img {
+  border-radius: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.user-info-custom .user-info-image-border .upload .change-image {
+  background-color: rgba(51, 51, 51, .7);
+  border-radius: 100%;
+  bottom: 0;
+  display: inline-block;
+  height: auto;
+  left: 0;
+  opacity: 1;
+  overflow: hidden;
+  padding: 10px 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  white-space: normal;
+  width: auto;
+  z-index: 5;
+}
+
+.user-info-custom .user-info-image-border .upload .change-image .icon {
+  display: block;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  position: static;
+  text-align: center;
+  width: auto;
+}
+
+.user-info-custom .user-info-content {
+  display: table-cell;
+  padding-right: 15px;
+  padding-top: 8px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.is-rtl .user-info-custom .user-info-content {
+  padding-left: 15px;
+  padding-right: 0;
+  text-align: right;
+}
+
+.user-info-custom .user-info-username,
+.user-info-small-text {
+  color: #F5F5F5;
+  display: block;
+}
+
+.user-info-custom .user-info-username {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.user-info-small-text {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.user-info-image-size {
+  height: 64px;
+  width: 64px;
+}
+
+
+.user-info-image>.user-info-image-border>img.img-circle {
+  height: 100%;
+}

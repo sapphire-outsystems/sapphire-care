@@ -1,0 +1,28 @@
+/* Validation colors */
+.alert-success,
+.alert-error,
+.alert-warning,
+.alert-info {
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+.alert-success {
+  background-color: #7CB342;
+  border: 0;
+}
+
+.alert-error {
+  background-color: #DE1504;
+  border: 0;
+}
+
+.alert-warning {
+  background-color: #FFA000;
+  border: 0;
+}
+
+.alert-info {
+  background-color: #00656D;
+  border: 0;
+}

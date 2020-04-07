@@ -1,0 +1,52 @@
+/*---------- $9. Custom Select ----------*/
+
+select.dropdown-display {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border: 0;
+  border-bottom: 1px solid #d3d3d3;
+  border-radius: 0;
+  font-size: 16px;
+  height: 50px;
+  padding: 0 10px 4px;
+}
+
+.select-dropdown {
+  position: relative;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.select-dropdown:after {
+  border: 1px solid #1486CC;
+  border-right: 0;
+  border-top: 0;
+  content: " ";
+  height: 10px;
+  position: absolute;
+  right: 10px;
+  top: 28px;
+  -webkit-transform: rotate(-45deg) translateY(-15px);
+  transform: rotate(-45deg) translateY(-15px);
+  width: 10px;
+}
+
+.is-rtl .select-dropdown:after {
+  left: 15px;
+  right: unset;
+}
+
+
+.custom-select-click {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 99
+}
+
+.custom-select-mark {
+  position: relative;
+}

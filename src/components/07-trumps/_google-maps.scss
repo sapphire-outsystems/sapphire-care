@@ -1,0 +1,13 @@
+/* google maps remove close from tooltip */
+
+.gm-style-iw.gm-style-iw-c button {
+  display: none;
+  /* <-- this will generally work on the fly. */
+  opacity: 0;
+  visibility: hidden;
+  /* this 2 lines below are just for hard hiding. :) */
+}
+
+.gm-style .gm-style-iw-d {
+  overflow: hidden !important;
+}

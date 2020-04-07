@@ -1,0 +1,224 @@
+/* Background colors */
+.background-primary-color {
+  background-color: #00BFA5;
+  /*primary-color*/
+}
+
+/*Class that is being used to add the style similar to disable*/
+.background-disable {
+  background-color: #FAFAFA;
+}
+
+.background-red,
+.btn.background-red,
+.btn.background-red:focus,
+.btn.background-red:hover,
+button.button-group-item.background-red,
+button.button-group-item.button-group-selected-item.background-red {
+  background-color: #cc3524
+}
+
+.background-dark-red,
+.btn.background-dark-red,
+.btn.background-dark-red:focus,
+.btn.background-dark-red:hover,
+button.button-group-item.background-dark-red,
+button.button-group-item.button-group-selected-item.background-dark-red {
+  background-color: #951919
+}
+
+.background-light-red,
+.btn.background-light-red,
+.btn.background-light-red:focus,
+.btn.background-light-red:hover,
+button.button-group-item.background-light-red,
+button.button-group-item.button-group-selected-item.background-light-red {
+  background-color: #ff3e2d
+}
+
+.background-violet,
+.btn.background-violet,
+.btn.background-violet:focus,
+.btn.background-violet:hover,
+button.button-group-item.background-violet,
+button.button-group-item.button-group-selected-item.background-violet {
+  background-color: #7b1fa2
+}
+
+.background-dark-violet,
+.btn.background-dark-violet,
+.btn.background-dark-violet:focus,
+.btn.background-dark-violet:hover,
+button.button-group-item.background-dark-violet,
+button.button-group-item.button-group-selected-item.background-dark-violet {
+  background-color: #4a148c
+}
+
+.background-light-violet,
+.btn.background-light-violet,
+.btn.background-light-violet:focus,
+.btn.background-light-violet:hover,
+button.button-group-item.background-light-violet,
+button.button-group-item.button-group-selected-item.background-light-violet {
+  background-color: #ab47bc
+}
+
+.background-blue,
+.btn.background-blue,
+.btn.background-blue:focus,
+.btn.background-blue:hover,
+button.button-group-item.background-blue,
+button.button-group-item.button-group-selected-item.background-blue {
+  background-color: #2d7daa
+}
+
+.background-dark-blue,
+.btn.background-dark-blue,
+.btn.background-dark-blue:focus,
+.btn.background-dark-blue:hover,
+button.button-group-item.background-dark-blue,
+button.button-group-item.button-group-selected-item.background-dark-blue {
+  background-color: #11455d
+}
+
+.background-light-blue,
+.btn.background-light-blue,
+.btn.background-light-blue:focus,
+.btn.background-light-blue:hover,
+button.button-group-item.background-light-blue,
+button.button-group-item.button-group-selected-item.background-light-blue {
+  background-color: #00BFA5
+}
+
+.background-primaryblue,
+.btn.background-primaryblue,
+.btn.background-primaryblue:focus,
+.btn.background-primaryblue:hover,
+button.button-group-item.background-primaryblue,
+button.button-group-item.button-group-selected-item.background-primaryblue {
+  background-color: #002b49
+}
+
+.background-green,
+.btn.background-green,
+.btn.background-green:focus,
+.btn.background-green:hover,
+button.button-group-item.background-green,
+button.button-group-item.button-group-selected-item.background-green {
+  background-color: #7cb342
+}
+
+.background-dark-green,
+.btn.background-dark-green,
+.btn.background-dark-green:focus,
+.btn.background-dark-green:hover,
+button.button-group-item.background-dark-green,
+button.button-group-item.button-group-selected-item.background-dark-green {
+  background-color: #00927e
+}
+
+.background-light-green,
+.btn.background-light-green,
+.btn.background-light-green:focus,
+.btn.background-light-green:hover,
+button.button-group-item.background-light-green,
+button.button-group-item.button-group-selected-item.background-light-green {
+  background-color: #8bc34a
+}
+
+.background-orange,
+.btn.background-orange,
+.btn.background-orange:focus,
+.btn.background-orange:hover,
+button.button-group-item.background-orange,
+button.button-group-item.button-group-selected-item.background-orange {
+  background-color: #ef7622
+}
+
+.background-dark-orange,
+.btn.background-dark-orange,
+.btn.background-dark-orange:focus,
+.btn.background-dark-orange:hover,
+button.button-group-item.background-dark-orange,
+button.button-group-item.button-group-selected-item.background-dark-orange {
+  background-color: #a54715
+}
+
+.background-light-orange,
+.btn.background-light-orange,
+.btn.background-light-orange:focus,
+.btn.background-light-orange:hover,
+button.button-group-item.background-light-orange,
+button.button-group-item.button-group-selected-item.background-light-orange {
+  background-color: #ffa000
+}
+
+.background-grey,
+.btn.background-grey,
+.btn.background-grey:focus,
+.btn.background-grey:hover,
+button.button-group-item.background-grey,
+button.button-group-item.button-group-selected-item.background-grey {
+  background-color: #6e6e6e
+}
+
+.background-dark-grey,
+.btn.background-dark-grey,
+.btn.background-dark-grey:focus,
+.btn.background-dark-grey:hover,
+button.button-group-item.background-dark-grey,
+button.button-group-item.button-group-selected-item.background-dark-grey {
+  background-color: #5C5C5C
+}
+
+.background-light-grey,
+.btn.background-light-grey,
+.btn.background-light-grey:focus,
+.btn.background-light-grey:hover,
+button.button-group-item.background-light-grey,
+button.button-group-item.button-group-selected-item.background-light-grey {
+  background-color: #c3cfc3;
+  color: #00BFA5
+}
+
+.background-light-grey2,
+.btn.background-light-grey2,
+.btn.background-light-grey2:focus,
+.btn.background-light-grey2:hover,
+button.button-group-item.background-light-grey2,
+button.button-group-item.button-group-selected-item.background-light-grey2 {
+  background-color: #eeefee;
+  color: #00BFA5
+}
+
+.background-light-grey3,
+.btn.background-light-grey3,
+.btn.background-light-grey3:focus,
+.btn.background-light-grey3:hover,
+button.button-group-item.background-light-grey3,
+button.button-group-item.button-group-selected-item.background-light-grey3 {
+  background-color: #f5fff5;
+  color: #00BFA5
+}
+
+.btn.background-white,
+.btn.background-white:focus,
+.btn.background-white:hover,
+button.button-group-item.background-white,
+button.button-group-item.button-group-selected-item.background-white {
+  background-color: #ffffff;
+  color: #00BFA5
+}
+
+.background-black,
+.btn.background-black,
+.btn.background-black:focus,
+.btn.background-black:hover,
+button.button-group-item.background-black,
+button.button-group-item.button-group-selected-item.background-black {
+  background-color: #333333
+}
+
+.background-white {
+  background-color: #fff
+}

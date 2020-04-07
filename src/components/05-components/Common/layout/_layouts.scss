@@ -1,0 +1,17 @@
+.layout.blank.bg-colored .content {
+  background: #00bfa5;
+  /*primary-color*/
+  color: #fff;
+}
+
+.layout.white-page .header {
+  background: #fff;
+  color: #00bfa5;
+  /*primary-color*/
+}
+
+.layout.white-page .content,
+.layout.white-content .content,
+.layout.white-content .bottom {
+  background: #fff;
+}

@@ -1,0 +1,13 @@
+/*Normalize rtl email and mobile input and expression*/
+.is-rtl .normalize-input {
+  direction: ltr;
+  text-align-last: right;
+}
+
+.is-rtl .normalize-input-direction-rtl {
+  direction: rtl;
+}
+
+.is-rtl .normalize-input-direction-ltr {
+  direction: ltr;
+}

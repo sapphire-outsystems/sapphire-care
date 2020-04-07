@@ -1,0 +1,42 @@
+/* Splash Screen */
+.splash-screen {
+  background-color: #002b49;
+  /*secondary-color*/
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.splash-loading {
+  max-width: 72vw;
+  z-index: 1;
+}
+
+.splash-logo {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  position: relative;
+}
+
+.splash-powerd-by {
+  position: relative;
+  z-index: 1;
+}
+
+.splash-bg-image {
+  bottom: -1vh;
+  position: fixed;
+  width: 100%;
+  z-index: 0;
+}
+
+.splash-bg-image img {
+  height: auto;
+  position: relative;
+  width: 100%;
+}
