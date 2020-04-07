@@ -1,0 +1,46 @@
+/* ListItem */
+.list-item-action-primary {
+  background-color: #00BFA5;
+  /*primary-color*/
+}
+
+.list-item-content-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.list-item-content-text {
+  color: #77909c;
+  font-size: 14px;
+}
+
+.list-item-content-right {
+  color: #77909c;
+}
+
+.list-item-content-right .icon {
+  font-size: 20px;
+}
+
+.list-item-content input.checkbox:before {
+  border: 0;
+}
+
+.list-item-content input.checkbox:checked:before {
+  border: 0;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.list-item-content input.checkbox:checked:after {
+  border-width: 2px;
+  content: "";
+  height: 5px;
+  left: 5px;
+  top: 8px;
+  -webkit-transform: rotate(-45deg) skew(2deg, -15deg);
+  -ms-transform: rotate(-45deg) skew(2deg, -15deg);
+  transform: rotate(-45deg) skew(2deg, -15deg);
+  width: 15px;
+}

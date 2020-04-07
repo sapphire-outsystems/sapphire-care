@@ -1,0 +1,191 @@
+/*---------- $3. Buttons ----------*/
+
+/* button: normal | active | disabled */
+.btn,
+.btn:hover,
+.btn:focus {
+  background: #00bfa5;
+  /*primary-color*/
+  border: 1px solid #00bfa5;
+  /*primary-color*/
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  line-height: 20px;
+  min-height: 50px;
+}
+
+.btn:active {
+  background-color: #007e85;
+  border: 1px solid #007e85;
+  color: #fff;
+
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.btn[disabled],
+.btn[disabled]:hover,
+.btn[disabled]:focus,
+.btn[disabled]:active {
+  background-color: #eee;
+  border: 1px solid #eee;
+  box-shadow: none;
+  color: #cecece;
+}
+
+/* button: primary | active | disabled */
+/* button: primary | active | disabled */
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #00bfa5;
+  /*primary-color*/
+  border: 1px solid #00bfa5;
+  /*primary-color*/
+  color: #fff;
+}
+
+.btn-primary:active {
+  background-color: #007e85;
+  /*primary-color*/
+  border: 1px solid #007e85;
+  /*primary-color*/
+  color: #fff;
+
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.btn-primary[disabled],
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:active {
+  background-color: #eee;
+  border: 1px solid #eee;
+  box-shadow: none;
+  color: #cecece;
+}
+
+/* button: tertiary | active | disabled */
+/* button: tertiary | active | disabled */
+.btn-tertiary,
+.btn-tertiary:hover,
+.btn-tertiary:focus {
+  background-color: transparent;
+  border: 1px solid #00bfa5;
+  /*primary-color*/
+  color: #00bfa5;
+  /*primary-color*/
+}
+
+.btn-tertiary:active {
+  background-color: transparent;
+  border: 1px solid #00bfa5;
+  /*primary-color*/
+  color: #00bfa5;
+  /*primary-color*/
+
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.btn-tertiary[disabled],
+.btn-tertiary[disabled]:hover,
+.btn-tertiary[disabled]:focus,
+.btn-tertiary[disabled]:active {
+  background: transparent;
+  border-color: #cecece;
+  color: #cecece;
+}
+
+/* button: cancel | active | disabled */
+.btn.btn-cancel,
+.btn.btn-cancel:hover,
+.btn.btn-cancel:focus {
+  background: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  color: #002b49;
+  /*secondary-color*/
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn.btn-cancel:active {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+  color: #002b49;
+  /*secondary-color*/
+}
+
+.btn.btn-cancel[disabled],
+.btn.btn-cancel[disabled]:hover,
+.btn.btn-cancel[disabled]:focus,
+.btn.btn-cancel[disabled]:active {
+  background-color: transparent;
+  border: transparent;
+  box-shadow: none;
+  color: #6e6e6e;
+}
+
+/* button: orange-cancel | active | disabled */
+.btn.btn-orange-cancel,
+.btn.btn-orange-cancel:hover,
+.btn.btn-orange-cancel:focus {
+  background: transparent;
+  border-color: #ff3e2d;
+  box-shadow: none;
+  color: #ff3e2d;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn.btn-orange-cancel:active {
+  background-color: transparent;
+  border-color: #ff3e2d;
+  box-shadow: none;
+  color: #ff3e2d;
+}
+
+.btn.btn-orange-cancel[disabled],
+.btn.btn-orange-cancel[disabled]:hover,
+.btn.btn-orange-cancel[disabled]:focus,
+.btn.btn-orange-cancel[disabled]:active {
+  background: transparent;
+  border-color: #cecece;
+  color: #cecece;
+}
+
+/* button: success | active | disabled */
+.btn-success,
+.btn-success:hover,
+.btn-success:focus {
+  background-color: #7cb342;
+  border-color: #7cb342;
+  color: #fff;
+}
+
+/* button: danger | active | disabled */
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: #de1504;
+  border-color: #de1504;
+  color: #fff;
+}
+
+/*button: small */
+.btn-small,
+.btn-small:hover,
+.btn-small:focus,
+.header-right .btn,
+.header-right .btn:hover,
+.header-right .btn:focus {
+  font-size: 12px;
+  min-height: 20px;
+  padding: 3px 10px;
+}

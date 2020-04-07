@@ -1,0 +1,46 @@
+/* Bottom-Bar */
+.bottom-bar>a.active .bottom-bar-item-text,
+.bottom-bar>a:active .bottom-bar-item-text,
+.bottom-bar-items>a.active .bottom-bar-item-text,
+.bottom-bar-items>a:active .bottom-bar-item-text,
+.bottom-bar>a.active .bottom-bar-item-icon,
+.bottom-bar>a:active .bottom-bar-item-icon,
+.bottom-bar-items>a.active .bottom-bar-item-icon,
+.bottom-bar-items>a:active .bottom-bar-item-icon {
+  color: #00BFA5;
+  /*primary-color*/
+}
+
+.floating-actions .bottom-bar-item {
+  border-color: #00BFA5;
+  /*primary-color*/
+  color: #00BFA5;
+  /*primary-color*/
+}
+
+.bottom-bar .floating-actions-items a,
+.bottom-bar .floating-actions-items a:link,
+.bottom-bar .floating-actions-items a:visited {
+  color: #00BFA5;
+  /*primary-color*/
+}
+
+.bottom-bar>a.active,
+.bottom-bar>a:active {
+  color: #00BFA5;
+  /*primary-color*/
+}
+
+.search-round {
+  -webkit-box-shadow: inset 0 0 0 3px #fff;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.search-stick-bottom {
+  background-color: #fff;
+}
+
+.header-right .search-input {
+  background-color: #00BFA5;
+  /*primary-color*/
+}

@@ -1,0 +1,33 @@
+/* Wizard */
+.wizard-item-wrapper.active .wizard-label {
+  color: #00BFA5;
+  /*primary-color*/
+}
+
+.wizard-item-wrapper .wizard-item {
+  border-radius: 0;
+  height: 10px;
+  width: calc(100% - 1px);
+}
+
+.wizard-item-wrapper.past .wizard-item {
+  background-color: #5c5c5c;
+  opacity: 1;
+}
+
+.wizard-item-wrapper.active .wizard-item {
+  background-color: #00BFA5;
+  /*primary-color*/
+}
+
+.wizard-item-wrapper:before {
+  display: none;
+}
+
+.wizard-item-wrapper.past .wizard-label {
+  color: #5c5c5c;
+}
+
+.wizard-item-wrapper .wizard-label {
+  font-size: 12px;
+}

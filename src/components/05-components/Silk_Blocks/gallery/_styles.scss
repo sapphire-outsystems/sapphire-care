@@ -1,0 +1,6 @@
+/* Gallery */
+.gallery>[data-block]>.card,
+.gallery>[data-block]>.card-background {
+  border: 0;
+  overflow: hidden;
+}

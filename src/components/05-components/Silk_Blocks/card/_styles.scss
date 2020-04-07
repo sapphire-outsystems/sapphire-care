@@ -1,0 +1,16 @@
+/* Card */
+.card.card-content {
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.03);
+}
+
+.card-action.expand {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.card-action.expand:before,
+.card-action.expand:after {
+  height: 20px;
+  width: 1px;
+}

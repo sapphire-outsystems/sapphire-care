@@ -1,0 +1,51 @@
+/* Section */
+.sticky-header {
+  z-index: 10;
+}
+
+.sticky-header .section-title {
+  background: #f2f2f2;
+  padding-left: 45px;
+  position: relative;
+}
+
+.is-rtl .sticky-header .section-title {
+  padding-left: 30px;
+  padding-right: 45px;
+}
+
+.section-content .sticky-header .section-title {
+  background-color: transparent;
+  padding-left: 30px;
+}
+
+.sticky-header .section-title:before {
+  background-color: #ff9400;
+  bottom: 15px;
+  content: "";
+  left: 30px;
+  position: absolute;
+  top: 15px;
+  width: 2px;
+}
+
+.is-rtl .sticky-header .section-title:before {
+  left: initial;
+  right: 30px;
+}
+
+.section-content .sticky-header .section-title:before {
+  display: none;
+}
+
+.section-title {
+  background: transparent;
+  border: 0;
+  color: #4d5c66;
+  font-size: 16px;
+  padding: 15px 30px;
+}
+
+.section-content {
+  padding: 15px 30px;
+}

@@ -1,0 +1,39 @@
+/* Tabs */
+
+.tabs-header {
+  background-color: #fff;
+}
+
+
+.tabs-header-tab {
+  color: #c4cccb;
+  font-size: 16px;
+  padding: 12px 20px 15px;
+  text-transform: none;
+}
+
+.tabs-underline {
+  background-color: #00bfa5;
+  /*primary-color*/
+}
+
+.tabs-header-tab.active {
+  border-bottom: 2px solid #00bfa5;
+  /*primary-color*/
+  color: #002b49;
+  /*secondary-color*/
+}
+
+/* hack to force tab to be full height for appointments */
+.tabs-content-tab .blank-slate.large {
+  min-height: 60vh;
+}
+
+.tabs-content-tab .blank-slate.large .blank-slate-icon {
+  font-size: 80px;
+}
+
+.tabs-content-tab .blank-slate.large .blank-slate-icon,
+.lineHeightOne .blank-slate.large .blank-slate-icon {
+  line-height: 1;
+}

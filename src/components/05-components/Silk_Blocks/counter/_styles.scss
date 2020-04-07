@@ -1,0 +1,29 @@
+/* Counter */
+.counter-number {
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: -.45px;
+  line-height: 45px;
+}
+
+.counter-label {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -.15px;
+  line-height: 18px;
+}
+
+/* Floating Actions */
+.floating-actions .floating-actions-icon {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.floating-actions .floating-actions-icon.extra-margin,
+.iphonex .screen>.floating-actions .floating-actions-icon.extra-margin {
+  margin-bottom: 85px;
+}
+
+.floating-actions.floating-actions--visible .floating-actions-icon {
+  background-color: #267D83;
+}

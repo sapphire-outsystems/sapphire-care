@@ -1,0 +1,30 @@
+/* Search */
+.search input[data-input] {
+  font-size: 14px;
+}
+
+.search-input:after {
+  color: #b0bec5;
+  font-size: 14px;
+}
+
+.searchAlignLeft .search-input:after {
+  left: 0px;
+}
+
+.searchAlignLeft .search input[data-input],
+.searchAlignLeft .search input[data-input]:empty {
+  padding-left: 25px;
+}
+
+.search input[data-input],
+.search input[data-input]:empty {
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: #333;
+}
+
+.search input[data-input]:focus,
+.search input[data-input]:empty:focus {
+  border-bottom: 1px solid #00BFA5;
+  /*primary-color*/
+}

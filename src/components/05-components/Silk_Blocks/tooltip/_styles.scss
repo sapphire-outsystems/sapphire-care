@@ -1,0 +1,25 @@
+/* Tooltip */
+.tooltip-wrapper {
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 24px 0 rgba(0, 0, 0, .32);
+  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, .32);
+  color: #333;
+  font-size: 14px;
+  padding: 5px 15px;
+}
+
+.tooltip-wrapper.top:after {
+  border-top-color: #fff;
+}
+
+.tooltip-wrapper.bottom:after {
+  border-bottom-color: #fff;
+}
+
+.tooltip-wrapper.right:after {
+  border-right-color: #fff;
+}
+
+.tooltip-wrapper.left:after {
+  border-left-color: #fff;
+}

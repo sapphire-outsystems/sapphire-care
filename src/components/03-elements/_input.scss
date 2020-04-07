@@ -1,0 +1,118 @@
+input.checkbox:before {
+  border: 1px solid #77909C;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input.checkbox:checked:before {
+  background-color: #00BFA5;
+  /*primary-color*/
+  border: 1px solid #00BFA5;
+  /*primary-color*/
+}
+
+
+input.checkbox:checked:after {
+  top: 7px;
+}
+
+.is-rtl input.checkbox:checked:after {
+  left: 2px;
+  top: 7px;
+}
+
+input.checkbox[disabled]:before {
+  border: 1px solid #eceff1;
+}
+
+/* Input Radio */
+input[type="radio"] {
+
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  margin: 0;
+  position: relative;
+  width: 20px;
+}
+
+input[type="radio"]:before {
+  border: 2px solid rgba(1, 1, 1, .54);
+  border-radius: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 20px;
+  -webkit-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  width: 20px;
+}
+
+input[type="radio"]:checked:before {
+  background: #fff;
+  border: 2px solid #00BFA5;
+  /*primary-color*/
+}
+
+input[type="radio"]:checked:after {
+  background: #00BFA5;
+  /*primary-color*/
+  border: 0;
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 10px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 10px;
+}
+
+/* End Input Radio */
+
+input[data-input]:focus,
+textarea[data-textarea]:focus {
+  border: 1px solid #0288d1;
+}
+
+input[data-input]:empty,
+textarea[data-textarea]:empty {
+  background: #fff;
+  border: 1px solid #fff;
+  border-bottom: 1px solid #1DC5AE;
+  color: #333333;
+}
+
+input[data-input]:empty:focus,
+textarea[data-textarea]:empty:focus {
+  border: 1px solid #1DC5AE;
+}
+
+
+input[data-input][disabled],
+input[data-input][readonly],
+textarea[data-textarea][disabled],
+textarea[data-textarea][readonly] {
+  border: 1px solid #EEEEEE;
+}
+
+
+input[data-input]:empty::-webkit-input-placeholder,
+textarea[data-textarea]:empty::-webkit-input-placeholder,
+input[data-input]:empty::-moz-placeholder,
+textarea[data-textarea]:empty::-moz-placeholder,
+input[data-input]:empty:-ms-input-placeholder,
+textarea[data-textarea]:empty:-ms-input-placeholder,
+input[data-input]:empty:-moz-placeholder,
+textarea[data-textarea]:empty:-moz-placeholder {
+  color: rgba(0, 0, 0, .38);
+}

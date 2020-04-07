@@ -1,0 +1,13 @@
+/* CardAdvanced */
+.card-action {
+  background-color: #00BFA5;
+  /*primary-color*/
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+  opacity: .95;
+}
+
+.card-action.expand:before,
+.card-action.expand:after {
+  background: #b0bec5;
+}

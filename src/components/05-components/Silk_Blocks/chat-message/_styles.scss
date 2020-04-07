@@ -1,0 +1,20 @@
+/* Chat Message */
+.chat.left .chat-message {
+  background-color: transparent;
+  padding-top: 5px;
+}
+
+.chat.left .chat-message:before {
+  display: none;
+}
+
+.chat.right .chat-message {
+  background-color: #00BFA5;
+  /*primary-color*/
+  color: #fff;
+}
+
+.chat.right .chat-message:before {
+  border-right-color: #00BFA5;
+  /*primary-color*/
+}

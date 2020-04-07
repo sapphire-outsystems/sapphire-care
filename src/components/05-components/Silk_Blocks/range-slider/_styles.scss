@@ -1,0 +1,46 @@
+/* Range Slider */
+.noUi-origin .noUi-handle-lower:before,
+.noUi-origin.noUi-connect .noUi-handle-lower:before,
+.noUi-origin .noUi-handle-lower:after,
+.noUi-origin.noUi-connect .noUi-handle-lower:after,
+.noUi-origin.noUi-background .noUi-handle-upper:before {
+  color: #00BFA5;
+  /*primary-color*/
+}
+
+.noUi-origin {
+  background-color: #cfd8dc;
+}
+
+.noUi-origin.noUi-connect {
+  background-color: #00BFA5;
+  /*primary-color*/
+}
+
+.noUi-base {
+  background-color: #00BFA5;
+  /*primary-color*/
+}
+
+.noUi-horizontal .noUi-handle {
+  background: #00BFA5;
+  /*primary-color*/
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  height: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) scale(1);
+  -ms-transform: translateY(-50%) scale(1);
+  transform: translateY(-50%) scale(1);
+  width: 16px;
+}
+
+.noUi-horizontal .noUi-handle.noUi-active {
+  -webkit-transform: translateY(-50%) scale(1.5);
+  -ms-transform: translateY(-50%) scale(1.5);
+  transform: translateY(-50%) scale(1.5);
+}
+
+.noUi-target {
+  margin: 15px 0;
+}
