@@ -1,0 +1,23 @@
+/* CardTopTitleWithBackground */
+.card-top-title-wrapper {
+  background: #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(209, 209, 209, 0.5);
+  box-shadow: 0 2px 5px 0 rgba(209, 209, 209, 0.5);
+}
+
+.card-top-title-wrapper-title {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.card-top-title-wrapper-text {
+  padding: 15px 20px 10px;
+}
+
+.card-top-title-wrapper-action {
+  padding: 20px 15px;
+  text-align: right;
+}

@@ -1,0 +1,39 @@
+/* CardImage */
+.card-image {
+  background: #fff;
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, .14);
+  overflow: hidden;
+}
+
+.card-image-img-wrapper,
+.card-image-background-image {
+  position: relative;
+}
+
+.card-image-background-image:before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 30%;
+}
+
+.card-image-top-background-image img {
+  height: 200px;
+
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.card-image-text-wrapper {
+  bottom: 10px;
+  left: 15px;
+  position: absolute;
+}
+
+.is-rtl .card-image-text-wrapper {
+  left: 0px;
+  right: 15px;
+}

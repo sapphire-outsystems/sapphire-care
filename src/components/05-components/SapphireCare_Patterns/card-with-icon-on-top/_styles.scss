@@ -1,0 +1,65 @@
+/* CardWithIconOnTop */
+.card-with-top-icon {
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 14px 0 rgba(0, 0, 0, .14);
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, .14);
+  margin-top: 40px;
+  padding-top: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.card-with-top-icon.disabled {
+  padding-top: 40px;
+}
+
+.card-with-top-icon-icon {
+  background-color: #ffffff;
+  border: 2px solid transparent;
+  border-radius: 100%;
+  color: #00BFA5;
+  /*primary-color*/
+  height: 120px;
+  left: 50%;
+  line-height: 78px;
+  position: absolute;
+  top: 20px;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 120px;
+}
+
+.card-with-top-icon.disabled .card-with-top-icon-icon {
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.card-with-top-icon-content {
+  padding: 0 10px 25px 10px;
+  position: relative;
+}
+
+.card-with-top-icon-icon .icon {
+  font-size: 30px;
+  line-height: 1;
+}
+
+.card-with-top-icon.disabled .card-with-top-icon-icon .icon {
+  color: #C3C3C3;
+}
+
+.card-with-top-icon-action {
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.card-with-top-icon-action a,
+.card-with-top-icon-action a:link,
+.card-with-top-icon-action a:visited {
+  font-size: 14px;
+  font-weight: 700;
+}

@@ -1,0 +1,53 @@
+/* Custom Pattern - Full page Feedback */
+.fullpage-feedback {
+  -servicestudio-background: #00bfa5;
+  background: #fff;
+  /*primary-color*/
+  bottom: 0;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: justify;
+  -servicestudio-color: #fff;
+  color: #black;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  /*position: fixed;*/
+  height: 100%;
+  justify-content: space-between;
+  left: 0;
+  padding: 80px 45px 40px;
+  -servicestudio-position: relative;
+  right: 0;
+  top: 0;
+}
+
+.fullpage-feedback.bg-colored {
+  background: #00bfa5;
+  /*primary-color*/
+  color: #fff;
+}
+
+
+.fullpage-feedback-top-icon {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.fullpage-feedback-top-icon .sc {
+  font-size: 110px;
+  line-height: 110px;
+}
+
+.fullpage-feedback-top-icon.large-icon .sc {
+  font-size: 300px;
+}
+
+.fullpage-feedback-top-content {
+  height: 60%;
+  position: relative;
+}
+
+.fullpage-feedback-bottom-content {
+  padding-top: 70px;
+}
