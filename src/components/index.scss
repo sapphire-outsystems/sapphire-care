@@ -1,8 +1,8 @@
-@use '00-settings/import'as settings;
+@use '00-settings'as settings;
 //@use '01-tools/import';
-@use '02-generic/import'as generic;
-@use '03-elements/import'as elements;
-@use '04-base/import'as base;
-@use '05-components/import'as components;
-@use '06-helpers/import'as helpers;
-@use '07-trumps/import'as trumps;
+@use '02-generic'as generic;
+@use '03-elements'as elements;
+@use '04-base'as base;
+@use '05-components'as components;
+@use '06-helpers'as helpers;
+@use '07-trumps'as trumps;

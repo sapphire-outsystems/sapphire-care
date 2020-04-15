@@ -1,7 +1,7 @@
 /* Menu */
 .app-menu {
-  -webkit-box-shadow: -15px 2px 40px 0 rgba(97, 97, 97, .41);
-  box-shadow: -15px 2px 40px 0 rgba(97, 97, 97, .41);
+  -webkit-box-shadow: -15px 2px 40px 0 rgba(97, 97, 97, 0.41);
+  box-shadow: -15px 2px 40px 0 rgba(97, 97, 97, 0.41);
 }
 
 .app-menu a .icon,
@@ -15,7 +15,11 @@
 }
 
 .menu--visible .menu-background {
-  opacity: .25;
+  opacity: 0.25;
+}
+
+.app-menu-links>a {
+  background-color: blue;
 }
 
 .app-menu-links>a,

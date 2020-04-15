@@ -1,6 +1,7 @@
 const path = require('path');
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const outputPath = path.join(__dirname, 'dist');
@@ -13,13 +14,32 @@ module.exports = {
 	output: {
 		path: outputPath,
 		publicPath: '/dist/',
-	},
+	},	
 	plugins: [
 		new CleanWebpackPlugin({
 			cleanOnceBeforeBuildPatterns: [`${outputPath}/*.hot-update.*`],
 			dangerouslyAllowCleanPatternsOutsideProject: true,
 			dry: false,
 		}),
+		new BrowserSyncPlugin(
+      // BrowserSync options
+      {
+        // browse to http://localhost:3000/ during development
+        host: 'localhost',
+        port: 3000,
+        // proxy the Webpack Dev Server endpoint
+        // (which should be serving on http://localhost:3100/)
+				// through BrowserSync
+				proxy: 'https://atc-dev.outsystemsenterprise.com/Care_MUI'
+        //proxy: 'https://miguelfilipe-gomes.outsystemscloud.com/ToDo_MFSG/'
+      },
+      // plugin options
+      {
+        // prevent BrowserSync from reloading the page
+        // and let Webpack Dev Server take care of this
+				reload: true
+      }
+    )
 	],
 	node: {
 		fs: 'empty',
@@ -50,6 +70,10 @@ module.exports = {
 					{
 						loader: 'sass-loader',
 						options: {
+							implementation: require('sass'),
+							sassOptions: {
+                fiber: require('fibers'),
+              },
 							sourceMap: !isProduction,
 							// prependData: () => {
 							// 	const path =
