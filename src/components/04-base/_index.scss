@@ -1,5 +1,5 @@
-@import 'buttons';
-@import 'images';
-@import 'radio-button';
-@import 'select';
-@import 'switch-button';
+@forward 'buttons';
+@forward 'images';
+@forward 'radio-button';
+@forward 'select';
+@forward 'switch-button';
