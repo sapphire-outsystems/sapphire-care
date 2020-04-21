@@ -1,16 +1,17 @@
 /* ListEmptyState */
+
+@use '~/Settings/colors';
+
 .list-empty-state {
-  background: #f6f6f6;
+  background: colors.$sapphire-white;
   display: block;
   padding: 20px;
   position: relative;
 }
 
 .list-empty-state-title {
-  background: #ccc;
-  background: -moz-linear-gradient(left, #ccc 0%, #f2f2f2 50%, #ccc 100%);
-  background: -webkit-linear-gradient(left, #ccc 0%, #f2f2f2 50%, #ccc 100%);
-  background: linear-gradient(to right, #ccc 0%, #f2f2f2 50%, #ccc 100%);
+  background: colors.$light-grey;
+  background: linear-gradient(to right, colors.$light-grey 0%, colors.$sapphire-white 50%, colors.$light-grey 100%);
   display: inline-block;
   height: 20px;
   width: 20%;
@@ -30,7 +31,7 @@
 }
 
 .list-empty-state--list-item .list-item-content-left {
-  background: #ccc;
+  background: colors.$light-grey;
   border-radius: 100%;
   display: inline-block !important;
   height: 40px;
@@ -39,19 +40,15 @@
 }
 
 .list-empty-state--list-item .list-item-content-title {
-  background: #ccc;
-  background: -moz-linear-gradient(left, #ccc 0%, #f2f2f2 50%, #ccc 100%);
-  background: -webkit-linear-gradient(left, #ccc 0%, #f2f2f2 50%, #ccc 100%);
-  background: linear-gradient(to right, #ccc 0%, #f2f2f2 50%, #ccc 100%);
+  background: colors.$light-grey;
+  background: linear-gradient(to right, colors.$light-grey 0%, colors.$sapphire-white 50%, colors.$light-grey 100%);
   display: block !important;
   height: 20px;
 }
 
 .list-empty-state--list-item .list-item-content-text {
-  background: #ccc;
-  background: -moz-linear-gradient(left, #ccc 0%, #f2f2f2 50%, #ccc 100%);
-  background: -webkit-linear-gradient(left, #ccc 0%, #f2f2f2 50%, #ccc 100%);
-  background: linear-gradient(to right, #ccc 0%, #f2f2f2 50%, #ccc 100%);
+  background: colors.$light-grey;
+  background: linear-gradient(to right, colors.$light-grey 0%, colors.$sapphire-white 50%, colors.$light-grey 100%);
   display: inline-block !important;
   height: 20px;
   margin-top: 7px;

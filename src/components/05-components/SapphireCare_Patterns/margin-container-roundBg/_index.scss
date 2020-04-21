@@ -1,6 +1,8 @@
 /* Custom Pattern - MarginContainer_RoundBg */
+@use '~Settings/colors';
+
 .margin-container-round-bg {
-  background: #fff;
+  background: colors.$sapphire-white;
   position: relative;
 }
 
@@ -13,7 +15,7 @@ div[data-block="SapphireCare_Patterns.MarginContainer_RoundBg"] {
 }
 
 .mc-round-bg-top-content:before {
-  background: #002b49;
+  background: colors.$sapphire-care-blue3;
   /*secondary-color*/
   border-radius: 0 0 10% 10%;
   content: "";

@@ -1,14 +1,16 @@
 /* Custom Pattern - Full page Feedback */
+@use '~Settings/colors'as colors;
+
 .fullpage-feedback {
-  -servicestudio-background: #00bfa5;
-  background: #fff;
+  -servicestudio-background: colors.$regular-alpha;
+  background: colors.$sapphire-white;
   /*primary-color*/
   bottom: 0;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-box-pack: justify;
-  -servicestudio-color: #fff;
-  color: #black;
+  -servicestudio-color: colors.$sapphire-white;
+  color: colors.$dark-grey;
   display: -webkit-box;
   display: flex;
   flex-direction: column;
@@ -23,9 +25,9 @@
 }
 
 .fullpage-feedback.bg-colored {
-  background: #00bfa5;
+  background: colors.$regular-alpha;
   /*primary-color*/
-  color: #fff;
+  color: colors.$sapphire-white;
 }
 
 

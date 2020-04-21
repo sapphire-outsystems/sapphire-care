@@ -1,4 +1,6 @@
 /* Separator */
+@use '~Settings/colors';
+
 .separator {
-  background-color: #e8e8e8;
+  background-color: colors.$light-grey;
 }

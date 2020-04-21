@@ -1,8 +1,10 @@
 /* Timeline */
 
+@use '~Settings/colors';
+
 .timeline-item.active .timeline-icon-container:empty {
-  background: #fff;
-  border: 1px solid #00BFA5;
+  background: colors.$sapphire-white;
+  border: 1px solid colors.$regular-alpha;
   /*primary-color*/
 }
 
@@ -32,7 +34,7 @@
 
 [data-block*="TimelineItem"]:not(:last-child) .timeline-icon-line,
 [data-block*="TimelineItem"] .timeline-icon-line {
-  border-right: 2px solid #00BFA5;
+  border-right: 2px solid colors.$regular-alpha;
   /*primary-color*/
   bottom: -15px;
   height: auto;
@@ -52,15 +54,15 @@
 
 [data-block*="TimelineItem"] .timeline-item.active .timeline-icon-line {
   background: transparent;
-  border-right: 2px dashed #00BFA5 !important;
+  border-right: 2px dashed colors.$regular-alpha !important;
   /*primary-color*/
   top: -17px;
 }
 
 [data-block*="TimelineItem"]:not(:last-child) .timeline-icon-container:empty,
 [data-block*="TimelineItem"] .timeline-icon-container:empty {
-  -webkit-box-shadow: 0 0 0 6px #f6f6f6;
-  box-shadow: 0 0 0 6px #f6f6f6;
+  -webkit-box-shadow: 0 0 0 6px colors.$sapphire-white;
+  box-shadow: 0 0 0 6px colors.$sapphire-white;
   margin: 5px 11px 0;
   position: relative;
   z-index: 1;

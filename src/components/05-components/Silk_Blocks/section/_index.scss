@@ -1,10 +1,12 @@
 /* Section */
+@use '~Settings/colors';
+
 .sticky-header {
   z-index: 10;
 }
 
 .sticky-header .section-title {
-  background: #f2f2f2;
+  background: colors.$sapphire-white;
   padding-left: 45px;
   position: relative;
 }
@@ -20,7 +22,7 @@
 }
 
 .sticky-header .section-title:before {
-  background-color: #ff9400;
+  background-color: colors.$regular-orange;
   bottom: 15px;
   content: "";
   left: 30px;
@@ -41,7 +43,7 @@
 .section-title {
   background: transparent;
   border: 0;
-  color: #4d5c66;
+  color: colors.$mid-dark-grey;
   font-size: 16px;
   padding: 15px 30px;
 }

@@ -1,6 +1,8 @@
+@use '~Settings/colors'as colors;
+
 /* CardWithIconOnTop */
 .card-with-top-icon {
-  background-color: #fff;
+  background-color: colors.$sapphire-white;
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 2px 14px 0 rgba(0, 0, 0, .14);
@@ -16,10 +18,10 @@
 }
 
 .card-with-top-icon-icon {
-  background-color: #ffffff;
+  background-color: colors.$sapphire-white;
   border: 2px solid transparent;
   border-radius: 100%;
-  color: #00BFA5;
+  color: colors.$regular-alpha;
   /*primary-color*/
   height: 120px;
   left: 50%;
@@ -33,7 +35,7 @@
 }
 
 .card-with-top-icon.disabled .card-with-top-icon-icon {
-  background-color: #ffffff;
+  background-color: colors.$sapphire-white;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -49,11 +51,11 @@
 }
 
 .card-with-top-icon.disabled .card-with-top-icon-icon .icon {
-  color: #C3C3C3;
+  color: colors.$mid-light-grey;
 }
 
 .card-with-top-icon-action {
-  border-top: 1px solid #eee;
+  border-top: 1px solid colors.$light-grey;
   padding: 15px 0;
 }
 

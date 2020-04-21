@@ -1,6 +1,8 @@
 /* Notification */
+@use '~Settings/colors';
+
 .notification {
-  background-color: #333;
+  background-color: colors.$dark-grey;
   font-size: 14px;
   padding: 15px;
 }

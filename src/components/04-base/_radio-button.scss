@@ -1,4 +1,7 @@
 /* Input Radio */
+
+@use '~Settings/colors';
+
 input[type="radio"] {
 
   -webkit-appearance: none;
@@ -27,13 +30,13 @@ input[type="radio"]:before {
 }
 
 input[type="radio"]:checked:before {
-  background: #fff;
-  border: 2px solid #00BFA5;
+  background: colors.$sapphire-white;
+  border: 2px solid colors.$regular-alpha;
   /*primary-color*/
 }
 
 input[type="radio"]:checked:after {
-  background: #00BFA5;
+  background: colors.$regular-alpha;
   /*primary-color*/
   border: 0;
   border-radius: 100%;
@@ -70,9 +73,9 @@ input.radio-button-custom:before {
 }
 
 input.radio-button-custom:checked:before {
-  background-color: #00BFA5;
+  background-color: colors.$regular-alpha;
   /*primary-color*/
-  border: 1px solid #00BFA5;
+  border: 1px solid colors.$regular-alpha;
   /*primary-color*/
   height: 20px;
   -webkit-transform: translate(20%, 20%);
@@ -104,5 +107,5 @@ input.radio-button-custom:checked:after {
 }
 
 input.radio-button-custom[disabled]:before {
-  border: 1px solid #eceff1;
+  border: 1px solid colors.$light-grey;
 }

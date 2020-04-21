@@ -1,4 +1,7 @@
 /* Bottom-Bar */
+
+@use '~Settings/colors';
+
 .bottom-bar>a.active .bottom-bar-item-text,
 .bottom-bar>a:active .bottom-bar-item-text,
 .bottom-bar-items>a.active .bottom-bar-item-text,
@@ -7,40 +10,40 @@
 .bottom-bar>a:active .bottom-bar-item-icon,
 .bottom-bar-items>a.active .bottom-bar-item-icon,
 .bottom-bar-items>a:active .bottom-bar-item-icon {
-  color: #00BFA5;
+  color: colors.$regular-alpha;
   /*primary-color*/
 }
 
 .floating-actions .bottom-bar-item {
-  border-color: #00BFA5;
+  border-color: colors.$regular-alpha;
   /*primary-color*/
-  color: #00BFA5;
+  color: colors.$regular-alpha;
   /*primary-color*/
 }
 
 .bottom-bar .floating-actions-items a,
 .bottom-bar .floating-actions-items a:link,
 .bottom-bar .floating-actions-items a:visited {
-  color: #00BFA5;
+  color: colors.$regular-alpha;
   /*primary-color*/
 }
 
 .bottom-bar>a.active,
 .bottom-bar>a:active {
-  color: #00BFA5;
+  color: colors.$regular-alpha;
   /*primary-color*/
 }
 
 .search-round {
-  -webkit-box-shadow: inset 0 0 0 3px #fff;
-  box-shadow: inset 0 0 0 3px #fff;
+  -webkit-box-shadow: inset 0 0 0 3px colors.$sapphire-white;
+  box-shadow: inset 0 0 0 3px colors.$sapphire-white;
 }
 
 .search-stick-bottom {
-  background-color: #fff;
+  background-color: colors.$sapphire-white;
 }
 
 .header-right .search-input {
-  background-color: #00BFA5;
+  background-color: colors.$regular-alpha;
   /*primary-color*/
 }

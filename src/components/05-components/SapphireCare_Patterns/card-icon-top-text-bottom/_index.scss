@@ -1,6 +1,8 @@
 /* CardIconTopTextBottom */
+@use '~Settings/colors';
+
 .card-icon-top {
-  background: #fff;
+  background: colors.$sapphire-white;
   padding: 40px 0;
   text-align: center;
 }

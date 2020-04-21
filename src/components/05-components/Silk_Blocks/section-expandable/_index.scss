@@ -1,7 +1,10 @@
 /* Section Expandable*/
+
+@use '~Settings/colors';
+
 .section-expandable {
-  background-color: white;
-  border-bottom: 1px solid #e4e4e4;
+  background-color: colors.$sapphire-white;
+  border-bottom: 1px solid colors.$light-grey;
   border-collapse: collapse;
 }
 
@@ -10,11 +13,11 @@
 }
 
 .section-expandable-title .dividers {
-  color: #333;
+  color: colors.$dark-grey;
 }
 
 .section-expandable.open .section-expandable-title .dividers {
-  color: #00BFA5;
+  color: colors.$regular-alpha;
   /*primary-color*/
 }
 

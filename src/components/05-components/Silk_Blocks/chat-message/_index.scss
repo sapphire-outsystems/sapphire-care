@@ -1,4 +1,7 @@
 /* Chat Message */
+
+@use '~Settings/colors';
+
 .chat.left .chat-message {
   background-color: transparent;
   padding-top: 5px;
@@ -9,12 +12,12 @@
 }
 
 .chat.right .chat-message {
-  background-color: #00BFA5;
+  background-color: colors.$regular-alpha;
   /*primary-color*/
-  color: #fff;
+  color: colors.$sapphire-white;
 }
 
 .chat.right .chat-message:before {
-  border-right-color: #00BFA5;
+  border-right-color: colors.$regular-alpha;
   /*primary-color*/
 }

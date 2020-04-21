@@ -1,4 +1,7 @@
 /* Custom Pattern - ImageBackground */
+
+@use '~Settings/colors';
+
 .image-bg {
   min-height: 100px;
   position: relative;
@@ -9,10 +12,10 @@
 }
 
 .image-bg-img:after {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 43, 73, 0)), to(#002b49));
-  background: -webkit-linear-gradient(top, rgba(0, 43, 73, 0) 0%, #002b49 100%);
-  background: -o-linear-gradient(top, rgba(0, 43, 73, 0) 0%, #002b49 100%);
-  background: linear-gradient(180deg, rgba(0, 43, 73, 0) 0%, #002b49 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 43, 73, 0)), to(colors.$sapphire-care-blue3));
+  background: -webkit-linear-gradient(top, rgba(0, 43, 73, 0) 0%, colors.$sapphire-care-blue3 100%);
+  background: -o-linear-gradient(top, rgba(0, 43, 73, 0) 0%, colors.$sapphire-care-blue3 100%);
+  background: linear-gradient(180deg, rgba(0, 43, 73, 0) 0%, colors.$sapphire-care-blue3 100%);
   content: "";
   display: block;
   height: 100%;
@@ -25,7 +28,7 @@
 .image-bg-title {
   bottom: 0;
   bottom: 20px;
-  color: #fff;
+  color: colors.$sapphire-white;
   font-size: 20px;
   left: 15px;
   position: absolute;

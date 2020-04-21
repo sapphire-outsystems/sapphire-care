@@ -1,6 +1,8 @@
 /* Splash Screen */
+@use '~Settings/colors';
+
 .splash-screen {
-  background-color: #002b49;
+  background-color: colors.$sapphire-care-blue3;
   /*secondary-color*/
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;

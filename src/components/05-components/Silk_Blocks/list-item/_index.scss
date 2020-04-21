@@ -1,6 +1,9 @@
 /* ListItem */
+
+@use '~Settings/colors';
+
 .list-item-action-primary {
-  background-color: #00BFA5;
+  background-color: colors.$regular-alpha;
   /*primary-color*/
 }
 
@@ -10,12 +13,12 @@
 }
 
 .list-item-content-text {
-  color: #77909c;
+  color: colors.$light-grey;
   font-size: 14px;
 }
 
 .list-item-content-right {
-  color: #77909c;
+  color: colors.$light-grey;
 }
 
 .list-item-content-right .icon {
@@ -28,8 +31,6 @@
 
 .list-item-content input.checkbox:checked:before {
   border: 0;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -39,8 +40,6 @@
   height: 5px;
   left: 5px;
   top: 8px;
-  -webkit-transform: rotate(-45deg) skew(2deg, -15deg);
-  -ms-transform: rotate(-45deg) skew(2deg, -15deg);
   transform: rotate(-45deg) skew(2deg, -15deg);
   width: 15px;
 }

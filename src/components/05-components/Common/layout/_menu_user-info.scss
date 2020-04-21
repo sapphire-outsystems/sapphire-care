@@ -21,7 +21,7 @@
 }
 
 .user-info-custom .user-info-image-border {
-  border: 2px solid #00bfa5;
+  border: 2px solid colors.$regular-alpha;
   /*primary-color*/
   border-radius: 50%;
   display: inline-block;
@@ -34,7 +34,7 @@
 }
 
 .user-info-custom .user-info-image-border .upload {
-  background: #002b49;
+  background: colors.$sapphire-care-blue3;
   /*secondary-color*/
   border-radius: 100%;
   display: inline-block;
@@ -102,7 +102,7 @@
 
 .user-info-custom .user-info-username,
 .user-info-small-text {
-  color: #F5F5F5;
+  color: colors.$light-grey;
   display: block;
 }
 

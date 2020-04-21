@@ -56,10 +56,10 @@ $border-radius:8px;
 .search input[data-input],
 .search input[data-input]:empty {
   border: 1px solid rgba(0, 0, 0, 0);
-  color: #333;
+  color: colors.$dark-grey;
 }
 
 // .search input[data-input]:focus,
 // .search input[data-input]:empty:focus {
-//   border-bottom: 1px solid #00BFA5;
+//   border-bottom: 1px solid colors.$regular-alpha;
 // }

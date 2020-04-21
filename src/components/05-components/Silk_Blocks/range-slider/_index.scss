@@ -1,29 +1,31 @@
 /* Range Slider */
+@use '~Settings/colors';
+
 .noUi-origin .noUi-handle-lower:before,
 .noUi-origin.noUi-connect .noUi-handle-lower:before,
 .noUi-origin .noUi-handle-lower:after,
 .noUi-origin.noUi-connect .noUi-handle-lower:after,
 .noUi-origin.noUi-background .noUi-handle-upper:before {
-  color: #00BFA5;
+  color: colors.$regular-alpha;
   /*primary-color*/
 }
 
 .noUi-origin {
-  background-color: #cfd8dc;
+  background-color: colors.$light-grey;
 }
 
 .noUi-origin.noUi-connect {
-  background-color: #00BFA5;
+  background-color: colors.$regular-alpha;
   /*primary-color*/
 }
 
 .noUi-base {
-  background-color: #00BFA5;
+  background-color: colors.$regular-alpha;
   /*primary-color*/
 }
 
 .noUi-horizontal .noUi-handle {
-  background: #00BFA5;
+  background: colors.$regular-alpha;
   /*primary-color*/
   -webkit-box-shadow: none;
   box-shadow: none;

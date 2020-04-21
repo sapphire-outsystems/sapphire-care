@@ -1,6 +1,8 @@
 /* CardTopTitleWithBackground */
+@use '~Settings/colors';
+
 .card-top-title-wrapper {
-  background: #fff;
+  background: colors.$sapphire-white;
   border-radius: 4px;
   -webkit-box-shadow: 0 2px 5px 0 rgba(209, 209, 209, 0.5);
   box-shadow: 0 2px 5px 0 rgba(209, 209, 209, 0.5);
