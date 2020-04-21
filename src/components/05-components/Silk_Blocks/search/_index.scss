@@ -1,21 +1,57 @@
-/* Search */
-.search input[data-input] {
-  font-size: 14px;
+@use '~Settings/colors';
+@use '~Settings/fonts';
+
+$border-radius:8px;
+
+.search {
+  border: 1px solid colors.$light-grey;
+  border-radius: $border-radius;
+  font-size: fonts.$font-size-heading3;
+
+  &:focus,
+  &:empty:focus {
+    border-bottom: 1px solid colors.$regular-alpha;
+  }
+
+  .search-input {
+    input[data-input] {
+      border-radius: $border-radius !important;
+      font-size: inherit;
+      padding-left: 35px !important;
+
+
+      &::placeholder {
+        color: colors.$light-grey;
+      }
+
+
+    }
+
+    &:after {
+      color: colors.$light-grey;
+      font-size: fonts.$font-size-heading3;
+      left: 10px;
+    }
+  }
+
 }
 
-.search-input:after {
-  color: #b0bec5;
-  font-size: 14px;
-}
 
-.searchAlignLeft .search-input:after {
-  left: 0px;
-}
 
-.searchAlignLeft .search input[data-input],
-.searchAlignLeft .search input[data-input]:empty {
-  padding-left: 25px;
-}
+
+
+// .searchAlignLeft {
+//   .search-input {
+//     &:after {
+//       left: 0px;
+//     }
+//   }
+// }
+
+// .searchAlignLeft .search input[data-input],
+// .searchAlignLeft .search input[data-input]:empty {
+//   padding-left: 25px;
+// }
 
 .search input[data-input],
 .search input[data-input]:empty {
@@ -23,8 +59,7 @@
   color: #333;
 }
 
-.search input[data-input]:focus,
-.search input[data-input]:empty:focus {
-  border-bottom: 1px solid #00BFA5;
-  /*primary-color*/
-}
+// .search input[data-input]:focus,
+// .search input[data-input]:empty:focus {
+//   border-bottom: 1px solid #00BFA5;
+// }

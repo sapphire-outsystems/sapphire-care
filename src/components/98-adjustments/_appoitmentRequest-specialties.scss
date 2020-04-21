@@ -1,0 +1,24 @@
+@use '~Settings/colors';
+
+
+
+div[data-block*="Specialties.SpecialtiesList"] {
+
+  div[data-block="SapphireCare_Patterns.SmallCard"] {
+    >div {
+      border-bottom: none;
+    }
+  }
+
+  div[data-block="SapphireCare_Patterns.SmallCard"]+div {
+    all: unset;
+
+    >div {
+      border-radius: 8px;
+      box-shadow: 2px 4px 4px 0px colors.$light-grey;
+      color: colors.$regular-alpha;
+      margin: 0 15px;
+      margin-bottom: 15px;
+    }
+  }
+}

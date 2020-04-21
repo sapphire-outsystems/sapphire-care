@@ -1,7 +1,40 @@
+@use '~Settings/colors';
+@use '~Tools/background-gradient'as gradient;
+@use '~Settings/fonts';
+
+.screen {
+  &.base {
+    .header {
+      background-color: transparent;
+
+      .header-title {
+        color: colors.$sapphire-care-blue3;
+      }
+    }
+  }
+
+  &.detail {
+    .header {
+      @include gradient.backgroundGradient;
+    }
+  }
+}
+
 .header {
-  background-color: #002b49;
-  /*secondary-color*/
-  color: #fff;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  justify-content: center;
+
+  a,
+  a:link,
+  a:visited {
+    color: colors.$regular-alpha;
+    /*primary-color*/
+    margin: 0 -10px;
+    padding: 0 10px;
+  }
 }
 
 .header-top {
@@ -10,46 +43,36 @@
 }
 
 .app-menu-line {
-  background-color: #00bfa5;
+  background-color: colors.$regular-alpha;
   /*primary-color*/
 }
 
-.header,
 .header-title,
 .header-right {
   color: inherit;
 }
 
-.header a,
-.header a:link,
-.header a:visited {
-  color: #00bfa5;
-  /*primary-color*/
-  margin: 0 -10px;
-  padding: 0 10px;
-}
-
 .header-title {
-  -webkit-box-flex: 5;
+  color: colors.$sapphire-white;
   flex: 5;
+  font-size: fonts.$font-size-heading1;
   text-align: left;
+  white-space: nowrap;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .is-rtl .header-title {
   text-align: right;
 }
 
-.header-title img {
-  display: block;
-  margin: 0 auto;
-}
-
 .header-content button.button-group-item.button-group-selected-item {
-  color: #00BFA5;
-  /*primary-color*/
-}
+  color: colors.$regular-alpha;
 
-.header-content button.button-group-item.button-group-selected-item:after {
-  background-color: #00BFA5;
-  /*primary-color*/
+  &:after {
+    background-color: colors.$regular-alpha;
+  }
 }

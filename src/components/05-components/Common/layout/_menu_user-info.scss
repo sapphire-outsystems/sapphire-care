@@ -1,6 +1,10 @@
 /* Menu UserInfo */
+
+@use '~Settings/colors';
+@use '~Tools/background-gradient'as gradient;
+
 .user-info-custom {
-  background-color: #002B49;
+  @include gradient.backgroundGradient;
   /*secondary-color*/
   display: table;
   margin-bottom: 10px;

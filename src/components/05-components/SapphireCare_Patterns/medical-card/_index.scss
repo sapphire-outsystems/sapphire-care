@@ -1,0 +1,168 @@
+@use '~Settings/colors';
+@use '~Tools/background-gradient'as gradient;
+
+.MedicalCard {
+  &__Container {
+    @include gradient.backgroundGradient;
+    border-radius: 10px;
+    box-shadow: 0 8px 6px 0 rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    height: 173px;
+    max-width: 320px;
+    padding: 0 15px;
+    padding-bottom: 12px;
+    padding-top: 18px;
+    width: 100%;
+
+    &.Requested {
+      background-color: colors.$sapphire-white;
+      background-image: none;
+      color: colors.$dark-grey;
+
+      .MedicalCard__Title--container {
+        color: colors.$regular-alpha;
+
+        .MedicalCard__Title--subTitle {
+          color: colors.$dark-grey;
+        }
+
+      }
+
+      .MedicalCard__Title--subTitle {
+        color: colors.$mid-light-grey;
+
+      }
+
+      .MedicalCard__TimeTo {
+        display: none;
+      }
+
+      .Photo {
+        img {
+          border-color: colors.$mid-light-grey;
+        }
+      }
+    }
+
+    &.MainAccount {
+      .Photo {
+        img {
+          border: 2px solid colors.$regular-alpha;
+
+        }
+
+      }
+    }
+  }
+
+  &__Row {
+    display: flex;
+    flex: 2;
+    position: relative;
+  }
+
+  &__Row:nth-child(2) {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    flex: 1;
+  }
+
+  &__Title {
+    flex: 2;
+    white-space: nowrap;
+  }
+
+  &__TimeTo,
+  &__Location,
+  &__Date {
+    flex: 1;
+  }
+
+  &__Title--icon {
+    align-items: flex-start;
+    display: flex;
+    margin-right: 5px;
+  }
+
+
+
+  &__Location,
+  &__Date {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .MedicalCard__Title--wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .MedicalCard__Title--subTitle {
+      font-weight: bold;
+    }
+  }
+
+  &__Location {
+    margin-right: 5px;
+  }
+
+  &__Date {
+    margin-left: 5px;
+    ;
+  }
+
+  &__Title--container {
+    display: flex;
+
+    >.MedicalCard__Title--icon {
+      font-size: 22px;
+    }
+  }
+
+  &__Title--wrapper {
+
+    .MedicalCard__Title--title {
+      font-size: 22px;
+      font-weight: bold;
+      line-height: 24px;
+    }
+
+
+
+  }
+
+  &__PhotoContainer {
+    text-align: right;
+
+    .Photo {
+      img {
+        border-color: colors.$mid-light-grey;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+      }
+
+    }
+  }
+
+  &__TimeTo {
+    align-items: center;
+    background-color: colors.$sapphire-care-red;
+    border-radius: 10px;
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    width: 80px;
+  }
+
+  &__PhotoContainer+&__TimeTo {
+    bottom: -12px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+
+
+}

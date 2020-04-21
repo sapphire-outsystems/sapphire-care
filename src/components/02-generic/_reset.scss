@@ -1,7 +1,10 @@
+@use '~Settings/colors';
+
+
 body,
 .content {
   background: #F6F6F6;
-  color: #333;
+  color: colors.$dark-grey;
   font-family: Lato, Arial;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
