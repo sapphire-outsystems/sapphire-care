@@ -1,6 +1,8 @@
 /* Background colors */
+@use '~Settings/colors';
+
 .background-primary-color {
-  background-color: #00BFA5;
+  background-color: colors.$regular-alpha;
   /*primary-color*/
 }
 
@@ -15,7 +17,7 @@
 .btn.background-red:hover,
 button.button-group-item.background-red,
 button.button-group-item.button-group-selected-item.background-red {
-  background-color: #cc3524
+  background-color: colors.$regular-red;
 }
 
 .background-dark-red,
@@ -24,7 +26,7 @@ button.button-group-item.button-group-selected-item.background-red {
 .btn.background-dark-red:hover,
 button.button-group-item.background-dark-red,
 button.button-group-item.button-group-selected-item.background-dark-red {
-  background-color: #951919
+  background-color: colors.$dark-red;
 }
 
 .background-light-red,
@@ -33,7 +35,7 @@ button.button-group-item.button-group-selected-item.background-dark-red {
 .btn.background-light-red:hover,
 button.button-group-item.background-light-red,
 button.button-group-item.button-group-selected-item.background-light-red {
-  background-color: #ff3e2d
+  background-color: colors.$light-red;
 }
 
 .background-violet,
@@ -42,7 +44,7 @@ button.button-group-item.button-group-selected-item.background-light-red {
 .btn.background-violet:hover,
 button.button-group-item.background-violet,
 button.button-group-item.button-group-selected-item.background-violet {
-  background-color: #7b1fa2
+  background-color: colors.$regular-pink;
 }
 
 .background-dark-violet,
@@ -51,7 +53,7 @@ button.button-group-item.button-group-selected-item.background-violet {
 .btn.background-dark-violet:hover,
 button.button-group-item.background-dark-violet,
 button.button-group-item.button-group-selected-item.background-dark-violet {
-  background-color: #4a148c
+  background-color: colors.$dark-pink;
 }
 
 .background-light-violet,
@@ -60,7 +62,7 @@ button.button-group-item.button-group-selected-item.background-dark-violet {
 .btn.background-light-violet:hover,
 button.button-group-item.background-light-violet,
 button.button-group-item.button-group-selected-item.background-light-violet {
-  background-color: #ab47bc
+  background-color: colors.$light-pink;
 }
 
 .background-blue,
@@ -69,7 +71,7 @@ button.button-group-item.button-group-selected-item.background-light-violet {
 .btn.background-blue:hover,
 button.button-group-item.background-blue,
 button.button-group-item.button-group-selected-item.background-blue {
-  background-color: #2d7daa
+  background-color: colors.$regular-blue;
 }
 
 .background-dark-blue,
@@ -78,7 +80,7 @@ button.button-group-item.button-group-selected-item.background-blue {
 .btn.background-dark-blue:hover,
 button.button-group-item.background-dark-blue,
 button.button-group-item.button-group-selected-item.background-dark-blue {
-  background-color: #11455d
+  background-color: colors.$dark-blue;
 }
 
 .background-light-blue,
@@ -87,7 +89,7 @@ button.button-group-item.button-group-selected-item.background-dark-blue {
 .btn.background-light-blue:hover,
 button.button-group-item.background-light-blue,
 button.button-group-item.button-group-selected-item.background-light-blue {
-  background-color: #00BFA5
+  background-color: colors.$regular-alpha;
 }
 
 .background-primaryblue,
@@ -96,7 +98,7 @@ button.button-group-item.button-group-selected-item.background-light-blue {
 .btn.background-primaryblue:hover,
 button.button-group-item.background-primaryblue,
 button.button-group-item.button-group-selected-item.background-primaryblue {
-  background-color: #002b49
+  background-color: colors.$sapphire-care-blue3;
 }
 
 .background-green,
@@ -105,7 +107,7 @@ button.button-group-item.button-group-selected-item.background-primaryblue {
 .btn.background-green:hover,
 button.button-group-item.background-green,
 button.button-group-item.button-group-selected-item.background-green {
-  background-color: #7cb342
+  background-color: colors.$regular-green;
 }
 
 .background-dark-green,
@@ -114,7 +116,7 @@ button.button-group-item.button-group-selected-item.background-green {
 .btn.background-dark-green:hover,
 button.button-group-item.background-dark-green,
 button.button-group-item.button-group-selected-item.background-dark-green {
-  background-color: #00927e
+  background-color: colors.$dark-green;
 }
 
 .background-light-green,
@@ -123,7 +125,7 @@ button.button-group-item.button-group-selected-item.background-dark-green {
 .btn.background-light-green:hover,
 button.button-group-item.background-light-green,
 button.button-group-item.button-group-selected-item.background-light-green {
-  background-color: #8bc34a
+  background-color: colors.$light-green;
 }
 
 .background-orange,
@@ -132,7 +134,7 @@ button.button-group-item.button-group-selected-item.background-light-green {
 .btn.background-orange:hover,
 button.button-group-item.background-orange,
 button.button-group-item.button-group-selected-item.background-orange {
-  background-color: #ef7622
+  background-color: colors.$regular-orange;
 }
 
 .background-dark-orange,
@@ -141,7 +143,7 @@ button.button-group-item.button-group-selected-item.background-orange {
 .btn.background-dark-orange:hover,
 button.button-group-item.background-dark-orange,
 button.button-group-item.button-group-selected-item.background-dark-orange {
-  background-color: #a54715
+  background-color: colors.$dark-orange;
 }
 
 .background-light-orange,
@@ -150,7 +152,7 @@ button.button-group-item.button-group-selected-item.background-dark-orange {
 .btn.background-light-orange:hover,
 button.button-group-item.background-light-orange,
 button.button-group-item.button-group-selected-item.background-light-orange {
-  background-color: #ffa000
+  background-color: colors.$light-orange;
 }
 
 .background-grey,
@@ -159,7 +161,7 @@ button.button-group-item.button-group-selected-item.background-light-orange {
 .btn.background-grey:hover,
 button.button-group-item.background-grey,
 button.button-group-item.button-group-selected-item.background-grey {
-  background-color: #6e6e6e
+  background-color: colors.$regular-grey;
 }
 
 .background-dark-grey,
@@ -168,7 +170,7 @@ button.button-group-item.button-group-selected-item.background-grey {
 .btn.background-dark-grey:hover,
 button.button-group-item.background-dark-grey,
 button.button-group-item.button-group-selected-item.background-dark-grey {
-  background-color: #5C5C5C
+  background-color: colors.$mid-dark-grey;
 }
 
 .background-light-grey,
@@ -177,8 +179,8 @@ button.button-group-item.button-group-selected-item.background-dark-grey {
 .btn.background-light-grey:hover,
 button.button-group-item.background-light-grey,
 button.button-group-item.button-group-selected-item.background-light-grey {
-  background-color: #c3cfc3;
-  color: #00BFA5
+  background-color: colors.$mid-light-grey;
+  color: colors.$regular-alpha;
 }
 
 .background-light-grey2,
@@ -187,8 +189,8 @@ button.button-group-item.button-group-selected-item.background-light-grey {
 .btn.background-light-grey2:hover,
 button.button-group-item.background-light-grey2,
 button.button-group-item.button-group-selected-item.background-light-grey2 {
-  background-color: #eeefee;
-  color: #00BFA5
+  background-color: colors.$light-grey;
+  color: colors.$regular-alpha;
 }
 
 .background-light-grey3,
@@ -197,8 +199,8 @@ button.button-group-item.button-group-selected-item.background-light-grey2 {
 .btn.background-light-grey3:hover,
 button.button-group-item.background-light-grey3,
 button.button-group-item.button-group-selected-item.background-light-grey3 {
-  background-color: #f5fff5;
-  color: #00BFA5
+  background-color: colors.$sapphire-light;
+  color: colors.$regular-alpha;
 }
 
 .btn.background-white,
@@ -206,8 +208,8 @@ button.button-group-item.button-group-selected-item.background-light-grey3 {
 .btn.background-white:hover,
 button.button-group-item.background-white,
 button.button-group-item.button-group-selected-item.background-white {
-  background-color: #ffffff;
-  color: #00BFA5
+  background-color: colors.$sapphire-white;
+  color: colors.$regular-alpha;
 }
 
 .background-black,
@@ -216,9 +218,9 @@ button.button-group-item.button-group-selected-item.background-white {
 .btn.background-black:hover,
 button.button-group-item.background-black,
 button.button-group-item.button-group-selected-item.background-black {
-  background-color: #333333
+  background-color: colors.$dark-grey;
 }
 
 .background-white {
-  background-color: #fff
+  background-color: colors.$sapphire-white;
 }
