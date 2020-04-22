@@ -1,16 +1,16 @@
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 @use '~Settings/fonts';
 
 $border-radius:8px;
 
 .search {
-  border: 1px solid colors.$light-grey;
+  border: 1px solid $light-grey;
   border-radius: $border-radius;
   font-size: fonts.$font-size-heading3;
 
   &:focus,
   &:empty:focus {
-    border-bottom: 1px solid colors.$regular-alpha;
+    border-bottom: 1px solid $regular-alpha;
   }
 
   .search-input {
@@ -21,14 +21,14 @@ $border-radius:8px;
 
 
       &::placeholder {
-        color: colors.$light-grey;
+        color: $light-grey;
       }
 
 
     }
 
     &:after {
-      color: colors.$light-grey;
+      color: $light-grey;
       font-size: fonts.$font-size-heading3;
       left: 10px;
     }
@@ -56,10 +56,10 @@ $border-radius:8px;
 .search input[data-input],
 .search input[data-input]:empty {
   border: 1px solid rgba(0, 0, 0, 0);
-  color: colors.$dark-grey;
+  color: $dark-grey;
 }
 
 // .search input[data-input]:focus,
 // .search input[data-input]:empty:focus {
-//   border-bottom: 1px solid colors.$regular-alpha;
+//   border-bottom: 1px solid $regular-alpha;
 // }

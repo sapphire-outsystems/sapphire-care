@@ -1,8 +1,8 @@
 /* Carousel */
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 
 .owl-theme .owl-nav [class*="owl-"] {
-  color: colors.$sapphire-white;
+  color: $sapphire-white;
   font-size: 34px;
   -webkit-transform: translateY(-30px);
   -ms-transform: translateY(-30px);
@@ -10,6 +10,6 @@
 }
 
 .carousel .carousel-navigation i {
-  color: colors.$sapphire-white;
+  color: $sapphire-white;
   font-size: 36px;
 }

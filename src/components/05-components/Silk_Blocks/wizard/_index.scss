@@ -1,9 +1,9 @@
 /* Wizard */
 
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 
 .wizard-item-wrapper.active .wizard-label {
-  color: colors.$regular-alpha;
+  color: $regular-alpha;
   /*primary-color*/
 }
 
@@ -14,12 +14,12 @@
 }
 
 .wizard-item-wrapper.past .wizard-item {
-  background-color: colors.$regular-grey;
+  background-color: $regular-grey;
   opacity: 1;
 }
 
 .wizard-item-wrapper.active .wizard-item {
-  background-color: colors.$regular-alpha;
+  background-color: $regular-alpha;
   /*primary-color*/
 }
 
@@ -28,7 +28,7 @@
 }
 
 .wizard-item-wrapper.past .wizard-label {
-  color: colors.$regular-grey;
+  color: $regular-grey;
 }
 
 .wizard-item-wrapper .wizard-label {

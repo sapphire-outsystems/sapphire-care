@@ -1,6 +1,6 @@
 /* Input Radio */
 
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 
 input[type="radio"] {
 
@@ -30,13 +30,13 @@ input[type="radio"]:before {
 }
 
 input[type="radio"]:checked:before {
-  background: colors.$sapphire-white;
-  border: 2px solid colors.$regular-alpha;
+  background: $sapphire-white;
+  border: 2px solid $regular-alpha;
   /*primary-color*/
 }
 
 input[type="radio"]:checked:after {
-  background: colors.$regular-alpha;
+  background: $regular-alpha;
   /*primary-color*/
   border: 0;
   border-radius: 100%;
@@ -73,9 +73,9 @@ input.radio-button-custom:before {
 }
 
 input.radio-button-custom:checked:before {
-  background-color: colors.$regular-alpha;
+  background-color: $regular-alpha;
   /*primary-color*/
-  border: 1px solid colors.$regular-alpha;
+  border: 1px solid $regular-alpha;
   /*primary-color*/
   height: 20px;
   -webkit-transform: translate(20%, 20%);
@@ -107,5 +107,5 @@ input.radio-button-custom:checked:after {
 }
 
 input.radio-button-custom[disabled]:before {
-  border: 1px solid colors.$light-grey;
+  border: 1px solid $light-grey;
 }

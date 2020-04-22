@@ -1,6 +1,6 @@
 /* Small Card */
 
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 
 .small-card {
   display: table;
@@ -19,7 +19,7 @@
 }
 
 .small-card.has-bg-color {
-  background-color: colors.$sapphire-white;
+  background-color: $sapphire-white;
 }
 
 .small-card.border-radius {
@@ -27,16 +27,16 @@
 }
 
 .small-card.border-bottom {
-  border-bottom: 1px solid colors.$light-grey;
+  border-bottom: 1px solid $light-grey;
 }
 
 .small-card.border-top {
-  border-top: 1px solid colors.$light-grey;
+  border-top: 1px solid $light-grey;
 }
 
 .small-card.box-shadow {
-  -webkit-box-shadow: 0 2px 12px 0 colors.$light-grey;
-  box-shadow: 0 2px 12px 0 colors.$light-grey;
+  -webkit-box-shadow: 0 2px 12px 0 $light-grey;
+  box-shadow: 0 2px 12px 0 $light-grey;
 }
 
 .small-card.has-padding-l-r {
@@ -55,7 +55,7 @@
 }
 
 .small-card.active {
-  background: colors.$regular-zeta;
+  background: $regular-zeta;
 }
 
 .small-card-col-left,
@@ -93,7 +93,7 @@
 }
 
 .small-card-col-left img {
-  border: 2px solid colors.$light-grey;
+  border: 2px solid $light-grey;
   border-radius: 100%;
   height: auto;
   max-width: 60px;
@@ -151,7 +151,7 @@
 
 
 .campaign .small-card-col-left img {
-  border: 1px solid colors.$light-grey;
+  border: 1px solid $light-grey;
   border-radius: 4px;
   height: 80px;
   max-width: 70px;

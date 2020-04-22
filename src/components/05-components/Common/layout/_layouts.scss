@@ -1,19 +1,19 @@
-@use '~Settings/colors'as colors;
+@use '~Settings/colors'as *;
 
 .layout.blank.bg-colored .content {
-  background: colors.$regular-alpha;
+  background: $regular-alpha;
   /*primary-color*/
-  color: colors.$sapphire-white;
+  color: $sapphire-white;
 }
 
 .layout.white-page .header {
-  background: colors.$sapphire-white;
-  color: colors.$regular-alpha;
+  background: $sapphire-white;
+  color: $regular-alpha;
   /*primary-color*/
 }
 
 .layout.white-page .content,
 .layout.white-content .content,
 .layout.white-content .bottom {
-  background: colors.$sapphire-white;
+  background: $sapphire-white;
 }

@@ -1,8 +1,8 @@
-@use '~Settings/colors'as colors;
+@use '~Settings/colors'as *;
 
 /* CardWithIconOnTop */
 .card-with-top-icon {
-  background-color: colors.$sapphire-white;
+  background-color: $sapphire-white;
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 2px 14px 0 rgba(0, 0, 0, .14);
@@ -18,10 +18,10 @@
 }
 
 .card-with-top-icon-icon {
-  background-color: colors.$sapphire-white;
+  background-color: $sapphire-white;
   border: 2px solid transparent;
   border-radius: 100%;
-  color: colors.$regular-alpha;
+  color: $regular-alpha;
   /*primary-color*/
   height: 120px;
   left: 50%;
@@ -35,7 +35,7 @@
 }
 
 .card-with-top-icon.disabled .card-with-top-icon-icon {
-  background-color: colors.$sapphire-white;
+  background-color: $sapphire-white;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -51,11 +51,11 @@
 }
 
 .card-with-top-icon.disabled .card-with-top-icon-icon .icon {
-  color: colors.$mid-light-grey;
+  color: $mid-light-grey;
 }
 
 .card-with-top-icon-action {
-  border-top: 1px solid colors.$light-grey;
+  border-top: 1px solid $light-grey;
   padding: 15px 0;
 }
 

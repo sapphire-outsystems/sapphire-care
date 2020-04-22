@@ -1,6 +1,6 @@
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 
 @mixin backgroundGradient {
-  background-color: colors.$sapphire-care-blue1;
-  background-image: linear-gradient(-90deg, colors.$sapphire-care-blue1, colors.$sapphire-care-blue2);
+  background-color: $sapphire-care-blue1;
+  background-image: linear-gradient(-90deg, $sapphire-care-blue1, $sapphire-care-blue2);
 }

@@ -1,27 +1,27 @@
 /* Tabs */
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 
 .tabs-header {
-  background-color: colors.$sapphire-white;
+  background-color: $sapphire-white;
 }
 
 
 .tabs-header-tab {
-  color: colors.$mid-dark-grey;
+  color: $mid-dark-grey;
   font-size: 16px;
   padding: 12px 20px 15px;
   text-transform: none;
 }
 
 .tabs-underline {
-  background-color: colors.$regular-alpha;
+  background-color: $regular-alpha;
   /*primary-color*/
 }
 
 .tabs-header-tab.active {
-  border-bottom: 2px solid colors.$regular-alpha;
+  border-bottom: 2px solid $regular-alpha;
   /*primary-color*/
-  color: colors.$sapphire-care-blue3;
+  color: $sapphire-care-blue3;
   /*secondary-color*/
 }
 

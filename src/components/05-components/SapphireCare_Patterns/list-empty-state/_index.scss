@@ -1,17 +1,17 @@
 /* ListEmptyState */
 
-@use '~/Settings/colors';
+@use '~/Settings/colors'as *;
 
 .list-empty-state {
-  background: colors.$sapphire-white;
+  background: $sapphire-white;
   display: block;
   padding: 20px;
   position: relative;
 }
 
 .list-empty-state-title {
-  background: colors.$light-grey;
-  background: linear-gradient(to right, colors.$light-grey 0%, colors.$sapphire-white 50%, colors.$light-grey 100%);
+  background: $light-grey;
+  background: linear-gradient(to right, $light-grey 0%, $sapphire-white 50%, $light-grey 100%);
   display: inline-block;
   height: 20px;
   width: 20%;
@@ -31,7 +31,7 @@
 }
 
 .list-empty-state--list-item .list-item-content-left {
-  background: colors.$light-grey;
+  background: $light-grey;
   border-radius: 100%;
   display: inline-block !important;
   height: 40px;
@@ -40,15 +40,15 @@
 }
 
 .list-empty-state--list-item .list-item-content-title {
-  background: colors.$light-grey;
-  background: linear-gradient(to right, colors.$light-grey 0%, colors.$sapphire-white 50%, colors.$light-grey 100%);
+  background: $light-grey;
+  background: linear-gradient(to right, $light-grey 0%, $sapphire-white 50%, $light-grey 100%);
   display: block !important;
   height: 20px;
 }
 
 .list-empty-state--list-item .list-item-content-text {
-  background: colors.$light-grey;
-  background: linear-gradient(to right, colors.$light-grey 0%, colors.$sapphire-white 50%, colors.$light-grey 100%);
+  background: $light-grey;
+  background: linear-gradient(to right, $light-grey 0%, $sapphire-white 50%, $light-grey 100%);
   display: inline-block !important;
   height: 20px;
   margin-top: 7px;

@@ -1,31 +1,31 @@
 /* Range Slider */
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 
 .noUi-origin .noUi-handle-lower:before,
 .noUi-origin.noUi-connect .noUi-handle-lower:before,
 .noUi-origin .noUi-handle-lower:after,
 .noUi-origin.noUi-connect .noUi-handle-lower:after,
 .noUi-origin.noUi-background .noUi-handle-upper:before {
-  color: colors.$regular-alpha;
+  color: $regular-alpha;
   /*primary-color*/
 }
 
 .noUi-origin {
-  background-color: colors.$light-grey;
+  background-color: $light-grey;
 }
 
 .noUi-origin.noUi-connect {
-  background-color: colors.$regular-alpha;
+  background-color: $regular-alpha;
   /*primary-color*/
 }
 
 .noUi-base {
-  background-color: colors.$regular-alpha;
+  background-color: $regular-alpha;
   /*primary-color*/
 }
 
 .noUi-horizontal .noUi-handle {
-  background: colors.$regular-alpha;
+  background: $regular-alpha;
   /*primary-color*/
   -webkit-box-shadow: none;
   box-shadow: none;

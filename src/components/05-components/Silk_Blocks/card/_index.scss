@@ -1,6 +1,6 @@
 /* Card */
 
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 
 .card.card-content {
   -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.03);
@@ -8,7 +8,7 @@
 }
 
 .card-action.expand {
-  background-color: colors.$sapphire-white;
+  background-color: $sapphire-white;
   opacity: 1;
 }
 

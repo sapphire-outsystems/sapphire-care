@@ -1,9 +1,9 @@
 /* ListItem */
 
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 
 .list-item-action-primary {
-  background-color: colors.$regular-alpha;
+  background-color: $regular-alpha;
   /*primary-color*/
 }
 
@@ -13,12 +13,12 @@
 }
 
 .list-item-content-text {
-  color: colors.$light-grey;
+  color: $light-grey;
   font-size: 14px;
 }
 
 .list-item-content-right {
-  color: colors.$light-grey;
+  color: $light-grey;
 }
 
 .list-item-content-right .icon {

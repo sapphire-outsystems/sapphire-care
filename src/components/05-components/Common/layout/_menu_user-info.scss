@@ -1,6 +1,6 @@
 /* Menu UserInfo */
 
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 @use '~Tools/background-gradient'as gradient;
 
 .user-info-custom {
@@ -21,7 +21,7 @@
 }
 
 .user-info-custom .user-info-image-border {
-  border: 2px solid colors.$regular-alpha;
+  border: 2px solid $regular-alpha;
   /*primary-color*/
   border-radius: 50%;
   display: inline-block;
@@ -34,7 +34,7 @@
 }
 
 .user-info-custom .user-info-image-border .upload {
-  background: colors.$sapphire-care-blue3;
+  background: $sapphire-care-blue3;
   /*secondary-color*/
   border-radius: 100%;
   display: inline-block;
@@ -102,7 +102,7 @@
 
 .user-info-custom .user-info-username,
 .user-info-small-text {
-  color: colors.$light-grey;
+  color: $light-grey;
   display: block;
 }
 

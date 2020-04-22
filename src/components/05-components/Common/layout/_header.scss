@@ -1,4 +1,4 @@
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 @use '~Tools/background-gradient'as gradient;
 @use '~Settings/fonts';
 
@@ -8,7 +8,7 @@
       background-color: transparent;
 
       .header-title {
-        color: colors.$sapphire-care-blue3;
+        color: $sapphire-care-blue3;
       }
     }
   }
@@ -30,7 +30,7 @@
   a,
   a:link,
   a:visited {
-    color: colors.$regular-alpha;
+    color: $regular-alpha;
     /*primary-color*/
     margin: 0 -10px;
     padding: 0 10px;
@@ -43,7 +43,7 @@
 }
 
 .app-menu-line {
-  background-color: colors.$regular-alpha;
+  background-color: $regular-alpha;
   /*primary-color*/
 }
 
@@ -53,7 +53,7 @@
 }
 
 .header-title {
-  color: colors.$sapphire-white;
+  color: $sapphire-white;
   flex: 5;
   font-size: fonts.$font-size-heading1;
   text-align: left;
@@ -70,9 +70,9 @@
 }
 
 .header-content button.button-group-item.button-group-selected-item {
-  color: colors.$regular-alpha;
+  color: $regular-alpha;
 
   &:after {
-    background-color: colors.$regular-alpha;
+    background-color: $regular-alpha;
   }
 }

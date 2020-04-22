@@ -1,95 +1,96 @@
 /*---------- border colors ----------*/
+@use '~Settings/colors'as *;
 
 .border-red {
-  border-color: #cc3524;
+  border-color: $regular-red;
 }
 
 .border-dark-red {
-  border-color: #951919;
+  border-color: $dark-red;
 }
 
 .border-light-red {
-  border-color: #ff3e2d;
+  border-color: $light-red;
 }
 
 .border-violet {
-  border-color: #7b1fa2;
+  border-color: $regular-pink;
 }
 
 .border-dark-violet {
-  border-color: #4a148c;
+  border-color: $dark-pink;
 }
 
 .border-light-violet {
-  border-color: #ab47bc;
+  border-color: $light-pink;
 }
 
 .border-blue {
-  border-color: #2d7daa;
+  border-color: $regular-blue;
 }
 
 .border-dark-blue {
-  border-color: #11455d;
+  border-color: $dark-blue;
 }
 
 .border-light-blue {
-  border-color: #00BFA5;
+  border-color: $regular-alpha;
 }
 
 .border-green {
-  border-color: #7cb342;
+  border-color: $regular-green;
 }
 
 .border-dark-green {
-  border-color: #00927e;
+  border-color: $dark-green;
 }
 
 .border-light-green {
-  border-color: #8bc34a;
+  border-color: $light-green;
 }
 
 .border-orange {
-  border-color: #ef7622;
+  border-color: $regular-orange;
 }
 
 .border-dark-orange {
-  border-color: #a54715;
+  border-color: $dark-orange;
 }
 
 .border-light-orange {
-  border-color: #ffa000;
+  border-color: $light-orange;
 }
 
 .border-grey {
-  border-color: #6e6e6e;
+  border-color: $regular-grey;
 }
 
 .border-dark-grey {
-  border-color: #5C5C5C
+  border-color: $mid-dark-grey;
 }
 
 .border-light-grey {
-  border-color: #c3c3c3
+  border-color: $mid-light-grey;
 }
 
 .border-light-grey2 {
-  border-color: #eeeeee
+  border-color: $light-grey
 }
 
 .border-light-grey3 {
-  border-color: #f5f5f5
+  border-color: $sapphire-light;
 }
 
 .border-white {
-  border-color: #fff;
+  border-color: $sapphire-white;
 }
 
 .border-black {
-  border-color: #333333;
+  border-color: $dark-grey;
 }
 
 .border-primary-color {
-  border-color: #00BFA5;
+  border-color: $regular-alpha;
   /*primary-color*/
 }
 

@@ -1,8 +1,8 @@
 /* CardAdvanced */
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 
 .card-action {
-  background-color: colors.$regular-alpha;
+  background-color: $regular-alpha;
   /*primary-color*/
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
   box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
@@ -11,5 +11,5 @@
 
 .card-action.expand:before,
 .card-action.expand:after {
-  background: colors.$mid-light-grey;
+  background: $mid-light-grey;
 }

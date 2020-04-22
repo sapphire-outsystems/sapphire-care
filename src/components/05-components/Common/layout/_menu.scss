@@ -1,6 +1,6 @@
 /* Menu */
 
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 
 .app-menu {
 	-webkit-box-shadow: -15px 2px 40px 0 rgba(97, 97, 97, 0.41);
@@ -9,7 +9,7 @@
 
 .app-menu a .icon,
 .submenu .icon {
-	color: colors.$regular-alpha;
+	color: $regular-alpha;
 	/*primary-color*/
 	font-size: 26px;
 	margin: 0;
@@ -22,7 +22,7 @@
 }
 
 .app-menu-links>a {
-	background-color: colors.$regular-eta;
+	background-color: $regular-eta;
 	padding-left: 40px !important;
 }
 
@@ -59,14 +59,14 @@
 	a,
 	a:link,
 	a:visited {
-		background-color: colors.$sapphire-white;
+		background-color: $sapphire-white;
 		border: 0;
-		border-bottom: 1px solid colors.$light-grey;
+		border-bottom: 1px solid $light-grey;
 	}
 
 	a:first-child,
 	a:link:first-child,
 	a:visited:first-child {
-		border-top: 1px solid colors.$light-grey;
+		border-top: 1px solid $light-grey;
 	}
 }

@@ -1,4 +1,4 @@
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 
 div[data-block*="Specialties.SpecialtiesList"] {
 
@@ -13,8 +13,8 @@ div[data-block*="Specialties.SpecialtiesList"] {
 
     >div {
       border-radius: 8px;
-      box-shadow: 2px 4px 4px 0px colors.$light-grey;
-      color: colors.$regular-alpha;
+      box-shadow: 2px 4px 4px 0px $light-grey;
+      color: $regular-alpha;
       margin: 0 15px;
       margin-bottom: 15px;
     }

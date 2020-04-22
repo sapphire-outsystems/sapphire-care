@@ -1,7 +1,7 @@
-@use '~Settings/colors'as colors;
+@use '~Settings/colors'as *;
 
 .calendar {
-  background-color: colors.$sapphire-white;
+  background-color: $sapphire-white;
   border-radius: 4px;
   -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .11);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .11);
@@ -9,7 +9,7 @@
 }
 
 .calendar .pika-title {
-  border-bottom: 1px solid colors.$light-grey;
+  border-bottom: 1px solid $light-grey;
   display: block;
   position: relative;
   text-align: center;
@@ -17,14 +17,14 @@
 }
 
 .calendar .pika-title .pika-label {
-  color: colors.$dark-grey;
+  color: $dark-grey;
   display: inline-block;
   font-weight: 400;
 }
 
 .calendar .pika-title .pika-prev,
 .calendar .pika-title .pika-next {
-  color: colors.$regular-alpha;
+  color: $regular-alpha;
   /*primary-color*/
   display: block;
   position: absolute;
@@ -67,7 +67,7 @@
 }
 
 .calendar table.pika-table thead tr th abbr {
-  color: colors.$dark-grey;
+  color: $dark-grey;
   display: inline-block;
   font-size: 0;
   text-decoration: none;
@@ -87,12 +87,12 @@
 }
 
 .calendar .is-today .pika-button {
-  color: colors.$regular-grey;
+  color: $regular-grey;
 }
 
 .calendar .is-today.is-selected .pika-button,
 .calendar .is-selected .pika-button {
-  background-color: colors.$regular-alpha;
+  background-color: $regular-alpha;
   /*primary-color*/
-  color: colors.$sapphire-white;
+  color: $sapphire-white;
 }

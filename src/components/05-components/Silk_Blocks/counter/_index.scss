@@ -1,5 +1,5 @@
 /* Counter */
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 
 .counter-number {
   font-size: 38px;
@@ -27,5 +27,5 @@
 }
 
 .floating-actions.floating-actions--visible .floating-actions-icon {
-  background-color: colors.$regular-delta;
+  background-color: $regular-delta;
 }

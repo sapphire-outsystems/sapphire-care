@@ -1,6 +1,6 @@
 /* Badge */
 
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 
 .badge {
   border-radius: 100px;
@@ -10,6 +10,6 @@
 }
 
 .badge.background-white {
-  color: colors.$regular-alpha
+  color: $regular-alpha
     /*primary-color*/
 }

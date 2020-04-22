@@ -1,10 +1,10 @@
 /*CardTwoColsBig*/
 
-@use '~Settings/colors'as colors;
+@use '~Settings/colors'as *;
 
 .card-two-cols-big {
-  background-color: colors.$sapphire-white;
-  color: colors.$dark-grey;
+  background-color: $sapphire-white;
+  color: $dark-grey;
   display: table;
   padding: 20px 0;
   position: relative;
@@ -22,7 +22,7 @@
 }
 
 .card-two-cols-big-left.separator-border:after {
-  background-color: colors.$light-grey;
+  background-color: $light-grey;
   bottom: 4px;
   content: "";
   display: block;
@@ -42,7 +42,7 @@
 
 .card-two-cols-big-left-icon,
 .card-two-cols-big-right-icon {
-  color: colors.$regular-alpha;
+  color: $regular-alpha;
   /*primary-color*/
   font-size: 40px;
 }

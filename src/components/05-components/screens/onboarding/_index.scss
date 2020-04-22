@@ -1,6 +1,6 @@
 /* OnBoarding */
 
-@use '~Settings/colors'as colors;
+@use '~Settings/colors'as *;
 
 .onboarding {
 
@@ -9,7 +9,7 @@
 }
 
 .onboarding:before {
-  background-color: colors.$regular-alpha;
+  background-color: $regular-alpha;
   /*primary-color*/
   border-bottom-left-radius: 70%;
   border-bottom-right-radius: 70%;
@@ -99,13 +99,13 @@
 }
 
 .onboarding .carousel .carousel-dots-container .carousel-dot {
-  background-color: colors.$mid-light-grey;
+  background-color: $mid-light-grey;
   height: 8px;
   width: 8px;
 }
 
 .onboarding .carousel .carousel-dots-container .carousel-dot.active {
-  background-color: colors.$regular-alpha;
+  background-color: $regular-alpha;
   /* primary-color */
 }
 

@@ -1,10 +1,10 @@
 /* CardTwoCols */
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 
 .card-two-cols {
-  background-color: colors.$sapphire-white;
+  background-color: $sapphire-white;
   ;
-  border-color: colors.$light-grey;
+  border-color: $light-grey;
   border-radius: 4px;
   border-width: 1px;
   display: table;
@@ -15,98 +15,97 @@
 }
 
 .card-two-cols.background-red {
-  background-color: rgba(204, 53, 36, .1)
+  background-color: $regular-red;
 }
 
 .card-two-cols.background-dark-red {
-  background-color: rgba(149, 25, 25, .1)
+  background-color: $dark-red;
 }
 
 .card-two-cols.background-light-red {
-  background-color: rgba(255, 62, 45, .1)
+  background-color: $light-red;
 }
 
 .card-two-cols.background-violet {
-  background-color: rgba(123, 31, 162, .1)
+  background-color: $regular-pink
 }
 
 .card-two-cols.background-dark-violet {
-  background-color: rgba(74, 20, 140, .1)
+  background-color: $dark-pink
 }
 
 .card-two-cols.background-light-violet {
-  background-color: rgba(171, 71, 188, .1)
+  background-color: $light-pink;
 }
 
 .card-two-cols.background-blue {
-  background-color: rgba(45, 125, 170, .1)
+  background-color: $regular-blue;
 }
 
 .card-two-cols.background-dark-blue {
-  background-color: rgba(17, 69, 93, .1)
+  background-color: $dark-blue;
 }
 
-.card-two-cols.background-light-blfe {
-  background-color: rgba(22, 151, 159, .1)
+.card-two-cols.background-light-blue {
+  background-color: $regular-alpha;
 }
 
 .card-two-cols.background-green {
-  background-color: rgba(124, 179, 66, .1)
+  background-color: $regular-green;
 }
 
 .card-two-cols.background-dark-green {
-  background-color: rgba(0, 146, 126, .1)
+  background-color: $dark-green;
 }
 
 .card-two-cols.background-light-green {
-  background-color: rgba(139, 195, 74, .1)
+  background-color: $light-green;
 }
 
 .card-two-cols.background-orange {
-  background-color: rgba(239, 118, 34, .1)
+  background-color: $regular-orange
 }
 
 .card-two-cols.background-dark-orange {
-  background-color: rgba(165, 71, 21, .1)
+  background-color: $dark-orange;
 }
 
 .card-two-cols.background-light-orange {
-  background-color: rgba(255, 160, 0, .1)
+  background-color: $light-orange;
 }
 
 .card-two-cols.background-grey {
-  background-color: rgba(110, 110, 110, .1)
+  background-color: $regular-grey;
 }
 
 .card-two-cols.background-dark-grey {
-  background-color: rgba(77, 92, 102, .1)
+  background-color: $mid-dark-grey;
 }
 
 .card-two-cols.background-light-grey {
-  background-color: rgba(195, 195, 195, .1)
+  background-color: $mid-light-grey;
 }
 
 .card-two-cols.background-light-grey2 {
-  background-color: rgba(238, 238, 238, .1)
+  background-color: $light-grey;
 }
 
 .card-two-cols.background-light-grey3 {
-  background-color: rgba(245, 245, 245, .1)
+  background-color: $sapphire-light;
 }
 
 .card-two-cols.background-black {
-  background-color: rgba(51, 51, 51, .1)
+  background-color: $dark-grey;
 }
 
 .card-two-cols.background-primary-color {
-  color: rgba(22, 151, 159, .1)
-    /*primary-color*/
+  color: $regular-alpha;
+  /*primary-color*/
 }
 
 
 .card-two-cols.box-shadow {
-  -webkit-box-shadow: 0 3px 30px 0 rgba(110, 110, 110, .18);
-  box-shadow: 0 3px 30px 0 rgba(110, 110, 110, .18);
+  box-shadow: 0 3px 30px 0 $regular-grey;
 }
 
 .card-two-cols.border {
@@ -124,18 +123,18 @@
 }
 
 body:not(.is-rtl) .card-two-cols.border.border-left:not(.border-all) {
-  border-bottom-color: colors.$light-grey;
+  border-bottom-color: $light-grey;
   border-left-width: 5px;
-  border-right-color: colors.$light-grey;
-  border-top-color: colors.$light-grey;
+  border-right-color: $light-grey;
+  border-top-color: $light-grey;
 }
 
 body.is-rtl .card-two-cols.border.border-left {
-  border-bottom-color: colors.$light-grey;
-  border-left-color: colors.$light-grey;
+  border-bottom-color: $light-grey;
+  border-left-color: $light-grey;
   border-left-width: 0;
   border-right-width: 4px;
-  border-top-color: colors.$light-grey;
+  border-top-color: $light-grey;
 }
 
 .card-two-cols.border.border-all {
@@ -172,7 +171,7 @@ body.is-rtl .card-two-cols.border.border-left {
 }
 
 .card-two-cols-col-left.separator-border:after {
-  background-color: colors.$light-grey;
+  background-color: $light-grey;
   bottom: 4px;
   content: "";
   display: block;
@@ -189,7 +188,7 @@ body.is-rtl .card-two-cols.border.border-left {
 }
 
 .card-two-cols-col-left img {
-  border: 1px solid colors.$light-grey;
+  border: 1px solid $light-grey;
   border-radius: 4px;
 }
 
@@ -221,7 +220,7 @@ body.is-rtl .card-two-cols.border.border-left {
 }
 
 .card-two-cols.border-top {
-  border-top: 1px solid colors.$light-grey;
+  border-top: 1px solid $light-grey;
 }
 
 .popup-content .card-two-cols.split-half-columns {

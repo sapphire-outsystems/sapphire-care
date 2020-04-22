@@ -1,14 +1,14 @@
 /* Bottom Bar */
 
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 
 .bottom-bar .bottom-bar-item-icon .icon {
   font-size: 18px;
 }
 
 .bottom-bar.wizard-steps {
-  background-color: colors.$light-grey;
-  color: colors.$dark-grey;
+  background-color: $light-grey;
+  color: $dark-grey;
   font-size: 14px;
   height: 48px;
   line-height: 28px;
@@ -22,7 +22,7 @@
 }
 
 .white-bottom-bar {
-  background: colors.$sapphire-white;
+  background: $sapphire-white;
   -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, .24), 0 0 8px rgba(0, 0, 0, .12);
   box-shadow: 0 8px 8px rgba(0, 0, 0, .24), 0 0 8px rgba(0, 0, 0, .12);
   line-height: 16px;
@@ -54,18 +54,18 @@
 
 /* Bottom bar */
 .bottom .appointments-list {
-  background-color: colors.$sapphire-white;
+  background-color: $sapphire-white;
 }
 
 .bottom .appointments-list,
 .bottom .detail-schedule,
 .bottom .detail-request {
-  background-color: colors.$sapphire-white;
+  background-color: $sapphire-white;
   padding: 20px 15px;
 }
 
 .bottom .appointments-list a {
-  color: colors.$dark-grey;
+  color: $dark-grey;
 }
 
 .bottom .btn,

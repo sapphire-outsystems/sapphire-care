@@ -1,10 +1,10 @@
 /* Login Screen */
 
 
-@use '~Settings/colors'as colors;
+@use '~Settings/colors'as *;
 
 .login-screen {
-  background-color: colors.$sapphire-care-blue3;
+  background-color: $sapphire-care-blue3;
   /*secondary-color*/
   overflow: hidden;
 }
@@ -28,7 +28,7 @@
 .login-screen a,
 .login-screen a:visited,
 .login-screen a:link {
-  color: colors.$sapphire-white;
+  color: $sapphire-white;
   font-weight: 500;
 }
 
@@ -44,14 +44,14 @@
 .login-screen input[data-input]:empty,
 .login-screen .animated-label-input input[data-input],
 .login-screen .animated-label-input input[data-input]:empty {
-  border-bottom: 1px solid colors.$regular-alpha;
+  border-bottom: 1px solid $regular-alpha;
   /*primary-color*/
-  color: colors.$sapphire-white;
+  color: $sapphire-white;
   font-size: 16px;
 }
 
 .login-screen .animated-label-text {
-  color: colors.$sapphire-white;
+  color: $sapphire-white;
   font-size: 16px;
   top: 18px;
 }
@@ -61,7 +61,7 @@
 }
 
 .login-screen .animated-label-input .show-password {
-  color: colors.$regular-alpha;
+  color: $regular-alpha;
   /*primary-color*/
 }
 
@@ -82,7 +82,7 @@
 }
 
 .login-actions-big {
-  color: colors.$regular-alpha;
+  color: $regular-alpha;
   /*primary-color*/
   font-size: 16px;
   line-height: 24px;
@@ -101,7 +101,7 @@
 }
 
 .login-button {
-  color: colors.$sapphire-care-blue3;
+  color: $sapphire-care-blue3;
   font-size: 12px;
   padding-bottom: 14px;
   position: relative;
@@ -109,7 +109,7 @@
 }
 
 .login-button:before {
-  background-color: colors.$sapphire-white;
+  background-color: $sapphire-white;
   border-radius: 100%;
   content: "";
   display: block;
@@ -131,7 +131,7 @@
 .login-button a,
 .login-button a:visited,
 .login-button a:link {
-  color: colors.$regular-alpha;
+  color: $regular-alpha;
   /*primary-color*/
   display: block;
   margin: 2px auto 0;

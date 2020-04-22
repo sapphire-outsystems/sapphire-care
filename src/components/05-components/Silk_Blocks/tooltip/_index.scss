@@ -1,26 +1,26 @@
 /* Tooltip */
-@use '~Settings/colors';
+@use '~Settings/colors'as *;
 
 .tooltip-wrapper {
-  background-color: colors.$sapphire-white;
+  background-color: $sapphire-white;
   box-shadow: 0 2px 24px 0 rgba(0, 0, 0, .32);
-  color: colors.$dark-grey;
+  color: $dark-grey;
   font-size: 14px;
   padding: 5px 15px;
 }
 
 .tooltip-wrapper.top:after {
-  border-top-color: colors.$sapphire-white;
+  border-top-color: $sapphire-white;
 }
 
 .tooltip-wrapper.bottom:after {
-  border-bottom-color: colors.$sapphire-white;
+  border-bottom-color: $sapphire-white;
 }
 
 .tooltip-wrapper.right:after {
-  border-right-color: colors.$sapphire-white;
+  border-right-color: $sapphire-white;
 }
 
 .tooltip-wrapper.left:after {
-  border-left-color: colors.$sapphire-white;
+  border-left-color: $sapphire-white;
 }
