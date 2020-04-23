@@ -1,3 +1,5 @@
+@use '~Settings/colors'as *;
+
 input.checkbox:before {
   border: 1px solid $regular-grey;
   border-radius: 2px;
