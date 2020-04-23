@@ -1,4 +1,6 @@
 /* Validation colors */
+@use '~Settings/colors'as *;
+
 .alert-success,
 .alert-error,
 .alert-warning,
@@ -8,21 +10,21 @@
 }
 
 .alert-success {
-  background-color: #7CB342;
+  background-color: $regular-green;
   border: 0;
 }
 
 .alert-error {
-  background-color: #DE1504;
+  background-color: $regular-red;
   border: 0;
 }
 
 .alert-warning {
-  background-color: #FFA000;
+  background-color: $regular-orange;
   border: 0;
 }
 
 .alert-info {
-  background-color: #00656D;
+  background-color: $regular-gamma;
   border: 0;
 }

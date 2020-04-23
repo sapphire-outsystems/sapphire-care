@@ -5,7 +5,7 @@
 a,
 a:link,
 a:visited {
-  color: #00BFA5;
+  color: $regular-alpha;
   /*primary-color*/
   font-weight: 600;
 }
@@ -13,20 +13,20 @@ a:visited {
 a:active,
 a:link:active,
 a:visited:active {
-  color: #007E85;
+  color: $regular-beta;
 }
 
 a:disabled,
 a:disabled:link,
 a:disabled:visited {
-  color: #C3C3C3;
+  color: $mid-light-grey;
 }
 
 .app-menu a,
 .app-menu a:link,
 .app-menu a:visited,
 .submenu-item {
-  color: #333;
+  color: $dark-grey;
   font-size: 18px;
 }
 
@@ -35,7 +35,7 @@ a:disabled:visited {
 .app-menu a:active .icon,
 .app-menu a.active .icon,
 .submenu-item:active {
-  color: #002B49;
+  color: $sapphire-care-blue3;
   /*secondary-color*/
   font-weight: 700;
 }

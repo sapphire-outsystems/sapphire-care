@@ -1,25 +1,27 @@
+@use '~Settings/colors'as *;
+
 [data-dropdown]>div.dropdown-display {
-  background: #fff;
+  background: $sapphire-white;
   border: 0;
-  color: #6e6e6e;
+  color: $regular-grey;
 }
 
 [data-dropdown]>div.dropdown-display.dropdown-disabled {
   border-bottom: 0;
-  color: #bac6cd;
+  color: $sapphire-light;
 }
 
 [data-dropdown]>div.dropdown-display:after {
-  border-color: #00BFA5;
+  border-color: $regular-alpha;
   /*primary-color*/
 }
 
 [data-dropdown] div.dropdown-popup-row {
-  color: #333;
+  color: $dark-grey;
 }
 
 [data-dropdown] div.dropdown-popup-row-selected {
-  color: #00BFA5;
+  color: $regular-alpha;
   /*primary-color*/
 }
 
@@ -37,5 +39,5 @@ textarea[data-textarea].not-valid:focus,
 div.dropdown-display.not-valid,
 div.button-group.not-valid>div {
   border: 0;
-  border-bottom: 1px solid #DE1504;
+  border-bottom: 1px solid $regular-red;
 }

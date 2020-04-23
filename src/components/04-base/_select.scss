@@ -1,11 +1,13 @@
 /*---------- $9. Custom Select ----------*/
 
+@use '~Settings/colors'as *;
+
 select.dropdown-display {
   -webkit-appearance: none;
   appearance: none;
-  background-color: #fff;
+  background-color: $sapphire-white;
   border: 0;
-  border-bottom: 1px solid #d3d3d3;
+  border-bottom: 1px solid $light-grey;
   border-radius: 0;
   font-size: 16px;
   height: 50px;
@@ -19,7 +21,7 @@ select.dropdown-display {
 }
 
 .select-dropdown:after {
-  border: 1px solid #1486CC;
+  border: 1px solid $regular-blue;
   border-right: 0;
   border-top: 0;
   content: " ";

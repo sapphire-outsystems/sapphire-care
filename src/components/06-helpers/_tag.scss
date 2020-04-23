@@ -1,56 +1,58 @@
 /*---------- Tag colors ----------*/
+@use '~Settings/colors'as *;
+
 .tag.text-black {
   background-color: transparent;
-  border: 1px solid #333;
-  color: #333;
+  border: 1px solid $dark-grey;
+  color: $dark-grey;
 }
 
 .tag.text-blue {
   background-color: transparent;
-  border: 1px solid #2d7daa;
-  color: #2d7daa;
+  border: 1px solid $regular-blue;
+  color: $regular-blue;
 }
 
 .tag.text-green {
   background-color: transparent;
-  border: 1px solid #7cb342;
-  color: #7cb342;
+  border: 1px solid $regular-green;
+  color: $regular-green;
 }
 
 .tag.text-grey {
   background-color: transparent;
-  border: 1px solid #6e6e6e;
-  color: #6e6e6e;
+  border: 1px solid $regular-grey;
+  color: $regular-grey;
 }
 
 .tag.text-orange {
   background-color: transparent;
-  border: 1px solid #ef7622;
-  color: #ef7622;
+  border: 1px solid $regular-orange;
+  color: $regular-orange;
 }
 
 .tag.text-primary-color {
   background-color: transparent;
-  border: 1px solid #00bfa5;
+  border: 1px solid $regular-alpha;
   /*primary-color*/
-  color: #00bfa5;
+  color: $regular-alpha;
   /*primary-color*/
 }
 
 .tag.text-red {
   background-color: transparent;
-  border: 1px solid #cc3524;
-  color: #cc3524;
+  border: 1px solid $regular-red;
+  color: $regular-red;
 }
 
 .tag.text-violet {
   background-color: transparent;
-  border: 1px solid #7b1fa2;
-  color: #7b1fa2;
+  border: 1px solid $regular-pink;
+  color: $regular-pink;
 }
 
 .tag.text-white {
   background-color: transparent;
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid $sapphire-white;
+  color: $sapphire-white;
 }

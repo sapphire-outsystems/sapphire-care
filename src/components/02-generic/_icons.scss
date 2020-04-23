@@ -1,6 +1,6 @@
 .icon-circle {
-  background-color: #00BFA5;
-  /*primary-color*/
+  background-color: $regular-alpha
+    /*primary-color*/
 }
 
 
@@ -12,14 +12,14 @@
 
 .icon-demo {
   border-bottom: 0;
-  color: #8a8a8a;
+  color: $mid-light-grey;
   font-size: 14px;
   margin-bottom: 20px;
   text-align: center;
 }
 
 .icon-demo span.sc {
-  color: #676767;
+  color: $regular-grey;
   font-size: 5.2em;
   white-space: normal;
 }

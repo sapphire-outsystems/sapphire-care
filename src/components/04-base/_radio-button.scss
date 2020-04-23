@@ -58,7 +58,7 @@ input[type="radio"]:checked:after {
 /*-------------------- Customized radio button --------------------*/
 
 input.radio-button-custom {
-  border: 1px solid #77909C;
+  border: 1px solid $mid-dark-grey;
   border-radius: 50%;
   height: 30px;
   width: 30px;
@@ -66,7 +66,7 @@ input.radio-button-custom {
 
 
 input.radio-button-custom:before {
-  border: 1px solid #77909C;
+  border: 1px solid $mid-dark-grey;
   border-radius: 50%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

@@ -4,35 +4,35 @@ input[data-switch].switch:empty {
 }
 
 input.switch:empty:before {
-  background: #EEEEEE;
+  background: $light-grey;
 }
 
 input.switch:checked:before {
-  background-color: #88c057;
-  border-color: #88c057;
+  background-color: $regular-green;
+  border-color: $regular-green;
 }
 
 input.switch:empty:after {
-  background-color: #fff;
-  border-color: #B0BEC5;
+  background-color: $sapphire-white;
+  border-color: $light-grey;
 }
 
 input.switch[disabled]:empty:before {
-  background-color: #F6F6F6;
-  border: 1px solid #CFD8DC;
+  background-color: $sapphire-white;
+  border: 1px solid $mid-light-grey;
 }
 
 input.switch[disabled]:empty:checked:before {
-  background-color: #EEEEEE;
+  background-color: $light-grey;
   border-color: transparent;
 }
 
 input.switch[disabled]:empty:after {
-  background-color: #cfd8dc;
-  border-color: #cfd8dc;
+  background-color: $mid-light-grey;
+  border-color: $mid-light-grey;
 }
 
 input.switch[disabled]:checked:after {
-  background-color: #fff;
+  background-color: $sapphire-white;
   border-color: transparent;
 }
