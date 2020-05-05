@@ -1,6 +1,7 @@
 /*CardTwoColsBig*/
 
 @use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
 
 .card-two-cols-big {
   background-color: $sapphire-white;
@@ -14,6 +15,7 @@
 .card-two-cols-big-left,
 .card-two-cols-big-right {
   display: table-cell;
+  font-family: $latin-bold;
   padding: 12px 0;
   position: relative;
   text-align: center;

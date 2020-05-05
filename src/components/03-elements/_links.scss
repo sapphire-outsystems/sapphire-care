@@ -1,60 +1,121 @@
 /* Links */
 @use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
 
-
-a,
-a:link,
-a:visited {
+a {
   color: $regular-alpha;
-  /*primary-color*/
   font-weight: 600;
+
+  &:link {
+    color: $regular-alpha;
+    font-weight: 600;
+
+    &:active {
+      color: $regular-beta;
+    }
+
+    .icon {
+      margin: -15px -5px;
+    }
+  }
+
+  &:visited {
+    color: $regular-alpha;
+    font-weight: 600;
+
+    &:active {
+      color: $regular-beta;
+    }
+
+    .icon {
+      margin: -15px -5px;
+    }
+  }
+
+  &:active {
+    color: $regular-beta;
+  }
+
+  &:disabled {
+    color: $mid-light-grey;
+
+    &:link {
+      color: $mid-light-grey;
+    }
+
+    &:visited {
+      color: $mid-light-grey;
+    }
+  }
+
+  .icon {
+    margin: -15px -5px;
+  }
 }
 
-a:active,
-a:link:active,
-a:visited:active {
-  color: $regular-beta;
+.app-menu {
+  a {
+    color: $dark-grey;
+    font-size: 18px;
+
+    &:link {
+      color: $dark-grey;
+      font-size: 18px;
+    }
+
+    &:visited {
+      color: $dark-grey;
+      font-size: 18px;
+    }
+
+    &:active,
+    &.active {
+      color: $sapphire-care-blue3;
+      font-family: $latin-bold;
+
+      .icon {
+        color: $sapphire-care-blue3;
+        font-family: $latin-bold;
+      }
+    }
+  }
+
+  .app-menu-links-bottom {
+    a {
+      font-size: $font-size-heading4;
+
+      &:link {
+        font-size: $font-size-heading4;
+
+        .icon {
+          font-size: $font-size-heading2;
+          margin-left: 0px;
+        }
+      }
+
+      &:visited {
+        font-size: $font-size-heading4;
+
+        .icon {
+          font-size: $font-size-heading2;
+          margin-left: 0px;
+        }
+      }
+
+      .icon {
+        font-size: $font-size-heading2;
+        margin-left: 0px;
+      }
+    }
+  }
 }
 
-a:disabled,
-a:disabled:link,
-a:disabled:visited {
-  color: $mid-light-grey;
-}
-
-.app-menu a,
-.app-menu a:link,
-.app-menu a:visited,
 .submenu-item {
   color: $dark-grey;
   font-size: 18px;
-}
 
-.app-menu a:active,
-.app-menu a.active,
-.app-menu a:active .icon,
-.app-menu a.active .icon,
-.submenu-item:active {
-  color: $sapphire-care-blue3;
-  /*secondary-color*/
-  font-weight: 700;
-}
-
-.app-menu .app-menu-links-bottom a,
-.app-menu .app-menu-links-bottom a:link,
-.app-menu .app-menu-links-bottom a:visited {
-  font-size: 16px;
-}
-
-.app-menu .app-menu-links-bottom a .icon,
-.app-menu .app-menu-links-bottom a:link .icon,
-.app-menu .app-menu-links-bottom a:visited .icon {
-  font-size: 20px;
-  margin-left: 0px;
-}
-
-a .icon,
-a:link .icon,
-a:visited .icon {
-  margin: -15px -5px;
+  &:active {
+    color: $sapphire-care-blue3;
+    font-family: $latin-bold;
+  }
 }

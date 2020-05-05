@@ -1,0 +1,45 @@
+@use '~Tools/background-gradient'as *;
+@use '~Settings/fonts'as *;
+@use '~Settings/colors'as *;
+
+
+#PrescriptionDetail {
+
+  #PrescriptionSquares {
+
+    .section {
+      .section-title {
+        color: $sapphire-white;
+
+        #DrugName {
+          font-size: 1.714rem;
+        }
+
+        #DrugMg,
+        #Date {
+          font-family: $latin-regular;
+          font-size: 1rem;
+        }
+
+
+
+      }
+
+      .tabs-header {
+        margin-bottom: 25px;
+
+        .tabs-header-tab {
+          color: $sapphire-white;
+          font-family: $latin-regular;
+
+          &.active {
+            font-family: $latin-bold;
+          }
+        }
+      }
+    }
+
+  }
+
+
+}

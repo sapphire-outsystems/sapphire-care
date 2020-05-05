@@ -1,5 +1,6 @@
 @use '~Settings/colors'as *;
 @use '~Tools/background-gradient'as gradient;
+@use '~Tools/remaining-days'as *;
 
 .MedicalCard {
   &__Container {
@@ -11,11 +12,15 @@
     flex-direction: column;
     font-size: 14px;
     height: 173px;
-    max-width: 320px;
+    //max-width: 320px;
     padding: 0 15px;
     padding-bottom: 12px;
     padding-top: 18px;
     width: 100%;
+
+    @media (orientation: portrait) {
+      max-width: 320px;
+    }
 
     &.Requested {
       background-color: $sapphire-white;
@@ -70,7 +75,12 @@
   }
 
   &__Title {
-    flex: 2;
+    @media (orientation: portrait) {
+      flex: 2;
+
+    }
+
+    flex:1;
     white-space: nowrap;
   }
 
@@ -94,7 +104,12 @@
     flex-direction: column;
     justify-content: flex-end;
 
+    @media (orientation: landscape) {
+      align-items: center;
+    }
+
     .MedicalCard__Title--wrapper {
+      align-items: center;
       display: flex;
       flex-direction: row;
     }
@@ -115,6 +130,11 @@
 
   &__Title--container {
     display: flex;
+
+    @media (orientation: landscape) {
+      justify-content: center;
+    }
+
 
     >.MedicalCard__Title--icon {
       font-size: 22px;
@@ -148,13 +168,7 @@
   }
 
   &__TimeTo {
-    align-items: center;
-    background-color: $sapphire-care-red;
-    border-radius: 10px;
-    display: flex;
-    height: 24px;
-    justify-content: center;
-    width: 80px;
+    @include remainDays
   }
 
   &__PhotoContainer+&__TimeTo {

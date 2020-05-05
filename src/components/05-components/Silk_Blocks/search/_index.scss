@@ -6,7 +6,7 @@ $border-radius:8px;
 .search {
   border: 1px solid $light-grey;
   border-radius: $border-radius;
-  font-size: fonts.$font-size-heading3;
+  font-size: fonts.$font-size-heading4;
 
   &:focus,
   &:empty:focus {
@@ -29,7 +29,7 @@ $border-radius:8px;
 
     &:after {
       color: $light-grey;
-      font-size: fonts.$font-size-heading3;
+      font-size: fonts.$font-size-heading4;
       left: 10px;
     }
   }

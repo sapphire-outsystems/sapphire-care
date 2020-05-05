@@ -1,5 +1,6 @@
 /*---------- $3. Buttons ----------*/
 @use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
 
 /* button: normal | active | disabled */
 .btn,
@@ -11,7 +12,7 @@
   /*primary-color*/
   border-radius: 4px;
   color: $sapphire-white;
-  font-size: 16px;
+  font-size: $font-size-heading4;
   font-weight: 700;
   letter-spacing: .5px;
   line-height: 20px;
@@ -111,7 +112,7 @@
   box-shadow: none;
   color: $sapphire-care-blue3;
   /*secondary-color*/
-  font-size: 14px;
+  font-size: $font-size-normal;
   font-weight: 400;
 }
 
@@ -141,7 +142,7 @@
   border-color: $regular-orange;
   box-shadow: none;
   color: $regular-orange;
-  font-size: 14px;
+  font-size: $font-size-normal;
   font-weight: 400;
 }
 
@@ -186,7 +187,7 @@
 .header-right .btn,
 .header-right .btn:hover,
 .header-right .btn:focus {
-  font-size: 12px;
+  font-size: $font-size-small;
   min-height: 20px;
   padding: 3px 10px;
 }
@@ -211,7 +212,7 @@ a.btn.select-date:hover {
   -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .11);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .11);
   color: $dark-grey !important;
-  font-size: 16px !important;
+  font-size: $font-size-heading4 !important;
   font-weight: bold;
   line-height: 35px;
   margin: 5px 0 10px;
@@ -222,7 +223,7 @@ a.btn.select-date:hover {
 
 a.btn.select-date .sc {
   color: $regular-alpha;
-  font-size: 20px;
+  font-size: $font-size-small;
   margin-right: 10px;
   /*primary-color*/
 }
@@ -248,7 +249,7 @@ a.btn.select-date .sc {
 button.button-group-item {
   border-radius: 4px;
   color: $mid-dark-grey;
-  line-height: 12px;
+  line-height: $font-size-small;
   min-height: 36px;
   padding: 5px 10px;
 }

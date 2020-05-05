@@ -1,8 +1,10 @@
 @use '~Settings/colors'as *;
 @use '~Tools/background-gradient'as gradient;
-@use '~Settings/fonts';
+@use '~Settings/fonts'as *;
 
 .screen {
+  z-index: 1;
+
   &.base {
     .header {
       background-color: transparent;
@@ -11,11 +13,21 @@
         color: $sapphire-care-blue3;
       }
     }
+
+    .list-item {
+      padding: 15px 0;
+    }
   }
 
   &.detail {
     .header {
-      @include gradient.backgroundGradient;
+      background-color: transparent;
+
+      .header-title {
+        font-size: 18px;
+        position: absolute;
+        top: 75px;
+      }
     }
   }
 }
@@ -34,6 +46,8 @@
     /*primary-color*/
     margin: 0 -10px;
     padding: 0 10px;
+
+
   }
 }
 
@@ -55,7 +69,8 @@
 .header-title {
   color: $sapphire-white;
   flex: 5;
-  font-size: fonts.$font-size-heading1;
+  font-family: $latin-bold;
+  font-size: $font-size-heading1;
   text-align: left;
   white-space: nowrap;
 

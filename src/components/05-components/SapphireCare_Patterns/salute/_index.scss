@@ -1,0 +1,13 @@
+@use '~Settings/fonts'as *;
+
+.Salute__Container {
+  .Salute__Hello {
+    font-family: $latin-regular;
+    font-size: $font-size-heading2;
+  }
+
+  .Salute__PatientName {
+    font-family: $latin-bold;
+    font-size: $font-size-big;
+  }
+}

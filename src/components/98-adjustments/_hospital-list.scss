@@ -1,0 +1,23 @@
+@use '~Settings/colors' as *;
+
+#HospitalAndServiceList {
+	.search {
+		margin-bottom: 20px;
+	}
+
+	#HospitalListContent {
+		.card-image-top {
+			margin-bottom: 20px;
+			.card-image-top-actions-wrapper-act:nth-of-type(2) {
+				.CardImageTop__Icon {
+					align-items: center;
+					border-left: 1px solid $light-grey;
+					border-right: 1px solid $light-grey;
+					display: flex;
+					height: 25px;
+					justify-content: center;
+				}
+			}
+		}
+	}
+}

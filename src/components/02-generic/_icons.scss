@@ -1,11 +1,10 @@
 @use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
 
 .icon-circle {
-  background-color: $regular-alpha
-    /*primary-color*/
+  background-color: $regular-alpha;
+  /*primary-color*/
 }
-
-
 
 /* Custom FontIcon Sample Page */
 .list.list-icons {
@@ -15,7 +14,7 @@
 .icon-demo {
   border-bottom: 0;
   color: $mid-light-grey;
-  font-size: 14px;
+  font-size: $font-size-normal;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -24,4 +23,486 @@
   color: $regular-grey;
   font-size: 5.2em;
   white-space: normal;
+}
+
+.sc {
+  display: static !important;
+  /* use !important to prevent issues with browser extensions that change fonts  */
+
+  font-family: $font-family-icons !important;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  position: relative;
+  text-transform: none;
+  top: 0;
+
+}
+
+/* Icons Sizes */
+.sc.small {
+  font-size: 0.857em;
+}
+
+.sc.medium {
+  font-size: 1em;
+}
+
+.sc.large {
+  font-size: 1.285em;
+}
+
+.sc.extra-large {
+  font-size: 1.857em;
+}
+
+.sc.extra2-large {
+  font-size: 2.571em;
+}
+
+.sc.extra3-large {
+  font-size: 4.214em;
+}
+
+.sc.extra3-large {
+  font-size: 4.214em;
+}
+
+.sc.icon-5x {
+  font-size: 5em;
+}
+
+
+
+/* Icons */
+
+.sc-blank-campaign:before {
+  content: "\e949";
+}
+
+.sc-senttohospital:before {
+  content: "\e94a";
+}
+
+.sc-campaign:before {
+  content: "\e94b";
+}
+
+.sc-filter-active:before {
+  content: "\e93a";
+}
+
+.sc-medication-stick:before {
+  content: "\e93b";
+}
+
+.sc-medication-enema:before {
+  content: "\e93c";
+}
+
+.sc-medication-kit:before {
+  content: "\e93d";
+}
+
+.sc-medication-ring:before {
+  content: "\e93e";
+}
+
+.sc-medication-spray:before {
+  content: "\e93f";
+}
+
+.sc-medication-patche:before {
+  content: "\e940";
+}
+
+.sc-medication-ampoule:before {
+  content: "\e941";
+}
+
+.sc-medication-sachet:before {
+  content: "\e942";
+}
+
+.sc-medication-inhale:before {
+  content: "\e943";
+}
+
+.sc-medication-bottle:before {
+  content: "\e944";
+}
+
+.sc-medication-glass:before {
+  content: "\e945";
+}
+
+.sc-medication-bag:before {
+  content: "\e946";
+}
+
+.sc-medication-powder:before {
+  content: "\e947";
+}
+
+.sc-medication-syringe:before {
+  content: "\e948";
+}
+
+.sc-gps:before {
+  content: "\e90d";
+}
+
+/*allergies*/
+.sc-allergie:before,
+.sc-allergies:before {
+  content: "\e900";
+}
+
+/*down*/
+.sc-arrow-down:before,
+.sc-down:before {
+  content: "\e901";
+}
+
+/*left*/
+.sc-arrow-left:before,
+.sc-left:before {
+  content: "\e902";
+}
+
+/*right*/
+.sc-arrow-right:before,
+.sc-right:before {
+  content: "\e903";
+}
+
+/*up*/
+.sc-arrow-up:before,
+.sc-up:before {
+  content: "\e904";
+}
+
+.sc-blank-appointment:before {
+  content: "\e905";
+}
+
+.sc-blank-documents:before {
+  content: "\e906";
+}
+
+.sc-blank-exam:before {
+  content: "\e907";
+}
+
+.sc-blank-medication:before {
+  content: "\e908";
+}
+
+.sc-blank-notification:before {
+  content: "\e909";
+}
+
+.sc-blank-profile:before {
+  content: "\e90a";
+}
+
+.sc-calendar:before {
+  content: "\e90b";
+}
+
+.sc-change:before {
+  content: "\e90c";
+}
+
+.sc-check:before {
+  content: "\e90e";
+}
+
+.sc-chronic-disease:before {
+  content: "\e90f";
+}
+
+.sc-circle-check:before {
+  content: "\e910";
+}
+
+.sc-circle-wrong:before {
+  content: "\e911";
+}
+
+.sc-circle-wrong-full:before {
+  content: "\e915";
+}
+
+.sc-close:before {
+  content: "\e912";
+}
+
+/*patient-history*/
+.sc-delayed:before,
+.sc-patient-history:before {
+  content: "\e913";
+}
+
+.sc-doctor:before {
+  content: "\e914";
+}
+
+/*resutts*/
+.sc-documents:before,
+.sc-resutts:before {
+  content: "\e916";
+}
+
+/*pencil*/
+.sc-edit:before,
+.sc-pencil:before {
+  content: "\e917";
+}
+
+.sc-exam:before {
+  content: "\e918";
+}
+
+.sc-eye:before {
+  content: "\e919";
+}
+
+.sc-eye-none:before {
+  content: "\e91a";
+}
+
+.sc-filter:before {
+  content: "\e91b";
+}
+
+/*figerprint*/
+.sc-fingerprint:before,
+.sc-figerprint:before {
+  content: "\e91c";
+}
+
+.sc-fingerprint-ok:before {
+  content: "\e91d";
+}
+
+.sc-home:before {
+  content: "\e91e";
+}
+
+.sc-hospital:before {
+  content: "\e91f";
+}
+
+/*info-ball*/
+.sc-info:before,
+.sc-info-ball:before {
+  content: "\e920";
+}
+
+/*labs*/
+.sc-lab:before,
+.sc-labs:before {
+  content: "\e921";
+}
+
+.sc-language:before {
+  content: "\e922";
+}
+
+.sc-list:before {
+  content: "\e923";
+}
+
+.sc-locker:before {
+  content: "\e927";
+}
+
+.sc-mail-sent:before {
+  content: "\e924";
+}
+
+/*blood-type*/
+.sc-medication-drop:before,
+.sc-blood-type:before {
+  content: "\e925";
+}
+
+/*blood-type2*/
+.sc-medication-drop2:before,
+.sc-blood-type2:before {
+  content: "\e926";
+}
+
+.sc-medication-ointment:before {
+  content: "\e928";
+}
+
+.sc-medication-pill:before {
+  content: "\e929";
+}
+
+.sc-medication-pill2:before {
+  content: "\e92a";
+}
+
+/*menu*/
+.sc-menu-bar:before,
+.sc-menu:before {
+  content: "\e92b";
+}
+
+/*more*/
+.sc-menu-dots:before,
+.sc-more:before {
+  content: "\e92c";
+}
+
+/*envelope*/
+.sc-message:before,
+.sc-envelope:before {
+  content: "\e92d";
+}
+
+/*notifications-bell*/
+.sc-notification:before,
+.sc-notifications-bell:before {
+  content: "\e92e";
+}
+
+.sc-phone:before {
+  content: "\e92f";
+}
+
+.sc-photo:before {
+  content: "\e930";
+}
+
+.sc-plus:before {
+  content: "\e931";
+}
+
+/*settings*/
+.sc-preferences:before,
+.sc-settings:before {
+  content: "\e932";
+}
+
+.sc-profile:before {
+  content: "\e933";
+}
+
+/*rads*/
+.sc-radioactive:before,
+.sc-rads:before {
+  content: "\e934";
+}
+
+.sc-route:before {
+  content: "\e935";
+}
+
+/*save-disk*/
+.sc-save:before,
+.sc-save-disk:before {
+  content: "\e939";
+}
+
+.sc-search:before {
+  content: "\e936";
+}
+
+.sc-share:before {
+  content: "\e937";
+}
+
+.sc-trash:before {
+  content: "\e938";
+}
+
+
+.sc-no-preference:before {
+  content: "\e94c";
+}
+
+.sc-civil-ID:before {
+  content: "\e94f";
+}
+
+.sc-get-ride:before {
+  content: "\e94e";
+}
+
+.sc-Map-pin:before {
+  content: "\e950";
+}
+
+.sc-check-invert:before {
+  content: "\e951";
+}
+
+.sc-twitter:before {
+  content: "\e952";
+}
+
+.sc-linkedin:before {
+  content: "\e953";
+}
+
+.sc-facebook:before {
+  content: "\e954";
+}
+
+.sc-blank-connection:before {
+  content: "\e955";
+}
+
+.sc-trophy:before {
+  content: "\e956";
+}
+
+.sc-publication:before {
+  content: "\e957";
+}
+
+.sc-education:before {
+  content: "\e958";
+}
+
+.sc-mail:before {
+  content: "\e959";
+}
+
+.sc-speciality:before {
+  content: "\e960";
+}
+
+.sc-medicine:before {
+  content: "\e961";
+}
+
+.sc-sapphire:before {
+  content: "\e962";
+}
+
+.sc-calendar_agenda:before {
+  content: "\e963";
+}
+
+.sc-clock:before {
+  content: "\e95f";
+}
+
+.sc-notes:before {
+  content: "\e95b";
+}
+
+.sc-download:before {
+  color: $regular-alpha;
+  content: "\e95a";
 }

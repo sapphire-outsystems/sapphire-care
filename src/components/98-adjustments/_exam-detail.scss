@@ -1,0 +1,101 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+
+#ExamDetail {
+
+  #ExamDetailHeader {
+
+    .Title__container {
+      margin-bottom: 5px;
+    }
+
+
+    .Exam__Container {
+      font-family: $latin-regular;
+      margin-top: 30px;
+
+      >div {
+        flex: 1;
+      }
+
+      >div:nth-child(2) {
+        .cardInfo__container {
+          .cardInfo__content {
+            font-family: $latin-regular;
+            font-size: $font-size-heading4;
+            opacity: 1;
+          }
+        }
+      }
+
+      .cardInfo {
+
+        &__label,
+        &__container {
+
+          color: $sapphire-white;
+          //font-size: $font-size-heading4;
+
+          .card__info,
+          .cardInfo__content {
+            color: $sapphire-white;
+          }
+
+          .cardInfo__content {
+            opacity: 0.6;
+          }
+
+
+        }
+
+        &__label {
+          font-size: $font-size-heading4;
+        }
+
+        &__container {
+          .cardInfo__icon {
+            color: $sapphire-white;
+          }
+
+          .cardInfo__content__wrapper {
+            .title {
+              font-size: $font-size-heading4;
+            }
+          }
+        }
+
+
+
+        .card__label {
+          //ont-size: $font-size-heading4;
+          font-family: $latin-regular;
+          margin-bottom: 10px;
+        }
+
+        .card__info {
+          color: $sapphire-white;
+          font-size: 20px;
+          margin-right: 5px;
+        }
+
+      }
+
+
+    }
+
+
+  }
+
+  #SearchContainer,
+  #ExamResults {
+    .section {
+      background-color: $sapphire-white;
+    }
+  }
+
+  #SearchContainer {
+    .section {
+      padding-top: 20px;
+    }
+  }
+}

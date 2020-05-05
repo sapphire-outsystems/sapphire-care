@@ -21,10 +21,13 @@
   padding: 30px 0 50px;
 }
 
-.list-empty-state--list-item {
-  position: relative;
-  width: 90%;
+@media (orientation: portrait) {
+  .list-empty-state--list-item {
+    position: relative;
+    width: 90%;
+  }
 }
+
 
 .list-empty-state--list-item:not(:first-child) {
   margin-top: 20px;

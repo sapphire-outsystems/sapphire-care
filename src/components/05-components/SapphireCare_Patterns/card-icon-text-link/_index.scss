@@ -1,0 +1,25 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+$height: 100px;
+$width: 105px;
+
+.CardIcon__Container {
+  align-items: center;
+  background-color: $sapphire-white;
+  border-radius: 10px;
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.14);
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: $height;
+  justify-content: center;
+
+  .CardIcon__icon {
+    color: $regular-alpha;
+    font-size: 40px;
+  }
+
+  .CardIcon__text {
+    font-family: $latin-bold;
+  }
+}

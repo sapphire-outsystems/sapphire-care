@@ -1,5 +1,6 @@
 /* Section */
 @use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
 
 .sticky-header {
   z-index: 10;
@@ -44,10 +45,11 @@
   background: transparent;
   border: 0;
   color: $mid-dark-grey;
-  font-size: 16px;
-  padding: 15px 30px;
+  font-family: $latin-bold;
+  font-size: unset;
+  padding: 15px;
 }
 
 .section-content {
-  padding: 15px 30px;
+  padding: 15px;
 }

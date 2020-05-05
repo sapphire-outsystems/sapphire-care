@@ -1,0 +1,35 @@
+@use '~Setting/fonts'as *;
+
+$cardHeightWidht:55px;
+
+.cardProfile__container {
+  display: flex;
+
+  .cardProfile__image {
+    border-radius: 50%;
+    height: $cardHeightWidht;
+    width: $cardHeightWidht;
+  }
+
+  .cardProfile__content {
+    .cardProfile__titlle__container {
+      .cardProfile__title {
+        font-size: $font-size-heading4;
+        font-family: $latin-bold;
+      }
+
+      .cardProfile__rightBadge {
+        color: $mid-light-grey;
+      }
+
+      .cardProfile__info {
+        color: $mid-light-grey;
+      }
+
+      .cardProfile__bottomBadge {
+        color: $mid-light-grey;
+      }
+
+      ]
+    }
+  }

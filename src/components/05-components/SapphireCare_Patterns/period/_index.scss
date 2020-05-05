@@ -1,0 +1,13 @@
+.PeriodContainer {
+
+  .PeriodContainer__row {
+    display: flex;
+    justify-content: space-between;
+
+    &.double {
+      .CardInfo__Container {
+        padding: 25px;
+      }
+    }
+  }
+}

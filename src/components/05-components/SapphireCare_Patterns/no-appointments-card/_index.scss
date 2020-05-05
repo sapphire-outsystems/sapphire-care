@@ -1,0 +1,33 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+
+.NoAppointmentCard__Container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  justify-content: space-between;
+
+
+
+  .Icon,
+  .LabelMessage {
+    color: $mid-light-grey;
+  }
+
+  .CreateAppButton {
+    align-items: center;
+    display: flex;
+    font-family: $latin-bold;
+    justify-content: center;
+    width: 100%;
+
+    .btn {
+      align-items: center;
+      border-radius: 24px;
+      display: flex;
+      justify-content: center;
+      width: 300px;
+    }
+  }
+}

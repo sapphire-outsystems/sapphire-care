@@ -1,0 +1,43 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+
+.cardInfo {
+  height: 110px;
+
+  &__label {
+    color: $regular-grey;
+    margin-bottom: 20px;
+  }
+
+  &__container {
+    display: flex;
+
+    .cardInfo__content__wrapper {
+      flex: 2;
+
+      .cardInfo__title {
+        font-family: $latin-bold;
+        font-size: $font-size-heading4;
+      }
+
+      .cardInfo__content {
+        color: $regular-grey;
+      }
+
+    }
+
+    .cardInfo__icon {
+      color: $regular-grey;
+      font-size: 20px;
+      margin-right: 15px;
+    }
+
+    .cardInfo__link {
+      color: $light-grey;
+      flex: 1;
+      font-size: 30px;
+      text-align: right;
+    }
+  }
+
+}

@@ -1,0 +1,82 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+
+$marginContainers:15px;
+
+.GenericCard__Container {
+  align-items: center;
+  background-color: $sapphire-white;
+  border-radius: 10px;
+  display: flex;
+  height: 130px;
+  padding: 25px 15px;
+
+  &.twitter {
+    background-color: $regular-blue;
+    border-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 10px;
+    color: $sapphire-white;
+    left: -$marginContainers;
+    max-width: 350px;
+    position: relative;
+
+    .GenericCard__Content {
+      .Content__Container {
+        .Date {
+          color: inherit;
+        }
+      }
+    }
+
+  }
+
+  &.image {
+    align-items: center;
+    display: flex;
+
+    .GenericCard__Image {
+      margin-right: $marginContainers;
+
+      div[id*='ImagePlaceholder'] {
+        width: 80px;
+      }
+
+    }
+
+    .GenericCard__Content {
+      display: block;
+
+    }
+  }
+
+  .GenericCard__Content {
+    display: flex;
+
+    .IconContainer {
+      margin-right: $marginContainers;
+    }
+
+    .Content__Container {
+      .Title {
+        font-size: $font-size-heading4;
+      }
+
+      .Title,
+      .Date {
+        font-family: $latin-bold;
+      }
+
+      .Date {
+        color: $mid-light-grey;
+        display: flex;
+
+        .Clock_Icon {
+          margin-right: 5px;
+        }
+      }
+    }
+
+  }
+
+}

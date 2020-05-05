@@ -1,0 +1,32 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+
+#HospitalDetailHeader {
+
+  .DetailHeader {
+
+    .section-title {
+      font-size: 14px;
+
+      .Title__Container {
+        margin-bottom: 5px
+      }
+
+      .SubTitle__Container {
+        font-family: $latin-regular;
+        font-size: $font-size-normal;
+        margin-bottom: 50px;
+      }
+    }
+
+  }
+
+}
+
+#DoctorsSpeciality {
+  .section {
+    background-color: $sapphire-white;
+    padding-top: 10px;
+  }
+
+}

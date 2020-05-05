@@ -1,7 +1,7 @@
-$font-family-latin-regular: 'LatoRegular';
-$font-family-latin-bold: 'LatoBold';
-$font-family-arabic-regular: 'TajawalRegular';
-$font-family-arabic-bold: 'TajawalBold';
+$latin-regular: 'LatoRegular';
+$latin-bold: 'LatoBold';
+$arabic-regular: 'TajawalRegular';
+$arabic-bold: 'TajawalBold';
 $font-family-icons: 'Sapphire-Icon-Font';
 
 /* Font base: 14px */
@@ -9,8 +9,9 @@ $font-size-huge: 2.249em; // 34px
 $font-size-big: 2.143em; // 30px
 $font-size-heading1: 1.714em; // 24px
 $font-size-heading2: 1.429em; // 20px
-$font-size-heading3: 1.143em; // 16px
-$font-size-heading4: 1.071em; // 15px
+$font-size-heading3: 1.285em; // 18px
+$font-size-heading4: 1.143em; // 16px
+$font-size-heading5: 1.071em; // 15px
 $font-size-normal: 1em; // 14px
 $font-size-regular: 1em; // 14px
 $font-size-small: 0.857em; // 12px
@@ -58,27 +59,27 @@ $font-size-tiny: 0.786em; // 11px
 
 
 
-/* Font classes */
-.lato-light {
-  font-family: Lato, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-}
+// /* Font classes */
+// .lato-light {
+//   font-family: Lato, Arial, sans-serif;
+//   font-style: normal;
+//   font-weight: 300;
+// }
 
-.lato-regular {
-  font-family: Lato, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
+// .lato-regular {
+//   font-family: Lato, Arial, sans-serif;
+//   font-style: normal;
+//   font-weight: 400;
+// }
 
-.lato-semibold {
-  font-family: Lato, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-}
+// .lato-semibold {
+//   font-family: Lato, Arial, sans-serif;
+//   font-style: normal;
+//   font-weight: 600;
+// }
 
-.lato-bold {
-  font-family: Lato, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-}
+// .lato-bold {
+//   font-family: Lato, Arial, sans-serif;
+//   font-style: normal;
+//   font-weight: 700;
+// }

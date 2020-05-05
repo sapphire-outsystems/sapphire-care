@@ -1,0 +1,30 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+
+#ExamList {
+
+  .cardInfo {
+
+    &__container {
+      .Title {
+        font-family: $latin-bold;
+        font-size: $font-size-heading4;
+      }
+
+      .cardInfo__icon {
+        color: $regular-alpha;
+        font-size: 20px;
+      }
+    }
+
+    &.disabled {
+
+      .cardInfo__icon {
+        color: $regular-grey;
+        opacity: 0.6;
+        pointer-events: none;
+      }
+
+    }
+  }
+}

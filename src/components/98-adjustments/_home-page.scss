@@ -1,0 +1,95 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+
+$marginContainers:15px;
+
+img[id*='ImageBgWhite'],
+img[id*='ImageBgBlue'] {
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+#HomePage {
+  .header-title {
+    align-items: flex-end;
+    display: flex;
+    height: 100%;
+  }
+
+  .header-right {
+    color: $regular-alpha;
+  }
+
+
+}
+
+#InformationSection {
+  >div.section {
+    background-color: $regular-eta;
+    margin: 20px 0;
+    padding-bottom: 30px;
+  }
+
+  .list {
+
+    &.list-group,
+    .list-item {
+      all: unset;
+
+    }
+
+    &.list-group {
+      display: flex;
+    }
+
+    .list-item {
+      width: 100%;
+
+      &:first-of-type {
+        margin-right: $marginContainers;
+      }
+
+      &:last-of-type {
+        margin-left: $marginContainers;
+      }
+    }
+
+
+  }
+}
+
+#NewsSection {
+  .list {
+    &.list-group {
+      background-color: unset;
+    }
+  }
+
+  .list-item {
+    border: none;
+    padding: 15px;
+  }
+
+  .section-content {
+    padding: 0;
+  }
+
+  >div.section {
+    background-color: $sapphire-care-blue3;
+
+    .section-title {
+      color: $sapphire-white;
+      display: flex;
+      justify-content: space-between;
+
+      .NewsCounter {
+        color: $regular-alpha;
+        font-family: $latin-bold;
+      }
+    }
+
+  }
+
+
+}
