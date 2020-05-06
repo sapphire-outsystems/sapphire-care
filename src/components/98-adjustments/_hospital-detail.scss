@@ -1,5 +1,6 @@
 @use '~Settings/colors'as *;
 @use '~Settings/fonts'as *;
+@use '~Tools/card-profile-image'as *;
 
 #HospitalDetailHeader {
 
@@ -27,6 +28,34 @@
   .section {
     background-color: $sapphire-white;
     padding-top: 10px;
-  }
 
+
+    .cardProfile__container {
+      display: flex;
+
+      .cardProfile__image {
+        @include cardImageSize(56px)
+      }
+
+      .cardProfile__content {
+
+        .cardProfile__title__container {
+
+          .cardProfile__title {
+            color: $dark-grey;
+            font-size: $font-size-heading4;
+          }
+        }
+
+        .cardProfile__info {
+          color: $mid-light-grey
+        }
+
+        .cardInfo__label,
+        .bio__title {
+          font-size: $font-size-heading2;
+        }
+      }
+    }
+  }
 }

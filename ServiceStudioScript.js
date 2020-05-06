@@ -36,8 +36,14 @@ var add = (function() {
 			});
 		},
 		localHostDev: function() {
-			return (document.head.innerHTML +=
-				`<link rel="stylesheet" type="text/css" href=${localHostUrl}/>`);
+			var fileref=document.createElement("link")
+			fileref.setAttribute("rel", "stylesheet")
+			fileref.setAttribute("type", "text/css")
+			fileref.setAttribute("href", localHostUrl)
+			
+			return document.getElementsByTagName("head")[0].appendChild(fileref)
+			// return (document.head.innerHTML +=
+			// 	`<link rel="stylesheet" type="text/css" href=${localHostUrl}/>`);
 		},
 	};
 })();

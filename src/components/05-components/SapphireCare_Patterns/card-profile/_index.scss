@@ -1,35 +1,67 @@
-@use '~Setting/fonts'as *;
+@use '~Settings/fonts'as *;
+@use '~Settings/colors'as *;
+@use '~Tools/remaining-days'as *;
+@use '~Tools/card-profile-image'as *;
 
-$cardHeightWidht:55px;
+
+
 
 .cardProfile__container {
   display: flex;
 
   .cardProfile__image {
-    border-radius: 50%;
-    height: $cardHeightWidht;
-    width: $cardHeightWidht;
+    margin-right: 15px;
+    @include cardImageSize()
   }
 
   .cardProfile__content {
-    .cardProfile__titlle__container {
+    width: 100%;
+
+    .cardProfile__title__container {
+      display: flex;
+      justify-content: space-between;
+
       .cardProfile__title {
-        font-size: $font-size-heading4;
+        color: $sapphire-white;
+        flex: 1;
         font-family: $latin-bold;
+        font-size: $font-size-heading1;
       }
 
       .cardProfile__rightBadge {
+        border: 1px solid $mid-light-grey;
+        border-radius: 12px;
         color: $mid-light-grey;
-      }
+        font-size: $font-size-small;
+        max-height: 25px;
+        padding: 2px 5px;
 
-      .cardProfile__info {
-        color: $mid-light-grey;
       }
 
       .cardProfile__bottomBadge {
         color: $mid-light-grey;
       }
 
-      ]
+
+
+    }
+
+    .cardProfile__info {
+      color: $sapphire-white;
     }
   }
+}
+
+
+.cardInfo__label,
+.title {
+  color: $dark-grey;
+  font-family: $latin-bold;
+
+}
+
+
+
+.title {
+  font-size: $font-size-heading4;
+}

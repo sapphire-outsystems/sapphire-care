@@ -26,7 +26,8 @@ $icons-size:48px;
         font-size: $font-size-heading1;
 
         [id*='DrugMg'] {
-          font-size: $font-size-heading4;
+          font-family: $latin-regular;
+          font-size: 1rem;
           margin-left: 5px;
         }
       }

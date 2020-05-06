@@ -1,5 +1,8 @@
+@use '~Settings/colors'as *;
+
 #Information {
   .section {
     background-color: $sapphire-white;
+    height: 100%;
   }
 }

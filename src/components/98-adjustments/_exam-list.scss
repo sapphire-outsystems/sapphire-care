@@ -4,16 +4,19 @@
 #ExamList {
 
   .cardInfo {
+    height: auto;
+    min-height: 44px;
 
     &__container {
       .Title {
         font-family: $latin-bold;
         font-size: $font-size-heading4;
+        line-height: $font-size-heading3;
       }
 
       .cardInfo__icon {
         color: $regular-alpha;
-        font-size: 20px;
+        font-size: 30px;
       }
     }
 

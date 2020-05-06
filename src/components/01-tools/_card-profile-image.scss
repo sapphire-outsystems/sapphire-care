@@ -1,0 +1,16 @@
+@use '~Settings/colors'as *;
+
+$cardSize:62px;
+
+
+@mixin cardImageSize ($size:$cardSize, $borderColor:$sapphire-white) {
+  min-width: $size;
+
+  img {
+    border: 1px solid $borderColor;
+    border-radius: 50%;
+    height: $size;
+    width: $size;
+  }
+
+}

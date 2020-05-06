@@ -21,6 +21,10 @@ $marginContainers:15px;
     max-width: 350px;
     position: relative;
 
+    @media (orientation: landscape) {
+      max-width: 100%;
+    }
+
     .GenericCard__Content {
       .Content__Container {
         .Date {
