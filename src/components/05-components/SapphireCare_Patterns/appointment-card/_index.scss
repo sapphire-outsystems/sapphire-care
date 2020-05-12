@@ -2,79 +2,107 @@
 @use '~Tools/background-gradient'as gradient;
 @use '~Tools/remaining-days'as *;
 
-.MedicalCard {
-  &__Container {
-    @include gradient.backgroundGradient;
-    border-radius: 10px;
-    box-shadow: 0 8px 6px 0 rgba(0, 0, 0, 0.1);
-    color: $sapphire-white;
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-    height: 173px;
-    //max-width: 320px;
-    padding: 0 15px;
-    padding-bottom: 12px;
-    padding-top: 18px;
-    width: 100%;
+.appointment-card {
+  @include gradient.backgroundGradient;
+  border-radius: 10px;
+  box-shadow: 2px 8px 6px 2px rgba(0, 0, 0, 0.1);
+  color: $sapphire-white;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  height: 173px;
+  //max-width: 320px;
+  padding: 0 15px;
+  padding-bottom: 12px;
+  padding-top: 18px;
+  position: relative;
+  width: 100%;
 
-    @media (orientation: portrait) {
-      max-width: 320px;
+  @media (orientation: portrait) {
+    max-width: 320px;
+  }
+
+  &.requested {
+    background-color: $sapphire-white;
+    background-image: none;
+    color: $dark-grey;
+
+    .appointment-card__title--container {
+      color: $regular-alpha;
+
+      .appointment-card--subtitle {
+        color: $dark-grey;
+      }
+
     }
 
-    &.Requested {
-      background-color: $sapphire-white;
-      background-image: none;
-      color: $dark-grey;
+    .appointment-card--subtitle {
+      color: $mid-light-grey;
 
-      .MedicalCard__Title--container {
-        color: $regular-alpha;
+    }
 
-        .MedicalCard__Title--subTitle {
-          color: $dark-grey;
-        }
+    .appointment-card__timeto {
+      display: none;
+    }
 
-      }
-
-      .MedicalCard__Title--subTitle {
-        color: $mid-light-grey;
-
-      }
-
-      .MedicalCard__TimeTo {
-        display: none;
-      }
-
-      .Photo {
-        img {
-          border-color: $mid-light-grey;
-        }
+    .photo {
+      img {
+        border-color: $mid-light-grey;
       }
     }
 
-    &.MainAccount {
-      .Photo {
-        img {
-          border: 2px solid $regular-alpha;
+    .requested__bar-container {
+      height: 100%;
+      left: 5px;
+      padding: 15px 0;
+      position: absolute;
+      top: 0;
 
-        }
+      .requested__bar {
+        background-color: $regular-red;
+        height: 100%;
+        width: 2px;
+      }
+    }
+
+
+
+    .appointment-card__row {
+      &:nth-of-type(2) {
+        border-top: none;
+        flex: 2;
+      }
+
+      &:nth-of-type(3) {
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        flex: 1;
+      }
+    }
+
+  }
+
+  &.main-account {
+    .photo {
+      img {
+        border: 2px solid $regular-alpha;
 
       }
+
     }
   }
 
-  &__Row {
+  &__row {
     display: flex;
     flex: 2;
     position: relative;
+
+    &:nth-of-type(2) {
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+      flex: 1;
+    }
   }
 
-  &__Row:nth-child(2) {
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
-    flex: 1;
-  }
-
-  &__Title {
+  &__row &__title {
     @media (orientation: portrait) {
       flex: 2;
 
@@ -84,13 +112,13 @@
     white-space: nowrap;
   }
 
-  &__TimeTo,
-  &__Location,
-  &__Date {
+  &__timeto,
+  &__location,
+  &__date {
     flex: 1;
   }
 
-  &__Title--icon {
+  &__title--icon {
     align-items: flex-start;
     display: flex;
     margin-right: 5px;
@@ -98,8 +126,8 @@
 
 
 
-  &__Location,
-  &__Date {
+  &__location,
+  &__date {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -108,27 +136,27 @@
       align-items: center;
     }
 
-    .MedicalCard__Title--wrapper {
+    .appointment-card__title--wrapper {
       align-items: center;
       display: flex;
       flex-direction: row;
     }
 
-    .MedicalCard__Title--subTitle {
+    .appointment-card__title--subtitle {
       font-weight: bold;
     }
   }
 
-  &__Location {
+  &__location {
     margin-right: 5px;
   }
 
-  &__Date {
+  &__date {
     margin-left: 5px;
     ;
   }
 
-  &__Title--container {
+  &__title--container {
     display: flex;
 
     @media (orientation: landscape) {
@@ -136,14 +164,14 @@
     }
 
 
-    >.MedicalCard__Title--icon {
+    >.appointment-card__title--icon {
       font-size: 22px;
     }
   }
 
   &__Title--wrapper {
 
-    .MedicalCard__Title--title {
+    .appointment-card__title--title {
       font-size: 22px;
       font-weight: bold;
       line-height: 24px;
@@ -153,10 +181,10 @@
 
   }
 
-  &__PhotoContainer {
+  &__photo-container {
     text-align: right;
 
-    .Photo {
+    .photo {
       img {
         border-color: $mid-light-grey;
         border-radius: 50%;
@@ -167,16 +195,14 @@
     }
   }
 
-  &__TimeTo {
+  &__timeto {
     @include remainDays
   }
 
-  &__PhotoContainer+&__TimeTo {
+  &__photo-container+&__timeto {
     bottom: -12px;
     position: absolute;
     right: 0;
     z-index: 1;
   }
-
-
 }

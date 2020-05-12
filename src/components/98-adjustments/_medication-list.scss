@@ -1,0 +1,13 @@
+#MedicationList {
+  .list-item {
+    padding: 30px 0;
+
+    &:first-of-type {
+      padding-top: 0;
+    }
+  }
+
+  .list-card__title {
+    margin-bottom: 5px;
+  }
+}

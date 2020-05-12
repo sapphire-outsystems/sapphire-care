@@ -3,7 +3,7 @@
 $height: 100px;
 $width: 105px;
 
-.CardIcon__Container {
+.card-icon {
   align-items: center;
   background-color: $sapphire-white;
   border-radius: 10px;
@@ -14,12 +14,13 @@ $width: 105px;
   height: $height;
   justify-content: center;
 
-  .CardIcon__icon {
+  &__icon {
     color: $regular-alpha;
-    font-size: 40px;
+    display: contents;
+    font-size: 50px;
   }
 
-  .CardIcon__text {
+  &__text {
     font-family: $latin-bold;
   }
 }

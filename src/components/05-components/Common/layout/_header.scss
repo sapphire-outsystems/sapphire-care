@@ -22,6 +22,7 @@
   &.detail {
     .header {
       background-color: transparent;
+      height: 100px;
 
       .header-title {
         font-size: $font-size-heading3;
@@ -34,7 +35,7 @@
   color: inherit;
   display: flex;
   flex-direction: column;
-  height: 100px;
+  height: 120px;
   justify-content: center;
 
   a,
@@ -42,8 +43,8 @@
   a:visited {
     color: $regular-alpha;
     /*primary-color*/
-    margin: 0 -10px;
-    padding: 0 10px;
+    margin: 0;
+    padding: 0;
 
 
   }
@@ -51,7 +52,7 @@
 
 .header-top {
   height: 60px;
-  padding: 0 15px;
+  padding: 0;
 }
 
 .app-menu-line {

@@ -1,29 +1,32 @@
 @use '~Tools/background-gradient'as *;
 @use '~Settings/fonts'as *;
 @use '~Settings/colors'as *;
+@use '~Tools/information-section'as *;
 
 
 #PrescriptionDetail {
+  .section-title {
+    color: $sapphire-white;
+
+    #DrugName {
+      font-size: 1.714rem;
+    }
+
+    #DrugMg,
+    #Date {
+      font-family: $latin-regular;
+      font-size: 1rem;
+    }
+
+
+
+  }
 
   #PrescriptionSquares {
 
     .section {
-      .section-title {
-        color: $sapphire-white;
-
-        #DrugName {
-          font-size: 1.714rem;
-        }
-
-        #DrugMg,
-        #Date {
-          font-family: $latin-regular;
-          font-size: 1rem;
-        }
-
-
-
-      }
+      padding-bottom: 30px;
+      padding-top: 20px;
 
       .tabs-header {
         margin-bottom: 25px;
@@ -37,9 +40,36 @@
           }
         }
       }
+
+      [data-block*='SapphireCare_Patterns.CardPrescription'] {
+        flex: 1;
+
+        margin: 0 7px 0 7px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .period__row:first-of-type {
+        margin-bottom: 15px;
+      }
+
+      .card-prescription__icon {
+        font-size: 20px;
+        left: -5px;
+        margin: 0;
+        position: relative;
+      }
     }
 
   }
 
 
+
+  @extend %information-section;
 }

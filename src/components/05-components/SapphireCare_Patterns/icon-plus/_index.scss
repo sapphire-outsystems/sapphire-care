@@ -1,0 +1,20 @@
+@use '~Settings/colors'as *;
+
+$height-width:65px;
+
+#IconPlus {
+  bottom: 15px;
+  position: fixed;
+  right: 0;
+
+  .icon-plus {
+    align-items: center;
+    background-color: $regular-alpha;
+    border-radius: 50%;
+    color: $sapphire-white;
+    display: flex;
+    height: $height-width;
+    justify-content: center;
+    width: $height-width;
+  }
+}

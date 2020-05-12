@@ -134,6 +134,10 @@
   color: $regular-grey;
 }
 
+.btn__cancel--reschedule {
+  color: $regular-red;
+}
+
 /* button: orange-cancel | active | disabled */
 .btn.btn-orange-cancel,
 .btn.btn-orange-cancel:hover,
@@ -179,6 +183,8 @@
   border-color: $regular-red;
   color: $sapphire-white;
 }
+
+
 
 /*button: small */
 .btn-small,

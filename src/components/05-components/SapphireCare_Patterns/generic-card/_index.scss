@@ -2,44 +2,23 @@
 @use '~Settings/fonts'as *;
 
 $marginContainers:15px;
+$line-height:1.429rem;
+$max-lines:3;
 
-.GenericCard__Container {
+.generic-card {
   align-items: center;
   background-color: $sapphire-white;
   border-radius: 10px;
-  display: flex;
   height: 130px;
   padding: 25px 15px;
 
-  &.twitter {
-    background-color: $regular-blue;
-    border-radius: 0;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 10px;
-    color: $sapphire-white;
-    left: -$marginContainers;
-    max-width: 350px;
-    position: relative;
 
-    @media (orientation: landscape) {
-      max-width: 100%;
-    }
-
-    .GenericCard__Content {
-      .Content__Container {
-        .Date {
-          color: inherit;
-        }
-      }
-    }
-
-  }
 
   &.image {
     align-items: center;
     display: flex;
 
-    .GenericCard__Image {
+    .generic-card__image {
       margin-right: $marginContainers;
 
       div[id*='ImagePlaceholder'] {
@@ -48,39 +27,85 @@ $marginContainers:15px;
 
     }
 
-    .GenericCard__Content {
+    .generic-card__news {
       display: block;
 
     }
   }
 
-  .GenericCard__Content {
-    display: flex;
 
-    .IconContainer {
-      margin-right: $marginContainers;
+
+  &.twitter {
+    background-color: $regular-blue;
+    border-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 10px;
+    color: $sapphire-white;
+    display: flex;
+    left: -$marginContainers;
+    max-width: 350px;
+    position: relative;
+
+    @media (orientation: landscape) {
+      max-width: 100%;
     }
 
-    .Content__Container {
-      .Title {
+    .generic-card__news {
+      display: block;
+
+
+      .title,
+      .date {
+        color: $sapphire-white;
+      }
+
+    }
+
+  }
+
+  .generic-card__icon {
+    margin-right: $marginContainers;
+  }
+
+  .generic-card__news {
+    display: flex;
+
+
+
+    .news__container {
+      max-height:calc(#{$line-height} * #{$max-lines});
+      overflow: hidden;
+      position: relative;
+
+      &::before {
+        bottom: 0;
+        content: "...";
+        position: absolute;
+        right: 0;
+      }
+
+
+      .title {
         font-size: $font-size-heading4;
       }
 
-      .Title,
-      .Date {
+      .title,
+      .date {
         font-family: $latin-bold;
       }
 
-      .Date {
-        color: $mid-light-grey;
-        display: flex;
 
-        .Clock_Icon {
-          margin-right: 5px;
-        }
-      }
     }
 
+  }
+
+  .date {
+    color: $mid-light-grey;
+    display: flex;
+
+    .clock {
+      margin-right: 5px;
+    }
   }
 
 }

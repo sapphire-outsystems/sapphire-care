@@ -490,7 +490,7 @@
   content: "\e962";
 }
 
-.sc-calendar_agenda:before {
+.sc-calendar-agenda:before {
   content: "\e963";
 }
 
@@ -505,4 +505,16 @@
 .sc-download:before {
   color: $regular-alpha;
   content: "\e95a";
+}
+
+.sc-map-pin:before {
+  content: "\e950";
+}
+
+.sc-language-user:before {
+  content: "\e964";
+}
+
+.sc-hourglass:before {
+  content: "\e95c";
 }

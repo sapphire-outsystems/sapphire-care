@@ -41,15 +41,20 @@
   display: none;
 }
 
-.section-title {
-  background: transparent;
-  border: 0;
-  color: $mid-dark-grey;
-  font-family: $latin-bold;
-  font-size: unset;
-  padding: 15px;
-}
+.section {
+  padding: 0 15px;
 
-.section-content {
-  padding: 15px;
+  .section-title {
+    background: transparent;
+    border: 0;
+    color: $mid-dark-grey;
+    font-family: $latin-bold;
+    font-size: $font-size-heading3;
+    padding: 0;
+
+  }
+
+  .section-content {
+    padding: 0;
+  }
 }

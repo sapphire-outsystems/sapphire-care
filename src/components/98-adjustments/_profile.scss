@@ -1,0 +1,66 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+
+#ProfileHeader {
+
+  .card-profile {
+    margin-bottom: 30px;
+  }
+
+  .profile__cardInfo {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 35px;
+    width: 100%;
+
+    div[data-block*="CardPrescription"] {
+      flex: 1;
+    }
+
+    div[data-block*="CardPrescription"]:nth-of-type(even) {
+      margin: 0 15px;
+    }
+
+
+    .card-prescription {
+      justify-content: space-around;
+      text-align: center;
+
+      .card-prescription__title {
+
+
+        >span {
+          white-space: nowrap;
+        }
+
+      }
+
+      .card-prescription__content {
+        justify-content: center;
+
+        .card-prescription__icon,
+        .card-prescription__text {
+          color: $regular-alpha;
+          font-size: $font-size-heading2;
+        }
+      }
+    }
+  }
+}
+
+#ProfileInfo {
+  .section {
+    background-color: $sapphire-white;
+    height: 100%;
+    padding-top: 35px;
+
+    .cardInfo__label {
+      font-size: $font-size-heading2;
+
+    }
+
+    .cardInfo {
+      border-bottom: 1px solid $light-grey;
+    }
+  }
+}

@@ -1,62 +1,76 @@
 @use '~Settings/fonts'as *;
 @use '~Settings/colors'as *;
 
-#DoctorHeader {
 
-  .section {
-    margin-bottom: 40px;
-  }
-}
+#DoctorDetail {
 
-#AppointmentRequest {
-  position: relative;
-  top: -40px;
 
-  .btn {
-    align-items: center;
-    border-radius: 24px;
-    display: flex;
 
-  }
-}
+  #DoctorHeader {
 
-#PersonalInfo {
-  position: relative;
-
-  .section {
-    background-color: $sapphire-white;
+    .section {
+      margin-bottom: 70px;
+    }
   }
 
-  .bio {
-    padding-bottom: 30px;
+  #AppointmentRequest {
+    position: relative;
+    top: -25px;
 
-    .bio__title {
-      color: $dark-grey;
-      font-family: $latin-bold;
+    .btn {
+      align-items: center;
+      border-radius: 24px;
+      display: flex;
 
     }
   }
 
-  .bio,
-  .cardInfo {
-    border-bottom: 1px solid $light-grey;
-    margin-bottom: 25px;
-  }
+  #PersonalInfo {
+    position: relative;
 
-  .cardInfo__icon {
-    font-size: 30px;
-  }
+    .section {
+      background-color: $sapphire-white;
+      height: 100%;
+    }
 
-  .section-content {
-    :nth-child(5) {
-      .cardInfo {
-        height: auto;
-        padding-bottom: 25px;
+    .bio {
+      padding-bottom: 30px;
+
+      .bio__title {
+        color: $dark-grey;
+        font-family: $latin-bold;
+
       }
+    }
+
+    .bio__title,
+    .cardInfo__label {
+      font-size: $font-size-heading2;
 
     }
+
+    .bio,
+    .cardInfo {
+      border-bottom: 1px solid $light-grey;
+      margin-bottom: 25px;
+    }
+
+    .cardInfo__icon {
+      font-size: 30px;
+    }
+
+    .section-content {
+      :nth-child(5) {
+        .cardInfo {
+          height: auto;
+          padding-bottom: 25px;
+        }
+
+      }
+    }
+
+
+
   }
-
-
 
 }

@@ -1,7 +1,7 @@
 @use '~Settings/colors'as *;
 @use '~Settings/fonts'as *;
 
-.NoAppointmentCard__Container {
+.no-appointment-card {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -10,12 +10,12 @@
 
 
 
-  .Icon,
-  .LabelMessage {
+  .no-appointment-card__icon,
+  .no-appointment-card__label {
     color: $mid-light-grey;
   }
 
-  .CreateAppButton {
+  .no-appointment-card__btn {
     align-items: center;
     display: flex;
     font-family: $latin-bold;

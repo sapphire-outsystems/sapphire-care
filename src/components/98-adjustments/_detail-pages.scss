@@ -8,14 +8,11 @@
 
 
     div[data-block*='CardInfo'] {
-
-      &:not(:last-child) {
-        .cardInfo {
-          border-bottom: 1px solid $light-grey;
-          margin-bottom: 20px;
-        }
-
+      .cardInfo {
+        border-bottom: 1px solid $light-grey;
+        margin-bottom: 20px;
       }
+
     }
   }
 }

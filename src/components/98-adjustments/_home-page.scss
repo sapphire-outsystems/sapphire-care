@@ -21,75 +21,115 @@ img[id*='ImageBgBlue'] {
     color: $regular-alpha;
   }
 
-
-}
-
-#InformationSection {
-  >div.section {
-    background-color: $regular-eta;
-    margin: 20px 0;
-    padding-bottom: 30px;
-  }
-
-  .list {
-
-    &.list-group,
-    .list-item {
-      all: unset;
-
+  #SaluteSection {
+    .section {
+      margin-bottom: 30px;
     }
 
-    &.list-group {
-      display: flex;
+  }
+
+  #AppoitmentsSection {
+
+    .section {
+      padding-bottom: 30px;
     }
-
-    .list-item {
-      width: 100%;
-
-      &:first-of-type {
-        margin-right: $marginContainers;
-      }
-
-      &:last-of-type {
-        margin-left: $marginContainers;
-      }
-    }
-
-
-  }
-}
-
-#NewsSection {
-  .list {
-    &.list-group {
-      background-color: unset;
-    }
-  }
-
-  .list-item {
-    border: none;
-    padding: 15px;
-  }
-
-  .section-content {
-    padding: 0;
-  }
-
-  >div.section {
-    background-color: $sapphire-care-blue3;
 
     .section-title {
-      color: $sapphire-white;
-      display: flex;
-      justify-content: space-between;
-
-      .NewsCounter {
-        color: $regular-alpha;
-        font-family: $latin-bold;
-      }
+      margin-bottom: 10px;
     }
 
   }
 
+
+  #InformationSection {
+    .section {
+      background-color: $regular-eta;
+      padding-bottom: 30px;
+      padding-top: 20px;
+
+      .section-title {
+        margin-bottom: 10px;
+      }
+    }
+
+    .list {
+
+      &.list-group,
+      .list-item {
+        all: unset;
+
+      }
+
+      &.list-group {
+        display: flex;
+      }
+
+      .list-item {
+        width: 100%;
+
+        &:first-of-type {
+          margin-right: $marginContainers;
+        }
+
+        &:last-of-type {
+          margin-left: $marginContainers;
+        }
+      }
+
+
+    }
+  }
+
+  #Covid {
+    .section {
+      margin-top: 30px;
+    }
+  }
+
+  #Hospitals {
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+  }
+
+  #NewsSection {
+    .list {
+      &.list-group {
+        background-color: unset;
+      }
+    }
+
+    .list-item {
+      border: none;
+      padding: 15px;
+    }
+
+    .section {
+      padding: 40px 0 0 0;
+
+    }
+
+    >div.section {
+      background-color: $sapphire-care-blue3;
+
+      .section-title {
+        color: $sapphire-white;
+        display: flex;
+        font-size: $font-size-heading2;
+        justify-content: space-between;
+        padding: 0 15px 25px 15px;
+
+        .NewsCounter {
+          color: $regular-alpha;
+          font-family: $latin-bold;
+        }
+      }
+
+    }
+
+
+  }
 
 }

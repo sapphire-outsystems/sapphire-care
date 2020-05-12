@@ -1,0 +1,123 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+
+$height:120px;
+
+#Request__Appointment {
+  .header {
+    height: $height;
+  }
+
+  .section-title {
+    margin-bottom: 10px;
+  }
+
+  .search {
+    margin-bottom: 20px;
+  }
+
+  .wizard {
+    left: 0;
+    position: fixed;
+    top: $height;
+    width: 100%;
+    z-index: 1;
+
+    .wizard-item-wrapper {
+
+      &.active,
+      &.past {
+        .wizard-item {
+          background-color: $regular-alpha;
+        }
+      }
+
+      .wizard-item {
+        background-color: $light-grey;
+        height: 6px;
+        width: 100%;
+      }
+
+    }
+
+
+  }
+
+  .list-item {
+    padding: 15px 0;
+  }
+
+  .content {
+    background: $sapphire-white;
+  }
+
+
+  #SearchContainer {
+    .section {
+      margin-top: 30px;
+
+      .section-title {
+        font-family: $latin-bold;
+        font-size: $font-size-heading2;
+      }
+    }
+  }
+
+
+  #Doctor__Section {
+
+
+    .card-profile__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .card-profile__title {
+        color: $dark-grey;
+        font-size: $font-size-heading4;
+      }
+
+    }
+
+    .card-profile__info {
+      color: $light-grey;
+    }
+  }
+
+  #Calendar__Section {
+    a.select-date {
+      display: block;
+    }
+  }
+
+  #Summary__Section {
+    .summary__section--text {
+      color: $mid-light-grey;
+      margin-bottom: 40px;
+    }
+
+    .cardInfo {
+      border-bottom: 1px solid $light-grey;
+      height: auto;
+      margin-bottom: 20px;
+
+      .cardInfo__label {
+        color: $mid-light-grey;
+      }
+
+      .cardInfo__link {
+        color: $regular-alpha;
+        font-size: 20px;
+      }
+    }
+
+    .btn {
+      align-items: center;
+      border-radius: 24px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+}

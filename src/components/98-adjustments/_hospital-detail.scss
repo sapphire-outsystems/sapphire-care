@@ -4,9 +4,11 @@
 
 #HospitalDetailHeader {
 
+
   .DetailHeader {
 
     .section-title {
+      color: $sapphire-white;
       font-size: 14px;
 
       .Title__Container {
@@ -16,7 +18,7 @@
       .SubTitle__Container {
         font-family: $latin-regular;
         font-size: $font-size-normal;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
       }
     }
 
@@ -27,27 +29,31 @@
 #DoctorsSpeciality {
   .section {
     background-color: $sapphire-white;
-    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-top: 35px;
 
+    .list-item {
+      padding: 15px 0;
+    }
 
-    .cardProfile__container {
+    .card-profile {
       display: flex;
 
-      .cardProfile__image {
+      .card-profile__image {
         @include cardImageSize(56px)
       }
 
-      .cardProfile__content {
+      .card-profile__content {
 
-        .cardProfile__title__container {
+        .card-profile__title__container {
 
-          .cardProfile__title {
+          .card-profile__title {
             color: $dark-grey;
             font-size: $font-size-heading4;
           }
         }
 
-        .cardProfile__info {
+        .card-profile__info {
           color: $mid-light-grey
         }
 

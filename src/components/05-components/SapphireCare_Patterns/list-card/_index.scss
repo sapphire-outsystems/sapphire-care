@@ -1,13 +1,13 @@
 @use '~Settings/colors'as *;
 @use '~Settings/fonts'as *;
 
-.ListCardContainer {
-  .ListCard__Title {
+.list-card {
+  .list-card__title {
     font-family: $latin-bold;
     font-size: $font-size-heading4;
   }
 
-  .ListCard__Content {
+  .list-card__content {
     color: $mid-light-grey;
   }
 }

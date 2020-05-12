@@ -1,3 +1,5 @@
+@forward 'appointments-list';
+@forward 'appointment-request';
 @forward 'appoitmentRequest-specialties';
 @forward 'appointment-detail';
 @forward 'carousel';
@@ -8,4 +10,7 @@
 @forward 'home-page';
 @forward 'hospital-detail';
 @forward 'hospital-list';
+@forward 'medication-list';
+@forward 'menu';
 @forward 'prescription-detail';
+@forward 'profile';

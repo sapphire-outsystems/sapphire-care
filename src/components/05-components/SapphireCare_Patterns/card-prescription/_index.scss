@@ -2,54 +2,38 @@
 @use '~Settings/fonts'as *;
 $dimensions:100px;
 
-[data-block*='SapphireCare_Patterns.CardPrescription'] {
-  flex: 1;
 
-  margin: 0 7px 15px 7px;
+.card-prescription {
+  align-items: center;
+  background-color: $sapphire-white;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  height: $dimensions;
+  justify-content: center;
+  padding: 15px;
+  text-align: left;
 
-  &:first-child {
-    margin-left: 0;
+  .card-prescription_title {
+    font-family: $latin-bold;
+    font-size: $font-size-heading4;
+    width: 100%;
   }
 
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.CardPrescription {
-  &__Container {
+  .card-prescription__content {
     align-items: center;
-    background-color: $sapphire-white;
-    border-radius: 6px;
     display: flex;
-    flex-direction: column;
-    height: $dimensions;
-    justify-content: center;
-    padding: 15px;
-    text-align: left;
+    width: 100%;
 
-    .CardPrescription__title {
-      font-family: $latin-bold;
-      font-size: $font-size-heading4;
-      width: 100%;
+    .card-prescription__icon {
+      color: $regular-alpha;
+      margin-right: 5px;
+      ;
     }
 
-    .CardPrescription__content {
-      align-items: center;
-      display: flex;
-      width: 100%;
-
-      .CardPrescription__icon {
-        color: $regular-alpha;
-        margin-right: 5px;
-        ;
-      }
-
-      .CardPrescription__text {
-        font-family: $latin-bold;
-        font-size: $font-size-heading3;
-      }
+    .card-prescription__text {
+      font-family: $latin-bold;
+      font-size: $font-size-heading3;
     }
   }
-
 }

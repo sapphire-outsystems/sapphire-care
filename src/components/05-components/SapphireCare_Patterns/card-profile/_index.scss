@@ -6,29 +6,29 @@
 
 
 
-.cardProfile__container {
+.card-profile {
   display: flex;
 
-  .cardProfile__image {
+  &__image {
     margin-right: 15px;
     @include cardImageSize()
   }
 
-  .cardProfile__content {
+  &__content {
     width: 100%;
 
-    .cardProfile__title__container {
+    .card-profile__title__container {
       display: flex;
       justify-content: space-between;
 
-      .cardProfile__title {
+      .card-profile__title {
         color: $sapphire-white;
         flex: 1;
         font-family: $latin-bold;
         font-size: $font-size-heading1;
       }
 
-      .cardProfile__rightBadge {
+      .card-profile__right-badge {
         border: 1px solid $mid-light-grey;
         border-radius: 12px;
         color: $mid-light-grey;
@@ -38,7 +38,7 @@
 
       }
 
-      .cardProfile__bottomBadge {
+      .card-profile__bottom-badge {
         color: $mid-light-grey;
       }
 
@@ -46,9 +46,21 @@
 
     }
 
-    .cardProfile__info {
+    .card-profile__info {
       color: $sapphire-white;
     }
+
+
+  }
+
+  &__link {
+    a {
+      color: $light-grey;
+    }
+
+    align-items: center;
+
+    display: flex;
   }
 }
 

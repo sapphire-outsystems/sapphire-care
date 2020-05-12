@@ -1,0 +1,33 @@
+@use '~Settings/fonts'as *;
+@use '~Settings/colors'as *;
+
+%information-section {
+  #Information {
+    .section {
+      height: auto;
+      padding-bottom: 30px;
+      padding-top: 35px;
+    }
+
+    .section-title {
+      color: $dark-grey;
+      font-family: $latin-bold;
+      font-size: $font-size-heading2;
+      margin-bottom: 13px;
+    }
+
+    .title {
+      margin-bottom: 5px;
+    }
+
+    .cardInfo__label {
+      color: $mid-light-grey;
+    }
+
+    .cardInfo__icon {
+      font-size: 25px;
+    }
+
+
+  }
+}

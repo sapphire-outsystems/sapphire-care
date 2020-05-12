@@ -4,6 +4,12 @@
 .cardInfo {
   height: 110px;
 
+  &.no-label {
+    height: auto;
+    margin-bottom: 20px;
+    padding: 20px 0;
+  }
+
   &__label {
     color: $regular-grey;
     margin-bottom: 20px;
@@ -13,7 +19,7 @@
     display: flex;
 
     .cardInfo__content__wrapper {
-      flex: 2;
+      width: 100%;
 
       .cardInfo__title {
         font-family: $latin-bold;
@@ -36,7 +42,6 @@
 
     .cardInfo__link {
       color: $light-grey;
-      flex: 1;
       font-size: 30px;
       text-align: right;
     }
