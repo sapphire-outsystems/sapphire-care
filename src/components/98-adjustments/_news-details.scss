@@ -1,0 +1,45 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+
+
+
+
+#NewsDetails {
+  .section {
+    .news-details__top-image {
+      align-items: center;
+      display: flex;
+      height: 200px;
+      justify-content: center;
+      margin-bottom: 15px;
+      overflow: hidden;
+      width: 100%;
+
+      img {
+        height: auto;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+
+    .news-details__body {
+      .date {
+        color: $mid-light-grey;
+        font-size: $font-size-small;
+        margin-bottom: 5px;
+      }
+
+      .title {
+        font-family: $latin-bold;
+        font-size: $font-size-heading1;
+        margin-bottom: 25px;
+
+      }
+    }
+  }
+
+
+
+
+
+}

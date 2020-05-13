@@ -2,7 +2,6 @@
 @forward 'appointment-request';
 @forward 'appoitmentRequest-specialties';
 @forward 'appointment-detail';
-@forward 'carousel';
 @forward 'detail-pages';
 @forward 'doctor-detail';
 @forward 'exam-detail';
@@ -12,5 +11,7 @@
 @forward 'hospital-list';
 @forward 'medication-list';
 @forward 'menu';
+@forward 'news-details';
+@forward 'news-list';
 @forward 'prescription-detail';
 @forward 'profile';
