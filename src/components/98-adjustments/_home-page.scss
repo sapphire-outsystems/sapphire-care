@@ -6,6 +6,7 @@ $marginContainers:15px;
 img[id*='ImageBgWhite'],
 img[id*='ImageBgBlue'] {
   height: 100%;
+  -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
   position: absolute;
   top: 0;
 }
