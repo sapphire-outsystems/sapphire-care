@@ -1,4 +1,5 @@
 var localHostUrl = 'https://localhost:3000/dev.app.css';
+var cdnUrl ="https://cdn.jsdelivr.net/gh/sapphire-outsystems/sapphire-care/dist/prod.app.css";
 
 var add = (function() {
 	return {
