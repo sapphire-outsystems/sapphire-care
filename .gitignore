@@ -2,5 +2,7 @@ node_modules
 
 dist/*
 
+!dist/prod.app.css
+
 ServiceStudioScript.js
 ServiceStudioScript.js
