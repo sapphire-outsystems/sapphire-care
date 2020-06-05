@@ -1,7 +1,7 @@
 @use '~Settings/colors'as *;
 @use '~Settings/fonts'as *;
 
-#ExamList {
+[id*='ExamList'] {
 
   .cardInfo {
     height: auto;

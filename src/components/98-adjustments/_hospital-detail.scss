@@ -2,7 +2,7 @@
 @use '~Settings/fonts'as *;
 @use '~Tools/card-profile-image'as *;
 
-#HospitalDetailHeader {
+[id*='HospitalDetailHeader'] {
 
 
   .DetailHeader {
@@ -26,7 +26,7 @@
 
 }
 
-#DoctorsSpeciality {
+[id*='DoctorsSpeciality'] {
   .section {
     background-color: $sapphire-white;
     padding-bottom: 30px;

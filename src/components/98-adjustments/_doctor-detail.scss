@@ -2,18 +2,18 @@
 @use '~Settings/colors'as *;
 
 
-#DoctorDetail {
+[id*='DoctorDetail'] {
 
 
 
-  #DoctorHeader {
+  [id*='DoctorHeader'] {
 
     .section {
       margin-bottom: 70px;
     }
   }
 
-  #AppointmentRequest {
+  [id*='AppointmentRequest'] {
     position: relative;
     top: -25px;
 
@@ -25,7 +25,7 @@
     }
   }
 
-  #PersonalInfo {
+  [id*='PersonalInfo'] {
     position: relative;
 
     .section {

@@ -3,7 +3,7 @@
 
 $height:120px;
 
-#Request__Appointment {
+[id*='Request__Appointment'] {
   .header {
     height: $height;
   }
@@ -52,7 +52,7 @@ $height:120px;
   }
 
 
-  #SearchContainer {
+  [id*='SearchContainer'] {
     .section {
       margin-top: 30px;
 
@@ -64,7 +64,7 @@ $height:120px;
   }
 
 
-  #Doctor__Section {
+  [id*='Doctor__Section'] {
 
 
     .card-profile__content {
@@ -84,13 +84,13 @@ $height:120px;
     }
   }
 
-  #Calendar__Section {
+  [id*='Calendar__Section'] {
     a.select-date {
       display: block;
     }
   }
 
-  #Summary__Section {
+  [id*='Summary__Section'] {
     .summary__section--text {
       color: $mid-light-grey;
       margin-bottom: 40px;

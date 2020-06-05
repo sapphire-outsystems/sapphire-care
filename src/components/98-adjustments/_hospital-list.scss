@@ -1,13 +1,14 @@
-@use '~Settings/colors' as *;
+@use '~Settings/colors'as *;
 
-#HospitalAndServiceList {
+[id*='HospitalAndServiceList'] {
 	.search {
 		margin-bottom: 20px;
 	}
 
-	#HospitalListContent {
+	[id*='HospitalListContent'] {
 		.card-image-top {
 			margin-bottom: 20px;
+
 			.card-image-top-actions-wrapper-act:nth-of-type(2) {
 				.CardImageTop__Icon {
 					align-items: center;

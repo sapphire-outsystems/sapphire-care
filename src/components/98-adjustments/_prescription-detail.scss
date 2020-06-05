@@ -4,16 +4,16 @@
 @use '~Tools/information-section'as *;
 
 
-#PrescriptionDetail {
+[id*='PrescriptionDetail'] {
   .section-title {
     color: $sapphire-white;
 
-    #DrugName {
+    [id*='DrugName'] {
       font-size: 1.714rem;
     }
 
-    #DrugMg,
-    #Date {
+    [id*='DrugMg'],
+    [id*='Date'] {
       font-family: $latin-regular;
       font-size: 1rem;
     }
@@ -22,7 +22,7 @@
 
   }
 
-  #PrescriptionSquares {
+  [id*='PrescriptionSquares'] {
 
     .section {
       padding-bottom: 30px;

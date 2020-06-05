@@ -1,6 +1,6 @@
 @use '~Settings/fonts'as *;
 
-#AppointmentList {
+[id*='AppointmentList'] {
   .section {
     .section-title {
       font-family: $latin-bold;
@@ -16,7 +16,7 @@
     border: none;
   }
 
-  #Scheduled {
+  [id*='Scheduled'] {
     .section {
       margin-bottom: 20px;
     }

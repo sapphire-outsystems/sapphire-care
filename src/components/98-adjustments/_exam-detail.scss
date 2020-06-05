@@ -1,12 +1,12 @@
 @use '~Settings/colors'as *;
 @use '~Settings/fonts'as *;
 
-#ExamDetail {
+[id*='ExamDetail'] {
   .Title_Value {
     color: $sapphire-white;
   }
 
-  #ExamDetailHeader {
+  [id*='ExamDetailHeader'] {
     .section {
       padding-bottom: 35px;
     }
@@ -96,14 +96,14 @@
 
   }
 
-  #SearchContainer,
-  #ExamResults {
+  [id*='SearchContainer'],
+  [id*='ExamResults'] {
     .section {
       background-color: $sapphire-white;
     }
   }
 
-  #SearchContainer {
+  [id*='SearchContainer'] {
     .section {
       padding-top: 25px;
     }

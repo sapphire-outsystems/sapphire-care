@@ -1,7 +1,7 @@
 @use '~Tools/information-section'as *;
 @use '~Settings/colors'as *;
 
-#AppointementDetail {
+[id*='AppointementDetail'] {
   .section {
 
     .section-title {
@@ -20,14 +20,14 @@
 
   @extend %information-section;
 
-  #Information {
+  [id*='Information'] {
     .section {
       height: auto;
       padding-bottom: 10px;
     }
   }
 
-  #Reschedule {
+  [id*='Reschedule'] {
     .section {
       background-color: $sapphire-white;
       padding-bottom: 25px;

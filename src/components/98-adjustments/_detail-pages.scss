@@ -1,7 +1,7 @@
 @use '~Settings/fonts'as *;
 @use '~Settings/colors'as *;
 
-#Information {
+[id*='Information'] {
   .section {
     background-color: $sapphire-white;
     padding-top: 10px;

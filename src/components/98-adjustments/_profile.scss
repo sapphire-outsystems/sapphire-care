@@ -1,7 +1,7 @@
 @use '~Settings/colors'as *;
 @use '~Settings/fonts'as *;
 
-#ProfileHeader {
+[id*='ProfileHeader'] {
 
   .card-profile {
     margin-bottom: 30px;
@@ -48,7 +48,7 @@
   }
 }
 
-#ProfileInfo {
+[id*='ProfileInfo'] {
   .section {
     background-color: $sapphire-white;
     height: 100%;

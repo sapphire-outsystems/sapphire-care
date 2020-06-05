@@ -1,7 +1,7 @@
 @use '~Settings/colors'as *;
 @use '~Settings/fonts'as *;
 
-$marginContainers:15px;
+$marginContainers: 15px;
 
 img[id*='ImageBgWhite'],
 img[id*='ImageBgBlue'] {
@@ -11,7 +11,7 @@ img[id*='ImageBgBlue'] {
   top: 0;
 }
 
-#HomePage {
+[id*='HomePage'] {
   .header-title {
     align-items: flex-end;
     display: flex;
@@ -26,15 +26,13 @@ img[id*='ImageBgBlue'] {
     width: 90%;
   }
 
-  #SaluteSection {
+  [id*='SaluteSection'] {
     .section {
       margin-bottom: 30px;
     }
-
   }
 
-  #AppoitmentsSection {
-
+  [id*='AppoitmentsSection'] {
     .section {
       padding-bottom: 30px;
     }
@@ -42,11 +40,9 @@ img[id*='ImageBgBlue'] {
     .section-title {
       margin-bottom: 10px;
     }
-
   }
 
-
-  #InformationSection {
+  [id*='InformationSection'] {
     .section {
       background-color: $regular-eta;
       padding-bottom: 30px;
@@ -62,7 +58,6 @@ img[id*='ImageBgBlue'] {
       &.list-group,
       .list-item {
         all: unset;
-
       }
 
       &.list-group {
@@ -80,26 +75,22 @@ img[id*='ImageBgBlue'] {
           margin-left: $marginContainers;
         }
       }
-
-
     }
   }
 
-  #Covid {
+  [id*='CovidSection'] {
     .section {
-      margin-top: 30px;
+      margin: 30px 0;
     }
   }
 
-  #Hospitals {
-
+  [id*='HospitalSection'] {
     .section {
       margin-bottom: 30px;
     }
-
   }
 
-  #NewsSection {
+  [id*='NewsSection'] {
     .list {
       &.list-group {
         background-color: unset;
@@ -113,7 +104,6 @@ img[id*='ImageBgBlue'] {
 
     .section {
       padding: 40px 0 0 0;
-
     }
 
     >div.section {
@@ -131,10 +121,6 @@ img[id*='ImageBgBlue'] {
           font-family: $latin-bold;
         }
       }
-
     }
-
-
   }
-
 }
