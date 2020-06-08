@@ -98,3 +98,11 @@
 .borderImportant {
   border: 1px solid !important;
 }
+
+.border-bottom {
+  border-bottom: 1px solid;
+}
+
+.border-light-grey {
+  border-color: $light-grey;
+}
