@@ -11,6 +11,10 @@ img[id*='ImageBgBlue'] {
   width: 100%;
 }
 
+[data-block*="PullToRefresh"] {
+  display: none;
+}
+
 [id*='HomePage'] {
   .header-title {
     align-items: flex-end;
