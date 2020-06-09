@@ -4,6 +4,14 @@
 $marginContainers: 15px;
 
 [id*='BgImageContainer'] {
+  &.detail {
+    background-color: #0e5280;
+  }
+
+  &.base {
+    background-color: $sapphire-white;
+  }
+
   height: 100%;
   position: absolute;
   top: 0;
