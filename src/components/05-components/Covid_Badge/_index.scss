@@ -3,7 +3,6 @@
 
 .daily-badge {
   border-radius: 4px;
-  box-shadow: 0 2px 12px 0 $regular-grey;
   color: $dark-grey;
   padding: 10px;
 
@@ -11,6 +10,15 @@
     color: $regular-alpha;
     font-family: 'LatoBold';
     font-size: $font-size-heading3;
+  }
+
+  &__subtitle {
+    color: $dark-grey;
+  }
+
+  .btn {
+    background-color: $sapphire-white;
+    color: $regular-alpha;
   }
 
 }
