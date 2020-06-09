@@ -3,13 +3,20 @@
 
 $marginContainers: 15px;
 
-img[id*='ImageBgWhite'],
-img[id*='ImageBgBlue'] {
+[id*='BgImageContainer'] {
   height: 100%;
   position: absolute;
   top: 0;
   width: 100%;
+
+  img[id*='ImageBgWhite'],
+  img[id*='ImageBgBlue'] {
+    height: auto;
+    width: 100%;
+  }
 }
+
+
 
 [data-block*="PullToRefresh"] {
   display: none;
