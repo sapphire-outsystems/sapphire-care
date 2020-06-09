@@ -3,9 +3,6 @@
 @use '~Settings/colors'as *;
 @use '~Tools/information-section'as *;
 
-body {
-  background-color: red;
-}
 
 [id*='PrescriptionDetail'] {
   .section-title {
@@ -77,6 +74,23 @@ body {
 
     >div {
       display: contents;
+    }
+  }
+
+  [id*='DosageInformation'] {
+    .section {
+      padding-bottom: 0;
+    }
+
+    .list {
+
+      [data-block*='_ListItem']:last-of-type {
+        .dosage-info__list-item {
+          margin: 0;
+        }
+
+      }
+
     }
   }
 

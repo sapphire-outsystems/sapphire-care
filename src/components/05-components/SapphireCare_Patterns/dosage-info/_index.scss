@@ -1,0 +1,34 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+
+.dosage-info {
+
+  &__title-container {
+    color: $regular-grey;
+    display: flex;
+    font-size: $font-size-normal;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+  }
+
+  &__list-item {
+    border-bottom: 1px solid $light-grey;
+    display: flex;
+    font-size: $font-size-heading4;
+    height: 50px;
+    margin-bottom: 30px;
+
+
+    & :nth-child(2) {
+      font-family: 'LatoBold';
+      text-align: right;
+    }
+
+    >div {
+      flex: 1;
+    }
+  }
+
+
+}
