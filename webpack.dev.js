@@ -50,8 +50,8 @@ module.exports = merge(common, {
         // proxy the Webpack Dev Server endpoint
         // (which should be serving on http://localhost:3100/)
 				// through BrowserSync
-				proxy: 'https://atc-dev.outsystemsenterprise.com/SapphireCare_StyleGuide/'
-				//proxy: 'https://atc-dev.outsystemsenterprise.com/Care_MUI'
+				//proxy: 'https://atc-dev.outsystemsenterprise.com/SapphireCare_StyleGuide/'
+				proxy: 'https://atc-dev.outsystemsenterprise.com/Care_MUI'
         //proxy: 'https://miguelfilipe-gomes.outsystemscloud.com/ToDo_MFSG/'
       },
       // plugin options

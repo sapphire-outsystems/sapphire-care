@@ -3,6 +3,9 @@
 @use '~Settings/colors'as *;
 @use '~Tools/information-section'as *;
 
+body {
+  background-color: red;
+}
 
 [id*='PrescriptionDetail'] {
   .section-title {
@@ -69,7 +72,13 @@
 
   }
 
+  [id*='List_MedicationInfoHeader'] {
+    display: contents;
 
+    >div {
+      display: contents;
+    }
+  }
 
   @extend %information-section;
 }
