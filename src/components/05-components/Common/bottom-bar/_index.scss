@@ -68,19 +68,19 @@
   color: $dark-grey;
 }
 
-.bottom .btn,
-/* added to solve height issue in all buttons */
-.bottom .btn:hover,
-/* added to solve height issue in all buttons */
-.bottom .btn:focus,
-/* added to solve height issue in all buttons */
-.bottom .detail-schedule .btn,
-.bottom .detail-request .btn {
-  border-radius: 4px;
-  line-height: 30px;
-  margin-top: 10px;
-  min-height: 50px;
-}
+// .bottom .btn,
+// /* added to solve height issue in all buttons */
+// .bottom .btn:hover,
+// /* added to solve height issue in all buttons */
+// .bottom .btn:focus,
+// /* added to solve height issue in all buttons */
+// .bottom .detail-schedule .btn,
+// .bottom .detail-request .btn {
+//   border-radius: 4px;
+//   line-height: 30px;
+//   margin-top: 10px;
+//   min-height: 50px;
+// }
 
 .bottom .detail-request .btn:first-child,
 .bottom .detail-schedule .btn:first-child {
