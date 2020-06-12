@@ -51,8 +51,23 @@
 [id*='ProfileInfo'] {
   .section {
     background-color: $sapphire-white;
-    height: 100%;
     padding-top: 35px;
+
+    [data-block*='CardInfo'] {
+      background-color: lime;
+
+      &:last-of-type {
+        background-color: red;
+
+        .cardInfo.no-label {
+          margin: 0;
+          padding-bottom: 30px;
+
+        }
+      }
+
+
+    }
 
     .cardInfo__label {
       font-size: $font-size-heading2;
