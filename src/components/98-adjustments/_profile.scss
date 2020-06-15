@@ -60,6 +60,36 @@
 }
 
 [id*='ProfileHeader'] {
+  .card-profile__image {
+    border-radius: 50%;
+    min-height: 62px;
+    overflow: hidden;
+    position: relative;
+
+    .opacity-container {
+      background-color: $regular-alpha;
+      height: 100%;
+      opacity: 0.2;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    .upload-file,
+    .change-image {
+      align-items: center;
+      color: $sapphire-white;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      min-height: 62px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
 
   .card-profile {
     margin-bottom: 30px;
