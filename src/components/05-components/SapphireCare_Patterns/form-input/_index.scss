@@ -1,0 +1,44 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+
+.animated-label,
+.animated-label.active,
+.animated-label:focus {
+  margin-bottom: 15px;
+
+  .animated-label-text {
+    all: unset;
+    display: flex;
+    font-size: $font-size-normal;
+    margin-bottom: 7px;
+
+    .form-input__asterisk {
+      color: $regular-red;
+      margin-left: 5px;
+    }
+
+    .form-input__label,
+    .form-input__asterisk {
+      font-size: $font-size-normal;
+    }
+
+    &:active {
+
+      .form-input__label,
+      .form-input__asterisk {
+        font-size: $font-size-normal;
+      }
+    }
+  }
+
+  .animated-label-input input[data-input],
+  &:empty {
+    color: $regular-grey;
+    font-size: $font-size-heading4;
+    height: 30px;
+    line-height: 20px;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+}
