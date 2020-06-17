@@ -1,0 +1,7 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+
+.doctor-list__separator {
+  font-size: $font-size-heading3;
+  margin: 15px 0;
+}
