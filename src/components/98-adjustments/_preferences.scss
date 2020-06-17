@@ -1,0 +1,45 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+
+[id*='PreferencesSettings'] {
+  .pref-settings__card {
+    align-items: center;
+    border-bottom: 1px solid $light-grey;
+    display: flex;
+    height: 80px;
+
+    >div {
+      flex: 1;
+    }
+
+    // >div:nth-child(2) {
+    //   flex: 2;
+    // }
+
+    .pref-settings__iconLabel {
+      align-items: center;
+      display: flex;
+
+      .icon-container {
+        margin-right: 15px;
+      }
+
+      .label {
+        font-family: $latin-bold;
+      }
+
+    }
+
+    [data-block*='FingerprintPreferenceWB'] {
+      display: flex;
+      justify-content: center;
+
+      input.switch:checked:before {
+        background-color: $regular-alpha;
+        border-color: $regular-alpha;
+      }
+    }
+
+
+  }
+}
