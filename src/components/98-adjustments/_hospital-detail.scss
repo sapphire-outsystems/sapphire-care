@@ -19,6 +19,10 @@
         font-family: $latin-regular;
         font-size: $font-size-normal;
         margin-bottom: 40px;
+
+        .is-rtl & {
+          font-family: $arabic-regular;
+        }
       }
     }
 

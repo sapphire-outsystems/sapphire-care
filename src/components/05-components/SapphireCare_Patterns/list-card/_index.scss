@@ -5,6 +5,10 @@
   .list-card__title {
     font-family: $latin-bold;
     font-size: $font-size-heading4;
+
+    .is-rtl & {
+      font-family: $arabic-bold;
+    }
   }
 
   .list-card__content {

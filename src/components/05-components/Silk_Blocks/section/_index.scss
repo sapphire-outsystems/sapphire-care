@@ -52,6 +52,10 @@
     font-size: $font-size-heading3;
     padding: 0;
 
+    .is-rtl & {
+      font-family: $arabic-bold;
+    }
+
   }
 
   .section-content {

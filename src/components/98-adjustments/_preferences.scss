@@ -22,10 +22,19 @@
 
       .icon-container {
         margin-right: 15px;
+
+        .is-rtl & {
+          margin-left: 15px;
+          margin-right: unset;
+        }
       }
 
       .label {
         font-family: $latin-bold;
+
+        .is-rtl & {
+          font-family: $arabic-bold;
+        }
       }
 
     }

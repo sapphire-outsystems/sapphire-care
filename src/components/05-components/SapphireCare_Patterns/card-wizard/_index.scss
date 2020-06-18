@@ -1,5 +1,6 @@
 @use '~Settings/colors'as *;
 @use '~Settings/fonts'as *;
+@use '~Tools/arrow-left-arabic'as *;
 
 
 .cardWizard {
@@ -20,6 +21,7 @@
   .cardWizard__link {
     color: $light-grey;
     font-size: 30px;
+    @extend %arrow-left;
   }
 
   &.imageBg {
@@ -46,11 +48,19 @@
 
         padding-left: 15px;
         width: 100%;
+
+        .is-rtl & {
+          font-family: $arabic-bold;
+        }
       }
 
       :nth-child(2) {
         font-family: $latin-regular;
         font-size: 1rem;
+
+        .is-rtl & {
+          font-family: $arabic-regular;
+        }
       }
     }
 

@@ -6,10 +6,14 @@
   .group-month {
     border-bottom: 1px solid $light-grey;
     color: $dark-blue;
-    font-family: 'LatoBold';
+    font-family: $latin-bold;
     font-size: $font-size-heading3;
     margin-bottom: 20px;
     padding-bottom: 5px;
+
+    .is-rtl & {
+      font-family: $arabic-bold;
+    }
   }
 
   .cardInfo {
@@ -23,6 +27,10 @@
         font-family: $latin-bold;
         font-size: $font-size-heading4;
         line-height: $font-size-heading3;
+
+        .is-rtl & {
+          font-family: $arabic-bold;
+        }
       }
 
       .cardInfo__icon {

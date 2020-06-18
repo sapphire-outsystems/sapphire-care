@@ -29,6 +29,10 @@ $icons-size:48px;
           font-family: $latin-regular;
           font-size: 1rem;
           margin-left: 5px;
+
+          .is-rtl & {
+            font-family: $arabic-regular;
+          }
         }
       }
 
@@ -36,6 +40,10 @@ $icons-size:48px;
         @include remainDays;
         font-family: $latin-bold;
         font-size: $font-size-small;
+
+        .is-rtl & {
+          font-family: $arabic-bold;
+        }
 
       }
     }
@@ -52,12 +60,21 @@ $icons-size:48px;
         display: flex;
         font-size: $font-size-heading2;
         margin-right: 5px;
+
+        .is-rtl & {
+          margin-left: 5px;
+          margin-right: unset;
+        }
       }
 
       div[id*='Date__Value'] {
         display: contents;
         font-family: $latin-bold;
         font-size: 16px;
+
+        .is-rtl & {
+          font-family: $arabic-bold;
+        }
       }
 
     }

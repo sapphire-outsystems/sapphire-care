@@ -26,6 +26,11 @@
   /*primary-color*/
   color: $sapphire-care-blue3;
   font-family: $latin-bold;
+
+  .is-rtl & {
+    font-family: $arabic-bold;
+  }
+
   /*secondary-color*/
 }
 

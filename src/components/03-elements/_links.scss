@@ -73,9 +73,17 @@ a {
       color: $sapphire-care-blue3;
       font-family: $latin-bold;
 
+      .is-rtl & {
+        font-family: $arabic-bold;
+      }
+
       .icon {
         color: $sapphire-care-blue3;
         font-family: $latin-bold;
+
+        .is-rtl & {
+          font-family: $arabic-bold;
+        }
       }
     }
   }
@@ -117,5 +125,9 @@ a {
   &:active {
     color: $sapphire-care-blue3;
     font-family: $latin-bold;
+
+    .is-rtl & {
+      font-family: $arabic-bold;
+    }
   }
 }

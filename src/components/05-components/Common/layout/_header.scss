@@ -77,6 +77,10 @@
   text-align: left;
   white-space: nowrap;
 
+  .is-rtl & {
+    font-family: $arabic-bold;
+  }
+
   img {
     display: block;
     margin: 0 auto;

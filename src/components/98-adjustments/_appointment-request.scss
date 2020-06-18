@@ -59,6 +59,10 @@ $height:100px;
       .section-title {
         font-family: $latin-bold;
         font-size: $font-size-heading2;
+
+        .is-rtl & {
+          font-family: $arabic-bold;
+        }
       }
     }
   }

@@ -21,8 +21,12 @@
 
 
     & :nth-child(2) {
-      font-family: 'LatoBold';
+      font-family: $latin-bold;
       text-align: right;
+
+      .is-rtl & {
+        font-family: $arabic-bold;
+      }
     }
 
     >div {

@@ -1,0 +1,11 @@
+%arrow-left {
+  .is-rtl & {
+    .sc-arrow-right {
+      align-items: center;
+      display: flex;
+      text-align: left;
+      transform: rotate(-180deg);
+    }
+
+  }
+}

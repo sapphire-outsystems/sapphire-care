@@ -24,6 +24,10 @@
       font-family: $latin-regular;
       margin-top: 30px;
 
+      .is-rtl & {
+        font-family: $arabic-regular;
+      }
+
       >div {
         flex: 1;
       }
@@ -34,6 +38,10 @@
             font-family: $latin-regular;
             font-size: $font-size-heading4;
             opacity: 1;
+
+            .is-rtl & {
+              font-family: $arabic-regular;
+            }
           }
         }
       }
@@ -81,6 +89,10 @@
           //ont-size: $font-size-heading4;
           font-family: $latin-regular;
           margin-bottom: 10px;
+
+          .is-rtl & {
+            font-family: $arabic-regular;
+          }
         }
 
         .cardInfo__icon {

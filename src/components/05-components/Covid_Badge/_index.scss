@@ -9,8 +9,12 @@
 
   &__title {
     color: $regular-alpha;
-    font-family: 'LatoBold';
+    font-family: $latin-bold;
     font-size: $font-size-heading3;
+
+    .is-rtl & {
+      font-family: $arabic-bold;
+    }
   }
 
   &__subtitle {

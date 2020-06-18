@@ -2,6 +2,7 @@
 @use '~Settings/colors'as *;
 @use '~Tools/remaining-days'as *;
 @use '~Tools/card-profile-image'as *;
+@use '~Tools/arrow-left-arabic'as *;
 
 
 
@@ -11,6 +12,12 @@
 
   &__image {
     margin-right: 15px;
+
+    .is-rtl & {
+      margin-left: 15px;
+      margin-right: unset;
+    }
+
     @include cardImageSize()
   }
 
@@ -29,6 +36,10 @@
         flex: 1;
         font-family: $latin-bold;
         font-size: $font-size-heading1;
+
+        .is-rtl & {
+          font-family: $arabic-bold;
+        }
       }
 
       .card-profile__right-badge {
@@ -61,8 +72,8 @@
       color: $light-grey;
     }
 
+    @extend %arrow-left;
     align-items: center;
-
     display: flex;
   }
 }
@@ -72,6 +83,10 @@
 .title {
   color: $dark-grey;
   font-family: $latin-bold;
+
+  .is-rtl & {
+    font-family: $arabic-bold;
+  }
 
 }
 

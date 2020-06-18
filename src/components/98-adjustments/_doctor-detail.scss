@@ -40,6 +40,10 @@
         color: $dark-grey;
         font-family: $latin-bold;
 
+        .is-rtl & {
+          font-family: $arabic-bold;
+        }
+
       }
     }
 

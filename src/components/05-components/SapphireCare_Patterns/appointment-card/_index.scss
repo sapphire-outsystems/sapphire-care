@@ -58,6 +58,10 @@
       position: absolute;
       top: 0;
 
+      .is-rtl & {
+        right: 5px;
+      }
+
       .requested__bar {
         background-color: $regular-red;
         height: 100%;
@@ -122,6 +126,11 @@
     align-items: flex-start;
     display: flex;
     margin-right: 5px;
+
+    .is-rtl & {
+      margin-left: 5px;
+      margin-right: unset;
+    }
   }
 
 

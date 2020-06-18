@@ -6,8 +6,12 @@
   margin-bottom: 20px;
 
   legend {
-    font-family: 'LatoBold';
+    font-family: $latin-bold;
     font-size: $font-size-heading2;
     margin-bottom: 20px;
+
+    .is-rtl & {
+      font-family: $arabic-bold;
+    }
   }
 }

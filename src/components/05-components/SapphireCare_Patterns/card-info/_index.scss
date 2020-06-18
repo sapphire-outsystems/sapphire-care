@@ -1,5 +1,6 @@
 @use '~Settings/colors'as *;
 @use '~Settings/fonts'as *;
+@use '~Tools/arrow-left-arabic'as *;
 
 .cardInfo {
   height: 110px;
@@ -24,6 +25,10 @@
       .cardInfo__title {
         font-family: $latin-bold;
         font-size: $font-size-heading4;
+
+        .is-rtl & {
+          font-family: $arabic-bold;
+        }
       }
 
       .cardInfo__content {
@@ -38,12 +43,19 @@
       display: flex;
       font-size: 20px;
       margin-right: 15px;
+
+      .is-rtl & {
+        margin-left: 15px;
+        margin-right: unset;
+      }
     }
 
     .cardInfo__link {
       color: $light-grey;
       font-size: 30px;
       text-align: right;
+
+      @extend %arrow-left;
     }
   }
 

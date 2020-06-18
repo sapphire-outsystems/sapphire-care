@@ -18,6 +18,10 @@
   letter-spacing: .5px;
   line-height: 20px;
   min-height: 50px;
+
+  .is-rtl & {
+    font-family: $arabic-bold;
+  }
 }
 
 .btn:active {

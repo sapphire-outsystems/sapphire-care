@@ -21,6 +21,11 @@ $max-lines:3;
     .generic-card__image {
       margin-right: $marginContainers;
 
+      .is-rtl & {
+        margin-left: $marginContainers;
+        margin-right: unset;
+      }
+
       div[id*='ImagePlaceholder'] {
         width: 80px;
       }
@@ -92,6 +97,10 @@ $max-lines:3;
       .title,
       .date {
         font-family: $latin-bold;
+
+        .is-rtl & {
+          font-family: $arabic-bold;
+        }
       }
 
 

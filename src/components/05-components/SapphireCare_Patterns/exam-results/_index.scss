@@ -12,6 +12,10 @@
     .exam__title {
       color: $regular-alpha;
       font-family: $latin-bold;
+
+      .is-rtl & {
+        font-family: $arabic-bold;
+      }
     }
 
     .exam__previousLabel,
@@ -24,6 +28,10 @@
 
     .exam__previousResult {
       font-family: $latin-bold;
+
+      .is-rtl & {
+        font-family: $arabic-bold;
+      }
     }
 
   }
@@ -37,6 +45,10 @@
       font-family: $latin-bold;
       font-size: $font-size-heading2;
       justify-content: flex-end;
+
+      .is-rtl & {
+        font-family: $arabic-bold;
+      }
     }
 
     .exam__isBigger {
@@ -52,6 +64,10 @@
 
     .examReference__value {
       font-family: $latin-bold;
+
+      .is-rtl & {
+        font-family: $arabic-bold;
+      }
     }
 
     .examReference__label {}

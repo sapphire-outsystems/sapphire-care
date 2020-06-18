@@ -14,10 +14,18 @@ $dimensions:100px;
   padding: 15px;
   text-align: left;
 
+  .is-rtl & {
+    text-align: right;
+  }
+
   .card-prescription_title {
     font-family: $latin-bold;
     font-size: $font-size-heading4;
     width: 100%;
+
+    .is-rtl & {
+      font-family: $arabic-bold;
+    }
   }
 
   .card-prescription__content {
@@ -28,12 +36,21 @@ $dimensions:100px;
     .card-prescription__icon {
       color: $regular-alpha;
       margin-right: 5px;
-      ;
+
+      .is-rtl & {
+        margin-left: 5px;
+        margin-right: unset;
+      }
+
     }
 
     .card-prescription__text {
       font-family: $latin-bold;
       font-size: $font-size-heading3;
+
+      .is-rtl & {
+        font-family: $arabic-bold;
+      }
     }
   }
 }
