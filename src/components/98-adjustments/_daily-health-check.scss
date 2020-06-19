@@ -1,0 +1,26 @@
+@use '~Settings/fonts'as *;
+@use '~Settings/colors'as *;
+
+[id*='DailyHealthCheck'] {
+
+
+  .main-content {
+    background-color: $sapphire-white;
+
+    .section {
+      margin-bottom: 25px;
+
+      .section-title {
+        margin-bottom: 20px;
+      }
+
+    }
+  }
+
+  .bottom {
+    background-color: $sapphire-white;
+  }
+
+
+
+}

@@ -16,32 +16,32 @@ $height:100px;
     margin-bottom: 20px;
   }
 
-  .wizard {
-    left: 0;
-    position: fixed;
-    top: $height;
-    width: 100%;
-    z-index: 1;
+  // .wizard {
+  //   left: 0;
+  //   position: fixed;
+  //   top: $height;
+  //   width: 100%;
+  //   z-index: 1;
 
-    .wizard-item-wrapper {
+  //   .wizard-item-wrapper {
 
-      &.active,
-      &.past {
-        .wizard-item {
-          background-color: $regular-alpha;
-        }
-      }
+  //     &.active,
+  //     &.past {
+  //       .wizard-item {
+  //         background-color: $regular-alpha;
+  //       }
+  //     }
 
-      .wizard-item {
-        background-color: $light-grey;
-        height: 6px;
-        width: 100%;
-      }
+  //     .wizard-item {
+  //       background-color: $light-grey;
+  //       height: 6px;
+  //       width: 100%;
+  //     }
 
-    }
+  //   }
 
 
-  }
+  // }
 
   .list-item {
     padding: 15px 0;
