@@ -8,6 +8,12 @@
 
   .cardInfo {
 
+    &.disabled {
+      .title {
+        color: $regular-alpha;
+      }
+    }
+
     .cardInfo__container {
       align-items: center;
       border-bottom: 1px solid $light-grey;
