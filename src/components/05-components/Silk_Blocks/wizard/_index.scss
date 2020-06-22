@@ -16,6 +16,7 @@
     &.past {
       .wizard-item {
         background-color: $regular-alpha;
+        opacity: 1;
       }
     }
 
@@ -26,10 +27,15 @@
       }
     }
 
+    &:before {
+      display: none;
+    }
+
 
 
     .wizard-item {
       background-color: $light-grey;
+      border-radius: unset;
       height: 6px;
       width: 100%;
     }
