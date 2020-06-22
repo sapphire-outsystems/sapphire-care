@@ -1,0 +1,21 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+
+[id*='Notification_Detail'] {
+
+
+  .date {
+    font-size: $font-size-small;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-family: $latin-bold;
+    font-size: $font-size-heading1;
+    margin-bottom: 20px;
+
+    .is-rtl & {
+      font-family: $arabic-bold;
+    }
+  }
+}
