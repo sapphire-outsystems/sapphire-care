@@ -16,9 +16,15 @@
       }
 
       .SubTitle__Container {
+        display: flex;
+        flex-direction: column;
         font-family: $latin-regular;
         font-size: $font-size-normal;
-        margin-bottom: 40px;
+
+
+        :nth-child(1) {
+          margin-bottom: 10px;
+        }
 
         .is-rtl & {
           font-family: $arabic-regular;

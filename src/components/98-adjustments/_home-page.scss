@@ -6,11 +6,11 @@ $marginContainers: 15px;
 [id*='BgImageContainer'] {
 
   background-color: $sapphire-white;
-
-
   height: 100%;
+  overflow: hidden;
   position: absolute;
   top: 0;
+  white-space: nowrap;
   width: 100%;
 
   img[id*='ImageBgWhite'],
