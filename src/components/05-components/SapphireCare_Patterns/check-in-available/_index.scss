@@ -13,6 +13,13 @@
   padding: 0 15px;
   position: absolute;
 
+  .is-rtl & {
+    border-top-left-radius: unset;
+    border-top-right-radius: 0;
+    left: unset;
+    right: 0;
+  }
+
   .icon {
     font-size: $font-size-small;
 
