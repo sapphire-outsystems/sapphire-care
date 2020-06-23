@@ -51,7 +51,7 @@
       }
     }
 
-    .requested__bar-container {
+    .cancel_requested__bar-container {
       height: 100%;
       left: 5px;
       padding: 15px 0;
@@ -62,10 +62,18 @@
         right: 5px;
       }
 
-      .requested__bar {
-        background-color: $regular-red;
+      .cancel_requested__bar {
+
         height: 100%;
         width: 2px;
+
+        &.red {
+          background-color: $regular-red;
+        }
+
+        &.grey {
+          background-color: $regular-grey;
+        }
       }
     }
 
