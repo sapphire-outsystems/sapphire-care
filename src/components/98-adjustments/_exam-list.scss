@@ -2,6 +2,9 @@
 @use '~Settings/fonts'as *;
 
 [id*='ExamList'] {
+  .list {
+    background-color: transparent;
+  }
 
   .group-month {
     border-bottom: 1px solid $light-grey;
