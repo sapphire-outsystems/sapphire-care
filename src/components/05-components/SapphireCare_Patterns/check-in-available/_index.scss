@@ -1,0 +1,24 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+
+.check-in-available {
+  align-items: center;
+  background: $regular-alpha;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  bottom: -19px;
+  display: flex;
+  height: 26px;
+  left: 0;
+  padding: 0 15px;
+  position: absolute;
+
+  .icon {
+    font-size: $font-size-small;
+
+    .sc-check-invert {
+      left: -3px;
+      position: relative;
+    }
+  }
+}
