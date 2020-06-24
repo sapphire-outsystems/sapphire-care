@@ -20,17 +20,6 @@
     margin-bottom: 160px;
   }
 
-  // &__background_S {
-  //   position: absolute;
-  //   top: 0;
-  //   width: 100%;
-
-  //   img {
-  //     height: auto;
-  //     width: 100%;
-  //   }
-  // }
-
   .login-screen__container {
     align-items: center;
     display: flex;
@@ -55,21 +44,6 @@
         color: $sapphire-white;
       }
     }
-
-
-    // .animated-label {
-    //   .animated-label-text {
-    //     font-size: $font-size-heading3;
-    //   }
-
-
-    //   &.active {
-    //     .animated-label-text {
-    //       font-size: $font-size-normal;
-    //     }
-    //   }
-    // }
-
 
     input[data-input],
     input[data-input]:focus,
