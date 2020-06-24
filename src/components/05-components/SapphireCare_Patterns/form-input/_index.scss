@@ -42,3 +42,21 @@
   }
 
 }
+
+
+.animated-label {
+  .animated-label-text {
+    bottom: -30px;
+    font-size: $font-size-heading3;
+    position: relative;
+    transition: font-size .5s ease;
+  }
+
+  &.active {
+    .animated-label-text {
+      bottom: 0;
+      font-size: $font-size-normal;
+      transition: font-size .5s ease;
+    }
+  }
+}

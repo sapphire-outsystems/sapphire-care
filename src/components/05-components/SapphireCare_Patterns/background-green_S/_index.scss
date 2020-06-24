@@ -1,0 +1,14 @@
+@use '~Settings/colors'as *;
+
+.background-green_S {
+  background-color: $regular-alpha;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}

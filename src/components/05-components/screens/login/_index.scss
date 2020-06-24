@@ -20,16 +20,16 @@
     margin-bottom: 160px;
   }
 
-  &__background_S {
-    position: absolute;
-    top: 0;
-    width: 100%;
+  // &__background_S {
+  //   position: absolute;
+  //   top: 0;
+  //   width: 100%;
 
-    img {
-      height: auto;
-      width: 100%;
-    }
-  }
+  //   img {
+  //     height: auto;
+  //     width: 100%;
+  //   }
+  // }
 
   .login-screen__container {
     align-items: center;
@@ -42,6 +42,7 @@
       &-logo {
         margin-bottom: 20px;
         width: 110px;
+        z-index: 1;
       }
 
     }
@@ -56,23 +57,18 @@
     }
 
 
-    .animated-label {
-      .animated-label-text {
-        bottom: -30px;
-        font-size: $font-size-heading3;
-        position: relative;
-        transition: font-size .5s ease;
-      }
-
-      &.active {
-        .animated-label-text {
-          bottom: 0;
-          font-size: $font-size-normal;
-        }
+    // .animated-label {
+    //   .animated-label-text {
+    //     font-size: $font-size-heading3;
+    //   }
 
 
-      }
-    }
+    //   &.active {
+    //     .animated-label-text {
+    //       font-size: $font-size-normal;
+    //     }
+    //   }
+    // }
 
 
     input[data-input],
