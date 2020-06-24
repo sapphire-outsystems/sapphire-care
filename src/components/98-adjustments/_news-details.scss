@@ -6,6 +6,8 @@
 
 [id*='NewsDetails'] {
   .section {
+    background-color: $sapphire-white;
+
     .news-details__top-image {
       align-items: center;
       display: flex;
@@ -13,6 +15,8 @@
       justify-content: center;
       margin-bottom: 15px;
       overflow: hidden;
+      position: relative;
+      top: 15px;
       width: 100%;
 
       img {
