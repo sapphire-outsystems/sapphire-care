@@ -119,6 +119,36 @@
     padding-bottom: 15px;
     position: absolute;
     text-align: center;
+
+
+    &:before {
+      background-color: $sapphire-white;
+      border-radius: 100%;
+      content: "";
+      display: block;
+      height: 350%;
+      left: 50%;
+      position: absolute;
+      top: -105%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 110%;
+      z-index: 0;
+    }
+
+    >div {
+      margin-top: -15px;
+      position: relative;
+
+    }
+
+    a,
+    a:visited,
+    a:link {
+      color: $regular-alpha;
+      display: block;
+      margin: 2px auto 0;
+    }
   }
 
 }
