@@ -26,6 +26,10 @@
   .is-rtl & {
     font-family: $arabic-bold;
   }
+
+  &.btn-blue {
+    background-color: $dark-blue;
+  }
 }
 
 .btn:active {
