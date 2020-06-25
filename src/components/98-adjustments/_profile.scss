@@ -3,15 +3,7 @@
 
 [id*='Profile'] {
 
-  [id*="MandatoryLabel"] {
-    display: flex;
-    margin-bottom: 10px;
 
-    .form-input__asterisk {
-      color: $regular-red;
-      margin-right: 5px;
-    }
-  }
 
   [id*='Address'] {
 
@@ -31,26 +23,7 @@
 
   }
 
-  [id*='NotificationPreferences'] {
-    .form-fieldSet__content {
 
-      >div {
-        border-bottom: 1px solid $light-grey;
-        display: flex;
-        margin-bottom: 20px;
-      }
-    }
-
-    [id*='Checkbox'] {
-      flex: 1;
-
-      .form-input__input {
-        align-items: center;
-        display: flex;
-      }
-
-    }
-  }
 
   [id*="SaveButton"] {
     padding-bottom: 20px;

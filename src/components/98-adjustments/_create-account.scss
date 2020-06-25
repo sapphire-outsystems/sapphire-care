@@ -1,0 +1,107 @@
+@use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
+
+$mobile-input-width:75px;
+
+[id*='CreateAccount'] {
+
+  .main-content {
+    background-color: $sapphire-white;
+
+    .section-title {
+      margin: 20px 0;
+    }
+
+    [id*='MandatoryLabel'] {
+      margin-bottom: 20px;
+    }
+
+
+
+
+    .mobile-with-flag {
+      align-items: center;
+      display: flex;
+
+      >div {
+        width: 100%;
+
+        .animated-label {
+
+          .flag {
+            align-items: center;
+            display: flex;
+            display: none;
+            position: absolute;
+
+            .flag-img {
+              margin-right: 5px;
+              width: 50px;
+
+              img {
+                height: auto;
+                width: 100%;
+              }
+            }
+          }
+
+
+
+          &.active {
+            .flag {
+              display: flex;
+            }
+
+            input[id='MobileNumber_Input'] {
+              padding-left: $mobile-input-width;
+              position: relative;
+              // width: calc(100% - #{$mobile-input-width});
+            }
+          }
+        }
+      }
+
+
+
+    }
+
+    [id*='Residential_Area'] {
+
+      .animated-label-text {
+        color: $regular-grey;
+        font-size: $font-size-normal;
+        position: relative;
+        top: 10px;
+      }
+
+      .animated-label-input {
+        position: relative;
+        top: 20px;
+
+        .form-control.city {
+          visibility: hidden;
+        }
+
+        .dropdown-display {
+          height: 30px;
+          padding-left: 0;
+        }
+
+        .select-dropdown:after {
+          border-color: $regular-alpha;
+          top: 15px;
+        }
+      }
+    }
+
+    [id*='NotificationPreferences'] {
+      >fieldset {
+        margin-top: 45px;
+      }
+    }
+
+    .btn-confirm {
+      margin: 20px 0 40px 0;
+    }
+  }
+}
