@@ -125,4 +125,12 @@
     }
   }
 
+  .animated-label {
+    &.active {
+      .animated-label-text {
+        color: $regular-white;
+      }
+    }
+  }
+
 }
