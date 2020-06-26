@@ -9,14 +9,16 @@
 		.card-image-top {
 			margin-bottom: 20px;
 
-			.card-image-top-actions-wrapper-act:nth-of-type(2) {
-				.CardImageTop__Icon {
-					align-items: center;
-					border-left: 1px solid $light-grey;
-					border-right: 1px solid $light-grey;
-					display: flex;
-					height: 25px;
-					justify-content: center;
+			.card-image-top-actions-wrapper {
+				padding: 10px 0;
+			}
+
+			.card-image-top-actions-wrapper-act {
+				color: $light-grey;
+				padding: 0;
+
+				&:nth-of-type(-n + 4):not(:first-child) {
+					border-left: 1px solid;
 				}
 			}
 		}

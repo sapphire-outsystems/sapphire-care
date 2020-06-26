@@ -10,6 +10,10 @@
 .card-profile {
   display: flex;
 
+  &.selected {
+    background-color: $regular-eta;
+  }
+
   &__image {
     margin-right: 15px;
 

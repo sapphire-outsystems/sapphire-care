@@ -16,6 +16,10 @@
   margin-bottom: 15px;
   padding: 25px 15px;
 
+  &.selected {
+    background-color: $regular-eta;
+  }
+
 
 
   .cardWizard__link {
