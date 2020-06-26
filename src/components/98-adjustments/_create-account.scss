@@ -52,7 +52,7 @@ $mobile-input-width:75px;
               display: flex;
             }
 
-            input[id='MobileNumber_Input'] {
+            input[type='tel'] {
               padding-left: $mobile-input-width;
               position: relative;
               // width: calc(100% - #{$mobile-input-width});

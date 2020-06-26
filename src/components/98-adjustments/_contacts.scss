@@ -1,0 +1,90 @@
+@use '~Settings/fonts'as *;
+@use '~Settings/colors'as *;
+
+$icon-size:50px;
+
+[id*=Contacts] {
+
+  font-family: $latin-bold;
+
+  .is-rtl & {
+    font-family: $arabic-bold;
+  }
+
+  .section-content {
+    >div {
+      margin-bottom: 40px;
+    }
+  }
+
+  .contacts-title {
+
+
+
+    .title {
+      font-size: $font-size-heading2;
+    }
+
+    .subtitle {
+      color: $regular-grey;
+      font-size: $font-size-heading4;
+    }
+  }
+
+  .contacts-contact {
+    .mobile-number {
+      margin-bottom: 40px;
+
+      .title {}
+
+      .subtitle {
+        font-size: $font-size-heading2;
+      }
+    }
+
+    .e-mail {
+      .title {}
+
+      .subtitle {}
+    }
+
+    .mobile-number,
+    .e-mail {
+      .subtitle {
+        color: $regular-alpha;
+        letter-spacing: 1px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .contacts-social_media {
+
+
+    .title {
+      margin-bottom: 10px;
+    }
+
+    .social-nedia__container {
+      align-items: center;
+      display: flex;
+
+      >div:nth-child(2) {
+        margin: 0 25px;
+      }
+
+      .social-media__icon {
+        align-items: center;
+        border: 2px solid $regular-alpha;
+        border-radius: 50%;
+        color: $regular-alpha;
+        display: flex;
+        height: $icon-size;
+        justify-content: center;
+        width: $icon-size;
+
+
+      }
+    }
+  }
+}
