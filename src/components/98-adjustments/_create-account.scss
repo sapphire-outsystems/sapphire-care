@@ -58,6 +58,11 @@ $mobile-input-width:75px;
             input[type='tel'] {
               padding-left: $mobile-input-width;
               position: relative;
+
+              .is-rtl & {
+                padding-right: $mobile-input-width;
+              }
+
               // width: calc(100% - #{$mobile-input-width});
             }
           }
