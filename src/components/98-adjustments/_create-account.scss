@@ -41,6 +41,10 @@ $mobile-input-width:75px;
               margin-right: 5px;
               width: 50px;
 
+              .is-rtl & {
+                margin-left: 5px;
+              }
+
               img {
                 height: auto;
                 width: 100%;
@@ -53,15 +57,18 @@ $mobile-input-width:75px;
           &.active {
             .flag {
               display: flex;
+
+              .is-rtl & {
+                left: -20px;
+                position: absolute;
+              }
             }
+
+
 
             input[type='tel'] {
               padding-left: $mobile-input-width;
               position: relative;
-
-              .is-rtl & {
-                padding-right: $mobile-input-width;
-              }
 
               // width: calc(100% - #{$mobile-input-width});
             }
