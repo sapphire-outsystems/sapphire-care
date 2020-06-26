@@ -14,6 +14,10 @@
   &__label {
     color: $regular-grey;
     margin-bottom: 20px;
+
+    @media screen and (max-width:320px) {
+      margin-bottom: 5px;
+    }
   }
 
   &__container {
