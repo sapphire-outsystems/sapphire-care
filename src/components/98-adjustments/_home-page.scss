@@ -15,7 +15,9 @@ $marginContainers: 15px;
 
   img[id*='ImageBgWhite'],
   img[id*='ImageBgBlue'] {
-    height: auto;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
     width: 100%;
   }
 }
