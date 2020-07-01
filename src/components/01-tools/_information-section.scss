@@ -4,7 +4,7 @@
 %information-section {
   [id*='Information'] {
     .section {
-      height: auto;
+      min-height: -webkit-fill-available;
       padding-bottom: 30px;
       padding-top: 35px;
     }

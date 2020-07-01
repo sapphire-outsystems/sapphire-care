@@ -14,8 +14,12 @@ $dimensions:100px;
   padding: 15px;
   text-align: left;
 
-  @media screen and (max-width:320px) {
+
+  @media screen and (max-width:576px) {
+    display: block;
+    font-size: $font-size-small;
     padding: 10px;
+    word-break: break-word;
   }
 
   .is-rtl & {
