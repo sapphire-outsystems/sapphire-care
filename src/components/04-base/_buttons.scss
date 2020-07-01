@@ -30,26 +30,34 @@
   &.btn-blue {
     background-color: $dark-blue;
   }
-}
 
-.btn:active {
-  background-color: $regular-beta;
-  border: 1px solid $regular-beta;
-  color: $sapphire-white;
+  &.btn-logout,
+  &.reschedule-cancel {
+    background-color: $sapphire-white;
+    border-color: $regular-red;
+    color: $regular-red;
+  }
 
-  -webkit-filter: brightness(1);
-  filter: brightness(1);
-}
+  &:active {
+    background-color: $regular-beta;
+    border: 1px solid $regular-beta;
+    color: $sapphire-white;
 
-.btn[disabled],
-.btn[disabled]:hover,
-.btn[disabled]:focus,
-.btn[disabled]:active {
-  background-color: $light-grey;
-  border: 1px solid $light-grey;
-  border-radius: 24px;
-  box-shadow: none;
-  color: $mid-light-grey;
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+  }
+
+  &[disabled],
+  [disabled]:hover,
+  [disabled]:focus,
+  [disabled]:active {
+    background-color: $light-grey;
+    border-color: $light-grey;
+    box-shadow: none;
+    color: $mid-light-grey;
+  }
+
+
 }
 
 /* button: primary | active | disabled */
@@ -122,7 +130,6 @@
   color: $sapphire-care-blue3;
   /*secondary-color*/
   font-size: $font-size-normal;
-  font-weight: 400;
 }
 
 .btn.btn-cancel:active {
@@ -156,7 +163,6 @@
   box-shadow: none;
   color: $regular-orange;
   font-size: $font-size-normal;
-  font-weight: 400;
 }
 
 .btn.btn-orange-cancel:active {
