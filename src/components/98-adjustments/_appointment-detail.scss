@@ -20,10 +20,18 @@
 
   @extend %information-section;
 
+  [id*='Check_In'] {
+    .section {
+      background-color: $sapphire-white;
+      padding-top: 35px;
+    }
+  }
+
   [id*='Information'] {
     .section {
-      height: 100%;
+      height: auto;
       padding-bottom: 10px;
+      padding-top: 0;
     }
   }
 
