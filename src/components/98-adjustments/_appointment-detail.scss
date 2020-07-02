@@ -2,67 +2,61 @@
 @use '~Settings/colors'as *;
 
 [id*='AppointementDetail'] {
-  .section {
+	.section {
+		.section-title {
+			color: $sapphire-white;
 
-    .section-title {
-      color: $sapphire-white;
+			.Date__Container {
+				margin: 0;
+			}
 
-      .Date__Container {
-        margin: 0;
-      }
+			.RemainDays {
+				font-size: 12px;
+			}
+		}
+	}
 
-      .RemainDays {
-        font-size: 12px;
-      }
-    }
+	@extend %information-section;
 
-  }
+	[id*='Check_In'] {
+		.section {
+			background-color: $sapphire-white;
+			padding-top: 35px;
+		}
+	}
 
-  @extend %information-section;
+	[id*='Information'] {
+		.section {
+			height: 100%;
+			padding-bottom: 10px;
+			padding-top: 0;
+		}
+	}
 
-  [id*='Check_In'] {
-    .section {
-      background-color: $sapphire-white;
-      padding-top: 35px;
-    }
-  }
+	[id*='Reschedule'] {
+		.section {
+			background-color: $sapphire-white;
+			padding-bottom: 25px;
 
-  [id*='Information'] {
-    .section {
-      height: auto;
-      padding-bottom: 10px;
-      padding-top: 0;
-    }
-  }
+			.reschedule__btn,
+			.reschedule__cancel {
+				align-items: center;
+				display: flex;
+				height: 48px;
+				justify-content: center;
+			}
 
-  [id*='Reschedule'] {
-    .section {
-      background-color: $sapphire-white;
-      padding-bottom: 25px;
+			.reschedule__btn {
+				margin-bottom: 15px;
 
-      .reschedule__btn,
-      .reschedule__cancel {
-        align-items: center;
-        display: flex;
-        height: 48px;
-        justify-content: center;
-      }
-
-      .reschedule__btn {
-        margin-bottom: 15px;
-
-        .btn {
-          align-items: center;
-          border-radius: 24px;
-          color: $sapphire-white;
-          display: flex;
-          width: 100%;
-        }
-
-      }
-
-    }
-
-
-  }
+				.btn {
+					align-items: center;
+					border-radius: 24px;
+					color: $sapphire-white;
+					display: flex;
+					width: 100%;
+				}
+			}
+		}
+	}
 }

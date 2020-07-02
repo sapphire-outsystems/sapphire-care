@@ -108,11 +108,10 @@
 
   }
 
-  [id*='SearchContainer'],
   [id*='ExamResults'] {
     .section {
       background-color: $sapphire-white;
-      height: 100vh;
+      height: 100%;
       ;
     }
   }
