@@ -1,53 +1,60 @@
 /* Action Sheet - Sapphire Filter */
 @use '~Settings/colors'as *;
 
-.sapphire-filter.action-sheet-container {
-  -servicestudio-height: auto;
-  -servicestudio-position: relative;
-  -servicestudio-top: auto;
-  z-index: 100;
-}
+.sapphire-filter {
+  &.action-sheet-container {
+    -servicestudio-height: auto;
+    -servicestudio-position: relative;
+    -servicestudio-top: auto;
+    z-index: 100;
 
-.sapphire-filter .action-sheet {
-  background-color: $sapphire-white;
-  padding: 20px 0 10px;
+    .action-sheet {
+      background-color: $sapphire-white;
+      padding: 20px 0 10px;
 
-  -servicestudio-position: relative;
-}
+      -servicestudio-position: relative;
 
-.sapphire-filter .action-sheet--title {
-  color: $sapphire-care-blue3;
-  /*secondary-color*/
-  font-size: 20px;
-  font-weight: 700;
-  text-align: center;
-}
+      &--title {
+        color: $sapphire-care-blue3;
+        /*secondary-color*/
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+      }
 
-.sapphire-filter .action-sheet--closebtn {
-  color: $dark-grey;
-  font-size: 24px;
-  position: absolute;
-  right: 18px;
-  top: 20px;
-}
+      &--closebtn {
+        color: $dark-grey;
+        font-size: 24px;
+        position: absolute;
+        right: 18px;
+        top: 20px;
+      }
 
-.is-rtl .sapphire-filter .action-sheet--closebtn {
-  left: 10px;
-  right: auto;
-}
+      &--closebtn {
+        .icon {
+          color: $mid-dark-grey;
+          font-size: 24px;
+        }
 
-.sapphire-filter .action-sheet--closebtn .icon {
-  color: $mid-dark-grey;
-  font-size: 24px;
-}
+        .is-rtl & {
+          left: 10px;
+          right: auto;
+        }
 
-.sapphire-filter .action-sheet--buttons-actions {
-  -servicestudio-max-height: initial;
-  max-height: 66vh;
-  overflow-y: auto;
-  padding: 20px 0;
-}
+      }
 
-.sapphire-filter .action-sheet-cancel {
-  padding: 0 20px 20px;
+      &--buttons-actions {
+        -servicestudio-max-height: initial;
+        max-height: 66vh;
+        overflow-y: auto;
+        padding: 20px 0;
+      }
+
+      &-cancel {
+        padding: 0 20px 20px;
+      }
+    }
+  }
+
+
 }
