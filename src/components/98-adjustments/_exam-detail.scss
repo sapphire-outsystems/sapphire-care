@@ -112,4 +112,29 @@
       padding-top: 25px;
     }
   }
+
+  @media (device-height : 568px) and (device-width : 320px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    [id*='ExamDetail'] {
+
+      .section {
+        padding-bottom: 45px;
+      }
+
+      .Exam__Container {
+        margin-top: 5px;
+
+        >div:first-child {
+          .cardInfo {
+
+            .cardInfo__content {
+              position: absolute;
+
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
