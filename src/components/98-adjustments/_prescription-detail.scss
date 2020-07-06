@@ -130,4 +130,44 @@
   }
 
   @extend %information-section;
+
+
+
+}
+
+@media (device-height : 568px) and (device-width : 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  [id*='PrescriptionDetail'] {
+
+
+    [id*='PrescriptionSquares'] {
+      .section {
+        .tabs-header {
+          margin-bottom: 15px;
+
+          .tabs-header-tab {
+            padding: 5px;
+          }
+        }
+
+        .card-prescription {
+          height: 80px;
+          padding: 5px;
+        }
+      }
+    }
+
+    [id*='Information'] {
+      .section {
+        padding-bottom: unset;
+        padding-top: 5px;
+
+        .cardInfo {
+          height: auto;
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+  }
+
 }

@@ -105,3 +105,9 @@
     background-color: $regular-alpha;
   }
 }
+
+@media (device-height : 568px) and (device-width : 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .header-top {
+    height: 60px;
+  }
+}
