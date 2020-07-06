@@ -1,0 +1,74 @@
+@use '~Settings/fonts'as *;
+@use '~Settings/colors'as *;
+
+$left_plus: 26px;
+$photo_size: 40px;
+$photo_size2: $photo_size - 2px;
+
+.select-profile {
+	display: flex;
+
+	.photo {
+		img {
+			border: 2px solid $regular-alpha;
+			border-radius: 50%;
+			height: $photo_size;
+			width: $photo_size;
+		}
+	}
+
+	&__photo-container {
+		align-items: center;
+		display: flex;
+
+		> div {
+			&:nth-child(2),
+			&:nth-child(3) {
+				left: 35px;
+				position: absolute;
+
+				img {
+					border-color: $mid-light-grey;
+					height: $photo_size2;
+					width: $photo_size2;
+				}
+			}
+
+			&:nth-child(3) {
+				left: 55px;
+
+				> div {
+					align-items: center;
+					background-color: $light-grey;
+					border: 2px solid $sapphire-white;
+					border-radius: 50%;
+					display: flex;
+					height: 38px;
+					justify-content: center;
+					width: 38px;
+				}
+			}
+		}
+	}
+
+	&__title {
+		left: $left_plus;
+		position: relative;
+
+		&.plus {
+			left: $left_plus + 20px;
+		}
+
+		> div {
+			&:nth-child(2) {
+				align-items: center;
+				color: $regular-alpha;
+				display: flex;
+
+				:first-child {
+					margin-right: 8px;
+				}
+			}
+		}
+	}
+}
