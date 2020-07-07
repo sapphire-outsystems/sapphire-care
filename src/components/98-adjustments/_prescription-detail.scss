@@ -82,6 +82,13 @@
       }
 
       .card-prescription {
+
+        &__content,
+        &__icon,
+        &__text {
+          height: 100%;
+        }
+
         @media screen and (max-width:576px) {
           display: block;
           font-size: $font-size-small;
