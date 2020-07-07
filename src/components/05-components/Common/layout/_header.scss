@@ -66,6 +66,16 @@
 
 
   }
+
+  .app-menu-icon {
+    &.back {
+      .is-rtl & {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+
 }
 
 .header-top {

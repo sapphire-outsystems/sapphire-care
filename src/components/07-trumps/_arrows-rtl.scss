@@ -1,19 +1,19 @@
 /* is-rtl arrows */
 .is-rtl .fa-angle-left:before {
-  content: "\f105";
+  content: "\e902";
 }
 
 .is-rtl .fa-angle-right:before {
-  content: "\f104";
+  content: "\e903";
 }
 
 .is-rtl .app-menu-back .fa-angle-left:before,
 .is-rtl .carousel-navigation .fa-angle-left:before {
-  content: "\f104";
+  content: "\e902";
 }
 
 .is-rtl .carousel-navigation .fa-angle-right:before {
-  content: "\f105";
+  content: "\e903";
 }
 
 .is-rtl [style^='text-align: right'] {
