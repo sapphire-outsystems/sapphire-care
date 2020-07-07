@@ -70,10 +70,12 @@ $marginContainers: 15px;
   [id*='AppoitmentsSection'] {
     .section {
       padding-bottom: 30px;
+      padding-left: 15px;
       padding-right: 0;
 
       .is-rtl & {
         padding-left: 0;
+        padding-right: 15px;
       }
     }
 
