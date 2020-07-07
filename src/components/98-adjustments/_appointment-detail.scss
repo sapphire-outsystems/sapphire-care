@@ -25,6 +25,12 @@
 		}
 	}
 
+	[id*='Request_Declined'] {
+		.section {
+			margin-top: 35px;
+		}
+	}
+
 	[id*='Information'] {
 		.section {
 			padding-bottom: 10px;

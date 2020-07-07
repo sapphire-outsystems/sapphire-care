@@ -1,7 +1,7 @@
 @use '~Settings/colors'as *;
 
-.background-green_S {
-  background-color: $regular-alpha;
+.background-green_S,
+.background-white_S {
   height: 100%;
   position: absolute;
   top: 0;
@@ -12,4 +12,12 @@
     height: auto;
     width: 100%;
   }
+}
+
+.background-green_S {
+  background-color: $regular-alpha;
+}
+
+.background-white_S {
+  background-color: $sapphire-white;
 }
