@@ -1,35 +1,36 @@
 /* Text Sizes */
 
 @use '~Settings/colors'as *;
+@use '~Settings/fonts'as *;
 
 .text-small {
-  font-size: 12px;
+  font-size: $font-size-small;
 }
 
 .text-medium {
-  font-size: 14px;
+  font-size: $font-size-normal;
 }
 
 .text-medium-large {
-  font-size: 24px;
+  font-size: $font-size-heading1;
 }
 
 .text-large {
-  font-size: 18px;
+  font-size: $font-size-heading3;
 }
 
 .text-extra-large {
-  font-size: 26px;
+  font-size: $font-size-big;
 }
 
 
 .text-extra2-large {
-  font-size: 60px;
+  font-size: $font-size-huge;
 }
 
 /*Font sizes*/
 .text-size-medium {
-  font-size: 20px;
+  font-size: $font-size-heading2;
 }
 
 /* Text colors */

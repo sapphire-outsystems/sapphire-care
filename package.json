@@ -4,7 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"dev": "set NODE_ENV=development && webpack-dev-server --config webpack.dev.js",
+		"dev_care": "set NODE_ENV=development && webpack-dev-server --config webpack.dev.js --env.url=care",
+		"dev_style": "set NODE_ENV=development && webpack-dev-server --config webpack.dev.js --env.url=style",
 		"prod": "set NODE_ENV=production && webpack --config webpack.prod.js",
 		"new:build": "npm run prod && git add . && git commit -m \"New Release\" --allow-empty && git push origin master",
 		"release:patch": "npm run new:build && release-it patch --ci",
