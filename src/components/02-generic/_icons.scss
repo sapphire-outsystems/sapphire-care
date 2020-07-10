@@ -81,114 +81,97 @@
 
 /* Icons */
 
-.sc-blank-campaign:before {
-  content: "\e949";
+.sc-trophy:before {
+  content: "\e956";
 }
 
-.sc-senttohospital:before {
-  content: "\e94a";
+.sc-publication:before {
+  content: "\e957";
 }
 
-.sc-campaign:before {
-  content: "\e94b";
+.sc-education:before {
+  content: "\e958";
 }
 
-.sc-filter-active:before {
-  content: "\e93a";
+.sc-mail:before {
+  content: "\e959";
 }
 
-.sc-medication-stick:before {
-  content: "\e93b";
+.sc-download:before {
+  color: $regular-alpha;
+  content: "\e95a";
 }
 
-.sc-medication-enema:before {
-  content: "\e93c";
+.sc-notes:before {
+  content: "\e95b";
 }
 
-.sc-medication-kit:before {
-  content: "\e93d";
+.sc-hourglass:before {
+  content: "\e95c";
 }
 
-.sc-medication-ring:before {
-  content: "\e93e";
+.sc-arrow-left-cal:before {
+  content: "\e95d";
 }
 
-.sc-medication-spray:before {
-  content: "\e93f";
+.sc-arrow-right-cal:before {
+  content: "\e95e";
 }
 
-.sc-medication-patche:before {
-  content: "\e940";
+.sc-clock:before {
+  content: "\e95f";
 }
 
-.sc-medication-ampoule:before {
-  content: "\e941";
+.sc-speciality:before {
+  content: "\e960";
 }
 
-.sc-medication-sachet:before {
-  content: "\e942";
+.sc-medicine:before {
+  content: "\e961";
 }
 
-.sc-medication-inhale:before {
-  content: "\e943";
+.sc-sapphire:before {
+  content: "\e962";
 }
 
-.sc-medication-bottle:before {
-  content: "\e944";
+.sc-calendar_agenda:before {
+  content: "\e963";
 }
 
-.sc-medication-glass:before {
-  content: "\e945";
+.sc-map-pin:before {
+  content: "\e950";
 }
 
-.sc-medication-bag:before {
-  content: "\e946";
-}
-
-.sc-medication-powder:before {
-  content: "\e947";
-}
-
-.sc-medication-syringe:before {
-  content: "\e948";
-}
-
-.sc-gps:before {
-  content: "\e90d";
-}
-
-/*allergies*/
-.sc-allergie:before,
-.sc-allergies:before {
+.sc-allergie:before {
   content: "\e900";
 }
 
-/*down*/
-.sc-arrow-down:before,
-.sc-down:before {
+.sc-arrow-down:before {
   content: "\e901";
 }
 
-/*left*/
-.sc-arrow-left:before,
-.sc-left:before {
+.sc-arrow-left:before {
   content: "\e902";
 }
 
-/*right*/
-.sc-arrow-right:before,
-.sc-right:before {
+.sc-arrow-right:before {
   content: "\e903";
 }
 
-/*up*/
-.sc-arrow-up:before,
-.sc-up:before {
+.sc-arrow-up:before {
   content: "\e904";
 }
 
 .sc-blank-appointment:before {
   content: "\e905";
+}
+
+.sc-blank-campaign:before {
+  content: "\e949";
+}
+
+.sc-blank-connection:before {
+  content: "\e955";
 }
 
 .sc-blank-documents:before {
@@ -215,6 +198,10 @@
   content: "\e90b";
 }
 
+.sc-campaign:before {
+  content: "\e94b";
+}
+
 .sc-change:before {
   content: "\e90c";
 }
@@ -231,6 +218,10 @@
   content: "\e910";
 }
 
+.sc-circle-check-invert:before {
+  content: "\e951";
+}
+
 .sc-circle-wrong:before {
   content: "\e911";
 }
@@ -239,13 +230,15 @@
   content: "\e915";
 }
 
+.sc-civil-ID:before {
+  content: "\e94f";
+}
+
 .sc-close:before {
   content: "\e912";
 }
 
-/*patient-history*/
-.sc-delayed:before,
-.sc-patient-history:before {
+.sc-delayed:before {
   content: "\e913";
 }
 
@@ -253,15 +246,15 @@
   content: "\e914";
 }
 
-/*resutts*/
-.sc-documents:before,
-.sc-resutts:before {
+.sc-documents:before {
+  content: "\e94d";
+}
+
+.sc-documents1:before {
   content: "\e916";
 }
 
-/*pencil*/
-.sc-edit:before,
-.sc-pencil:before {
+.sc-edit:before {
   content: "\e917";
 }
 
@@ -277,18 +270,28 @@
   content: "\e91a";
 }
 
-.sc-filter:before {
-  content: "\e91b";
+.sc-facebook:before {
+  content: "\e954";
 }
 
-/*figerprint*/
-.sc-fingerprint:before,
-.sc-figerprint:before {
+.sc-filter-active:before {
+  content: "\e93a";
+}
+
+.sc-fingerprint:before {
   content: "\e91c";
 }
 
 .sc-fingerprint-ok:before {
   content: "\e91d";
+}
+
+.sc-get-ride:before {
+  content: "\e94e";
+}
+
+.sc-gps:before {
+  content: "\e90d";
 }
 
 .sc-home:before {
@@ -299,20 +302,20 @@
   content: "\e91f";
 }
 
-/*info-ball*/
-.sc-info:before,
-.sc-info-ball:before {
+.sc-info:before {
   content: "\e920";
 }
 
-/*labs*/
-.sc-lab:before,
-.sc-labs:before {
+.sc-lab:before {
   content: "\e921";
 }
 
 .sc-language:before {
   content: "\e922";
+}
+
+.sc-linkedin:before {
+  content: "\e953";
 }
 
 .sc-list:before {
@@ -327,20 +330,48 @@
   content: "\e924";
 }
 
-/*blood-type*/
-.sc-medication-drop:before,
-.sc-blood-type:before {
+.sc-medication-ampoule:before {
+  content: "\e941";
+}
+
+.sc-medication-bag:before {
+  content: "\e946";
+}
+
+.sc-medication-bottle:before {
+  content: "\e944";
+}
+
+.sc-medication-drop:before {
   content: "\e925";
 }
 
-/*blood-type2*/
-.sc-medication-drop2:before,
-.sc-blood-type2:before {
+.sc-medication-drop2:before {
   content: "\e926";
+}
+
+.sc-medication-enema:before {
+  content: "\e93c";
+}
+
+.sc-medication-glass:before {
+  content: "\e945";
+}
+
+.sc-medication-inhale:before {
+  content: "\e943";
+}
+
+.sc-medication-kit:before {
+  content: "\e93d";
 }
 
 .sc-medication-ointment:before {
   content: "\e928";
+}
+
+.sc-medication-patche:before {
+  content: "\e940";
 }
 
 .sc-medication-pill:before {
@@ -351,27 +382,47 @@
   content: "\e92a";
 }
 
-/*menu*/
-.sc-menu-bar:before,
-.sc-menu:before {
+.sc-medication-powder:before {
+  content: "\e947";
+}
+
+.sc-medication-ring:before {
+  content: "\e93e";
+}
+
+.sc-medication-sachet:before {
+  content: "\e942";
+}
+
+.sc-medication-spray:before {
+  content: "\e93f";
+}
+
+.sc-medication-stick:before {
+  content: "\e93b";
+}
+
+.sc-medication-syringe:before {
+  content: "\e948";
+}
+
+.sc-menu-bar:before {
   content: "\e92b";
 }
 
-/*more*/
-.sc-menu-dots:before,
-.sc-more:before {
+.sc-menu-dots:before {
   content: "\e92c";
 }
 
-/*envelope*/
-.sc-message:before,
-.sc-envelope:before {
+.sc-message:before {
   content: "\e92d";
 }
 
-/*notifications-bell*/
-.sc-notification:before,
-.sc-notifications-bell:before {
+.sc-no-preference:before {
+  content: "\e94c";
+}
+
+.sc-notification:before {
   content: "\e92e";
 }
 
@@ -387,9 +438,7 @@
   content: "\e931";
 }
 
-/*settings*/
-.sc-preferences:before,
-.sc-settings:before {
+.sc-preferences:before {
   content: "\e932";
 }
 
@@ -397,24 +446,24 @@
   content: "\e933";
 }
 
-/*rads*/
-.sc-radioactive:before,
-.sc-rads:before {
+.sc-radioactive:before {
   content: "\e934";
 }
 
-.sc-route:before {
+~.sc-route:before {
   content: "\e935";
 }
 
-/*save-disk*/
-.sc-save:before,
-.sc-save-disk:before {
+.sc-save:before {
   content: "\e939";
 }
 
 .sc-search:before {
   content: "\e936";
+}
+
+.sc-senttohospital:before {
+  content: "\e94a";
 }
 
 .sc-share:before {
@@ -425,96 +474,6 @@
   content: "\e938";
 }
 
-
-.sc-no-preference:before {
-  content: "\e94c";
-}
-
-.sc-civil-ID:before {
-  content: "\e94f";
-}
-
-.sc-get-ride:before {
-  content: "\e94e";
-}
-
-.sc-Map-pin:before {
-  content: "\e950";
-}
-
-.sc-check-invert:before {
-  content: "\e951";
-}
-
 .sc-twitter:before {
   content: "\e952";
-}
-
-.sc-linkedin:before {
-  content: "\e953";
-}
-
-.sc-facebook:before {
-  content: "\e954";
-}
-
-.sc-blank-connection:before {
-  content: "\e955";
-}
-
-.sc-trophy:before {
-  content: "\e956";
-}
-
-.sc-publication:before {
-  content: "\e957";
-}
-
-.sc-education:before {
-  content: "\e958";
-}
-
-.sc-mail:before {
-  content: "\e959";
-}
-
-.sc-speciality:before {
-  content: "\e960";
-}
-
-.sc-medicine:before {
-  content: "\e961";
-}
-
-.sc-sapphire:before {
-  content: "\e962";
-}
-
-.sc-calendar-agenda:before {
-  content: "\e963";
-}
-
-.sc-clock:before {
-  content: "\e95f";
-}
-
-.sc-notes:before {
-  content: "\e95b";
-}
-
-.sc-download:before {
-  color: $regular-alpha;
-  content: "\e95a";
-}
-
-.sc-map-pin:before {
-  content: "\e950";
-}
-
-.sc-language-user:before {
-  content: "\e964";
-}
-
-.sc-hourglass:before {
-  content: "\e95c";
 }
