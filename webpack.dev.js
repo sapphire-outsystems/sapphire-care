@@ -2,8 +2,11 @@ const path = require('path');
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
-const care_dev_url='https://atc-dev.outsystemsenterprise.com/Care_MUI'
-const style_dev_url='https://atc-dev.outsystemsenterprise.com/SapphireCare_StyleGuide/';
+const dotenv = require('dotenv');
+
+dotenv.config();
+
+const {CARE_URL,STYLEGUIDE_URL}=process.env;
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
@@ -37,7 +40,7 @@ module.exports =env=>{
       {
         host: 'localhost',
         port: 3000,
-				proxy: env.url==='care'?care_dev_url:style_dev_url
+				proxy: env.url==='care'?CARE_URL:STYLEGUIDE_URL
       },
       {
 				reload: true
