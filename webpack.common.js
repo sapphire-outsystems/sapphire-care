@@ -55,13 +55,7 @@ module.exports = {
                 fiber: require('fibers'),
               },
 							sourceMap: !isProduction,
-							// prependData: () => {
-							// 	const path =
-							// 		isProduction
-							// 			? '/Sapphirev2_Th/fonts/Lato-Regular.ttf'
-							// 			: 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&display=swap';
-							// 	return `$font-url: '${path}';`;
-							// },
+							
 						},
 					},
 				],
