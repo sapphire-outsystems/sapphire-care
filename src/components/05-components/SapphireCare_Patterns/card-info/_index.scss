@@ -1,6 +1,7 @@
 @use '~Settings/colors'as *;
 @use '~Settings/fonts'as *;
 @use '~Tools/arrow-left-arabic'as *;
+@use '~Tools/card-profile-image'as *;
 
 .cardInfo {
   height: 110px;
@@ -60,6 +61,10 @@
       text-align: right;
 
       @extend %arrow-left;
+    }
+
+    .cardInfo__image {
+      @include cardImageSize(50px, $regular-alpha)
     }
   }
 

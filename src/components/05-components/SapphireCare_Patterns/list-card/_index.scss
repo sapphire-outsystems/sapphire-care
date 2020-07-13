@@ -1,8 +1,11 @@
 @use '~Settings/colors'as *;
 @use '~Settings/fonts'as *;
+@use '~Tools/card-profile-image'as *;
 
 .list-card {
-  .list-card__title {
+  display: flex;
+
+  &__title {
     font-family: $latin-bold;
     font-size: $font-size-heading4;
 
@@ -11,7 +14,12 @@
     }
   }
 
-  .list-card__content {
+  &__content {
     color: $mid-light-grey;
   }
+
+  &__image {
+    @include cardImageSize(50px, $regular-alpha)
+  }
+
 }
