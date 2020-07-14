@@ -82,31 +82,31 @@ $mobile-input-width:75px;
 
     [id*='Residential_Area'] {
 
-      .animated-label-text {
-        color: $regular-grey;
-        font-size: $font-size-normal;
-        position: relative;
-        top: 10px;
-      }
+      // .animated-label-text {
+      //   color: $regular-grey;
+      //   font-size: $font-size-normal;
+      //   position: relative;
+      //   top: 10px;
+      // }
 
-      .animated-label-input {
-        position: relative;
-        top: 20px;
+      // .animated-label-input {
+      //   position: relative;
+      //   top: 20px;
 
-        .form-control.city {
-          visibility: hidden;
-        }
+      //   .form-control.city {
+      //     visibility: hidden;
+      //   }
 
-        .dropdown-display {
-          height: 30px;
-          padding-left: 0;
-        }
+      //   .dropdown-display {
+      //     height: 30px;
+      //     padding-left: 0;
+      //   }
 
-        .select-dropdown:after {
-          border-color: $regular-alpha;
-          top: 15px;
-        }
-      }
+      //   .select-dropdown:after {
+      //     border-color: $regular-alpha;
+      //     top: 15px;
+      //   }
+      // }
     }
 
     [id*='NotificationPreferences'] {
