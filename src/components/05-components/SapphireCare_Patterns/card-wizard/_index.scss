@@ -15,6 +15,7 @@
   justify-content: space-between;
   margin-bottom: 15px;
   padding: 25px 15px;
+  -webkit-text-fill-color: $regular-alpha;
 
   &.selected {
     background-color: $regular-eta;

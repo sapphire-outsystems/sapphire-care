@@ -18,6 +18,7 @@ $width: 105px;
     color: $regular-alpha;
     display: contents;
     font-size: 50px;
+    -webkit-text-fill-color: $regular-alpha;
   }
 
   &__text {
