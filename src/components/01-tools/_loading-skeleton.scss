@@ -1,0 +1,39 @@
+@use '~Settings/colors'as *;
+
+@keyframes loading {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.loading {
+  background-color: $mid-light-grey !important;
+  border: none;
+  color: transparent;
+  overflow: hidden;
+  position: relative;
+
+  div {
+    background-color: transparent;
+    border: none;
+    color: transparent;
+  }
+
+
+  &::after {
+    animation: loading 1.5s infinite;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .2), transparent);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+    width: 100%;
+  }
+
+  +.loading {
+    background-color: $light-grey;
+  }
+
+}
