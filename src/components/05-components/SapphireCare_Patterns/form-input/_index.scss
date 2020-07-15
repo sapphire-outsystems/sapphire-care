@@ -35,10 +35,10 @@
   &:empty {
     color: $dark-grey;
     font-size: $font-size-heading4;
-    height: 30px;
+    height: 50px;
     line-height: 20px;
+    margin: 0;
     padding: 0;
-    padding-bottom: 10px;
   }
 
 }
