@@ -81,24 +81,8 @@ $mobile-input-width:75px;
     }
 
     [id*='Residential_Area'] {
-
-      .animated-label-input {
-        position: relative;
-        top: 20px;
-
-        .form-control.city {
-          visibility: hidden;
-        }
-
-        .dropdown-display {
-          height: 30px;
-          padding-left: 0;
-        }
-
-        .select-dropdown:after {
-          border-color: $regular-alpha;
-          top: 15px;
-        }
+      .dropdown-display {
+        padding-left: 0;
       }
     }
 

@@ -3,16 +3,22 @@
 @use '~Settings/colors'as *;
 @use '~Settings/fonts'as *;
 
-select.dropdown-display {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: $sapphire-white;
-  border: 0;
-  border-bottom: 1px solid $light-grey;
-  border-radius: 0;
-  font-size: $font-size-heading4;
-  height: 50px;
-  padding: 0 10px 4px;
+select {
+
+  &.dropdown-display {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: $sapphire-white;
+    border: 0;
+    border-bottom: 1px solid $light-grey;
+    border-radius: 0;
+    font-size: $font-size-heading4;
+    height: 50px;
+    overflow: hidden;
+    padding-right: 50px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 
 .select-dropdown {
