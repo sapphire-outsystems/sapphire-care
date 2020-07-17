@@ -6,6 +6,10 @@
   min-width: 20px;
   padding: 4px;
   top: -10px;
+
+  .is-loading & {
+    display: none;
+  }
 }
 
 .icon-badge .badge span {

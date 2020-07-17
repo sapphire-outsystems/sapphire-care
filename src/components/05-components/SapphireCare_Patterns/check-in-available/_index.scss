@@ -13,6 +13,10 @@
   padding: 0 15px;
   position: absolute;
 
+  .is-loading & {
+    display: none;
+  }
+
   .is-rtl & {
     border-top-left-radius: unset;
     border-top-right-radius: 0;

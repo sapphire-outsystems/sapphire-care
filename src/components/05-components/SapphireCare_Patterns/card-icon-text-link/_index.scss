@@ -14,6 +14,10 @@ $width: 105px;
   height: $height;
   justify-content: center;
 
+  .is-loading & {
+    background-color: transparent;
+  }
+
   &__icon {
     color: $regular-alpha;
     display: contents;
@@ -21,8 +25,6 @@ $width: 105px;
     -webkit-text-fill-color: $regular-alpha;
 
     .is-loading & {
-      color: $regular-grey;
-      -webkit-text-fill-color: $regular-grey;
       visibility: hidden;
     }
   }

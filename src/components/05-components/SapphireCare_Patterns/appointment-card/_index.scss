@@ -226,7 +226,11 @@
   }
 
   &__timeto {
-    @include remainDays
+    @include remainDays;
+
+    .is-loading & {
+      display: none;
+    }
   }
 
   &__photo-container+&__timeto {
