@@ -19,6 +19,12 @@ $width: 105px;
     display: contents;
     font-size: 50px;
     -webkit-text-fill-color: $regular-alpha;
+
+    .is-loading & {
+      color: $regular-grey;
+      -webkit-text-fill-color: $regular-grey;
+      visibility: hidden;
+    }
   }
 
   &__text {

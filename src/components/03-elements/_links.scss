@@ -4,11 +4,11 @@
 
 a {
   color: $regular-alpha;
-  font-weight: 600;
+  //font-family: $latin-bold;
 
   &:link {
     color: $regular-alpha;
-    font-weight: 600;
+    //font-family: $latin-bold;
 
     &:active {
       color: $regular-beta;
@@ -21,7 +21,7 @@ a {
 
   &:visited {
     color: $regular-alpha;
-    font-weight: 600;
+    //font-family: $latin-bold;
 
     &:active {
       color: $regular-beta;
@@ -56,21 +56,21 @@ a {
 .app-menu {
   a {
     color: $dark-grey;
-    font-size: 18px;
+    font-size: $font-size-heading3;
 
     &:link {
       color: $dark-grey;
-      font-size: 18px;
+      font-size: $font-size-heading3;
     }
 
     &:visited {
       color: $dark-grey;
-      font-size: 18px;
+      font-size: $font-size-heading3;
     }
 
     &:active,
     &.active {
-      color: $sapphire-care-blue3;
+      color: $regular-beta;
       font-family: $latin-bold;
 
       .is-rtl & {
@@ -78,13 +78,20 @@ a {
       }
 
       .icon {
-        color: $sapphire-care-blue3;
+        color: $regular-beta;
         font-family: $latin-bold;
 
         .is-rtl & {
           font-family: $arabic-bold;
         }
       }
+    }
+  }
+
+  &-container {
+    .sc {
+
+      color: $regular-alpha;
     }
   }
 
@@ -120,7 +127,7 @@ a {
 
 .submenu-item {
   color: $dark-grey;
-  font-size: 18px;
+  font-size: $font-size-heading3;
 
   &:active {
     color: $sapphire-care-blue3;

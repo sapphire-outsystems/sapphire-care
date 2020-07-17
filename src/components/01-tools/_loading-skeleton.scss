@@ -8,16 +8,12 @@
 
 .is-loading {
   background-color: $mid-light-grey !important;
+  background-image: unset;
   border: none;
   color: transparent;
   overflow: hidden;
   position: relative;
 
-  div {
-    background-color: transparent;
-    border: none;
-    color: transparent;
-  }
 
 
   &::after {

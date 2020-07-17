@@ -18,6 +18,13 @@
   position: relative;
   width: 100%;
 
+  .is-loading & {
+    background-color: transparent;
+    background-image: unset;
+    border: none;
+    color: transparent;
+  }
+
   @media (orientation: portrait) {
     max-width: 320px;
   }
@@ -88,6 +95,8 @@
       &:nth-of-type(3) {
         border-top: 1px solid rgba(0, 0, 0, 0.2);
         flex: 1;
+
+
       }
     }
 
@@ -111,6 +120,10 @@
     &:nth-of-type(2) {
       border-top: 1px solid rgba(0, 0, 0, 0.2);
       flex: 1;
+
+      .is-loading & {
+        border-top: none;
+      }
     }
   }
 

@@ -7,6 +7,12 @@
   color: $dark-grey;
   padding: 10px;
 
+  .is-loading & {
+    >div {
+      visibility: hidden;
+    }
+  }
+
   &__title {
     color: $regular-alpha;
     font-family: $latin-bold;
