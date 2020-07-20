@@ -14,6 +14,10 @@
   overflow: hidden;
   position: relative;
 
+  .is-rtl & {
+    background-image: linear-gradient(to right, $light-grey, $sapphire-light);
+  }
+
   &::after {
     animation: loading 1.5s infinite;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
