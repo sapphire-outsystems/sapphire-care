@@ -7,14 +7,12 @@
 }
 
 .is-loading {
-  background-color: $light-grey;
-  background-image: unset;
+  //background-color: $light-grey;
+  background-image: linear-gradient(to left, $light-grey, $sapphire-light);
   border: none;
   color: transparent;
   overflow: hidden;
   position: relative;
-
-
 
   &::after {
     animation: loading 1.5s infinite;
@@ -31,5 +29,4 @@
   +.is-loading {
     background-color: $light-grey;
   }
-
 }

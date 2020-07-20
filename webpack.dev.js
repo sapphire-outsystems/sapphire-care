@@ -39,7 +39,8 @@ module.exports =env=>{
 		new BrowserSyncPlugin(
       {
         host: 'localhost',
-        port: 3000,
+				port: 3000,
+				https: true,
 				proxy: env.url==='care'?CARE_URL:STYLEGUIDE_URL
       },
       {
