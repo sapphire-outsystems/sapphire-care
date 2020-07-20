@@ -5,6 +5,13 @@ $marginContainers:15px;
 $line-height:1.3rem;
 $max-lines:3;
 
+%Isloding {
+  .is-loading & {
+    background-color: $light-grey;
+    color: transparent;
+  }
+}
+
 .generic-card {
   align-items: center;
   background-color: $sapphire-white;
@@ -21,6 +28,14 @@ $max-lines:3;
     .generic-card__image {
       margin-right: $marginContainers;
 
+      .is-loading & {
+        background-color: $light-grey;
+
+        img {
+          visibility: hidden;
+        }
+      }
+
       .is-rtl & {
         margin-left: $marginContainers;
         margin-right: unset;
@@ -34,6 +49,11 @@ $max-lines:3;
 
     .generic-card__news {
       display: block;
+
+      .title,
+      .date {
+        @extend %Isloding;
+      }
 
     }
   }
@@ -51,6 +71,16 @@ $max-lines:3;
     max-width: 350px;
     position: relative;
 
+    .is-loading & {
+      background-color: $sapphire-white;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      color: transparent;
+      max-width: unset;
+      position: static;
+
+    }
+
     @media (orientation: landscape) {
       max-width: 100%;
     }
@@ -62,6 +92,8 @@ $max-lines:3;
       .title,
       .date {
         color: $sapphire-white;
+        @extend %Isloding;
+
       }
 
     }
@@ -70,6 +102,8 @@ $max-lines:3;
 
   .generic-card__icon {
     margin-right: $marginContainers;
+
+    @extend %Isloding;
   }
 
   .generic-card__news {
@@ -101,6 +135,9 @@ $max-lines:3;
         .is-rtl & {
           font-family: $arabic-bold;
         }
+
+
+        @extend %Isloding;
       }
 
 
@@ -112,8 +149,12 @@ $max-lines:3;
     color: $mid-light-grey;
     display: flex;
 
+    @extend %Isloding;
+
     .clock {
       margin-right: 5px;
+
+      @extend %Isloding;
     }
   }
 
