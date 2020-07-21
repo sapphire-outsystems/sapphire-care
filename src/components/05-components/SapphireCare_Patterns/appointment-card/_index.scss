@@ -1,15 +1,9 @@
 @use '~Settings/colors'as *;
 @use '~Tools/background-gradient'as gradient;
 @use '~Tools/remaining-days'as *;
+@use '~Tools/loading-skeleton'as *;
 
-%IsLoading {
-  .is-loading & {
-    background-color: transparent;
-    background-image: unset;
-    border: none;
-    color: transparent;
-  }
-}
+
 
 .appointment-card {
   @include gradient.backgroundGradient;
@@ -26,8 +20,6 @@
   padding-top: 18px;
   position: relative;
   width: 100%;
-
-  @extend %IsLoading;
 
 
   &.requested {

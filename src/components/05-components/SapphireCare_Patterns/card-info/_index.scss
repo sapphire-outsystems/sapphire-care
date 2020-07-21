@@ -3,6 +3,8 @@
 @use '~Tools/arrow-left-arabic'as *;
 @use '~Tools/card-profile-image'as *;
 
+
+
 .cardInfo {
   height: 110px;
 
@@ -15,6 +17,8 @@
   &__label {
     color: $regular-grey;
     margin-bottom: 20px;
+
+
 
     @media screen and (max-width:320px) {
       margin-bottom: 5px;
@@ -30,17 +34,22 @@
       .cardInfo__title {
         font-family: $latin-bold;
         font-size: $font-size-heading4;
+        margin-right: 10px;
 
         .is-rtl & {
           font-family: $arabic-bold;
         }
+
       }
 
       .cardInfo__content {
         color: $regular-grey;
+
       }
 
     }
+
+
 
     .cardInfo__icon {
       align-items: flex-start;
@@ -53,6 +62,12 @@
         margin-left: 15px;
         margin-right: unset;
       }
+
+      .is-loading & {
+        i {
+          //@extend %IsLoading;
+        }
+      }
     }
 
     .cardInfo__link {
@@ -60,12 +75,23 @@
       font-size: 30px;
       text-align: right;
 
+      >i {
+        //@extend %IsLoading;
+      }
+
       @extend %arrow-left;
     }
 
     .cardInfo__image {
-      @include cardImageSize(50px, $regular-alpha)
+      @include cardImageSize(50px, $regular-alpha);
+
+      .is-loading {
+        border-radius: 50%;
+      }
+
     }
+
+
   }
 
 }

@@ -4,6 +4,10 @@
     display: flex;
     justify-content: space-between;
 
+    .is-loading {
+      display: block;
+    }
+
     &.double {
       .CardInfo__Container {
         padding: 25px;

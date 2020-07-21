@@ -6,16 +6,26 @@
   }
 }
 
+
+
 .is-loading {
   //background-color: $light-grey;
-  background-image: linear-gradient(to left, $light-grey, $sapphire-light);
+  background-image: $skeleton-color;
   border: none;
   color: transparent;
+  display: inline-flex;
+  margin-bottom: 5px;
   overflow: hidden;
   position: relative;
 
+
+
   .is-rtl & {
-    background-image: linear-gradient(to right, $light-grey, $sapphire-light);
+    background-image: $skeleton-color-arabic;
+  }
+
+  img {
+    visibility: hidden;
   }
 
   &::after {
@@ -31,6 +41,7 @@
   }
 
   +.is-loading {
-    background-color: $light-grey;
+    margin-top: 10px;
   }
+
 }

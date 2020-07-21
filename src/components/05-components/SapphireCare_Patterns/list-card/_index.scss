@@ -3,7 +3,6 @@
 @use '~Tools/card-profile-image'as *;
 
 .list-card {
-  background-color: white;
   display: flex;
 
   &__title {
@@ -24,11 +23,8 @@
   &__content {
     color: $mid-light-grey;
 
-    >span {
-      .is-loading & {
-        background-color: $light-grey;
-        color: transparent;
-      }
+    .is-loading {
+      margin-right: 10px;
     }
 
   }
@@ -36,16 +32,8 @@
   &__image {
     @include cardImageSize(50px, $regular-alpha);
 
-    >div {
-      .is-loading & {
-        background-color: $light-grey;
-        border-radius: 50%;
-        color: transparent;
-
-        img {
-          visibility: hidden;
-        }
-      }
+    .is-loading {
+      border-radius: 50%;
     }
 
   }
