@@ -3,11 +3,18 @@
 @use '~Tools/card-profile-image'as *;
 
 .list-card {
+  background-color: white;
   display: flex;
 
   &__title {
     font-family: $latin-bold;
     font-size: $font-size-heading4;
+
+    .is-loading & {
+      background-color: $light-grey;
+      color: transparent;
+      display: inline;
+    }
 
     .is-rtl & {
       font-family: $arabic-bold;
@@ -16,10 +23,31 @@
 
   &__content {
     color: $mid-light-grey;
+
+    >span {
+      .is-loading & {
+        background-color: $light-grey;
+        color: transparent;
+      }
+    }
+
   }
 
   &__image {
-    @include cardImageSize(50px, $regular-alpha)
+    @include cardImageSize(50px, $regular-alpha);
+
+    >div {
+      .is-loading & {
+        background-color: $light-grey;
+        border-radius: 50%;
+        color: transparent;
+
+        img {
+          visibility: hidden;
+        }
+      }
+    }
+
   }
 
 }
