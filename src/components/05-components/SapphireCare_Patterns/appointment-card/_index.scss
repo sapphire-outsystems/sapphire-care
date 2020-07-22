@@ -3,7 +3,14 @@
 @use '~Tools/remaining-days'as *;
 @use '~Tools/loading-skeleton'as *;
 
-
+%IsLoading {
+  .is-loading & {
+    background-color: transparent;
+    background-image: unset;
+    border: none;
+    color: transparent;
+  }
+}
 
 .appointment-card {
   @include gradient.backgroundGradient;
@@ -21,6 +28,7 @@
   position: relative;
   width: 100%;
 
+  @extend %IsLoading;
 
   &.requested {
     background-color: $sapphire-white;
