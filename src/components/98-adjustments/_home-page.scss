@@ -127,6 +127,12 @@ $marginContainers: 15px;
           -webkit-text-fill-color: transparent;
         }
       }
+
+      .card-icon__icon {
+        [id*='Content'] {
+          display: flex;
+        }
+      }
     }
 
     .list {
