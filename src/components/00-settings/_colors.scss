@@ -52,55 +52,6 @@
 // .SapphireDarkBlue      : #30384A - $sapphire-dark-blue
 // .SapphireGreyBlue      : #494F5C - $sapphire-grey-blue
 
-// ------------------------------------->
-// .BlueLight             : #C4F0EB - Changed to C4F0EB    LightBlue Deprecated
-// .BlueNavy              : #C4F0EB - Changed to C4F0EB    LightBlue  Deprecated
-// .Brown                 : #ca2c92 - Deprecated
-// .DarkPlum              : #ca2c92 - Deprecated
-// .Gray                  : #79868A - Deprecated
-// .Light                 : #ca2c92 - Deprecated
-// .LightTurquoise        : #C4F0EB - Changed to C4F0EB  LightBlue Deprecated
-// .PinkLight             : #CA2C92 - Deprecated
-// .Plum                  : #C32B87 - Changed to Pink Deprecated
-// .SapphireBackground    : #F3F3F3 - Changed to BodyColor Deprecated
-// .SapphireBlue2         : #00BFA5 - Changed to Alpha Deprecated
-// .SapphireClinician     : #D6D6D6 - Changed to lightGrey Deprecated
-// .SapphireDarkBlue1     : #333333 - Changed to DarkGrey Deprecated
-// .SapphireDarkBlue2     : #30384A - Changed to SapphireDarkBlue Deprecated
-// .SapphireDarkGrey      : #858585 - Changed to Grey Deprecated
-// .SapphireDarkText      : #333333 - Changed to DarkGrey Deprecated
-// .SapphireFemale        : #C892B3 - Changed to LightPink Deprecated
-// .SapphireInactive      : #ADADAD - Changed to MidLightGrey Deprecated
-// .SapphireLight         : #EBEBEB - Changed to SapphireLightContainer Deprecated
-// .SapphireLightBoard    : #D6D6D6 - Changed to LightGrey Deprecated
-// .SapphireLightText     : #F3F3F3 - Changed to BodyColor Deprecated
-// .SapphireLightText2    : #ca2c92 - Deprecated
-// .SapphireMale          : #194968 - Changed to DarkBlue Deprecated
-// .SapphireSilver        : #F3F3F3 - Changed to BodyColor Deprecated
-// .SapphireWarning       : #FF3E2D - Changed to Red Deprecated
-// .SapphireWhite         : #FFFFFF - Changed to white Deprecated
-// .Silver                : #D6D6D6 - Changed to LightGrey Deprecated
-// .Transparent           : #ca2c92 - Deprecated
-// .Turquoise             : #039BE5 - Changed to Blue Deprecated
-
-// Style guide: Colors
-
-// $regular-alpha: red;
-// $regular-beta: #C84B56;
-// $regular-gamma: #DE5360;
-// $regular-delta: #F45B69;
-// $regular-epsilon: #F78791;
-// $regular-zeta: #F8969F;
-// $regular-eta: #F9A5AD;
-
-// $regular-alpha: #660066;
-// $regular-beta: #800080;
-// $regular-gamma: #be29ec;
-// $regular-delta: #d896ff;
-// $regular-epsilon: #efbbff;
-// $regular-zeta: #f8969f;
-// $regular-eta: #f9a5ad;
-
 $regular-alpha: #00bfa5;
 $regular-beta: #009884;
 $regular-gamma: #006758;
@@ -150,10 +101,10 @@ $regular-red: #ff3e2d;
 $sapphire-background: #f3f3f3;
 $sapphire-blue: #2a5a6e;
 $sapphire-blue2: #00bfa5;
-$sapphire-care-blue1:#0e4f7c;
-$sapphire-care-blue2:#105C90;
-$sapphire-care-blue3:#002B49;
-$sapphire-care-red:#FA5252;
+$sapphire-care-blue1: #0e4f7c;
+$sapphire-care-blue2: #105c90;
+$sapphire-care-blue3: #002b49;
+$sapphire-care-red: #fa5252;
 $sapphire-clinician: #d6d6d6;
 $sapphire-dark-blue: #30384a;
 $sapphire-dark-blue1: #333333;
@@ -180,63 +131,3 @@ $regular-yellow: #fbc02d;
 $gray-darker: #333333;
 $gray-light: #d6d6d6;
 $gray-lighter: #f3f3f3;
-$primary-darker: #194968;
-$primary-dark: #2a5a6e;
-$primary-light: #56d3c2;
-$primary-lighter: #c4f0eb;
-$secondary-dark: #009884;
-$secondary-darker: #006758;
-$secondary: #009884;
-$secondary-light: #56d3c2;
-$secondary-lighter: #c4f0eb;
-
-// $color-black:#333333;
-// $color-dark-blue:#194968;
-// $color-green:#7CB342;
-// $color-red:#FF3E2D;
-// $color-text-red:#FF3E2D;
-// $color-turquoise:#039BE5;
-// $color-turquoise2:#039BE5;
-// $color-yellow:#FBC02D;
-// $text-black:#333333;
-// $text-blue:#039BE5;
-// $text-dark-blue:#194968;
-// $text-Dark-blue:#194968;
-// $text-dark-plum:#C32B87;
-// $text-dark-red:#B10100;
-// $text-gray:#858585;
-// $text-green:#7CB242;
-// $text-light-green:#C2DEA8;
-// $text-orange:#FFA000;
-// $text-plum:#C32B87;
-// $text-red:#FF3E2D;
-// $text-sapphire-background:#F3F3F3;
-// $text-sapphire-blue:#2A5A6E;
-// $text-sapphire-blue2: #2A5A6E;
-// $text-sapphire-clinician:#D6D6D6;
-// $text-sapphire-dark-blue1:#333333;
-// $text-sapphire-dark-blue2:#30384A;
-// $text-sapphire-dark-grey:#858585;
-// $text-sapphire-dark-text:#333333;
-// $text-sapphire-male:#194968;
-// $text-sapphire-female:#C892B3;
-// $text-sapphire-inactive:#ADADAD;
-// $text-sapphire-lighness-text:#F3F3F3;
-// $text-sapphire-light-board:#D6D6D6;
-// $text-sapphire-light-container:#EBEBEB;
-// $text-sapphire-light-text:#F3F3F3;
-// $text-sapphire-warning:#FF3E2D;
-// $text-sapphire-white:#fff;
-// $text-silver:#D6D6D&;
-// $text-turquoise:#039BE5;
-// $text-yellow:#FBc02D;
-
-$sapphire-color-text-dark: $regular-black;
-$sapphire-color-text-regular: $dark-grey;
-$sapphire-color-text-light: $mid-dark-grey;
-
-$sapphire-color-text-lighter: $mid-light-grey;
-$sapphire-color-text-lightest: $light-grey;
-$sapphire-color-disabled-background: $sapphire-light;
-$sapphire-color-disabled-border: $mid-light-grey;
-$sapphire-color-disabled-text: $mid-light-grey;

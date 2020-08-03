@@ -10,11 +10,9 @@
 		"prod": "cross-env NODE_ENV=production && webpack --config webpack.prod.js"
 	},
 	"scripts": {
-		"treta": "echo $npm_package_config_treta",
-		"dev": "$npm_package_config_env_dev && $npm_package_config_server_dev",
-		"dev_care": "$npm_package_config_env_dev && $npm_package_config_server_dev --env.url=care",
-		"dev_style": "$npm_package_config_env_dev && $npm_package_config_server_dev --env.url=style",
-		"prod": "$npm_package_config_prod",
+		"dev-care": "set NODE_ENV=development && webpack-dev-server --config webpack.dev.js --env.url=care",
+		"dev-style": "set NODE_ENV=development && webpack-dev-server --config webpack.dev.js --env.url=style",
+		"prod": "set NODE_ENV=production && webpack --config webpack.prod.js",
 		"new:build": "npm run prod && git add . && git commit -m \"New Release\" --allow-empty && git push origin master",
 		"release:patch": "npm run new:build && release-it patch --ci",
 		"release:minor": "npm run new:build && release-it minor --git.requireBranch=master",
@@ -50,7 +48,6 @@
 		"webpack-merge": "^4.2.2"
 	},
 	"dependencies": {
-		"browser-sync": "^2.26.7",
 		"fibers": "^4.0.2"
 	}
 }

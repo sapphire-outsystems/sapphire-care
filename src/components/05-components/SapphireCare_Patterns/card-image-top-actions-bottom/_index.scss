@@ -7,6 +7,14 @@
 	border-radius: 10px;
 	box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.14);
 	overflow: hidden;
+
+	.is-loading {
+		margin-bottom: 0;
+
+		> div {
+			visibility: hidden;
+		}
+	}
 }
 
 .card-image-top-img-wrapper,
