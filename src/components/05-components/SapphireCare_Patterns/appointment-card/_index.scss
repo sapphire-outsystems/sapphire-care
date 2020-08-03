@@ -1,6 +1,16 @@
 @use '~Settings/colors'as *;
 @use '~Tools/background-gradient'as gradient;
 @use '~Tools/remaining-days'as *;
+@use '~Tools/loading-skeleton'as *;
+
+%IsLoading {
+  .is-loading & {
+    background-color: transparent;
+    background-image: unset;
+    border: none;
+    color: transparent;
+  }
+}
 
 .appointment-card {
   @include gradient.backgroundGradient;
@@ -18,21 +28,26 @@
   position: relative;
   width: 100%;
 
-  .is-loading & {
-    background-color: transparent;
-    background-image: unset;
-    border: none;
-    color: transparent;
-  }
-
+  @extend %IsLoading;
 
   &.requested {
     background-color: $sapphire-white;
     background-image: none;
     color: $dark-grey;
 
+    .is-loading & {
+      background-color: transparent;
+      background-image: unset;
+      border: none;
+      color: transparent;
+    }
+
     .appointment-card__title--container {
       color: $regular-alpha;
+
+      .is-loading & {
+        color: transparent;
+      }
 
       .appointment-card--subtitle {
         color: $dark-grey;
@@ -61,6 +76,10 @@
       padding: 15px 0;
       position: absolute;
       top: 0;
+
+      .is-loading & {
+        display: none;
+      }
 
       .is-rtl & {
         right: 5px;
@@ -93,6 +112,9 @@
         border-top: 1px solid rgba(0, 0, 0, 0.2);
         flex: 1;
 
+        .is-loading & {
+          border-top: none;
+        }
 
       }
     }

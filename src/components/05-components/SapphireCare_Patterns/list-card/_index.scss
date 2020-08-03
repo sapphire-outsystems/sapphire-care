@@ -9,6 +9,12 @@
     font-family: $latin-bold;
     font-size: $font-size-heading4;
 
+    .is-loading & {
+      background-color: $light-grey;
+      color: transparent;
+      display: inline;
+    }
+
     .is-rtl & {
       font-family: $arabic-bold;
     }
@@ -16,10 +22,20 @@
 
   &__content {
     color: $mid-light-grey;
+
+    .is-loading {
+      margin-right: 10px;
+    }
+
   }
 
   &__image {
-    @include cardImageSize(50px, $regular-alpha)
+    @include cardImageSize(50px, $regular-alpha);
+
+    .is-loading {
+      border-radius: 50%;
+    }
+
   }
 
 }

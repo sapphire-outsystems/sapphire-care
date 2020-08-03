@@ -4,8 +4,14 @@
 
 $icons-size:48px;
 
+
 .DetailHeader {
   position: relative;
+
+
+  .cardInfo {
+    background-color: transparent;
+  }
 
   &.WithLinks {
     .Date__Container {
@@ -16,6 +22,7 @@ $icons-size:48px;
   .section-title {
     color: $sapphire-white;
 
+
     .Title__Container {
       align-items: center;
       display: flex;
@@ -24,6 +31,7 @@ $icons-size:48px;
 
       .Title_Value {
         font-size: $font-size-heading1;
+
 
         [id*='DrugMg'] {
           font-family: $latin-regular;
@@ -70,7 +78,7 @@ $icons-size:48px;
       div[id*='Date__Value'] {
         display: contents;
         font-family: $latin-bold;
-        font-size: 16px;
+        font-size: $font-size-normal;
 
         .is-rtl & {
           font-family: $arabic-bold;

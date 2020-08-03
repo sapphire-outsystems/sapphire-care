@@ -77,6 +77,18 @@
         }
       }
 
+
+
+      .period__row {
+        >div {
+          flex: 1;
+
+          &:nth-child(2) {
+            margin: 0 5px;
+          }
+        }
+      }
+
       .period__row:first-of-type {
         margin-bottom: 15px;
       }
