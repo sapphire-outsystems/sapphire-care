@@ -10,7 +10,7 @@
 		"prod": "cross-env NODE_ENV=production && webpack --config webpack.prod.js"
 	},
 	"scripts": {
-		"dev-care": "set NODE_ENV=development && webpack-dev-server --config webpack.dev.js --env.url=care",
+		"dev": "set NODE_ENV=development && webpack-dev-server --config webpack.dev.js --env.url=care",
 		"dev-style": "set NODE_ENV=development && webpack-dev-server --config webpack.dev.js --env.url=style",
 		"prod": "set NODE_ENV=production && webpack --config webpack.prod.js",
 		"new:build": "npm run prod && git add . && git commit -m \"New Release\" --allow-empty && git push origin master",

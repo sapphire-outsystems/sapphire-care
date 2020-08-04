@@ -3,134 +3,129 @@
 @use '~Settings/fonts'as *;
 
 .screen {
-  z-index: 1;
+	z-index: 1;
 
-  &.base {
-    .header {
-      background-color: transparent;
+	&.base {
+		.header {
+			background-color: transparent;
 
-      .header-title {
-        color: $sapphire-care-blue3;
-      }
-    }
+			.header-title {
+				color: $sapphire-care-blue3;
+			}
+		}
 
-    .content,
-    .list {
-      background-color: transparent;
-    }
+		.content,
+		.list {
+			background-color: transparent;
+		}
 
+		.list-item {
+			border-bottom: none;
+			padding: 15px 3px;
+		}
+	}
 
+	&.detail {
+		.header {
+			background-color: transparent;
+			height: auto;
 
-    .list-item {
-      padding: 15px 0;
-    }
-  }
+			.header-title {
+				font-size: $font-size-heading3;
+			}
 
-  &.detail {
-    .header {
-      background-color: transparent;
-      height: auto;
+			.header-content {
+				.section {
+					padding-left: 0;
+					padding-right: 0;
+				}
+			}
+		}
 
-      .header-title {
-        font-size: $font-size-heading3;
-      }
-
-      .header-content {
-        .section {
-          padding-left: 0;
-          padding-right: 0;
-        }
-      }
-    }
-
-    .shadow {
-      display: none;
-    }
-  }
+		.shadow {
+			display: none;
+		}
+	}
 }
 
 .header {
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  //height: 120px;
-  justify-content: center;
+	color: inherit;
+	display: flex;
+	flex-direction: column;
+	//height: 120px;
+	justify-content: center;
 
-  a,
-  a:link,
-  a:visited {
-    color: $regular-alpha;
-    /*primary-color*/
-    margin: 0;
-    padding: 0;
+	a,
+	a:link,
+	a:visited {
+		color: $regular-alpha;
+		/*primary-color*/
+		margin: 0;
+		padding: 0;
+	}
 
-
-  }
-
-  .app-menu-icon {
-    &.back {
-      .is-rtl & {
-        transform: rotate(180deg);
-      }
-    }
-  }
-
-
+	.app-menu-icon {
+		&.back {
+			.is-rtl & {
+				transform: rotate(180deg);
+			}
+		}
+	}
 }
 
 .app-menu-icon {
-  .is-loading & {
-    visibility: hidden;
-  }
+	.is-loading & {
+		visibility: hidden;
+	}
 }
 
 .header-top {
-  height: 100px;
-  padding: 0;
+	height: 100px;
+	padding: 0;
 }
 
 .app-menu-line {
-  background-color: $regular-alpha;
-  /*primary-color*/
+	background-color: $regular-alpha;
+	/*primary-color*/
 }
 
 .header-title,
 .header-right {
-  color: inherit;
+	color: inherit;
 }
 
 .header-title {
-  color: $sapphire-white;
-  flex: 5;
-  font-family: $latin-bold;
-  font-size: $font-size-heading1;
-  text-align: left;
-  white-space: nowrap;
+	color: $sapphire-white;
+	flex: 5;
+	font-family: $latin-bold;
+	font-size: $font-size-heading1;
+	text-align: left;
+	white-space: nowrap;
 
-  .is-rtl & {
-    font-family: $arabic-bold;
-  }
+	.is-rtl & {
+		font-family: $arabic-bold;
+	}
 
-  img {
-    display: block;
-    margin: 0 auto;
-  }
+	img {
+		display: block;
+		margin: 0 auto;
+	}
 }
 
 .is-rtl .header-title {
-  text-align: right;
+	text-align: right;
 }
 
 .header-content button.button-group-item.button-group-selected-item {
-  color: $regular-alpha;
+	color: $regular-alpha;
 
-  &:after {
-    background-color: $regular-alpha;
-  }
+	&:after {
+		background-color: $regular-alpha;
+	}
 }
 
-@media (device-height : 568px) and (device-width : 320px) and (-webkit-min-device-pixel-ratio: 2) {
-  .header-top {
-    height: 60px;
-  }
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+	.header-top {
+		height: 60px;
+	}
 }
