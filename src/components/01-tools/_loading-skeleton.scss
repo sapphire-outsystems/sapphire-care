@@ -1,4 +1,5 @@
-@use '~Settings/colors'as *;
+@use '~Settings/borders' as *;
+@use '~Settings/colors' as *;
 
 @keyframes loading {
 	100% {
@@ -9,6 +10,7 @@
 .is-loading {
 	background-image: $skeleton-color;
 	border: none;
+	border-radius: $border-radius-default;
 	color: transparent;
 	display: inline-flex;
 	margin-bottom: 5px;
