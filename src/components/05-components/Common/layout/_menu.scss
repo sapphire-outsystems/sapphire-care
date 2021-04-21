@@ -58,12 +58,6 @@
 	a:visited {
 		background-color: $sapphire-white;
 		border: 0;
-		border-bottom: 1px solid $light-grey;
-	}
-
-	a:first-child,
-	a:link:first-child,
-	a:visited:first-child {
-		border-top: 1px solid $light-grey;
+		padding: 14px 10px 14px 65px;
 	}
 }
