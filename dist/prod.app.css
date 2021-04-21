@@ -1456,8 +1456,8 @@ input.switch[disabled]:checked:after {
 }
 .header-title img {
   display: block;
+  height: 45px;
   margin: 0 auto;
-  width: 130px;
 }
 
 .is-rtl .header-title {
@@ -5961,7 +5961,6 @@ div[data-block*="Specialties.SpecialtiesList"] div[data-block="SapphireCare_Patt
   background-color: transparent;
 }
 [id*=HomePage] .header-title {
-  align-items: flex-end;
   align-items: center;
   display: flex;
   height: 100%;
