@@ -3,138 +3,137 @@
 @use '~Settings/fonts'as *;
 
 a {
-  color: $regular-alpha;
-  //font-family: $latin-bold;
+	color: $regular-alpha;
+	//font-family: $latin-bold;
 
-  &:link {
-    color: $regular-alpha;
-    //font-family: $latin-bold;
+	&:link {
+		color: $regular-alpha;
+		//font-family: $latin-bold;
 
-    &:active {
-      color: $regular-beta;
-    }
+		&:active {
+			color: $regular-beta;
+		}
 
-    .icon {
-      margin: -15px -5px;
-    }
-  }
+		.icon {
+			margin: -15px -5px;
+		}
+	}
 
-  &:visited {
-    color: $regular-alpha;
-    //font-family: $latin-bold;
+	&:visited {
+		color: $regular-alpha;
+		//font-family: $latin-bold;
 
-    &:active {
-      color: $regular-beta;
-    }
+		&:active {
+			color: $regular-beta;
+		}
 
-    .icon {
-      margin: -15px -5px;
-    }
-  }
+		.icon {
+			margin: -15px -5px;
+		}
+	}
 
-  &:active {
-    color: $regular-beta;
-  }
+	&:active {
+		color: $regular-beta;
+	}
 
-  &:disabled {
-    color: $mid-light-grey;
+	&:disabled {
+		color: $mid-light-grey;
 
-    &:link {
-      color: $mid-light-grey;
-    }
+		&:link {
+			color: $mid-light-grey;
+		}
 
-    &:visited {
-      color: $mid-light-grey;
-    }
-  }
+		&:visited {
+			color: $mid-light-grey;
+		}
+	}
 
-  .icon {
-    margin: -15px -5px;
-  }
+	.icon {
+		margin: -15px -5px;
+	}
 }
 
 .app-menu {
-  a {
-    color: $dark-grey;
-    font-size: $font-size-heading3;
+	a {
+		color: $dark-grey;
+		font-size: $font-size-heading3;
 
-    &:link {
-      color: $dark-grey;
-      font-size: $font-size-heading3;
-    }
+		&:link {
+			color: $dark-grey;
+			font-size: $font-size-heading3;
+		}
 
-    &:visited {
-      color: $dark-grey;
-      font-size: $font-size-heading3;
-    }
+		&:visited {
+			color: $dark-grey;
+			font-size: $font-size-heading3;
+		}
 
-    &:active,
-    &.active {
-      color: $regular-beta;
-      font-family: $latin-bold;
+		&:active,
+		&.active {
+			color: $regular-beta;
+			font-family: $latin-bold;
 
-      .is-rtl & {
-        font-family: $arabic-bold;
-      }
+			.is-rtl & {
+				font-family: $arabic-bold;
+			}
 
-      .icon {
-        color: $regular-beta;
-        font-family: $latin-bold;
+			.icon {
+				color: $regular-beta;
+				font-family: $latin-bold;
 
-        .is-rtl & {
-          font-family: $arabic-bold;
-        }
-      }
-    }
-  }
+				.is-rtl & {
+					font-family: $arabic-bold;
+				}
+			}
+		}
+	}
 
-  &-container {
-    .sc {
+	&-container {
+		.sc {
+			color: $regular-alpha;
+		}
+	}
 
-      color: $regular-alpha;
-    }
-  }
+	.app-menu-links-bottom {
+		a {
+			font-size: $font-size-heading4;
 
-  .app-menu-links-bottom {
-    a {
-      font-size: $font-size-heading4;
+			&:link {
+				font-size: $font-size-heading4;
 
-      &:link {
-        font-size: $font-size-heading4;
+				.icon {
+					font-size: $font-size-heading2;
+					margin-left: 0px;
+				}
+			}
 
-        .icon {
-          font-size: $font-size-heading2;
-          margin-left: 0px;
-        }
-      }
+			&:visited {
+				font-size: $font-size-heading4;
 
-      &:visited {
-        font-size: $font-size-heading4;
+				.icon {
+					font-size: $font-size-heading2;
+					margin-left: 0px;
+				}
+			}
 
-        .icon {
-          font-size: $font-size-heading2;
-          margin-left: 0px;
-        }
-      }
-
-      .icon {
-        font-size: $font-size-heading2;
-        margin-left: 0px;
-      }
-    }
-  }
+			.icon {
+				font-size: $font-size-heading2;
+				margin-left: 0px;
+			}
+		}
+	}
 }
 
 .submenu-item {
-  color: $dark-grey;
-  font-size: $font-size-heading3;
+	color: $dark-grey;
+	font-size: $font-size-heading3;
 
-  &:active {
-    color: $sapphire-care-blue3;
-    font-family: $latin-bold;
+	&:active {
+		color: $sapphire-care-blue1;
+		font-family: $latin-bold;
 
-    .is-rtl & {
-      font-family: $arabic-bold;
-    }
-  }
+		.is-rtl & {
+			font-family: $arabic-bold;
+		}
+	}
 }

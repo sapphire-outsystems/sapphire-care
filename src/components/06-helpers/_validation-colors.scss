@@ -5,26 +5,26 @@
 .alert-error,
 .alert-warning,
 .alert-info {
-  padding-bottom: 12px;
-  padding-top: 12px;
+	padding-bottom: 12px;
+	padding-top: 12px;
 }
 
 .alert-success {
-  background-color: $regular-green;
-  border: 0;
+	background-color: $regular-green;
+	border: 0;
 }
 
 .alert-error {
-  background-color: $regular-red;
-  border: 0;
+	background-color: $regular-red;
+	border: 0;
 }
 
 .alert-warning {
-  background-color: $regular-orange;
-  border: 0;
+	background-color: $regular-orange;
+	border: 0;
 }
 
 .alert-info {
-  background-color: $regular-gamma;
-  border: 0;
+	background-color: $regular-blue;
+	border: 0;
 }

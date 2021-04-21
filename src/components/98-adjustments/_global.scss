@@ -1,48 +1,43 @@
 @use '~Settings/colors'as *;
 
+[id*='MandatoryLabel'] {
+	display: flex;
+	margin-bottom: 10px;
 
-[id*="MandatoryLabel"] {
-  display: flex;
-  margin-bottom: 10px;
-
-  .form-input__asterisk {
-    color: $regular-red;
-    margin-right: 5px;
-  }
+	.form-input__asterisk {
+		color: $regular-red;
+		margin-right: 5px;
+	}
 }
 
 [id*='NotificationPreferences'] {
-  .form-fieldSet__content {
+	.form-fieldSet__content {
+		> div {
+			border-bottom: 1px solid $light-grey;
+			display: flex;
+			margin-bottom: 20px;
+		}
+	}
 
-    >div {
-      border-bottom: 1px solid $light-grey;
-      display: flex;
-      margin-bottom: 20px;
-    }
-  }
+	.form-input__input {
+		align-items: center;
+		display: flex;
+	}
 
-  .form-input__input {
-    align-items: center;
-    display: flex;
+	[id*='Checkbox'] {
+		flex: 1;
+	}
 
-  }
+	.input-label {
+		margin-left: 10px;
 
-  [id*='Checkbox'] {
-    flex: 1;
-  }
+		.is-rtl & {
+			margin-left: unset;
+			margin-right: 20px;
+		}
+	}
 
-  .input-label {
-    margin-left: 10px;
-
-    .is-rtl & {
-      margin-left: unset;
-      margin-right: 20px;
-    }
-  }
-
-  input.radio-button-custom {
-    border-color: $regular-alpha;
-  }
-
-
+	input.radio-button-custom {
+		border-color: $regular-alpha;
+	}
 }

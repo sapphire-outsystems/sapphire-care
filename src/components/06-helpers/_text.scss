@@ -4,125 +4,124 @@
 @use '~Settings/fonts'as *;
 
 .text-small {
-  font-size: $font-size-small;
+	font-size: $font-size-small;
 }
 
 .text-medium {
-  font-size: $font-size-normal;
+	font-size: $font-size-normal;
 }
 
 .text-medium-large {
-  font-size: $font-size-heading1;
+	font-size: $font-size-heading1;
 }
 
 .text-large {
-  font-size: $font-size-heading3;
+	font-size: $font-size-heading3;
 }
 
 .text-extra-large {
-  font-size: $font-size-big;
+	font-size: $font-size-big;
 }
 
-
 .text-extra2-large {
-  font-size: $font-size-huge;
+	font-size: $font-size-huge;
 }
 
 /*Font sizes*/
 .text-size-medium {
-  font-size: $font-size-heading2;
+	font-size: $font-size-heading2;
 }
 
 /* Text colors */
 .text-red {
-  color: $regular-red;
+	color: $regular-red;
 }
 
 .text-dark-red {
-  color: $dark-red;
+	color: $dark-red;
 }
 
 .text-light-red {
-  color: $light-red;
+	color: $light-red;
 }
 
 .text-violet {
-  color: $regular-pink;
+	color: $regular-pink;
 }
 
 .text-dark-violet {
-  color: $dark-pink
+	color: $dark-pink;
 }
 
 .text-light-violet {
-  color: $light-pink;
+	color: $light-pink;
 }
 
 .text-blue {
-  color: $regular-blue;
+	color: $regular-blue;
 }
 
 .text-dark-blue {
-  color: $dark-blue;
+	color: $dark-blue;
 }
 
 .text-light-blfe {
-  color: $regular-alpha;
+	color: $regular-alpha;
 }
 
 .text-green {
-  color: $regular-green;
+	color: $regular-green;
 }
 
 .text-dark-green {
-  color: $dark-green;
+	color: $dark-green;
 }
 
 .text-light-green {
-  color: $light-green;
+	color: $light-green;
 }
 
 .text-orange {
-  color: $regular-orange
+	color: $regular-orange;
 }
 
 .text-dark-orange {
-  color: $dark-orange;
+	color: $dark-orange;
 }
 
 .text-light-orange {
-  color: $light-orange
+	color: $light-orange;
 }
 
 .text-grey {
-  color: $regular-grey;
+	color: $regular-gray;
 }
 
 .text-dark-grey {
-  color: $mid-dark-grey;
+	color: $mid-dark-grey;
 }
 
 .text-light-grey {
-  color: $mid-light-grey
+	color: $mid-light-grey;
 }
 
 .text-light-grey2 {
-  color: $light-grey;
+	color: $light-grey;
 }
 
 .text-light-grey3 {
-  color: $sapphire-light
+	color: $sapphire-light;
 }
 
 .text-white {
-  color: $sapphire-white;
+	color: $sapphire-white;
 }
 
 .text-black {
-  color: $dark-grey
+	color: $dark-grey;
 }
 
 .text-primary-color {
-  color: $regular-alpha;
-  /*primary-color*/
+	color: $regular-alpha;
+	/*primary-color*/
 }

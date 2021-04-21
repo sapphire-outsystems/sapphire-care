@@ -3,14 +3,14 @@
 @use '~Settings/colors'as *;
 
 .custom-tabs .tabs-header {
-  background: $sapphire-care-blue3;
-  /*secondary-color*/
+	background: $sapphire-care-blue1;
+	/*secondary-color*/
 }
 
 .custom-tabs .tabs-header-tab {
-  color: $regular-grey;
+	color: $regular-gray;
 }
 
 .custom-tabs .tabs-header-tab.active {
-  color: $sapphire-white;
+	color: $sapphire-white;
 }

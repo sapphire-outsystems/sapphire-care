@@ -23,11 +23,11 @@
 }
 
 .card-image-top-background-image:before {
-	background: $sapphire-care-blue3;
+	background: $sapphire-care-blue1;
 	/*secondary-color*/
-	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, $sapphire-care-blue3 100%);
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, $sapphire-care-blue1 100%);
 	/*secondary-color*/
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, $sapphire-care-blue3 100%);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, $sapphire-care-blue1 100%);
 	/*secondary-color*/
 	bottom: 0;
 	content: '';

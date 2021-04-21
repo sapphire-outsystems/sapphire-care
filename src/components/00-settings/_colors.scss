@@ -1,7 +1,7 @@
 // Colors
 //
 // .Alpha                 : #00BFA5 - $regular-alpha
-// .Beta                  : #009884 - $regular-beta
+// .Beta                  : #00AC94 - $regular-beta
 // .Gamma                 : #006758 - $regular-gamma
 // .Delta                 : #00433A - $regular-delta
 // .Epsilon               : #56D3C2 - $regular-epsilon
@@ -52,35 +52,19 @@
 // .SapphireDarkBlue      : #30384A - $sapphire-dark-blue
 // .SapphireGreyBlue      : #494F5C - $sapphire-grey-blue
 
-$regular-alpha: #c468f7;
-$regular-beta: #8617c2;
-$regular-gamma: #5d3175;
-$regular-delta: #510e75;
-$regular-epsilon: #ff68f7;
-$regular-zeta: #d89df8;
-$regular-eta: #dfb5f7;
+$regular-alpha: #00bfa5;
+$regular-beta: darken($regular-alpha, 4%);
 
-$regular-beige: #e6e2aa;
-$regular-black: #131819;
-$regular-blue: #039be5;
-$blue-light: #c4f0eb;
-$light-blue-2: #f0faf9;
-$blue-navy: #c4f0eb;
-$body-color: #f3f3f3;
-$regular-brow: #ca2c92;
-$dark-beige: #928d09;
+$sapphire-care-blue1: #0e4f7c;
+
 $dark-blue: #194968;
 $dark-grey: #333333;
 $dark-orange: #c37b03;
 $dark-pink: #980263;
-$dark-plum: #ca2c92;
 $dark-red: #b10100;
 $dark-green: #578329;
 $dark-yellow: #c19323;
-$regular-gray: #858585;
-$regular-green: #7cb342;
-$regular-grey: #858585;
-$regular-light: #ca2c92;
+
 $light-blue: #c4f0eb;
 $light-green: #c2dea8;
 $light-beige: #f5f4e0;
@@ -88,49 +72,25 @@ $light-grey: #d6d6d6;
 $light-orange: #fcc891;
 $light-pink: #ca2c92;
 $light-red: #fad5d5;
-$light-turquoise: #c4f0eb;
 $light-yellow: #ffeab5;
+
 $mid-light-grey: #adadad;
 $mid-dark-grey: #5c5c5c;
-$regular-orange: #ffa000;
-$regular-pink: #c32b87;
-$pink-light: #c892b3;
-$light-pink-2: #feeced;
-$regular-plum: #c32b87;
-$regular-red: #ff3e2d;
-$sapphire-background: #f3f3f3;
-$sapphire-blue: #2a5a6e;
-$sapphire-blue2: #00bfa5;
-$sapphire-care-blue1: #0e4f7c;
-$sapphire-care-blue2: #105c90;
-$sapphire-care-blue3: #002b49;
+
 $sapphire-care-red: #fa5252;
-$sapphire-clinician: #d6d6d6;
-$sapphire-dark-blue: #30384a;
-$sapphire-dark-blue1: #333333;
-$sapphire-dark-blue2: #30384a;
-$sapphire-dark-grey: #858585;
-$sapphire-dark-text: #333333;
-$sapphire-grey-blue: #494f5c;
-$sapphire-female: #c892b3;
-$sapphire-inactive: #adadad;
 $sapphire-light: #ebebeb;
-$sapphire-light-board: #d6d6d6;
-$sapphire-light-container: #ebebeb;
-$sapphire-light-text: #f3f3f3;
-$sapphire-light-text2: #ca2c92;
-$sapphire-male: #194968;
-$sapphire-silver: #f3f3f3;
-$sapphire-warning: #ff3e2d;
 $sapphire-white: #ffffff;
-$regular-silver: #d6d6d6;
-$transparent: #ca2c92;
-$regular-turquoise: #049be5;
+
+$regular-red: #ff3e2d;
 $regular-white: #fff;
 $regular-yellow: #fbc02d;
-$gray-darker: #333333;
-$gray-light: #d6d6d6;
-$gray-lighter: #f3f3f3;
+$regular-beige: #e6e2aa;
+$regular-black: #131819;
+$regular-blue: #039be5;
+$regular-gray: #858585;
+$regular-green: #7cb342;
+$regular-orange: #ffa000;
+$regular-pink: #c32b87;
 
 $skeleton-color: linear-gradient(to left, $light-grey, $sapphire-light);
 $skeleton-color-arabic: linear-gradient(to right, $light-grey, $sapphire-light);

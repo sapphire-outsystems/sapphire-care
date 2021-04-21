@@ -2,32 +2,29 @@
 @use '~Settings/colors'as *;
 @use '~Settings/fonts'as *;
 
-
-
 .card-top-title-background {
-  background: $sapphire-white;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 2px 5px 0 rgba(214, 214, 214, 0.5);
-  box-shadow: 0 2px 5px 0 rgba(214, 214, 214, 0.5);
-  overflow: hidden;
+	background: $sapphire-white;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 2px 5px 0 rgba(214, 214, 214, 0.5);
+	box-shadow: 0 2px 5px 0 rgba(214, 214, 214, 0.5);
+	overflow: hidden;
 
-  &__title {
-    background-color: $regular-red;
-    color: $sapphire-white;
-    font-family: $latin-bold;
-    font-size: $font-size-heading4;
-    padding: 10px 0;
-    text-align: center;
-  }
+	&__title {
+		background-color: $regular-red;
+		color: $sapphire-white;
+		font-family: $latin-bold;
+		font-size: $font-size-heading4;
+		padding: 10px 0;
+		text-align: center;
+	}
 
-  &__text {
-    padding: 15px 20px 10px;
-  }
+	&__text {
+		padding: 15px 20px 10px;
+	}
 
-  &__action {
-    color: $regular-grey;
-    padding: 20px 15px;
-    text-align: right;
-  }
-
+	&__action {
+		color: $regular-gray;
+		padding: 20px 15px;
+		text-align: right;
+	}
 }

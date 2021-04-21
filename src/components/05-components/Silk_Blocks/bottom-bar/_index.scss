@@ -2,48 +2,34 @@
 
 @use '~Settings/colors'as *;
 
-.bottom-bar>a.active .bottom-bar-item-text,
-.bottom-bar>a:active .bottom-bar-item-text,
-.bottom-bar-items>a.active .bottom-bar-item-text,
-.bottom-bar-items>a:active .bottom-bar-item-text,
-.bottom-bar>a.active .bottom-bar-item-icon,
-.bottom-bar>a:active .bottom-bar-item-icon,
-.bottom-bar-items>a.active .bottom-bar-item-icon,
-.bottom-bar-items>a:active .bottom-bar-item-icon {
-  color: $regular-alpha;
-  /*primary-color*/
+.bottom-bar > a.active .bottom-bar-item-text,
+.bottom-bar > a:active .bottom-bar-item-text,
+.bottom-bar-items > a.active .bottom-bar-item-text,
+.bottom-bar-items > a:active .bottom-bar-item-text,
+.bottom-bar > a.active .bottom-bar-item-icon,
+.bottom-bar > a:active .bottom-bar-item-icon,
+.bottom-bar-items > a.active .bottom-bar-item-icon,
+.bottom-bar-items > a:active .bottom-bar-item-icon {
+	color: $regular-alpha;
+	/*primary-color*/
 }
 
-.floating-actions .bottom-bar-item {
-  border-color: $regular-alpha;
-  /*primary-color*/
-  color: $regular-alpha;
-  /*primary-color*/
-}
-
-.bottom-bar .floating-actions-items a,
-.bottom-bar .floating-actions-items a:link,
-.bottom-bar .floating-actions-items a:visited {
-  color: $regular-alpha;
-  /*primary-color*/
-}
-
-.bottom-bar>a.active,
-.bottom-bar>a:active {
-  color: $regular-alpha;
-  /*primary-color*/
+.bottom-bar > a.active,
+.bottom-bar > a:active {
+	color: $regular-alpha;
+	/*primary-color*/
 }
 
 .search-round {
-  -webkit-box-shadow: inset 0 0 0 3px $sapphire-white;
-  box-shadow: inset 0 0 0 3px $sapphire-white;
+	-webkit-box-shadow: inset 0 0 0 3px $sapphire-white;
+	box-shadow: inset 0 0 0 3px $sapphire-white;
 }
 
 .search-stick-bottom {
-  background-color: $sapphire-white;
+	background-color: $sapphire-white;
 }
 
 .header-right .search-input {
-  background-color: $regular-alpha;
-  /*primary-color*/
+	background-color: $regular-alpha;
+	/*primary-color*/
 }

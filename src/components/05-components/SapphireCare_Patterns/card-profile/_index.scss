@@ -4,98 +4,85 @@
 @use '~Tools/card-profile-image'as *;
 @use '~Tools/arrow-left-arabic'as *;
 
-
-
-
 .card-profile {
-  display: flex;
+	display: flex;
 
-  &.selected {
-    background-color: $regular-eta;
-  }
+	&.selected {
+		border: 2px solid $regular-alpha;
+	}
 
-  &__image {
-    margin-right: 15px;
+	&__image {
+		margin-right: 15px;
 
-    .is-rtl & {
-      margin-left: 15px;
-      margin-right: unset;
-    }
+		.is-rtl & {
+			margin-left: 15px;
+			margin-right: unset;
+		}
 
-    @include cardImageSize()
-  }
+		@include cardImageSize();
+	}
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
 
-    .card-profile__title__container {
-      display: flex;
-      justify-content: space-between;
+		.card-profile__title__container {
+			display: flex;
+			justify-content: space-between;
 
-      .card-profile__title {
-        color: $sapphire-white;
-        flex: 1;
-        font-family: $latin-bold;
-        font-size: $font-size-heading1;
+			.card-profile__title {
+				color: $sapphire-white;
+				flex: 1;
+				font-family: $latin-bold;
+				font-size: $font-size-heading1;
 
-        .is-rtl & {
-          font-family: $arabic-bold;
-        }
-      }
+				.is-rtl & {
+					font-family: $arabic-bold;
+				}
+			}
 
-      .card-profile__right-badge {
-        border: 1px solid $mid-light-grey;
-        border-radius: 12px;
-        color: $mid-light-grey;
-        font-size: $font-size-small;
-        max-height: 25px;
-        padding: 2px 5px;
+			.card-profile__right-badge {
+				border: 1px solid $mid-light-grey;
+				border-radius: 12px;
+				color: $mid-light-grey;
+				font-size: $font-size-small;
+				max-height: 25px;
+				padding: 2px 5px;
+			}
 
-      }
+			.card-profile__bottom-badge {
+				color: $mid-light-grey;
+			}
+		}
 
-      .card-profile__bottom-badge {
-        color: $mid-light-grey;
-      }
+		.card-profile__info {
+			color: $sapphire-white;
+		}
+	}
 
+	&__link {
+		a {
+			color: $light-grey;
+		}
 
-
-    }
-
-    .card-profile__info {
-      color: $sapphire-white;
-    }
-
-
-  }
-
-  &__link {
-    a {
-      color: $light-grey;
-    }
-
-    @extend %arrow-left;
-    align-items: center;
-    display: flex;
-  }
+		@extend %arrow-left;
+		align-items: center;
+		display: flex;
+	}
 }
-
 
 .cardInfo__label,
 .title {
-  color: $dark-grey;
-  font-family: $latin-bold;
+	color: $dark-grey;
+	font-family: $latin-bold;
 
-  .is-rtl & {
-    font-family: $arabic-bold;
-  }
-
+	.is-rtl & {
+		font-family: $arabic-bold;
+	}
 }
 
-
-
 .title {
-  font-size: $font-size-heading4;
+	font-size: $font-size-heading4;
 }

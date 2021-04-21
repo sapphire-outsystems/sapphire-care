@@ -2,138 +2,138 @@
 @use '~Settings/colors'as *;
 
 .avatar {
-  background: $mid-light-grey;
-  border: 1px solid $regular-alpha;
-  /*primary-color*/
-  color: $regular-grey;
-  font-size: 14px;
-  font-weight: 600;
+	background: $mid-light-grey;
+	border: 1px solid $regular-alpha;
+	/*primary-color*/
+	color: $regular-gray;
+	font-size: 14px;
+	font-weight: 600;
 }
 
 .avatar.background-primary-color {
-  background-color: transparent;
-  border: 1px solid rgba(0, 191, 165, .5);
-  /*primary-color*/
-  color: $regular-alpha;
-  /*primary-color*/
+	background-color: transparent;
+	border: 1px solid rgba(0, 191, 165, 0.5);
+	/*primary-color*/
+	color: $regular-alpha;
+	/*primary-color*/
 }
 
 .avatar.background-red {
-  background-color: transparent;
-  border: 1px solid rgba(255, 62, 45, 0.5);
-  color: $regular-red;
+	background-color: transparent;
+	border: 1px solid rgba(255, 62, 45, 0.5);
+	color: $regular-red;
 }
 
 .avatar.background-dark-red {
-  background-color: transparent;
-  border: 1px solid rgba(177, 1, 0, .5);
-  color: $dark-red;
+	background-color: transparent;
+	border: 1px solid rgba(177, 1, 0, 0.5);
+	color: $dark-red;
 }
 
 .avatar.background-light-red {
-  background-color: transparent;
-  border: 1px solid rgba(250, 213, 213, .5);
-  color: $light-red;
+	background-color: transparent;
+	border: 1px solid rgba(250, 213, 213, 0.5);
+	color: $light-red;
 }
 
 .avatar.background-violet {
-  background-color: transparent;
-  border: 1px solid rgba(195, 43, 135, .5);
-  color: $regular-pink;
+	background-color: transparent;
+	border: 1px solid rgba(195, 43, 135, 0.5);
+	color: $regular-pink;
 }
 
 .avatar.background-dark-violet {
-  background-color: transparent;
-  border: 1px solid rgba(152, 2, 99, .5);
-  color: $dark-pink;
+	background-color: transparent;
+	border: 1px solid rgba(152, 2, 99, 0.5);
+	color: $dark-pink;
 }
 
 .avatar.background-light-violet {
-  background-color: transparent;
-  border: 1px solid rgba(200, 146, 179, .5);
-  color: $light-pink;
+	background-color: transparent;
+	border: 1px solid rgba(200, 146, 179, 0.5);
+	color: $light-pink;
 }
 
 .avatar.background-blue {
-  background-color: transparent;
-  border: 1px solid rgba(3, 155, 229, .5);
-  color: $regular-blue;
+	background-color: transparent;
+	border: 1px solid rgba(3, 155, 229, 0.5);
+	color: $regular-blue;
 }
 
 .avatar.background-dark-blue {
-  background-color: transparent;
-  border: 1px solid rgba(25, 73, 104, .5);
-  color: $dark-blue;
+	background-color: transparent;
+	border: 1px solid rgba(25, 73, 104, 0.5);
+	color: $dark-blue;
 }
 
 .avatar.background-light-blue {
-  background-color: transparent;
-  border: 1px solid rgba(196, 240, 235, .5);
-  color: $light-blue;
+	background-color: transparent;
+	border: 1px solid rgba(196, 240, 235, 0.5);
+	color: $light-blue;
 }
 
 .avatar.background-green {
-  background-color: transparent;
-  border: 1px solid rgba(124, 179, 66, .5);
-  color: $regular-green;
+	background-color: transparent;
+	border: 1px solid rgba(124, 179, 66, 0.5);
+	color: $regular-green;
 }
 
 .avatar.background-dark-green {
-  background-color: transparent;
-  border: 1px solid rgba(87, 131, 41, .5);
-  color: $dark-green;
+	background-color: transparent;
+	border: 1px solid rgba(87, 131, 41, 0.5);
+	color: $dark-green;
 }
 
 .avatar.background-light-green {
-  background-color: transparent;
-  border: 1px solid rgba(194, 222, 168, .5);
-  color: $light-green;
+	background-color: transparent;
+	border: 1px solid rgba(194, 222, 168, 0.5);
+	color: $light-green;
 }
 
 .avatar.background-orange {
-  background-color: transparent;
-  border: 1px solid rgba(255, 160, 0, .5);
-  color: $regular-orange
+	background-color: transparent;
+	border: 1px solid rgba(255, 160, 0, 0.5);
+	color: $regular-orange;
 }
 
 .avatar.background-dark-orange {
-  background-color: transparent;
-  border: 1px solid rgba(195, 123, 3, .5);
-  color: $dark-orange
+	background-color: transparent;
+	border: 1px solid rgba(195, 123, 3, 0.5);
+	color: $dark-orange;
 }
 
 .avatar.background-light-orange {
-  background-color: transparent;
-  border: 1px solid rgba(252, 200, 145, .5);
-  color: $light-orange;
+	background-color: transparent;
+	border: 1px solid rgba(252, 200, 145, 0.5);
+	color: $light-orange;
 }
 
 .avatar.background-grey {
-  background-color: transparent;
-  border: 1px solid rgba(133, 133, 133, .5);
-  color: $regular-grey
+	background-color: transparent;
+	border: 1px solid rgba(133, 133, 133, 0.5);
+	color: $regular-gray;
 }
 
 .avatar.background-dark-grey {
-  background-color: transparent;
-  border: 1px solid rgba(92, 92, 92, .5);
-  color: $mid-dark-grey;
+	background-color: transparent;
+	border: 1px solid rgba(92, 92, 92, 0.5);
+	color: $mid-dark-grey;
 }
 
 .avatar.background-light-grey {
-  background-color: transparent;
-  border: 1px solid rgba(173, 173, 173, .5);
-  color: $mid-light-grey
+	background-color: transparent;
+	border: 1px solid rgba(173, 173, 173, 0.5);
+	color: $mid-light-grey;
 }
 
 .avatar.background-white {
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, .5);
-  color: $sapphire-white;
+	background-color: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	color: $sapphire-white;
 }
 
 .avatar.background-black {
-  background-color: transparent;
-  border: 1px solid rgba(51, 51, 51, .5);
-  color: $dark-grey
+	background-color: transparent;
+	border: 1px solid rgba(51, 51, 51, 0.5);
+	color: $dark-grey;
 }

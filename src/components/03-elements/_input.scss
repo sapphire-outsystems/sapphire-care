@@ -1,67 +1,62 @@
 @use '~Settings/colors'as *;
 
 input.checkbox:before {
-  border: 1px solid $regular-grey;
-  border-radius: 2px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+	border: 1px solid $regular-gray;
+	border-radius: 2px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 input.checkbox:checked:before {
-  background-color: $regular-alpha;
-  /*primary-color*/
-  border: 1px solid $regular-alpha;
-  /*primary-color*/
+	background-color: $regular-alpha;
+	/*primary-color*/
+	border: 1px solid $regular-alpha;
+	/*primary-color*/
 }
 
-
 input.checkbox:checked:after {
-  top: 7px;
+	top: 7px;
 }
 
 .is-rtl input.checkbox:checked:after {
-  left: 2px;
-  top: 7px;
+	left: 2px;
+	top: 7px;
 }
 
 input.checkbox[disabled]:before {
-  border: 1px solid $light-grey;
+	border: 1px solid $light-grey;
 }
 
 /* Input invalid red color */
 
 .animated-label-input input[data-input].not-valid {
-  border-bottom: 1px solid $regular-red;
+	border-bottom: 1px solid $regular-red;
 }
-
-
 
 input[data-input]:focus,
 textarea[data-textarea]:focus {
-  border: 1px solid $regular-blue;
+	border: 1px solid $regular-blue;
 }
 
 input[data-input]:empty,
 textarea[data-textarea]:empty {
-  background: $sapphire-white;
-  border: 1px solid $sapphire-white;
-  border-bottom: 1px solid $regular-alpha;
-  color: $dark-grey;
+	background: $sapphire-white;
+	border: 1px solid $sapphire-white;
+	border-bottom: 1px solid $regular-alpha;
+	color: $dark-grey;
 }
 
 input[data-input]:empty:focus,
 textarea[data-textarea]:empty:focus {
-  border: 1px solid $regular-alpha;
+	border: 1px solid $regular-alpha;
 }
-
 
 input[data-input][disabled],
 input[data-input][readonly],
 textarea[data-textarea][disabled],
 textarea[data-textarea][readonly] {
-  border: 1px solid $light-grey;
+	border: 1px solid $light-grey;
 }
-
 
 input[data-input]:empty::-webkit-input-placeholder,
 textarea[data-textarea]:empty::-webkit-input-placeholder,
@@ -71,5 +66,5 @@ input[data-input]:empty:-ms-input-placeholder,
 textarea[data-textarea]:empty:-ms-input-placeholder,
 input[data-input]:empty:-moz-placeholder,
 textarea[data-textarea]:empty:-moz-placeholder {
-  color: rgba(0, 0, 0, .38);
+	color: rgba(0, 0, 0, 0.38);
 }

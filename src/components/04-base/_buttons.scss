@@ -6,69 +6,66 @@
 .btn,
 .btn:hover,
 .btn:focus {
-  align-items: center;
-  background: $regular-alpha;
-  border: 1px solid $regular-alpha;
-  border-radius: 24px;
-  color: $sapphire-white;
-  display: flex;
-  font-family: $latin-bold;
-  font-size: $font-size-heading4;
-  justify-content: center;
-  letter-spacing: .5px;
-  line-height: 20px;
-  min-height: 50px;
-  width: 100%;
+	align-items: center;
+	background: $regular-alpha;
+	border: 1px solid $regular-alpha;
+	border-radius: 24px;
+	color: $sapphire-white;
+	display: flex;
+	font-family: $latin-bold;
+	font-size: $font-size-heading4;
+	justify-content: center;
+	letter-spacing: 0.5px;
+	line-height: 20px;
+	min-height: 50px;
+	width: 100%;
 
-  .bottom & {
-    border-radius: 24px;
-  }
+	.bottom & {
+		border-radius: 24px;
+	}
 
-  .is-rtl & {
-    font-family: $arabic-bold;
-  }
+	.is-rtl & {
+		font-family: $arabic-bold;
+	}
 
-  &.btn-logout,
-  &.reschedule-cancel,
-  &.btn-second {
-    background-color: $sapphire-white;
-  }
+	&.btn-logout,
+	&.reschedule-cancel,
+	&.btn-second {
+		background-color: $sapphire-white;
+	}
 
-  &.btn-second {
-    color: $regular-alpha;
-  }
+	&.btn-second {
+		color: $regular-alpha;
+	}
 
-  &.btn-blue {
-    background-color: $dark-blue;
-  }
+	&.btn-blue {
+		background-color: $dark-blue;
+	}
 
-  &.btn-logout,
-  &.reschedule-cancel {
+	&.btn-logout,
+	&.reschedule-cancel {
+		border-color: $regular-red;
+		color: $regular-red;
+	}
 
-    border-color: $regular-red;
-    color: $regular-red;
-  }
+	&:active {
+		background-color: $regular-beta;
+		border: 1px solid $regular-beta;
+		color: $sapphire-white;
 
-  &:active {
-    background-color: $regular-beta;
-    border: 1px solid $regular-beta;
-    color: $sapphire-white;
+		-webkit-filter: brightness(1);
+		filter: brightness(1);
+	}
 
-    -webkit-filter: brightness(1);
-    filter: brightness(1);
-  }
-
-  &[disabled],
-  [disabled]:hover,
-  [disabled]:focus,
-  [disabled]:active {
-    background-color: $light-grey;
-    border-color: $light-grey;
-    box-shadow: none;
-    color: $mid-light-grey;
-  }
-
-
+	&[disabled],
+	[disabled]:hover,
+	[disabled]:focus,
+	[disabled]:active {
+		background-color: $light-grey;
+		border-color: $light-grey;
+		box-shadow: none;
+		color: $mid-light-grey;
+	}
 }
 
 /* button: primary | active | disabled */
@@ -76,32 +73,32 @@
 .btn-primary,
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: $regular-alpha;
-  /*primary-color*/
-  border: 1px solid $regular-alpha;
-  /*primary-color*/
-  color: $sapphire-white;
+	background-color: $regular-alpha;
+	/*primary-color*/
+	border: 1px solid $regular-alpha;
+	/*primary-color*/
+	color: $sapphire-white;
 }
 
 .btn-primary:active {
-  background-color: $regular-beta;
-  /*primary-color*/
-  border: 1px solid $regular-beta;
-  /*primary-color*/
-  color: $sapphire-white;
+	background-color: $regular-beta;
+	/*primary-color*/
+	border: 1px solid $regular-beta;
+	/*primary-color*/
+	color: $sapphire-white;
 
-  -webkit-filter: brightness(1);
-  filter: brightness(1);
+	-webkit-filter: brightness(1);
+	filter: brightness(1);
 }
 
 .btn-primary[disabled],
 .btn-primary[disabled]:hover,
 .btn-primary[disabled]:focus,
 .btn-primary[disabled]:active {
-  background-color: $light-grey;
-  border: 1px solid $light-grey;
-  box-shadow: none;
-  color: $mid-light-grey;
+	background-color: $light-grey;
+	border: 1px solid $light-grey;
+	box-shadow: none;
+	color: $mid-light-grey;
 }
 
 /* button: tertiary | active | disabled */
@@ -109,108 +106,106 @@
 .btn-tertiary,
 .btn-tertiary:hover,
 .btn-tertiary:focus {
-  background-color: transparent;
-  border: 1px solid $regular-alpha;
-  color: $regular-alpha;
+	background-color: transparent;
+	border: 1px solid $regular-alpha;
+	color: $regular-alpha;
 }
 
 .btn-tertiary:active {
-  background-color: transparent;
-  border: 1px solid $regular-alpha;
-  color: $regular-alpha;
-  -webkit-filter: brightness(1);
-  filter: brightness(1);
+	background-color: transparent;
+	border: 1px solid $regular-alpha;
+	color: $regular-alpha;
+	-webkit-filter: brightness(1);
+	filter: brightness(1);
 }
 
 .btn-tertiary[disabled],
 .btn-tertiary[disabled]:hover,
 .btn-tertiary[disabled]:focus,
 .btn-tertiary[disabled]:active {
-  background: transparent;
-  border-color: $mid-light-grey;
-  color: $mid-light-grey;
+	background: transparent;
+	border-color: $mid-light-grey;
+	color: $mid-light-grey;
 }
 
 /* button: cancel | active | disabled */
 .btn.btn-cancel,
 .btn.btn-cancel:hover,
 .btn.btn-cancel:focus {
-  background: transparent;
-  border-color: transparent;
-  box-shadow: none;
-  color: $sapphire-care-blue3;
-  /*secondary-color*/
-  font-size: $font-size-normal;
+	background: transparent;
+	border-color: transparent;
+	box-shadow: none;
+	color: $sapphire-care-blue1;
+	/*secondary-color*/
+	font-size: $font-size-normal;
 }
 
 .btn.btn-cancel:active {
-  background-color: transparent;
-  border-color: transparent;
-  box-shadow: none;
-  color: $sapphire-care-blue3;
-  /*secondary-color*/
+	background-color: transparent;
+	border-color: transparent;
+	box-shadow: none;
+	color: $sapphire-care-blue1;
+	/*secondary-color*/
 }
 
 .btn.btn-cancel[disabled],
 .btn.btn-cancel[disabled]:hover,
 .btn.btn-cancel[disabled]:focus,
 .btn.btn-cancel[disabled]:active {
-  background-color: transparent;
-  border: transparent;
-  box-shadow: none;
-  color: $regular-grey;
+	background-color: transparent;
+	border: transparent;
+	box-shadow: none;
+	color: $regular-gray;
 }
 
 .btn__cancel--reschedule {
-  color: $regular-red;
+	color: $regular-red;
 }
 
 /* button: orange-cancel | active | disabled */
 .btn.btn-orange-cancel,
 .btn.btn-orange-cancel:hover,
 .btn.btn-orange-cancel:focus {
-  background: transparent;
-  border-color: $regular-orange;
-  box-shadow: none;
-  color: $regular-orange;
-  font-size: $font-size-normal;
+	background: transparent;
+	border-color: $regular-orange;
+	box-shadow: none;
+	color: $regular-orange;
+	font-size: $font-size-normal;
 }
 
 .btn.btn-orange-cancel:active {
-  background-color: transparent;
-  border-color: $regular-orange;
-  box-shadow: none;
-  color: $regular-orange;
+	background-color: transparent;
+	border-color: $regular-orange;
+	box-shadow: none;
+	color: $regular-orange;
 }
 
 .btn.btn-orange-cancel[disabled],
 .btn.btn-orange-cancel[disabled]:hover,
 .btn.btn-orange-cancel[disabled]:focus,
 .btn.btn-orange-cancel[disabled]:active {
-  background: transparent;
-  border-color: $mid-light-grey;
-  color: $mid-light-grey;
+	background: transparent;
+	border-color: $mid-light-grey;
+	color: $mid-light-grey;
 }
 
 /* button: success | active | disabled */
 .btn-success,
 .btn-success:hover,
 .btn-success:focus {
-  background-color: $regular-green;
-  border-color: $regular-green;
-  color: $sapphire-white;
+	background-color: $regular-green;
+	border-color: $regular-green;
+	color: $sapphire-white;
 }
 
 /* button: danger | active | disabled */
 .btn-danger,
 .btn-danger:hover,
 .btn-danger:focus {
-  background-color: $regular-red;
-  border-color: $regular-red;
-  color: $sapphire-white;
+	background-color: $regular-red;
+	border-color: $regular-red;
+	color: $sapphire-white;
 }
-
-
 
 /*button: small */
 .btn-small,
@@ -219,83 +214,83 @@
 .header-right .btn,
 .header-right .btn:hover,
 .header-right .btn:focus {
-  font-size: $font-size-small;
-  min-height: 20px;
-  padding: 3px 10px;
+	font-size: $font-size-small;
+	min-height: 20px;
+	padding: 3px 10px;
 }
 
-[class^="btn background-"],
-[class^="btn background-"]:hover,
-[class^="btn background-"]:focus {
-  border: none;
+[class^='btn background-'],
+[class^='btn background-']:hover,
+[class^='btn background-']:focus {
+	border: none;
 }
 
-[class^="btn background-"][disabled],
-[class^="btn background-"][disabled]:hover,
-[class^="btn background-"][disabled]:focus {
-  background-color: $mid-light-grey;
-  border: none;
-  color: $sapphire-white;
+[class^='btn background-'][disabled],
+[class^='btn background-'][disabled]:hover,
+[class^='btn background-'][disabled]:focus {
+	background-color: $mid-light-grey;
+	border: none;
+	color: $sapphire-white;
 }
 
 /* Button to Select Date */
 a.btn.select-date,
 a.btn.select-date:hover {
-  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .11);
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .11);
-  color: $dark-grey !important;
-  font-size: $font-size-heading4 !important;
-  font-weight: bold;
-  line-height: 35px;
-  margin: 5px 0 10px;
-  min-width: 200px;
-  padding-left: 20px;
-  padding-right: 20px;
+	-webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.11);
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.11);
+	color: $dark-grey !important;
+	font-size: $font-size-heading4 !important;
+	font-weight: bold;
+	line-height: 35px;
+	margin: 5px 0 10px;
+	min-width: 200px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 a.btn.select-date .sc {
-  color: $regular-alpha;
-  font-size: $font-size-small;
-  margin-right: 10px;
-  /*primary-color*/
+	color: $regular-alpha;
+	font-size: $font-size-small;
+	margin-right: 10px;
+	/*primary-color*/
 }
 
 /* default button on the colored background*/
 .layout.blank.bg-colored .btn {
-  border-color: $sapphire-white;
-  color: $sapphire-white;
+	border-color: $sapphire-white;
+	color: $sapphire-white;
 }
 
 .layout.blank.bg-colored .btn:active {
-  border-color: $regular-beta;
+	border-color: $regular-beta;
 }
 
 /* Button Group */
 .button-group {
-  background: $sapphire-light;
-  border-radius: 4px;
-  overflow: hidden;
-  padding: 4px;
+	background: $sapphire-light;
+	border-radius: 4px;
+	overflow: hidden;
+	padding: 4px;
 }
 
 button.button-group-item {
-  border-radius: 4px;
-  color: $mid-dark-grey;
-  line-height: $font-size-small;
-  min-height: 36px;
-  padding: 5px 10px;
+	border-radius: 4px;
+	color: $mid-dark-grey;
+	line-height: $font-size-small;
+	min-height: 36px;
+	padding: 5px 10px;
 }
 
 button.button-group-item.button-group-selected-item {
-  background-color: $regular-alpha;
-  /*primary-color*/
-  border-color: $regular-alpha;
-  /*primary-color*/
-  color: $sapphire-white;
+	background-color: $regular-alpha;
+	/*primary-color*/
+	border-color: $regular-alpha;
+	/*primary-color*/
+	color: $sapphire-white;
 }
 
 button.button-group-item.button-group-selected-item[disabled] {
-  background-color: $light-grey;
-  border-color: $light-grey;
-  color: $mid-dark-grey;
+	background-color: $light-grey;
+	border-color: $light-grey;
+	color: $mid-dark-grey;
 }

@@ -2,53 +2,44 @@
 
 @use '~Settings/colors'as *;
 
-
 .wizard {
-  left: 0;
-  position: fixed;
-  top: 100px;
-  width: 100%;
-  z-index: 1;
+	left: 0;
+	position: fixed;
+	top: 100px;
+	width: 100%;
+	z-index: 1;
 
-  .wizard-item-wrapper {
+	.wizard-item-wrapper {
+		&.active,
+		&.past {
+			.wizard-item {
+				background-color: $regular-alpha;
+				opacity: 1;
+			}
+		}
 
-    &.active,
-    &.past {
-      .wizard-item {
-        background-color: $regular-alpha;
-        opacity: 1;
-      }
-    }
+		&.active {
+			.wizard-label {
+				color: $regular-alpha;
+				/*primary-color*/
+			}
+		}
 
-    &.active {
-      .wizard-label {
-        color: $regular-alpha;
-        /*primary-color*/
-      }
-    }
+		&:before {
+			display: none;
+		}
 
-    &:before {
-      display: none;
-    }
-
-
-
-    .wizard-item {
-      background-color: $light-grey;
-      border-radius: unset;
-      height: 6px;
-      width: 100%;
-    }
-
-  }
-
-
+		.wizard-item {
+			background-color: $light-grey;
+			border-radius: unset;
+			height: 6px;
+			width: 100%;
+		}
+	}
 }
 
-
-
 // .wizard-item-wrapper .wizard-item-wrapper.past .wizard-item {
-//   background-color: $regular-grey;
+//   background-color: $regular-gray;
 //   opacity: 1;
 // }
 
@@ -62,7 +53,7 @@
 // }
 
 // .wizard-item-wrapper.past .wizard-label {
-//   color: $regular-grey;
+//   color: $regular-gray;
 // }
 
 // .wizard-item-wrapper .wizard-label {

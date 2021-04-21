@@ -2,482 +2,478 @@
 @use '~Settings/fonts'as *;
 
 .icon-circle {
-  background-color: $regular-alpha;
-  /*primary-color*/
+	background-color: $regular-alpha;
+	/*primary-color*/
 }
 
 /* Custom FontIcon Sample Page */
 .list.list-icons {
-  background-color: transparent;
+	background-color: transparent;
 }
 
 .icon-demo {
-  border-bottom: 0;
-  color: $mid-light-grey;
-  font-size: $font-size-normal;
-  margin-bottom: 20px;
-  text-align: center;
+	border-bottom: 0;
+	color: $mid-light-grey;
+	font-size: $font-size-normal;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 .icon-demo span.sc {
-  color: $regular-grey;
-  font-size: 5.2em;
-  white-space: normal;
+	color: $regular-gray;
+	font-size: 5.2em;
+	white-space: normal;
 }
 
 .sc {
-  display: static !important;
-  /* use !important to prevent issues with browser extensions that change fonts  */
+	display: static !important;
+	/* use !important to prevent issues with browser extensions that change fonts  */
 
-  font-family: $font-family-icons !important;
+	font-family: $font-family-icons !important;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  position: relative;
-  text-transform: none;
-  top: 0;
-
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	position: relative;
+	text-transform: none;
+	top: 0;
 }
 
 /* Icons Sizes */
 .sc.small {
-  font-size: 0.857em;
+	font-size: 0.857em;
 }
 
 .sc.medium {
-  font-size: 1em;
+	font-size: 1em;
 }
 
 .sc.large {
-  font-size: 1.285em;
+	font-size: 1.285em;
 }
 
 .sc.extra-large {
-  font-size: 1.857em;
+	font-size: 1.857em;
 }
 
 .sc.extra2-large {
-  font-size: 2.571em;
+	font-size: 2.571em;
 }
 
 .sc.extra3-large {
-  font-size: 4.214em;
+	font-size: 4.214em;
 }
 
 .sc.extra3-large {
-  font-size: 4.214em;
+	font-size: 4.214em;
 }
 
 .sc.icon-5x {
-  font-size: 5em;
+	font-size: 5em;
 }
-
-
 
 /* Icons */
 
 .sc-trophy:before {
-  content: "\e956";
+	content: '\e956';
 }
 
 .sc-publication:before {
-  content: "\e957";
+	content: '\e957';
 }
 
 .sc-education:before {
-  content: "\e958";
+	content: '\e958';
 }
 
 .sc-mail:before {
-  content: "\e959";
+	content: '\e959';
 }
 
 .sc-download:before {
-  content: "\e95a";
+	content: '\e95a';
 }
 
 .sc-notes:before {
-  content: "\e95b";
+	content: '\e95b';
 }
 
 .sc-hourglass:before {
-  content: "\e95c";
+	content: '\e95c';
 }
 
 .sc-arrow-left-cal:before {
-  content: "\e95d";
+	content: '\e95d';
 }
 
 .sc-arrow-right-cal:before {
-  content: "\e95e";
+	content: '\e95e';
 }
 
 .sc-clock:before {
-  content: "\e95f";
+	content: '\e95f';
 }
 
 .sc-speciality:before {
-  content: "\e960";
+	content: '\e960';
 }
 
 .sc-medicine:before {
-  content: "\e961";
+	content: '\e961';
 }
 
 .sc-sapphire:before {
-  content: "\e962";
+	content: '\e962';
 }
 
 .sc-calendar_agenda:before {
-  content: "\e963";
+	content: '\e963';
 }
 
 .sc-map-pin:before {
-  content: "\e950";
+	content: '\e950';
 }
 
 .sc-allergie:before {
-  content: "\e900";
+	content: '\e900';
 }
 
 .sc-arrow-down:before {
-  content: "\e901";
+	content: '\e901';
 }
 
 .sc-arrow-left:before {
-  content: "\e902";
+	content: '\e902';
 }
 
 .sc-arrow-right:before {
-  content: "\e903";
+	content: '\e903';
 }
 
 .sc-arrow-up:before {
-  content: "\e904";
+	content: '\e904';
 }
 
 .sc-blank-appointment:before {
-  content: "\e905";
+	content: '\e905';
 }
 
 .sc-blank-campaign:before {
-  content: "\e949";
+	content: '\e949';
 }
 
 .sc-blank-connection:before {
-  content: "\e955";
+	content: '\e955';
 }
 
 .sc-blank-documents:before {
-  content: "\e906";
+	content: '\e906';
 }
 
 .sc-blank-exam:before {
-  content: "\e907";
+	content: '\e907';
 }
 
 .sc-blank-medication:before {
-  content: "\e908";
+	content: '\e908';
 }
 
 .sc-blank-notification:before {
-  content: "\e909";
+	content: '\e909';
 }
 
 .sc-blank-profile:before {
-  content: "\e90a";
+	content: '\e90a';
 }
 
 .sc-calendar:before {
-  content: "\e90b";
+	content: '\e90b';
 }
 
 .sc-campaign:before {
-  content: "\e94b";
+	content: '\e94b';
 }
 
 .sc-change:before {
-  content: "\e90c";
+	content: '\e90c';
 }
 
 .sc-check:before {
-  content: "\e90e";
+	content: '\e90e';
 }
 
-
 .sc-chronic-disease:before {
-  content: "\e90f";
+	content: '\e90f';
 }
 
 .sc-circle-check:before {
-  content: "\e910";
+	content: '\e910';
 }
 
 .sc-circle-check-invert:before {
-  content: "\e951";
+	content: '\e951';
 }
 
 .sc-circle-wrong:before {
-  content: "\e911";
+	content: '\e911';
 }
 
 .sc-circle-wrong-full:before {
-  content: "\e915";
+	content: '\e915';
 }
 
 .sc-civil-ID:before {
-  content: "\e94f";
+	content: '\e94f';
 }
 
 .sc-close:before {
-  content: "\e912";
+	content: '\e912';
 }
 
 .sc-delayed:before {
-  content: "\e913";
+	content: '\e913';
 }
 
 .sc-doctor:before {
-  content: "\e914";
+	content: '\e914';
 }
 
 .sc-documents:before {
-  content: "\e94d";
+	content: '\e94d';
 }
 
 .sc-documents1:before {
-  content: "\e916";
+	content: '\e916';
 }
 
 .sc-edit:before {
-  content: "\e917";
+	content: '\e917';
 }
 
 .sc-exam:before {
-  content: "\e918";
+	content: '\e918';
 }
 
 .sc-eye:before {
-  content: "\e919";
+	content: '\e919';
 }
 
 .sc-eye-none:before {
-  content: "\e91a";
+	content: '\e91a';
 }
 
 .sc-facebook:before {
-  content: "\e954";
+	content: '\e954';
 }
 
 .sc-filter:before {
-  content: "\e91b";
+	content: '\e91b';
 }
 
 .sc-filter-active:before {
-  content: "\e93a";
+	content: '\e93a';
 }
 
 .sc-fingerprint:before {
-  content: "\e91c";
+	content: '\e91c';
 }
 
 .sc-fingerprint-ok:before {
-  content: "\e91d";
+	content: '\e91d';
 }
 
 .sc-get-ride:before {
-  content: "\e94e";
+	content: '\e94e';
 }
 
 .sc-gps:before {
-  content: "\e90d";
+	content: '\e90d';
 }
 
 .sc-home:before {
-  content: "\e91e";
+	content: '\e91e';
 }
 
 .sc-hospital:before {
-  content: "\e91f";
+	content: '\e91f';
 }
 
 .sc-info:before {
-  content: "\e920";
+	content: '\e920';
 }
 
 .sc-lab:before {
-  content: "\e921";
+	content: '\e921';
 }
 
 .sc-language:before {
-  content: "\e922";
+	content: '\e922';
 }
 
 .sc-linkedin:before {
-  content: "\e953";
+	content: '\e953';
 }
 
 .sc-list:before {
-  content: "\e923";
+	content: '\e923';
 }
 
 .sc-locker:before {
-  content: "\e927";
+	content: '\e927';
 }
 
 .sc-mail-sent:before {
-  content: "\e924";
+	content: '\e924';
 }
 
 .sc-medication-ampoule:before {
-  content: "\e941";
+	content: '\e941';
 }
 
 .sc-medication-bag:before {
-  content: "\e946";
+	content: '\e946';
 }
 
 .sc-medication-bottle:before {
-  content: "\e944";
+	content: '\e944';
 }
 
 .sc-medication-drop:before {
-  content: "\e925";
+	content: '\e925';
 }
 
 .sc-medication-drop2:before {
-  content: "\e926";
+	content: '\e926';
 }
 
 .sc-medication-enema:before {
-  content: "\e93c";
+	content: '\e93c';
 }
 
 .sc-medication-glass:before {
-  content: "\e945";
+	content: '\e945';
 }
 
 .sc-medication-inhale:before {
-  content: "\e943";
+	content: '\e943';
 }
 
 .sc-medication-kit:before {
-  content: "\e93d";
+	content: '\e93d';
 }
 
 .sc-medication-ointment:before {
-  content: "\e928";
+	content: '\e928';
 }
 
 .sc-medication-patche:before {
-  content: "\e940";
+	content: '\e940';
 }
 
 .sc-medication-pill:before {
-  content: "\e929";
+	content: '\e929';
 }
 
 .sc-medication-pill2:before {
-  content: "\e92a";
+	content: '\e92a';
 }
 
 .sc-medication-powder:before {
-  content: "\e947";
+	content: '\e947';
 }
 
 .sc-medication-ring:before {
-  content: "\e93e";
+	content: '\e93e';
 }
 
 .sc-medication-sachet:before {
-  content: "\e942";
+	content: '\e942';
 }
 
 .sc-medication-spray:before {
-  content: "\e93f";
+	content: '\e93f';
 }
 
 .sc-medication-stick:before {
-  content: "\e93b";
+	content: '\e93b';
 }
 
 .sc-medication-syringe:before {
-  content: "\e948";
+	content: '\e948';
 }
 
 .sc-menu-bar:before {
-  content: "\e92b";
+	content: '\e92b';
 }
 
 .sc-menu-dots:before {
-  content: "\e92c";
+	content: '\e92c';
 }
 
 .sc-message:before {
-  content: "\e92d";
+	content: '\e92d';
 }
 
 .sc-no-preference:before {
-  content: "\e94c";
+	content: '\e94c';
 }
 
 .sc-notification:before {
-  content: "\e92e";
+	content: '\e92e';
 }
 
 .sc-phone:before {
-  content: "\e92f";
+	content: '\e92f';
 }
 
 .sc-photo:before {
-  content: "\e930";
+	content: '\e930';
 }
 
 .sc-plus:before {
-  content: "\e931";
+	content: '\e931';
 }
 
 .sc-preferences:before {
-  content: "\e932";
+	content: '\e932';
 }
 
 .sc-profile:before {
-  content: "\e933";
+	content: '\e933';
 }
 
 .sc-radioactive:before {
-  content: "\e934";
+	content: '\e934';
 }
 
 .sc-route:before {
-  content: "\e935";
+	content: '\e935';
 }
 
 .sc-save:before {
-  content: "\e939";
+	content: '\e939';
 }
 
 .sc-search:before {
-  content: "\e936";
+	content: '\e936';
 }
 
 .sc-senttohospital:before {
-  content: "\e94a";
+	content: '\e94a';
 }
 
 .sc-share:before {
-  content: "\e937";
+	content: '\e937';
 }
 
 .sc-trash:before {
-  content: "\e938";
+	content: '\e938';
 }
 
 .sc-twitter:before {
-  content: "\e952";
+	content: '\e952';
 }

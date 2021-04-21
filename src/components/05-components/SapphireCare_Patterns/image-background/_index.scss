@@ -3,31 +3,31 @@
 @use '~Settings/colors'as *;
 
 .image-bg {
-  min-height: 100px;
-  position: relative;
+	min-height: 100px;
+	position: relative;
 }
 
 .image-bg-img {
-  position: relative;
+	position: relative;
 }
 
 .image-bg-img:after {
-  background: linear-gradient(180deg, $sapphire-care-blue2 0%, $sapphire-care-blue3 100%);
-  content: "";
-  display: block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+	background-color: $sapphire-care-blue1;
+	content: '';
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .image-bg-title {
-  bottom: 0;
-  bottom: 20px;
-  color: $sapphire-white;
-  font-size: 20px;
-  left: 15px;
-  position: absolute;
-  right: 15px;
+	bottom: 0;
+	bottom: 20px;
+	color: $sapphire-white;
+	font-size: 20px;
+	left: 15px;
+	position: absolute;
+	right: 15px;
 }

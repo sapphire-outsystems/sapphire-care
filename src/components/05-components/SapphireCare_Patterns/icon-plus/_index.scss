@@ -1,28 +1,28 @@
 @use '~Settings/colors'as *;
 
-$height-width:65px;
+$height-width: 65px;
 
 [id*='IconPlus'] {
-  bottom: 15px;
-  position: fixed;
-  right: 0;
+	bottom: 15px;
+	position: fixed;
+	right: 0;
 
-  .next-appointment {
-    bottom: 80px;
-    position: fixed;
-    right: 0;
-  }
+	.next-appointment {
+		bottom: 80px;
+		position: fixed;
+		right: 0;
+	}
 
-  .icon-plus {
-    align-items: center;
-    background-color: $regular-alpha;
-    //border: 3px solid;
-    border-radius: 50%;
-    //box-shadow: 0px 0px 9px 1px $regular-grey;
-    color: $sapphire-white;
-    display: flex;
-    height: $height-width;
-    justify-content: center;
-    width: $height-width;
-  }
+	.icon-plus {
+		align-items: center;
+		background-color: $regular-alpha;
+		//border: 3px solid;
+		border-radius: 50%;
+		//box-shadow: 0px 0px 9px 1px $regular-gray;
+		color: $sapphire-white;
+		display: flex;
+		height: $height-width;
+		justify-content: center;
+		width: $height-width;
+	}
 }

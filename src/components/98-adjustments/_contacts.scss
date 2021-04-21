@@ -1,97 +1,82 @@
 @use '~Settings/fonts'as *;
 @use '~Settings/colors'as *;
 
-$icon-size:50px;
+$icon-size: 50px;
 
-[id*=Contacts] {
+[id*='Contacts'] {
+	.section-content {
+		> div {
+			margin-bottom: 40px;
+		}
+	}
 
-  font-family: $latin-bold;
+	.contacts-title {
+		.title {
+			font-size: $font-size-heading2;
+		}
 
-  .is-rtl & {
-    font-family: $arabic-bold;
-  }
+		.subtitle {
+			color: $regular-gray;
+			font-size: $font-size-heading4;
+		}
+	}
 
-  .section-content {
-    >div {
-      margin-bottom: 40px;
-    }
-  }
+	.contacts-contact {
+		.mobile-number {
+			margin-bottom: 40px;
 
-  .contacts-title {
+			.title {
+			}
 
+			.subtitle {
+				font-size: $font-size-heading2;
+			}
+		}
 
+		.e-mail {
+			.title {
+			}
 
-    .title {
-      font-size: $font-size-heading2;
-    }
+			.subtitle {
+			}
+		}
 
-    .subtitle {
-      color: $regular-grey;
-      font-size: $font-size-heading4;
-    }
-  }
+		.mobile-number,
+		.e-mail {
+			.subtitle {
+				color: $regular-alpha;
+				letter-spacing: 1px;
+				margin-top: 5px;
+			}
+		}
+	}
 
-  .contacts-contact {
-    .mobile-number {
-      margin-bottom: 40px;
+	.contacts-social_media {
+		.title {
+			margin-bottom: 10px;
+		}
 
-      .title {}
+		.social-media__container {
+			> div {
+				> div:nth-child(3) {
+					margin: 0 25px;
+				}
 
-      .subtitle {
-        font-size: $font-size-heading2;
-      }
-    }
+				.social-media__icon {
+					align-items: center;
+					border: 2px solid $regular-alpha;
+					border-radius: 50%;
+					color: $regular-alpha;
+					display: inline-flex;
+					height: $icon-size;
+					justify-content: center;
+					width: $icon-size;
 
-    .e-mail {
-      .title {}
-
-      .subtitle {}
-    }
-
-    .mobile-number,
-    .e-mail {
-      .subtitle {
-        color: $regular-alpha;
-        letter-spacing: 1px;
-        margin-top: 5px;
-      }
-    }
-  }
-
-  .contacts-social_media {
-
-
-    .title {
-      margin-bottom: 10px;
-    }
-
-    .social-media__container {
-
-      >div {
-
-        >div:nth-child(3) {
-          margin: 0 25px;
-        }
-
-        .social-media__icon {
-          align-items: center;
-          border: 2px solid $regular-alpha;
-          border-radius: 50%;
-          color: $regular-alpha;
-          display: inline-flex;
-          height: $icon-size;
-          justify-content: center;
-          width: $icon-size;
-
-          .is-rtl & {
-            float: inline-end;
-          }
-
-
-        }
-      }
-
-
-    }
-  }
+					.is-rtl & {
+						float: inline-end;
+					}
+				}
+			}
+		}
+	}
 }

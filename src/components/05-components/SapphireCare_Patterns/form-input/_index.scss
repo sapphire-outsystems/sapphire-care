@@ -4,78 +4,70 @@
 .animated-label,
 .animated-label.active,
 .animated-label:focus {
-  margin-bottom: 15px;
+	margin-bottom: 15px;
 
-  .animated-label-text {
-    all: unset;
-    display: flex;
-    font-size: $font-size-normal;
-    margin-bottom: 7px;
+	.animated-label-text {
+		all: unset;
+		display: flex;
+		font-size: $font-size-normal;
+		margin-bottom: 7px;
 
-    .form-input__asterisk {
-      color: $regular-red;
-      margin-left: 5px;
-    }
+		.form-input__asterisk {
+			color: $regular-red;
+			margin-left: 5px;
+		}
 
-    .form-input__label,
-    .form-input__asterisk {
-      font-size: $font-size-normal;
-    }
+		.form-input__label,
+		.form-input__asterisk {
+			font-size: $font-size-normal;
+		}
 
-    &:active {
+		&:active {
+			.form-input__label,
+			.form-input__asterisk {
+				font-size: $font-size-normal;
+			}
+		}
+	}
 
-      .form-input__label,
-      .form-input__asterisk {
-        font-size: $font-size-normal;
-      }
-    }
-  }
-
-  .animated-label-input input[data-input],
-  &:empty {
-    color: $dark-grey;
-    font-size: $font-size-heading4;
-    height: 50px;
-    line-height: 20px;
-    margin: 0;
-    padding: 0;
-  }
-
+	.animated-label-input input[data-input],
+	&:empty {
+		color: $dark-grey;
+		font-size: $font-size-heading4;
+		height: 50px;
+		line-height: 20px;
+		margin: 0;
+		padding: 0;
+	}
 }
 
-
 .animated-label {
+	&.is-select {
+		.animated-label-text {
+			color: $regular-gray;
+			font-size: $font-size-normal;
+			position: relative;
+			top: 10px;
+		}
+	}
 
-  &.is-select {
-    .animated-label-text {
-      color: $regular-grey;
-      font-size: $font-size-normal;
-      position: relative;
-      top: 10px;
-    }
-  }
+	.animated-label-text {
+		bottom: -25px;
+		font-size: $font-size-heading3;
+		position: relative;
+		transition: font-size 0.5s ease;
+	}
 
-  .animated-label-text {
-    bottom: -25px;
-    font-size: $font-size-heading3;
-    position: relative;
-    transition: font-size .5s ease;
+	&.active {
+		.animated-label-text {
+			bottom: 0;
+			color: $regular-gray;
+			font-size: $font-size-normal;
+			transition: font-size 0.5s ease;
+		}
 
-  }
-
-
-
-  &.active {
-
-    .animated-label-text {
-      bottom: 0;
-      color: $regular-grey;
-      font-size: $font-size-normal;
-      transition: font-size .5s ease;
-    }
-
-    // .animated-label-input {
-    //   color: $dark-grey;
-    // }
-  }
+		// .animated-label-input {
+		//   color: $dark-grey;
+		// }
+	}
 }

@@ -1,35 +1,35 @@
 @use '~Settings/colors'as *;
 
-[data-dropdown]>div.dropdown-display {
-  background: $sapphire-white;
-  border: 0;
-  color: $regular-grey;
+[data-dropdown] > div.dropdown-display {
+	background: $sapphire-white;
+	border: 0;
+	color: $regular-gray;
 }
 
-[data-dropdown]>div.dropdown-display.dropdown-disabled {
-  border-bottom: 0;
-  color: $sapphire-light;
+[data-dropdown] > div.dropdown-display.dropdown-disabled {
+	border-bottom: 0;
+	color: $sapphire-light;
 }
 
-[data-dropdown]>div.dropdown-display:after {
-  border-color: $regular-alpha;
-  /*primary-color*/
+[data-dropdown] > div.dropdown-display:after {
+	border-color: $regular-alpha;
+	/*primary-color*/
 }
 
 [data-dropdown] div.dropdown-popup-row {
-  color: $dark-grey;
+	color: $dark-grey;
 }
 
 [data-dropdown] div.dropdown-popup-row-selected {
-  color: $regular-alpha;
-  /*primary-color*/
+	color: $regular-alpha;
+	/*primary-color*/
 }
 
 .dropdown-expanded-down div.dropdown-list {
-  border: 0;
-  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, .1);
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .1);
-  z-index: 11;
+	border: 0;
+	-webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+	z-index: 11;
 }
 
 input[data-input].not-valid,
@@ -37,7 +37,7 @@ input[data-input].not-valid:focus,
 textarea[data-textarea].not-valid,
 textarea[data-textarea].not-valid:focus,
 div.dropdown-display.not-valid,
-div.button-group.not-valid>div {
-  border: 0;
-  border-bottom: 1px solid $regular-red;
+div.button-group.not-valid > div {
+	border: 0;
+	border-bottom: 1px solid $regular-red;
 }

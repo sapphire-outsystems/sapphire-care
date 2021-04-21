@@ -4,231 +4,224 @@
 $marginContainers: 15px;
 
 [id*='BgImageContainer'] {
+	background-color: $sapphire-white;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	white-space: nowrap;
+	width: 100%;
 
-  background-color: $sapphire-white;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  white-space: nowrap;
-  width: 100%;
-
-  img[id*='ImageBgWhite'],
-  img[id*='ImageBgBlue'] {
-    background-size: cover;
-    height: 100%;
-    overflow: hidden;
-    width: 100%;
-  }
+	img[id*='ImageBgWhite'],
+	img[id*='ImageBgBlue'] {
+		background-size: cover;
+		height: 100%;
+		overflow: hidden;
+		width: 100%;
+	}
 }
 
-
-
-[data-block*="PullToRefresh"] {
-  display: none;
+[data-block*='PullToRefresh'] {
+	display: none;
 }
 
 [id*='HomePage'] {
-  .content {
-    background-color: transparent;
-  }
+	.content {
+		background-color: transparent;
+	}
 
-  .header-title {
-    align-items: flex-end;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    padding-bottom: 10px;
+	.header-title {
+		align-items: flex-end;
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		padding-bottom: 10px;
 
-    .is-loading {
-      >img {
-        visibility: hidden;
-      }
-    }
-  }
+		.is-loading {
+			> img {
+				visibility: hidden;
+			}
+		}
+	}
 
-  .header-right {
-    color: $regular-alpha;
-  }
+	.header-right {
+		color: $regular-alpha;
+	}
 
-  .main-content {
-    top: 20px;
-  }
+	.main-content {
+		top: 20px;
+	}
 
-  .carousel {
-    height: 210px;
+	.carousel {
+		height: 210px;
 
-    .carousel-container {
-      width: 90%;
-    }
+		.carousel-container {
+			width: 90%;
+		}
 
-    .is-rtl & {
-      direction: rtl;
-    }
-  }
+		.is-rtl & {
+			direction: rtl;
+		}
+	}
 
+	[id*='SaluteSection'] {
+		.section {
+			margin-bottom: 30px;
+		}
+	}
 
-  [id*='SaluteSection'] {
-    .section {
-      margin-bottom: 30px;
-    }
-  }
+	[id*='AppoitmentsSection'] {
+		.section {
+			padding-bottom: 30px;
+			padding-left: 15px;
+			padding-right: 0;
 
-  [id*='AppoitmentsSection'] {
-    .section {
-      padding-bottom: 30px;
-      padding-left: 15px;
-      padding-right: 0;
+			.is-rtl & {
+				padding-left: 0;
+				padding-right: 15px;
+			}
 
-      .is-rtl & {
-        padding-left: 0;
-        padding-right: 15px;
-      }
+			.carousel {
+				.is-loading {
+					border-radius: 10px;
+					display: block;
+				}
+			}
+		}
 
-      .carousel {
-        .is-loading {
-          border-radius: 10px;
-          display: block;
-        }
-      }
+		.section-title {
+			margin-bottom: 10px;
+		}
 
+		div[data-block='SapphireCare_Patterns.AppointmentCard'] {
+			display: inline-block;
+			margin: 0 10px 0 0;
+			white-space: normal;
+			width: 100%;
 
-    }
+			.is-rtl & {
+				margin: 0 0 0 10px;
+			}
+		}
+	}
 
-    .section-title {
-      margin-bottom: 10px;
-    }
+	[id*='InformationSection'] {
+		.section {
+			background-color: $sapphire-light;
+			padding-bottom: 30px;
+			padding-top: 20px;
 
-    div[data-block='SapphireCare_Patterns.AppointmentCard'] {
-      display: inline-block;
-      margin: 0 10px 0 0;
-      white-space: normal;
-      width: 100%;
+			.section-title {
+				margin-bottom: 10px;
+			}
 
-      .is-rtl & {
-        margin: 0 0 0 10px;
-      }
-    }
-  }
+			.is-loading {
+				i {
+					color: transparent;
+					-webkit-text-fill-color: transparent;
+				}
+			}
 
-  [id*='InformationSection'] {
-    .section {
-      background-color: $sapphire-light;
-      padding-bottom: 30px;
-      padding-top: 20px;
+			.card-icon__icon {
+				[id*='Content'] {
+					display: flex;
+				}
+			}
+		}
 
-      .section-title {
-        margin-bottom: 10px;
-      }
+		.list {
+			&.list-group,
+			.list-item {
+				all: unset;
+			}
 
-      .is-loading {
-        i {
-          color: transparent;
-          -webkit-text-fill-color: transparent;
-        }
-      }
+			&.list-group {
+				display: flex;
+			}
 
-      .card-icon__icon {
-        [id*='Content'] {
-          display: flex;
-        }
-      }
-    }
+			.list-item {
+				width: 100%;
 
-    .list {
+				&:first-of-type {
+					margin-right: $marginContainers;
 
-      &.list-group,
-      .list-item {
-        all: unset;
-      }
+					.is-rtl & {
+						margin-left: $marginContainers;
+						margin-right: unset;
+					}
+				}
 
-      &.list-group {
-        display: flex;
-      }
+				&:last-of-type {
+					margin-left: $marginContainers;
 
-      .list-item {
-        width: 100%;
+					.is-rtl & {
+						margin-left: unset;
+						margin-right: $marginContainers;
+					}
+				}
+			}
+		}
+	}
 
-        &:first-of-type {
-          margin-right: $marginContainers;
+	[id*='CovidSection'] {
+		.section {
+			margin: 30px 0;
 
-          .is-rtl & {
-            margin-left: $marginContainers;
-            margin-right: unset;
-          }
-        }
+			.daily-badge {
+				[id*='Content'] {
+					align-items: center;
+					display: flex;
+					justify-content: center;
+				}
+			}
 
-        &:last-of-type {
-          margin-left: $marginContainers;
+			.is-loading {
+				display: block;
+			}
+		}
+	}
 
-          .is-rtl & {
-            margin-left: unset;
-            margin-right: $marginContainers;
-          }
-        }
-      }
-    }
-  }
+	[id*='HospitalSection'] {
+		.section {
+			margin-bottom: 30px;
+		}
+	}
 
-  [id*='CovidSection'] {
-    .section {
-      margin: 30px 0;
+	[id*='NewsSection'] {
+		.list {
+			&.list-group {
+				background-color: unset;
+			}
+		}
 
-      .daily-badge {
-        [id*='Content'] {
-          align-items: center;
-          display: flex;
-          justify-content: center;
-        }
-      }
+		.list-item {
+			border: none;
+			padding: 15px;
+		}
 
-      .is-loading {
-        display: block;
-      }
-    }
-  }
+		.section {
+			padding: 40px 0 0 0;
+		}
 
-  [id*='HospitalSection'] {
-    .section {
-      margin-bottom: 30px;
-    }
-  }
+		> div.section {
+			background-color: $sapphire-care-blue1;
 
-  [id*='NewsSection'] {
-    .list {
-      &.list-group {
-        background-color: unset;
-      }
-    }
+			.section-title {
+				color: $sapphire-white;
+				display: flex;
+				font-size: $font-size-heading2;
+				justify-content: space-between;
+				padding: 0 15px 25px 15px;
 
-    .list-item {
-      border: none;
-      padding: 15px;
-    }
+				.NewsCounter {
+					color: $regular-alpha;
+					font-family: $latin-bold;
 
-    .section {
-      padding: 40px 0 0 0;
-    }
-
-    >div.section {
-      background-color: $sapphire-care-blue3;
-
-      .section-title {
-        color: $sapphire-white;
-        display: flex;
-        font-size: $font-size-heading2;
-        justify-content: space-between;
-        padding: 0 15px 25px 15px;
-
-        .NewsCounter {
-          color: $regular-alpha;
-          font-family: $latin-bold;
-
-          .is-rtl & {
-            font-family: $arabic-bold;
-          }
-        }
-      }
-    }
-  }
+					.is-rtl & {
+						font-family: $arabic-bold;
+					}
+				}
+			}
+		}
+	}
 }

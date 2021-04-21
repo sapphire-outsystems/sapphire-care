@@ -2,57 +2,57 @@
 @use '~Settings/colors'as *;
 
 .tag.text-black {
-  background-color: transparent;
-  border: 1px solid $dark-grey;
-  color: $dark-grey;
+	background-color: transparent;
+	border: 1px solid $dark-grey;
+	color: $dark-grey;
 }
 
 .tag.text-blue {
-  background-color: transparent;
-  border: 1px solid $regular-blue;
-  color: $regular-blue;
+	background-color: transparent;
+	border: 1px solid $regular-blue;
+	color: $regular-blue;
 }
 
 .tag.text-green {
-  background-color: transparent;
-  border: 1px solid $regular-green;
-  color: $regular-green;
+	background-color: transparent;
+	border: 1px solid $regular-green;
+	color: $regular-green;
 }
 
 .tag.text-grey {
-  background-color: transparent;
-  border: 1px solid $regular-grey;
-  color: $regular-grey;
+	background-color: transparent;
+	border: 1px solid $regular-gray;
+	color: $regular-gray;
 }
 
 .tag.text-orange {
-  background-color: transparent;
-  border: 1px solid $regular-orange;
-  color: $regular-orange;
+	background-color: transparent;
+	border: 1px solid $regular-orange;
+	color: $regular-orange;
 }
 
 .tag.text-primary-color {
-  background-color: transparent;
-  border: 1px solid $regular-alpha;
-  /*primary-color*/
-  color: $regular-alpha;
-  /*primary-color*/
+	background-color: transparent;
+	border: 1px solid $regular-alpha;
+	/*primary-color*/
+	color: $regular-alpha;
+	/*primary-color*/
 }
 
 .tag.text-red {
-  background-color: transparent;
-  border: 1px solid $regular-red;
-  color: $regular-red;
+	background-color: transparent;
+	border: 1px solid $regular-red;
+	color: $regular-red;
 }
 
 .tag.text-violet {
-  background-color: transparent;
-  border: 1px solid $regular-pink;
-  color: $regular-pink;
+	background-color: transparent;
+	border: 1px solid $regular-pink;
+	color: $regular-pink;
 }
 
 .tag.text-white {
-  background-color: transparent;
-  border: 1px solid $sapphire-white;
-  color: $sapphire-white;
+	background-color: transparent;
+	border: 1px solid $sapphire-white;
+	color: $sapphire-white;
 }

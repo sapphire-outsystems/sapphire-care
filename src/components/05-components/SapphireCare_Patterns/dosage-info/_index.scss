@@ -2,37 +2,32 @@
 @use '~Settings/fonts'as *;
 
 .dosage-info {
+	&__title-container {
+		color: $regular-gray;
+		display: flex;
+		font-size: $font-size-normal;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
 
-  &__title-container {
-    color: $regular-grey;
-    display: flex;
-    font-size: $font-size-normal;
-    justify-content: space-between;
-    margin-bottom: 20px;
+	&__list-item {
+		border-bottom: 1px solid $light-grey;
+		display: flex;
+		font-size: $font-size-heading4;
+		height: 50px;
+		margin-bottom: 30px;
 
-  }
+		& :nth-child(2) {
+			font-family: $latin-bold;
+			text-align: right;
 
-  &__list-item {
-    border-bottom: 1px solid $light-grey;
-    display: flex;
-    font-size: $font-size-heading4;
-    height: 50px;
-    margin-bottom: 30px;
+			.is-rtl & {
+				font-family: $arabic-bold;
+			}
+		}
 
-
-    & :nth-child(2) {
-      font-family: $latin-bold;
-      text-align: right;
-
-      .is-rtl & {
-        font-family: $arabic-bold;
-      }
-    }
-
-    >div {
-      flex: 1;
-    }
-  }
-
-
+		> div {
+			flex: 1;
+		}
+	}
 }

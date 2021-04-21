@@ -8,12 +8,12 @@ const isProduction = process.env.NODE_ENV === 'production ';
 
 module.exports = {
 	entry: {
-		app: path.resolve(__dirname, './src/app.js')
+		app: path.resolve(__dirname, './src/app.js'),
 	},
 	output: {
 		path: outputPath,
 		publicPath: '/dist/',
-	},	
+	},
 	plugins: [
 		new CleanWebpackPlugin({
 			cleanOnceBeforeBuildPatterns: [`${outputPath}/*.hot-update.*`],
@@ -52,10 +52,9 @@ module.exports = {
 						options: {
 							implementation: require('sass'),
 							sassOptions: {
-                fiber: require('fibers'),
-              },
+								fiber: require('fibers'),
+							},
 							sourceMap: !isProduction,
-							
 						},
 					},
 				],
@@ -75,17 +74,18 @@ module.exports = {
 			},
 		],
 	},
-	resolve:{
-		alias:{
-			Settings:path.join(__dirname,'src/components/00-settings'),
-			Tools:path.join(__dirname,'src/components/01-tools'),
-			Generic:path.join(__dirname,'src/components/02-generic'),
-			Elements:path.join(__dirname,'src/components/03-elements'),
-			Base:path.join(__dirname,'src/components/04-base'),
-			Components:path.join(__dirname,'src/components/05-components'),
-			Helpers:path.join(__dirname,'src/components/06-helpers'),
-			Trumps:path.join(__dirname,'src/components/07-trumps'),
-			Adjusts:path.join(__dirname,'src/components/98-adjustments'),
-		}
-	}
+	resolve: {
+		alias: {
+			Settings: path.join(__dirname, 'src/components/00-settings'),
+			Tools: path.join(__dirname, 'src/components/01-tools'),
+			Generic: path.join(__dirname, 'src/components/02-generic'),
+			Elements: path.join(__dirname, 'src/components/03-elements'),
+			Base: path.join(__dirname, 'src/components/04-base'),
+			Components: path.join(__dirname, 'src/components/05-components'),
+			Helpers: path.join(__dirname, 'src/components/06-helpers'),
+			Trumps: path.join(__dirname, 'src/components/07-trumps'),
+			Adjusts: path.join(__dirname, 'src/components/98-adjustments'),
+			Legacy: path.join(__dirname, 'src/components/99-legacy'),
+		},
+	},
 };

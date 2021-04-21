@@ -2,228 +2,226 @@
 @use '~Settings/colors'as *;
 
 .card-two-cols {
-  background-color: $sapphire-white;
-  ;
-  border-color: $light-grey;
-  border-radius: 4px;
-  border-width: 1px;
-  display: table;
-  padding: 10px;
-  padding-left: 20px;
-  position: relative;
-  width: 100%;
+	background-color: $sapphire-white;
+	border-color: $light-grey;
+	border-radius: 4px;
+	border-width: 1px;
+	display: table;
+	padding: 10px;
+	padding-left: 20px;
+	position: relative;
+	width: 100%;
 }
 
 .card-two-cols.background-red {
-  background-color: $regular-red;
+	background-color: $regular-red;
 }
 
 .card-two-cols.background-dark-red {
-  background-color: $dark-red;
+	background-color: $dark-red;
 }
 
 .card-two-cols.background-light-red {
-  background-color: $light-red;
+	background-color: $light-red;
 }
 
 .card-two-cols.background-violet {
-  background-color: $regular-pink
+	background-color: $regular-pink;
 }
 
 .card-two-cols.background-dark-violet {
-  background-color: $dark-pink
+	background-color: $dark-pink;
 }
 
 .card-two-cols.background-light-violet {
-  background-color: $light-pink;
+	background-color: $light-pink;
 }
 
 .card-two-cols.background-blue {
-  background-color: $regular-blue;
+	background-color: $regular-blue;
 }
 
 .card-two-cols.background-dark-blue {
-  background-color: $dark-blue;
+	background-color: $dark-blue;
 }
 
 .card-two-cols.background-light-blue {
-  background-color: $regular-alpha;
+	background-color: $regular-alpha;
 }
 
 .card-two-cols.background-green {
-  background-color: $regular-green;
+	background-color: $regular-green;
 }
 
 .card-two-cols.background-dark-green {
-  background-color: $dark-green;
+	background-color: $dark-green;
 }
 
 .card-two-cols.background-light-green {
-  background-color: $light-green;
+	background-color: $light-green;
 }
 
 .card-two-cols.background-orange {
-  background-color: $regular-orange
+	background-color: $regular-orange;
 }
 
 .card-two-cols.background-dark-orange {
-  background-color: $dark-orange;
+	background-color: $dark-orange;
 }
 
 .card-two-cols.background-light-orange {
-  background-color: $light-orange;
+	background-color: $light-orange;
 }
 
 .card-two-cols.background-grey {
-  background-color: $regular-grey;
+	background-color: $regular-gray;
 }
 
 .card-two-cols.background-dark-grey {
-  background-color: $mid-dark-grey;
+	background-color: $mid-dark-grey;
 }
 
 .card-two-cols.background-light-grey {
-  background-color: $mid-light-grey;
+	background-color: $mid-light-grey;
 }
 
 .card-two-cols.background-light-grey2 {
-  background-color: $light-grey;
+	background-color: $light-grey;
 }
 
 .card-two-cols.background-light-grey3 {
-  background-color: $sapphire-light;
+	background-color: $sapphire-light;
 }
 
 .card-two-cols.background-black {
-  background-color: $dark-grey;
+	background-color: $dark-grey;
 }
 
 .card-two-cols.background-primary-color {
-  color: $regular-alpha;
-  /*primary-color*/
+	color: $regular-alpha;
+	/*primary-color*/
 }
 
-
 .card-two-cols.box-shadow {
-  box-shadow: 0 3px 30px 0 $regular-grey;
+	box-shadow: 0 3px 30px 0 $regular-gray;
 }
 
 .card-two-cols.border {
-  border-style: solid;
-  border-width: 1px;
+	border-style: solid;
+	border-width: 1px;
 }
 
 .card-two-cols.border-left {
-  border-left-width: 5px;
+	border-left-width: 5px;
 }
 
 .is-rtl .card-two-cols.border-left {
-  border-left-width: 0;
-  border-right-width: 4px;
+	border-left-width: 0;
+	border-right-width: 4px;
 }
 
 body:not(.is-rtl) .card-two-cols.border.border-left:not(.border-all) {
-  border-bottom-color: $light-grey;
-  border-left-width: 5px;
-  border-right-color: $light-grey;
-  border-top-color: $light-grey;
+	border-bottom-color: $light-grey;
+	border-left-width: 5px;
+	border-right-color: $light-grey;
+	border-top-color: $light-grey;
 }
 
 body.is-rtl .card-two-cols.border.border-left {
-  border-bottom-color: $light-grey;
-  border-left-color: $light-grey;
-  border-left-width: 0;
-  border-right-width: 4px;
-  border-top-color: $light-grey;
+	border-bottom-color: $light-grey;
+	border-left-color: $light-grey;
+	border-left-width: 0;
+	border-right-width: 4px;
+	border-top-color: $light-grey;
 }
 
 .card-two-cols.border.border-all {
-  border-width: 1px;
+	border-width: 1px;
 }
 
 .card-two-cols.border.border-all .card-two-cols-col-right {
-  padding: 0 !important;
+	padding: 0 !important;
 }
 
 .card-two-cols-col-left,
 .card-two-cols-col-right {
-  display: table-cell;
-  vertical-align: middle;
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .card-two-cols-col-left {
-  width: 100px;
+	width: 100px;
 }
 
 .card-two-cols.border-left .card-two-cols-col-left {
-  width: 100px;
-  /*RGA - Changed from 85px*/
+	width: 100px;
+	/*RGA - Changed from 85px*/
 }
 
 .card-two-cols-col-left.separator-border {
-  padding-right: 5px;
-  position: relative;
+	padding-right: 5px;
+	position: relative;
 }
 
 .is-rtl .card-two-cols-col-left.separator-border {
-  padding-left: 5px;
-  padding-right: 0;
+	padding-left: 5px;
+	padding-right: 0;
 }
 
 .card-two-cols-col-left.separator-border:after {
-  background-color: $light-grey;
-  bottom: 4px;
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 4px;
-  width: 1px;
-  z-index: 1;
+	background-color: $light-grey;
+	bottom: 4px;
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 4px;
+	width: 1px;
+	z-index: 1;
 }
 
 .is-rtl .card-two-cols-col-left.separator-border:after {
-  left: 0;
-  right: auto;
+	left: 0;
+	right: auto;
 }
 
 .card-two-cols-col-left img {
-  border: 1px solid $light-grey;
-  border-radius: 4px;
+	border: 1px solid $light-grey;
+	border-radius: 4px;
 }
 
 .card-two-cols-col-right {
-  padding: 5px 0 5px 15px;
-  width: auto;
+	padding: 5px 0 5px 15px;
+	width: auto;
 }
 
 .is-rtl .card-two-cols-col-right {
-  padding-left: 0;
-  padding-right: 15px;
+	padding-left: 0;
+	padding-right: 15px;
 }
 
 /* popup fix */
 .card-two-cols.split-half-columns {
-  display: block;
-  padding: 0;
+	display: block;
+	padding: 0;
 }
 
-.card-two-cols.split-half-columns>div {
-  display: inline-block;
-  padding: 12px 15px;
-  width: 50%;
+.card-two-cols.split-half-columns > div {
+	display: inline-block;
+	padding: 12px 15px;
+	width: 50%;
 }
 
 .card-two-cols.split-half-columns .card-two-cols-col-left:after {
-  bottom: 0;
-  top: 0;
+	bottom: 0;
+	top: 0;
 }
 
 .card-two-cols.border-top {
-  border-top: 1px solid $light-grey;
+	border-top: 1px solid $light-grey;
 }
 
 .popup-content .card-two-cols.split-half-columns {
-  margin: 0 -10px -10px;
-  width: auto;
+	margin: 0 -10px -10px;
+	width: auto;
 }

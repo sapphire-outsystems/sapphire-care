@@ -2,63 +2,60 @@
 @use '~Settings/colors'as *;
 
 .sapphire-filter {
-  &.action-sheet-container {
-    -servicestudio-height: auto;
-    -servicestudio-position: relative;
-    -servicestudio-top: auto;
-    z-index: 100;
+	&.action-sheet-container {
+		-servicestudio-height: auto;
+		-servicestudio-position: relative;
+		-servicestudio-top: auto;
+		z-index: 100;
 
-    .action-sheet {
-      background-color: $sapphire-white;
-      padding: 20px 0 10px;
+		.action-sheet {
+			background-color: $sapphire-white;
+			padding: 20px 0 10px;
 
-      -servicestudio-position: relative;
+			-servicestudio-position: relative;
 
-      &--title {
-        color: $sapphire-care-blue3;
-        /*secondary-color*/
-        font-size: 20px;
-        font-weight: 700;
-        text-align: center;
-      }
+			&--title {
+				color: $sapphire-care-blue1;
+				/*secondary-color*/
+				font-size: 20px;
+				font-weight: 700;
+				text-align: center;
+			}
 
-      &--closebtn {
-        color: $dark-grey;
-        font-size: 24px;
-        position: absolute;
-        right: 18px;
-        top: 20px;
-      }
+			&--closebtn {
+				color: $dark-grey;
+				font-size: 24px;
+				position: absolute;
+				right: 18px;
+				top: 20px;
+			}
 
-      &--closebtn {
-        .icon {
-          color: $mid-dark-grey;
-          font-size: 24px;
-        }
+			&--closebtn {
+				.icon {
+					color: $mid-dark-grey;
+					font-size: 24px;
+				}
 
-        .is-rtl & {
-          left: 10px;
-          right: auto;
-        }
+				.is-rtl & {
+					left: 10px;
+					right: auto;
+				}
+			}
 
-      }
+			&--buttons-actions {
+				-servicestudio-max-height: initial;
+				max-height: 66vh;
+				overflow-y: auto;
+				padding: 20px 0;
 
-      &--buttons-actions {
-        -servicestudio-max-height: initial;
-        max-height: 66vh;
-        overflow-y: auto;
-        padding: 20px 0;
+				.small-card {
+					border: none;
+				}
+			}
 
-        .small-card {
-          border: none;
-        }
-      }
-
-      &-cancel {
-        padding: 0 20px 20px;
-      }
-    }
-  }
-
-
+			&-cancel {
+				padding: 0 20px 20px;
+			}
+		}
+	}
 }
