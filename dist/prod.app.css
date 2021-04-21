@@ -1661,12 +1661,7 @@ input.switch[disabled]:checked:after {
 .submenu-items a:visited {
   background-color: #ffffff;
   border: 0;
-  border-bottom: 1px solid #d6d6d6;
-}
-.submenu-items a:first-child,
-.submenu-items a:link:first-child,
-.submenu-items a:visited:first-child {
-  border-top: 1px solid #d6d6d6;
+  padding: 14px 10px 14px 65px;
 }
 
 .shadow {
