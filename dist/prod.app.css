@@ -759,6 +759,7 @@ a .icon {
 }
 .app-menu .app-menu-links-bottom a {
   font-size: 1.143em;
+  padding-left: 20px;
 }
 .app-menu .app-menu-links-bottom a:link {
   font-size: 1.143em;
@@ -1456,6 +1457,7 @@ input.switch[disabled]:checked:after {
 .header-title img {
   display: block;
   margin: 0 auto;
+  width: 130px;
 }
 
 .is-rtl .header-title {
@@ -3703,6 +3705,10 @@ div[data-block*="SapphireCare_Patterns.LanguangeSelector"] .languange-selector__
   margin: 0 auto;
   margin-bottom: 20px;
   width: 110px;
+}
+[id*=Login_Page] .login-screen .section-title .login-logo img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
 }
 [id*=Login_Page] .login-screen .section-content {
   color: #ffffff;
@@ -5956,10 +5962,10 @@ div[data-block*="Specialties.SpecialtiesList"] div[data-block="SapphireCare_Patt
 }
 [id*=HomePage] .header-title {
   align-items: flex-end;
+  align-items: center;
   display: flex;
   height: 100%;
   justify-content: center;
-  padding-bottom: 10px;
 }
 [id*=HomePage] .header-title .is-loading > img {
   visibility: hidden;
