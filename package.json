@@ -1,6 +1,10 @@
 {
 	"name": "sapphire-care",
+<<<<<<< HEAD
 	"version": "1.0.12",
+=======
+	"version": "1.0.14",
+>>>>>>> 016cbfb3d5de37cc67825a31605bbc6554b6845b
 	"description": "",
 	"main": "index.js",
 	"config": {

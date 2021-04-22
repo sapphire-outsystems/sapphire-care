@@ -2,35 +2,34 @@
 @use '~Settings/colors'as *;
 
 .splash-screen {
-  background-color: $regular-beta;
+	background-color: $regular-beta;
 
-  .splash-bg-image {
+	.splash-bg-image {
+		margin-top: -50px;
+		width: 170px;
 
-    img {
-      height: auto;
-      width: 100%;
-    }
-  }
+		img {
+			height: auto;
+			width: 100%;
+		}
+	}
 
-  .splash-loading {
-    bottom: 30%;
-    color: $regular-beta;
-    position: absolute;
+	.splash-loading {
+		bottom: 30%;
+		color: $regular-beta;
+		position: absolute;
 
-    .loading {
+		.loading {
+			margin-top: 20px;
 
-      margin-top: 20px;
-
-      .OSLoaderContainer {
-        .OSLoadingBar {
-          background-color: $regular-alpha;
-        }
-      }
-    }
-  }
+			.OSLoaderContainer {
+				.OSLoadingBar {
+					background-color: $regular-alpha;
+				}
+			}
+		}
+	}
 }
-
-
 
 // .splash-logo {
 //   align-items: center;
