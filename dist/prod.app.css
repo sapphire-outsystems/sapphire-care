@@ -690,6 +690,19 @@ textarea[data-textarea]:empty:-moz-placeholder {
   color: rgba(0, 0, 0, 0.38);
 }
 
+/* Autofill Chrome */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #0e4f7c inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #fff !important;
+}
+
+/* Autofill Chrome */
 /* Links */
 a {
   color: #00bfa5;
@@ -1905,7 +1918,7 @@ input.switch[disabled]:checked:after {
 }
 
 .background-green_S {
-  background-color: #00bfa5;
+  background-color: #0e4f7c;
 }
 
 .background-white_S {
@@ -3703,8 +3716,8 @@ div[data-block*="SapphireCare_Patterns.LanguangeSelector"] .languange-selector__
 }
 [id*=Login_Page] .login-screen .section-title .login-logo {
   margin: 0 auto;
-  margin-bottom: 20px;
-  width: 110px;
+  margin-bottom: 40px;
+  width: 130px;
 }
 [id*=Login_Page] .login-screen .section-title .login-logo img {
   -webkit-filter: brightness(0) invert(1);
@@ -3946,6 +3959,9 @@ div[data-block*="SapphireCare_Patterns.LanguangeSelector"] .languange-selector__
 /* Splash Screen */
 .splash-screen {
   background-color: #00ab93;
+}
+.splash-screen .splash-bg-image {
+  width: 170px;
 }
 .splash-screen .splash-bg-image img {
   height: auto;
