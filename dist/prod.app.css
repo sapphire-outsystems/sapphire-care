@@ -714,7 +714,8 @@ a:link:active {
   color: #00ab93;
 }
 a:link .icon {
-  margin: -15px -5px;
+  margin: unset;
+  padding: 8px 0;
 }
 a:visited {
   color: #00bfa5;
