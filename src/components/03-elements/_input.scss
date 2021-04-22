@@ -68,3 +68,16 @@ input[data-input]:empty:-moz-placeholder,
 textarea[data-textarea]:empty:-moz-placeholder {
 	color: rgba(0, 0, 0, 0.38);
 }
+
+/* Autofill Chrome */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-box-shadow: 0 0 0 30px $sapphire-care-blue1 inset !important;
+}
+
+input:-webkit-autofill {
+	-webkit-text-fill-color: $regular-white !important;
+}
+/* Autofill Chrome */
