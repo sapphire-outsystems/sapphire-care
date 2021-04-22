@@ -2830,11 +2830,11 @@ body.is-rtl .card-two-cols.border.border-left {
   background-color: #fa5252;
   border-radius: 10px;
   display: flex;
+  font-family: "LatoBold";
+  font-size: 0.857em;
   height: 24px;
   justify-content: center;
   width: 80px;
-  font-family: "LatoBold";
-  font-size: 0.857em;
 }
 .is-rtl .DetailHeader .section-title .Title__Container .RemainDays {
   font-family: "TajawalBold";
