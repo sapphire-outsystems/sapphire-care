@@ -4547,6 +4547,39 @@ div[data-block*="SapphireCare_Patterns.LanguangeSelector"] .languange-selector__
   width: 100%;
 }
 
+/* Wizard */
+.wizard-wrapper {
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.wizard-wrapper .wizard-wrapper-item.active .wizard-item-icon-wrapper,
+.wizard-wrapper .wizard-wrapper-item.past .wizard-item-icon-wrapper {
+  background-color: #00bfa5;
+  opacity: 1;
+}
+
+.wizard-wrapper .wizard-wrapper-item.active .wizard-label {
+  color: #00bfa5;
+  /*primary-color*/
+}
+
+.wizard-wrapper .wizard-item-icon-wrapper:before {
+  display: none;
+}
+
+.wizard-wrapper .wizard-wrapper-item .wizard-item-icon-wrapper {
+  background-color: #d6d6d6;
+  border-radius: unset;
+  height: 6px;
+  width: 100%;
+}
+
+.wizard-item-icon {
+  display: none;
+}
+
 /* Avatar */
 .avatar {
   background: #adadad;

@@ -38,24 +38,31 @@
 	}
 }
 
-// .wizard-item-wrapper .wizard-item-wrapper.past .wizard-item {
-//   background-color: $regular-gray;
-//   opacity: 1;
-// }
+/* Wizard */
+.wizard-wrapper {
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+.wizard-wrapper .wizard-wrapper-item.active .wizard-item-icon-wrapper,
+.wizard-wrapper .wizard-wrapper-item.past .wizard-item-icon-wrapper {
+	background-color: $regular-alpha;
+	opacity: 1;
+}
+.wizard-wrapper .wizard-wrapper-item.active .wizard-label {
+	color: $regular-alpha;
+	/*primary-color*/
+}
+.wizard-wrapper .wizard-item-icon-wrapper:before {
+	display: none;
+}
+.wizard-wrapper .wizard-wrapper-item .wizard-item-icon-wrapper {
+	background-color: $light-grey;
+	border-radius: unset;
+	height: 6px;
+	width: 100%;
+}
 
-// .wizard-item-wrapper.active .wizard-item {
-//   background-color: $regular-alpha;
-//   /*primary-color*/
-// }
-
-// .wizard-item-wrapper:before {
-//   display: none;
-// }
-
-// .wizard-item-wrapper.past .wizard-label {
-//   color: $regular-gray;
-// }
-
-// .wizard-item-wrapper .wizard-label {
-//   font-size: 12px;
-// }
+.wizard-item-icon {
+	display: none;
+}
