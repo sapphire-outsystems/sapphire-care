@@ -2,36 +2,35 @@
 @use '~Settings/fonts'as *;
 
 .no-appointment-card {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 160px;
-  justify-content: space-between;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 160px;
+	justify-content: space-between;
+	padding-right: 15px;
 
+	.no-appointment-card__icon,
+	.no-appointment-card__label {
+		color: $mid-light-grey;
+	}
 
+	.no-appointment-card__btn {
+		align-items: center;
+		display: flex;
+		font-family: $latin-bold;
+		justify-content: center;
+		width: 100%;
 
-  .no-appointment-card__icon,
-  .no-appointment-card__label {
-    color: $mid-light-grey;
-  }
+		.is-rtl & {
+			font-family: $arabic-bold;
+		}
 
-  .no-appointment-card__btn {
-    align-items: center;
-    display: flex;
-    font-family: $latin-bold;
-    justify-content: center;
-    width: 100%;
-
-    .is-rtl & {
-      font-family: $arabic-bold;
-    }
-
-    .btn {
-      align-items: center;
-      border-radius: 24px;
-      display: flex;
-      justify-content: center;
-      width: 300px;
-    }
-  }
+		.btn {
+			align-items: center;
+			border-radius: 24px;
+			display: flex;
+			justify-content: center;
+			width: 300px;
+		}
+	}
 }

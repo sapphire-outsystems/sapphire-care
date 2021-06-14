@@ -6,22 +6,40 @@
 	align-items: center;
 	background-color: $sapphire-white;
 	border-radius: 10px;
-	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
-	color: $regular-alpha;
+	box-shadow: 0 2px 14px 0 rgb(0 0 0 / 14%);
 	display: flex;
 	font-size: $font-size-heading3;
 	height: 70px;
 	justify-content: space-between;
 	margin-bottom: 15px;
 	padding: 25px 15px;
-	-webkit-text-fill-color: $regular-alpha;
 
 	&.selected {
 		border: 2px solid $regular-alpha;
 	}
 
+	&.hasContent {
+		flex-wrap: wrap;
+		height: unset;
+		padding: 15px 0;
+
+		.cardWizard__text,
+		.cardWizard__link {
+			padding: 0 15px;
+		}
+
+		.cardWizard__content {
+			background-color: rgba($regular-alpha, 20%);
+			border-radius: 0 0 10px 10px;
+			flex-basis: 100%;
+			margin-bottom: -15px;
+			margin-top: 15px;
+			padding: 15px;
+		}
+	}
+
 	.cardWizard__link {
-		color: $light-grey;
+		color: $regular-alpha;
 		font-size: 30px;
 		@extend %arrow-left;
 	}

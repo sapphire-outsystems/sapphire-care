@@ -49,6 +49,11 @@
 	justify-content: center;
 }
 
+.flex-center-vertical {
+	align-items: center;
+	display: flex;
+}
+
 /* Validation Code Input */
 .input-number input.form-control.validation-code-input {
 	font-size: 58px;
@@ -72,3 +77,17 @@ input.form-control.validation-code-input:focus {
 	border-top: none !important;
 }
 /* Validation Code Input */
+
+.bottom-action {
+	background-color: white;
+	bottom: 0;
+	left: 0px;
+	padding: 10px;
+	position: fixed;
+	right: 0px;
+	width: 100%;
+}
+
+.list.list-group {
+	overflow: visible;
+}
