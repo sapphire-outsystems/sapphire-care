@@ -30,28 +30,10 @@
 	left: -20px;
 	position: absolute;
 }
+
 .main-content .mobile-with-flag.patient-profile-edit > div .animated-label.active input[type='text'] {
 	padding-left: 75px;
 	position: relative;
-}
-
-.flex-content {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	padding: 36px 24px;
-}
-
-.flex-center-content {
-	align-items: center;
-	display: flex;
-	height: 100%;
-	justify-content: center;
-}
-
-.flex-center-vertical {
-	align-items: center;
-	display: flex;
 }
 
 /* Validation Code Input */
@@ -78,6 +60,11 @@ input.form-control.validation-code-input:focus {
 }
 /* Validation Code Input */
 
+.list.list-group {
+	overflow: visible;
+}
+
+/* Helpers */
 .bottom-action {
 	background-color: white;
 	bottom: 0;
@@ -88,6 +75,6 @@ input.form-control.validation-code-input:focus {
 	width: 100%;
 }
 
-.list.list-group {
-	overflow: visible;
+.content-with-bottom-action {
+	padding-bottom: 85px;
 }

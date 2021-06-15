@@ -1,170 +1,159 @@
 @use '~Settings/colors'as *;
 @use '~Settings/fonts'as *;
 
-$height:100px;
+$height: 100px;
 
 [id*='Request__Appointment'] {
-  .header {
-    height: $height;
-  }
+	.header {
+		height: $height;
+	}
 
-  .section-title {
-    margin-bottom: 10px;
-  }
+	.section-title {
+		margin-bottom: 10px;
+	}
 
-  .search {
-    margin-bottom: 20px;
-  }
+	.search {
+		margin-bottom: 20px;
+	}
 
-  // .wizard {
-  //   left: 0;
-  //   position: fixed;
-  //   top: $height;
-  //   width: 100%;
-  //   z-index: 1;
+	// .wizard {
+	//   left: 0;
+	//   position: fixed;
+	//   top: $height;
+	//   width: 100%;
+	//   z-index: 1;
 
-  //   .wizard-item-wrapper {
+	//   .wizard-item-wrapper {
 
-  //     &.active,
-  //     &.past {
-  //       .wizard-item {
-  //         background-color: $regular-alpha;
-  //       }
-  //     }
+	//     &.active,
+	//     &.past {
+	//       .wizard-item {
+	//         background-color: $regular-alpha;
+	//       }
+	//     }
 
-  //     .wizard-item {
-  //       background-color: $light-grey;
-  //       height: 6px;
-  //       width: 100%;
-  //     }
+	//     .wizard-item {
+	//       background-color: $light-grey;
+	//       height: 6px;
+	//       width: 100%;
+	//     }
 
-  //   }
+	//   }
 
+	// }
 
-  // }
+	.list-item {
+		padding: 15px 0;
+	}
 
-  .list-item {
-    padding: 15px 0;
-  }
+	.content {
+		background: $sapphire-white;
+	}
 
-  .content {
-    background: $sapphire-white;
-  }
+	[id*='SearchContainer'] {
+		.section {
+			.section-title {
+				font-family: $latin-bold;
+				font-size: $font-size-heading2;
+				margin-top: 30px;
 
+				.is-rtl & {
+					font-family: $arabic-bold;
+				}
+			}
+		}
+	}
 
-  [id*='SearchContainer'] {
-    .section {
-      margin-top: 30px;
+	[id*='Doctor__Section'] {
+		.card-profile__content {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 
-      .section-title {
-        font-family: $latin-bold;
-        font-size: $font-size-heading2;
+			.card-profile__title {
+				color: $dark-grey;
+				font-size: $font-size-heading4;
+			}
+		}
 
-        .is-rtl & {
-          font-family: $arabic-bold;
-        }
-      }
-    }
-  }
+		.card-profile__info {
+			color: $light-grey;
+		}
+	}
 
+	[id*='Calendar__Section'] {
+		a.select-date {
+			display: block;
+		}
+	}
 
-  [id*='Doctor__Section'] {
+	[id*='Summary__Section'] {
+		[id*='Summary__TextContainer'] {
+			margin-bottom: 40px;
+			margin-top: 15px;
 
+			.summary__section--text {
+				color: $mid-light-grey;
+				line-height: 20px;
+				margin-bottom: 40px;
+			}
+		}
 
-    .card-profile__content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+		.cardInfo {
+			border-bottom: 1px solid $light-grey;
+			height: auto;
+			margin-bottom: 20px;
 
-      .card-profile__title {
-        color: $dark-grey;
-        font-size: $font-size-heading4;
-      }
+			.cardInfo__label {
+				color: $mid-light-grey;
+			}
 
-    }
+			.cardInfo__link {
+				color: $regular-alpha;
+				font-size: 20px;
+			}
+		}
 
-    .card-profile__info {
-      color: $light-grey;
-    }
-  }
+		.requiered-documents {
+			.title {
+				align-items: center;
+				display: flex;
+				font-size: $font-size-heading4;
+				margin-bottom: 15px;
 
-  [id*='Calendar__Section'] {
-    a.select-date {
-      display: block;
-    }
-  }
+				:nth-child(2) {
+					font-family: $latin-bold;
+					margin-left: 5px;
 
-  [id*='Summary__Section'] {
+					.is-rtl & {
+						font-family: $arabic-bold;
+					}
+				}
+			}
 
-    [id*='Summary__TextContainer'] {
-      margin-bottom: 40px;
-      margin-top: 15px;
+			.info-message {
+				color: $mid-light-grey;
+				line-height: 20px;
+				margin-bottom: 15px;
+			}
 
-      .summary__section--text {
-        color: $mid-light-grey;
-        line-height: 20px;
-        margin-bottom: 40px;
-      }
-    }
+			.list-content {
+				margin-bottom: 15px;
 
-    .cardInfo {
-      border-bottom: 1px solid $light-grey;
-      height: auto;
-      margin-bottom: 20px;
+				.content {
+					align-items: center;
+					display: flex;
+					flex-direction: row;
 
-      .cardInfo__label {
-        color: $mid-light-grey;
-      }
+					:first-child {
+						flex: 1;
+					}
 
-      .cardInfo__link {
-        color: $regular-alpha;
-        font-size: 20px;
-      }
-    }
-
-    .requiered-documents {
-      .title {
-        align-items: center;
-        display: flex;
-        font-size: $font-size-heading4;
-        margin-bottom: 15px;
-
-        :nth-child(2) {
-          font-family: $latin-bold;
-          margin-left: 5px;
-
-          .is-rtl & {
-            font-family: $arabic-bold;
-          }
-        }
-
-      }
-
-      .info-message {
-        color: $mid-light-grey;
-        line-height: 20px;
-        margin-bottom: 15px;
-
-      }
-
-      .list-content {
-        margin-bottom: 15px;
-
-        .content {
-          align-items: center;
-          display: flex;
-          flex-direction: row;
-
-          :first-child {
-            flex: 1;
-          }
-
-          :nth-child(-n+2) {
-            flex: 2;
-          }
-        }
-      }
-    }
-  }
-
+					:nth-child(-n + 2) {
+						flex: 2;
+					}
+				}
+			}
+		}
+	}
 }

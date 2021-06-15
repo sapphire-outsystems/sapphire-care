@@ -1,4 +1,8 @@
 /* Class created to break word*/
 .breakWords {
-  word-break: break-word;
+	word-break: break-word;
+}
+
+.noWrap {
+	white-space: nowrap;
 }

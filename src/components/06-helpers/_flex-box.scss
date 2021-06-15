@@ -1,0 +1,22 @@
+.flex-content {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 36px 24px;
+}
+
+.flex-center-content {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+}
+
+.flex-center-vertical {
+	align-items: center;
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
