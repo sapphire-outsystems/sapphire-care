@@ -38,10 +38,38 @@
 		}
 	}
 
+	&.hasImage {
+		height: unset;
+		padding: 10px 15px 10px 10px;
+	}
+
 	.cardWizard__link {
 		color: $regular-alpha;
 		font-size: 30px;
 		@extend %arrow-left;
+	}
+
+	.cardWizard__header {
+		align-items: center;
+		display: flex;
+		gap: 15px;
+	}
+
+	.cardWizard__image img {
+		border-radius: 8px;
+		object-fit: cover;
+	}
+
+	.cardWizard__imageLeft {
+		align-items: center;
+		background-color: #f5f5f5;
+		border-radius: 8px;
+		color: $sapphire-care-blue1;
+		display: flex;
+		font-size: 42px;
+		height: 54px;
+		justify-content: center;
+		width: 54px;
 	}
 
 	&.imageBg {

@@ -3,62 +3,61 @@
 @use '~Settings/fonts'as *;
 
 .sticky-header {
-  z-index: 10;
+	z-index: 10;
 }
 
 .sticky-header .section-title {
-  background: $sapphire-white;
-  padding-left: 45px;
-  position: relative;
+	background: $sapphire-white;
+	padding-left: 45px;
+	position: relative;
 }
 
 .is-rtl .sticky-header .section-title {
-  padding-left: 30px;
-  padding-right: 45px;
+	padding-left: 30px;
+	padding-right: 45px;
 }
 
 .section-content .sticky-header .section-title {
-  background-color: transparent;
-  padding-left: 30px;
+	background-color: transparent;
+	padding-left: 30px;
 }
 
 .sticky-header .section-title:before {
-  background-color: $regular-orange;
-  bottom: 15px;
-  content: "";
-  left: 30px;
-  position: absolute;
-  top: 15px;
-  width: 2px;
+	background-color: $regular-orange;
+	bottom: 15px;
+	content: '';
+	left: 30px;
+	position: absolute;
+	top: 15px;
+	width: 2px;
 }
 
 .is-rtl .sticky-header .section-title:before {
-  left: initial;
-  right: 30px;
+	left: initial;
+	right: 30px;
 }
 
 .section-content .sticky-header .section-title:before {
-  display: none;
+	display: none;
 }
 
 .section {
-  padding: 0 15px;
+	padding: 0 15px;
 
-  .section-title {
-    background: transparent;
-    border: 0;
-    color: $mid-dark-grey;
-    font-family: $latin-bold;
-    font-size: $font-size-heading3;
-    padding: 0;
+	.section-title {
+		background: transparent;
+		border: 0;
+		color: $mid-dark-grey;
+		font-family: $latin-bold;
+		// font-size: $font-size-heading3;
+		padding: 0;
 
-    .is-rtl & {
-      font-family: $arabic-bold;
-    }
+		.is-rtl & {
+			font-family: $arabic-bold;
+		}
+	}
 
-  }
-
-  .section-content {
-    padding: 0;
-  }
+	.section-content {
+		padding: 0;
+	}
 }

@@ -30,6 +30,44 @@
 			background-color: transparent;
 			height: auto;
 
+			&.header-custom {
+				background: linear-gradient(315deg, rgba(0, 86, 128, 0) 0%, #002b49 100%);
+
+				.header-left {
+					height: 28px;
+
+					.app-menu-icon.back {
+						background-color: $sapphire-white;
+						border-radius: 50%;
+						height: 30px;
+						width: 30px;
+
+						i.sc-arrow-left-cal {
+							font-size: 25px;
+							margin-left: 0;
+						}
+					}
+				}
+
+				.header-title {
+					line-height: 30px;
+				}
+
+				.header-right a {
+					background-color: $sapphire-white;
+					border-radius: 100px;
+					font-size: 14px;
+					line-height: 30px;
+					padding: 0 15px;
+				}
+
+				.header-content {
+					color: $sapphire-white;
+					font-size: 24px;
+					padding-bottom: 30px;
+				}
+			}
+
 			.header-title {
 				font-size: $font-size-heading3;
 			}
@@ -44,6 +82,12 @@
 
 		.shadow {
 			display: none;
+		}
+	}
+
+	.header-left {
+		i.sc-arrow-left-cal {
+			margin-left: -8px;
 		}
 	}
 }
@@ -80,7 +124,7 @@
 }
 
 .header-top {
-	height: 100px;
+	height: 70px;
 	padding: 0;
 }
 
@@ -96,7 +140,7 @@
 
 .header-title {
 	color: $sapphire-white;
-	flex: 5;
+	flex: 6;
 	font-family: $latin-bold;
 	font-size: $font-size-heading1;
 	text-align: left;
