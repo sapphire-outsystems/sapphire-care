@@ -1409,6 +1409,37 @@ input.switch[disabled]:checked:after {
   background-color: transparent;
   height: auto;
 }
+.screen.detail .header.header-custom {
+  background: linear-gradient(315deg, rgba(0, 86, 128, 0) 0%, #002b49 100%);
+}
+.screen.detail .header.header-custom .header-left {
+  height: 28px;
+}
+.screen.detail .header.header-custom .header-left .app-menu-icon.back {
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+.screen.detail .header.header-custom .header-left .app-menu-icon.back i.sc-arrow-left-cal {
+  font-size: 25px;
+  margin-left: 0;
+}
+.screen.detail .header.header-custom .header-title {
+  line-height: 30px;
+}
+.screen.detail .header.header-custom .header-right a {
+  background-color: #ffffff;
+  border-radius: 100px;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 0 15px;
+}
+.screen.detail .header.header-custom .header-content {
+  color: #ffffff;
+  font-size: 24px;
+  padding-bottom: 30px;
+}
 .screen.detail .header .header-title {
   font-size: 1.285em;
 }
@@ -1418,6 +1449,9 @@ input.switch[disabled]:checked:after {
 }
 .screen.detail .shadow {
   display: none;
+}
+.screen .header-left i.sc-arrow-left-cal {
+  margin-left: -8px;
 }
 
 .header {
@@ -1443,7 +1477,7 @@ input.switch[disabled]:checked:after {
 }
 
 .header-top {
-  height: 100px;
+  height: 70px;
   padding: 0;
 }
 
@@ -1459,7 +1493,7 @@ input.switch[disabled]:checked:after {
 
 .header-title {
   color: #ffffff;
-  flex: 5;
+  flex: 6;
   font-family: "LatoBold";
   font-size: 1.714em;
   text-align: left;
@@ -1634,7 +1668,12 @@ input.switch[disabled]:checked:after {
 
 /* Menu */
 .app-menu {
+  background-color: #0e4f7c;
   box-shadow: -15px 2px 40px 0 rgba(92, 92, 92, 0.41);
+  padding-bottom: 0 !important;
+}
+.app-menu .app-menu-links {
+  background-color: #fff;
 }
 
 .app-menu a .icon,
@@ -2685,22 +2724,62 @@ body.is-rtl .card-two-cols.border.border-left {
   align-items: center;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
-  color: #00bfa5;
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.14);
   display: flex;
   font-size: 1.285em;
   height: 70px;
   justify-content: space-between;
   margin-bottom: 15px;
   padding: 25px 15px;
-  -webkit-text-fill-color: #00bfa5;
 }
 .cardWizard.selected {
   border: 2px solid #00bfa5;
 }
+.cardWizard.hasContent {
+  flex-wrap: wrap;
+  height: unset;
+  padding: 15px 0;
+}
+.cardWizard.hasContent .cardWizard__text,
+.cardWizard.hasContent .cardWizard__link {
+  padding: 0 15px;
+}
+.cardWizard.hasContent .cardWizard__content {
+  background-color: rgba(0, 191, 165, 0.2);
+  border-radius: 0 0 10px 10px;
+  flex-basis: 100%;
+  margin-bottom: -15px;
+  margin-top: 15px;
+  padding: 15px;
+}
+.cardWizard.hasImage {
+  height: unset;
+  padding: 10px 15px 10px 10px;
+}
 .cardWizard .cardWizard__link {
-  color: #d6d6d6;
+  color: #00bfa5;
   font-size: 30px;
+}
+.cardWizard .cardWizard__header {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+}
+.cardWizard .cardWizard__image img {
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cardWizard .cardWizard__imageLeft {
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  color: #0e4f7c;
+  display: flex;
+  font-size: 42px;
+  height: 54px;
+  justify-content: center;
+  width: 54px;
 }
 .cardWizard.imageBg {
   min-height: 140px;
@@ -3408,6 +3487,7 @@ div[data-block*="SapphireCare_Patterns.LanguangeSelector"] .languange-selector__
   flex-direction: column;
   height: 160px;
   justify-content: space-between;
+  padding-right: 15px;
 }
 .no-appointment-card .no-appointment-card__icon,
 .no-appointment-card .no-appointment-card__label {
@@ -4326,7 +4406,6 @@ div[data-block*="SapphireCare_Patterns.LanguangeSelector"] .languange-selector__
   border: 0;
   color: #5c5c5c;
   font-family: "LatoBold";
-  font-size: 1.285em;
   padding: 0;
 }
 .is-rtl .section .section-title {
@@ -5071,12 +5150,39 @@ button.button-group-item.button-group-selected-item.background-black {
   word-break: break-word;
 }
 
+.noWrap {
+  white-space: nowrap;
+}
+
 .display-none {
   display: none;
 }
 
 .display-block {
   display: block;
+}
+
+.flex-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 36px 24px;
+}
+
+.flex-center-content {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.flex-center-vertical {
+  align-items: center;
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .min-height {
@@ -5285,13 +5391,19 @@ button.button-group-item.button-group-selected-item.background-black {
   /*primary-color*/
 }
 
+.text-care-blue {
+  color: #0e4f7c;
+}
+
 /* Validation colors */
 .alert-success,
 .alert-error,
 .alert-warning,
 .alert-info {
-  padding-bottom: 12px;
-  padding-top: 12px;
+  padding-bottom: 15px;
+  padding-left: 35px;
+  padding-right: 15px;
+  padding-top: 15px;
 }
 
 .alert-success {
@@ -5312,6 +5424,10 @@ button.button-group-item.button-group-selected-item.background-black {
 .alert-info {
   background-color: #039be5;
   border: 0;
+}
+
+.alert-icon {
+  width: 35px;
 }
 
 .animated-label-input input[data-input]:focus {
@@ -5500,12 +5616,10 @@ div.button-group.not-valid > div {
 [id*=Request__Appointment] .content {
   background: #ffffff;
 }
-[id*=Request__Appointment] [id*=SearchContainer] .section {
-  margin-top: 30px;
-}
 [id*=Request__Appointment] [id*=SearchContainer] .section .section-title {
   font-family: "LatoBold";
   font-size: 1.429em;
+  margin-top: 30px;
 }
 .is-rtl [id*=Request__Appointment] [id*=SearchContainer] .section .section-title {
   font-family: "TajawalBold";
@@ -5579,18 +5693,16 @@ div.button-group.not-valid > div {
   flex: 2;
 }
 
+.section-title-custom {
+  font-family: "LatoBold";
+  font-size: 1.429em;
+}
+
 div[data-block*="Specialties.SpecialtiesList"] div[data-block="SapphireCare_Patterns.SmallCard"] > div {
   border-bottom: none;
 }
 div[data-block*="Specialties.SpecialtiesList"] div[data-block="SapphireCare_Patterns.SmallCard"] + div {
   all: unset;
-}
-div[data-block*="Specialties.SpecialtiesList"] div[data-block="SapphireCare_Patterns.SmallCard"] + div > div {
-  border-radius: 8px;
-  box-shadow: 2px 4px 4px 0px #d6d6d6;
-  color: #00bfa5;
-  margin: 0 15px;
-  margin-bottom: 15px;
 }
 
 [id*=AppointementDetail] .section .section-title {
@@ -6637,20 +6749,6 @@ div[id*=MenuHeader] .card-profile__bottom-badge {
   position: relative;
 }
 
-.flex-content {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 36px 24px;
-}
-
-.flex-center-content {
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-}
-
 /* Validation Code Input */
 .input-number input.form-control.validation-code-input {
   font-size: 58px;
@@ -6698,3 +6796,21 @@ input.form-control.validation-code-input:focus {
 }
 
 /* Validation Code Input */
+.list.list-group {
+  overflow: visible;
+}
+
+/* Helpers */
+.bottom-action {
+  background-color: white;
+  bottom: 0;
+  left: 0px;
+  padding: 10px;
+  position: fixed;
+  right: 0px;
+  width: 100%;
+}
+
+.content-with-bottom-action {
+  padding-bottom: 85px;
+}
