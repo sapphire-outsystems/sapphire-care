@@ -3,7 +3,13 @@
 @use '~Settings/colors'as *;
 
 .app-menu {
+	background-color: $sapphire-care-blue1;
 	box-shadow: -15px 2px 40px 0 rgba(92, 92, 92, 0.41);
+	padding-bottom: 0 !important;
+
+	.app-menu-links {
+		background-color: $regular-white;
+	}
 }
 
 .app-menu a .icon,
