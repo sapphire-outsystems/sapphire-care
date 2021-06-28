@@ -34,6 +34,10 @@
 	padding-left: 20px !important;
 }
 
+.app-menu-container {
+	transform: translateX(-110vw) translateZ(0);
+}
+
 .is-rtl {
 	.submenu-item {
 		&:before {
@@ -55,6 +59,10 @@
 				left: 15px;
 			}
 		}
+	}
+
+	.app-menu-container {
+		transform: translateX(110vw) translateZ(0);
 	}
 }
 

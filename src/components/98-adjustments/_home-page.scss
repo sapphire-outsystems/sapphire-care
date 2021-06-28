@@ -136,28 +136,11 @@ $marginContainers: 15px;
 
 			&.list-group {
 				display: flex;
+				gap: 15px;
 			}
 
 			.list-item {
 				width: 100%;
-
-				&:first-of-type {
-					margin-right: $marginContainers;
-
-					.is-rtl & {
-						margin-left: $marginContainers;
-						margin-right: unset;
-					}
-				}
-
-				&:last-of-type {
-					margin-left: $marginContainers;
-
-					.is-rtl & {
-						margin-left: unset;
-						margin-right: $marginContainers;
-					}
-				}
 			}
 		}
 	}
